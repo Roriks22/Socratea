@@ -1,0 +1,296 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: rgb(13, 45, 77);
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+  #social .button-icon {
+    -webkit-filter: invert(1) brightness(2);
+            filter: invert(1) brightness(2);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+*::-moz-selection {
+  background: pink;
+}
+*::selection {
+  background: pink;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8rem;
+  border-bottom: 1px solid gray;
+}
+.nav-container .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-container .nav-left .logo img {
+  margin-top: 15px;
+  width: 100px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nav-container .nav-left h1 {
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  margin-left: -20px;
+}
+.nav-container .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+.nav-container .nav-right h5 {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.nav-container .nav-right h5:hover {
+  color: rgb(7, 168, 255);
+}
+.nav-container .nav-right .prise-rdv {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.header-page {
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+}
+.header-page .header-top {
+  padding-bottom: 5rem;
+  border-bottom: 1px solid;
+}
+.header-page .header-top .info-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 25px;
+  width: 60%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.809);
+}
+.header-page .header-top .info-header .fa-solid {
+  color: rgb(100, 241, 128);
+  font-size: 0.4rem;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.header-page .header-top .titre_1 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.header-page .header-top .titre_2 {
+  color: rgb(7, 168, 255);
+  margin-bottom: 3rem;
+}
+.header-page .header-top .info_rdv {
+  margin-top: 3rem;
+  border: 1px solid;
+  padding: 20px;
+  margin-right: 2rem;
+  background: rgb(100, 241, 128);
+  color: rgba(0, 0, 0, 0.737);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.header-page .header-top .info_rdv .fa-arrow-right {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.header-page .header-top .info_methode {
+  margin-top: 3rem;
+  border: 1px solid;
+  padding: 20px;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header-page .header-top .info_methode:hover {
+  color: rgb(7, 168, 255);
+}
+.header-page .header-bottom {
+  gap: 5rem;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-page .header-bottom .experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header-page .header-bottom .experience h5 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.header-page .header-bottom .experience p {
+  color: rgba(255, 255, 255, 0.916);
+  font-style: italic;
+}/*# sourceMappingURL=main.css.map */

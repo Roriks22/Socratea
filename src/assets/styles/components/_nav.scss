@@ -1,0 +1,39 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+  border-bottom: 1px solid gray;
+  .nav-left {
+    display: flex;
+    align-items: center;
+    .logo {
+      img {
+        margin-top: 15px;
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    h1 {
+      font-size: 1.2rem;
+      letter-spacing: 5px;
+      margin-left: -20px;
+    }
+  }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    h5 {
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover {
+        color: rgb(7, 168, 255);
+      }
+    }
+    .prise-rdv {
+      border: 1px solid;
+      padding: 10px;
+    }
+  }
+}
