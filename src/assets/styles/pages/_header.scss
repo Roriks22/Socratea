@@ -2,6 +2,7 @@
   width: 70%;
   text-align: left;
   margin: 0 auto;
+  min-height: 90vh;
   .header-top {
     padding-bottom: 5rem;
     border-bottom: 1px solid;
@@ -25,10 +26,13 @@
     .titre_1 {
       margin-top: 3rem;
       margin-bottom: 2rem;
+      font-size: 4rem;
     }
     .titre_2 {
       color: rgb(7, 168, 255);
       margin-bottom: 3rem;
+      font-size: 3.5rem;
+      line-height: 70px;
     }
     .info_rdv {
       margin-top: 3rem;
@@ -45,13 +49,14 @@
       }
     }
     .info_methode {
-      margin-top: 3rem;
+      margin-top: 4rem;
       border: 1px solid;
       padding: 20px;
       background: transparent;
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.5s ease;
+      margin-bottom: 2rem;
 
       &:hover {
         color: rgb(7, 168, 255);
