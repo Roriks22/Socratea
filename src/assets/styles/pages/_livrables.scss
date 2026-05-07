@@ -1,0 +1,68 @@
+.livrables {
+  background: #ffff;
+  padding-top: 5rem;
+  min-height: 90vh;
+
+  .livrables-deroulement {
+    width: 80%;
+    margin: 0 auto;
+
+    .livrables-header {
+      text-align: left;
+
+      span {
+        color: rgb(7, 168, 255);
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        color: rgba(0, 0, 0, 0.734);
+        width: 50%;
+        line-height: 40px;
+      }
+      p {
+        color: rgba(0, 0, 0, 0.734);
+        margin-top: 2rem;
+        width: 42%;
+        margin-bottom: 5rem;
+      }
+    }
+    .livrables-footer {
+      display: flex;
+      .livrables-clients {
+        display: flex;
+        background: white;
+        padding: 25px;
+        border-top: 1px solid;
+        text-align: left;
+        width: 40%;
+        margin-bottom: 2rem;
+
+        .livrables-span {
+          width: 50%;
+          height: 30px;
+          font-size: 0.8rem;
+          span {
+            width: 100%;
+            color: rgb(7, 168, 255);
+            border: 1px solid;
+            padding: 5px;
+          }
+        }
+        .livrables-text {
+          margin-left: 2rem;
+          h3 {
+            color: rgba(0, 0, 0, 0.734);
+            font-size: 1.1rem;
+            padding-bottom: 0.5rem;
+          }
+          p {
+            color: rgb(104, 114, 129);
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
