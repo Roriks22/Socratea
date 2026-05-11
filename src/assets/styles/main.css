@@ -605,4 +605,120 @@ code {
   color: rgba(0, 0, 0, 0.734);
   text-transform: uppercase;
   font-size: 0.7rem;
+}
+
+.services {
+  background: rgb(242, 246, 251);
+  padding-top: 5rem;
+  min-height: 90vh;
+  padding-bottom: 5rem;
+}
+.services .services-deroulement {
+  width: 80%;
+  margin: 0 auto;
+}
+.services .services-deroulement .services-header {
+  text-align: left;
+}
+.services .services-deroulement .services-header span {
+  color: rgb(7, 168, 255);
+  text-align: left;
+  text-transform: uppercase;
+}
+.services .services-deroulement .services-header h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: rgba(0, 0, 0, 0.734);
+  width: 60%;
+  line-height: 40px;
+}
+.services .services-deroulement .services-header p {
+  color: rgba(0, 0, 0, 0.734);
+  margin-top: 2rem;
+  width: 42%;
+  margin-bottom: 5rem;
+}
+.services .services-deroulement .services-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.services .services-deroulement .services-footer .pole-services {
+  background: white;
+  border: 1px solid gray;
+  padding: 40px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: 0.8s ease-out 0s 1 normal forwards running fadeUp;
+          animation: 0.8s ease-out 0s 1 normal forwards running fadeUp;
+}
+.services .services-deroulement .services-footer .pole-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: rgb(7, 168, 255);
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+.services .services-deroulement .services-footer .pole-services:hover {
+  border-top-color: rgb(7, 168, 255);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 12px 30px rgba(13, 45, 77, 0.08);
+          box-shadow: 0 12px 30px rgba(13, 45, 77, 0.08);
+}
+.services .services-deroulement .services-footer .pole-services:hover::before {
+  width: 100%;
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte {
+  padding-left: 30px;
+  text-align: left;
+  cursor: pointer;
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte span {
+  color: rgb(7, 168, 255);
+  font-size: 0.8rem;
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte h5 {
+  color: rgba(0, 0, 0, 0.734);
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte p {
+  color: rgb(104, 114, 129);
+  padding-bottom: 1rem;
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte .service-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(0, 0, 0, 0.734);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  gap: 8px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte .service-link:hover {
+  color: rgb(7, 168, 255);
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte .service-link i {
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.services .services-deroulement .services-footer .pole-services .pole-texte .service-link:hover i {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,107 @@
+.services {
+  background: rgb(242, 246, 251);
+  padding-top: 5rem;
+  min-height: 90vh;
+  padding-bottom: 5rem;
+  .services-deroulement {
+    width: 80%;
+    margin: 0 auto;
+
+    .services-header {
+      text-align: left;
+
+      span {
+        color: rgb(7, 168, 255);
+        text-align: left;
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        color: rgba(0, 0, 0, 0.734);
+        width: 60%;
+        line-height: 40px;
+      }
+      p {
+        color: rgba(0, 0, 0, 0.734);
+        margin-top: 2rem;
+        width: 42%;
+        margin-bottom: 5rem;
+      }
+    }
+    .services-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      .pole-services {
+        background: white;
+        border: 1px solid gray;
+        padding: 40px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        animation: 0.8s ease-out 0s 1 normal forwards running fadeUp;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 3px;
+          width: 0;
+          background: rgb(7, 168, 255);
+          transition: width 0.4s ease;
+        }
+        &:hover {
+          border-top-color: rgb(7, 168, 255);
+          transform: translateY(-2px);
+          box-shadow: 0 12px 30px rgba(13, 45, 77, 0.08);
+        }
+        &:hover::before {
+          width: 100%;
+        }
+
+        .pole-texte {
+          padding-left: 30px;
+          text-align: left;
+          cursor: pointer;
+          span {
+            color: rgb(7, 168, 255);
+            font-size: 0.8rem;
+          }
+          h5 {
+            color: rgba(0, 0, 0, 0.734);
+            font-size: 1.1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          p {
+            color: rgb(104, 114, 129);
+            padding-bottom: 1rem;
+          }
+          .service-link {
+            display: inline-flex;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.734);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            gap: 8px;
+            transition: color 0.2s;
+
+            &:hover {
+              color: rgb(7, 168, 255);
+            }
+
+            i {
+              transition: transform 0.25s ease;
+            }
+            &:hover i {
+              transform: translateX(4px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
