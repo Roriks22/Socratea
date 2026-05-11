@@ -30,36 +30,38 @@
     }
     .livrables-footer {
       display: flex;
-      .livrables-clients {
-        display: flex;
-        background: white;
-        padding: 25px;
-        border-top: 1px solid;
-        text-align: left;
-        width: 40%;
-        margin-bottom: 2rem;
+      .livrables-left {
+        .livrables-clients {
+          display: flex;
+          background: white;
+          padding: 25px;
+          border-top: 1px solid;
+          text-align: left;
+          width: 80%;
+          margin-bottom: 2rem;
 
-        .livrables-span {
-          width: 50%;
-          height: 30px;
-          font-size: 0.8rem;
-          span {
-            width: 100%;
-            color: rgb(7, 168, 255);
-            border: 1px solid;
-            padding: 5px;
+          .livrables-span {
+            width: 30%;
+            height: 30px;
+            font-size: 0.8rem;
+            span {
+              width: 100%;
+              color: rgb(7, 168, 255);
+              border: 1px solid;
+              padding: 5px;
+            }
           }
-        }
-        .livrables-text {
-          margin-left: 2rem;
-          h3 {
-            color: rgba(0, 0, 0, 0.734);
-            font-size: 1.1rem;
-            padding-bottom: 0.5rem;
-          }
-          p {
-            color: rgb(104, 114, 129);
-            font-size: 1rem;
+          .livrables-text {
+            margin-left: 2rem;
+            h3 {
+              color: rgba(0, 0, 0, 0.734);
+              font-size: 1.1rem;
+              padding-bottom: 0.5rem;
+            }
+            p {
+              color: rgb(104, 114, 129);
+              font-size: 1rem;
+            }
           }
         }
       }

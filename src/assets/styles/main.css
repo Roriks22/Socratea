@@ -408,7 +408,7 @@ code {
   display: -ms-flexbox;
   display: flex;
 }
-.livrables .livrables-deroulement .livrables-footer .livrables-clients {
+.livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,29 +416,29 @@ code {
   padding: 25px;
   border-top: 1px solid;
   text-align: left;
-  width: 40%;
+  width: 80%;
   margin-bottom: 2rem;
 }
-.livrables .livrables-deroulement .livrables-footer .livrables-clients .livrables-span {
-  width: 50%;
+.livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-span {
+  width: 30%;
   height: 30px;
   font-size: 0.8rem;
 }
-.livrables .livrables-deroulement .livrables-footer .livrables-clients .livrables-span span {
+.livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-span span {
   width: 100%;
   color: rgb(7, 168, 255);
   border: 1px solid;
   padding: 5px;
 }
-.livrables .livrables-deroulement .livrables-footer .livrables-clients .livrables-text {
+.livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-text {
   margin-left: 2rem;
 }
-.livrables .livrables-deroulement .livrables-footer .livrables-clients .livrables-text h3 {
+.livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-text h3 {
   color: rgba(0, 0, 0, 0.734);
   font-size: 1.1rem;
   padding-bottom: 0.5rem;
 }
-.livrables .livrables-deroulement .livrables-footer .livrables-clients .livrables-text p {
+.livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-text p {
   color: rgb(104, 114, 129);
   font-size: 1rem;
 }
@@ -446,6 +446,7 @@ code {
 .dashboard-mockup {
   width: 720px;
   max-width: 100%;
+  height: 600px;
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 6px;
@@ -597,4 +598,11 @@ code {
 
 .mb-12 {
   margin-bottom: 12px;
+}
+
+.texte-schema {
+  padding-top: 3rem;
+  color: rgba(0, 0, 0, 0.734);
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }/*# sourceMappingURL=main.css.map */

@@ -113,7 +113,7 @@ const LivrableWireframe = () => {
     <div className="line w-80"></div>
     <div className="line w-60"></div>
   </div>
-
+  <p className="texte-schema">représentation schématique - exemple client à fournir</p>
 </div>
   );
 };
