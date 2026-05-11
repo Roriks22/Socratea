@@ -721,4 +721,105 @@ code {
 .services .services-deroulement .services-footer .pole-services .pole-texte .service-link:hover i {
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
+}
+
+.a_propos {
+  padding-top: 5rem;
+  min-height: 90vh;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.a_propos:before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0px;
+  background: radial-gradient(at 0% 50%, rgba(7, 168, 255, 0.08) 0%, transparent 55%);
+}
+.a_propos .container_apropos {
+  margin-left: 4rem;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+}
+.a_propos .container_apropos .apropos_left img {
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.a_propos .container_apropos .apropos-right {
+  text-align: left;
+  width: 50%;
+}
+.a_propos .container_apropos .apropos-right span {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  color: rgb(7, 168, 255);
+  text-transform: uppercase;
+}
+.a_propos .container_apropos .apropos-right span:before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: rgb(7, 168, 255);
+}
+.a_propos .container_apropos .apropos-right h3 {
+  margin-top: 20px;
+  margin-bottom: 36px;
+  font-size: 2.2rem;
+  line-height: 40px;
+  color: white;
+}
+.a_propos .container_apropos .apropos-right .texte_1 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  max-width: 620px;
+}
+.a_propos .container_apropos .apropos-right .texte_2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 620px;
+}
+.a_propos .container_apropos .apropos-right .btn-parcours {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.a_propos .container_apropos .apropos-right .btn-parcours .btn-click-parcours {
+  background: transparent;
+  border: 1.5px solid gray;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.35);
+  padding: 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.a_propos .container_apropos .apropos-right .btn-parcours .btn-click-parcours:hover {
+  background: transparent;
+  color: rgb(7, 168, 255);
+  border: 1.5px solid rgb(7, 168, 255);
 }/*# sourceMappingURL=main.css.map */
