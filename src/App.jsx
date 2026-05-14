@@ -1,6 +1,7 @@
 import Nav from "./assets/components/Nav"
 import Apropos from "./assets/pages/Apropos"
 import Contact from "./assets/pages/Contact"
+import Footer from "./assets/pages/Footer"
 import Header from "./assets/pages/Header"
 import Home from "./assets/pages/Home"
 import Livrables from "./assets/pages/Livrables"
@@ -19,6 +20,7 @@ function App() {
       <Services />
       <Apropos />
       <Contact />
+      <Footer />
     </div>
   )
 }
