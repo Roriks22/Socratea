@@ -4,9 +4,9 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-top">
                     <div className="footer-brand">
-                        <a href=""><img src="../../../public/images/SOCRATEA - Logo original.png" alt="Logo"/></a>
+                        <a href=""><img src="../../../public/images/SOCRATEA.png" alt="Logo"/>SOCRATEA</a>
                         <p>Cabinet d'expertise comptable orienté PME. Comptabilité, pilotage, automatisation des flux, paie, juridique. 100 % dématérialisé — partout en France.</p>
-                        <a href="#" className="footer-linkedin" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"></svg>Suivre sur Linkedin</a>
+                        <a href="#" className="footer-linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>Suivre sur Linkedin</a>
                     </div>
                     <div className="footer-col">
                         <h4>Cabinet</h4>
@@ -30,7 +30,7 @@ const Footer = () => {
                         <ul>
                             <li>21, rue Charlemagne <br />88480 Vers-sur-Selle</li>
                             <li><a href="mailto:cabinet.socratea@gmail.com">cabinet.socratea@gmail.com</a></li>
-                            <li><a href="tel:+33686506129"></a>06 86 50 61 29</li>
+                            <li className="telephone"><a href="tel:+33686506129"></a>06 86 50 61 29</li>
                         </ul>
                     </div>
                 </div>

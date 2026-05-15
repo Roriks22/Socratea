@@ -116,6 +116,12 @@
           color: rgba(255, 255, 255, 0.7);
           padding-left: 0.5rem;
           font-size: 0.9rem;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: var(--blue);
+            background: transparent;
+          }
         }
         span {
           padding-left: 0.5rem;

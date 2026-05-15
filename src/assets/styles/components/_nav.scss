@@ -6,6 +6,7 @@
   .nav-left {
     display: flex;
     align-items: center;
+    cursor: pointer;
     .logo {
       img {
         margin-top: 15px;
@@ -18,6 +19,12 @@
       font-size: 1.2rem;
       letter-spacing: 5px;
       margin-left: -20px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--blue);
+        background: transparent;
+      }
     }
   }
   .nav-right {
@@ -32,8 +39,22 @@
       }
     }
     .prise-rdv {
-      border: 1px solid;
-      padding: 10px;
+      color: var(--white);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-width: 1.5px;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.3);
+      border-image: initial;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: transparent;
+        color: rgb(7, 168, 255);
+        border: 1.5px solid rgb(7, 168, 255);
+      }
     }
   }
 }

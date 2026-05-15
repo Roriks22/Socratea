@@ -16,6 +16,7 @@
       text-align: center;
       font-size: 0.8rem;
       color: rgba(255, 255, 255, 0.809);
+
       .fa-solid {
         color: rgb(100, 241, 128);
         font-size: 0.4rem;
@@ -34,32 +35,62 @@
       font-size: 3.5rem;
       line-height: 70px;
     }
-    .info_rdv {
-      margin-top: 3rem;
-      border: 1px solid;
-      padding: 20px;
-      margin-right: 2rem;
-      background: rgb(100, 241, 128);
-      color: rgba(0, 0, 0, 0.737);
-      font-size: 1rem;
-      cursor: pointer;
-      .fa-arrow-right {
-        font-size: 0.8rem;
-        margin-left: 10px;
-      }
-    }
-    .info_methode {
-      margin-top: 4rem;
-      border: 1px solid;
-      padding: 20px;
-      background: transparent;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.5s ease;
-      margin-bottom: 2rem;
+    .info-group {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      .info_rdv {
+        background: #64f180;
+        border: 1.5px solid #64f180;
+        color: #0d2d4d;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 28px;
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+        transition: all 0.25s ease;
+        cursor: pointer;
+        border: none;
 
-      &:hover {
-        color: rgb(7, 168, 255);
+        &:hover {
+          background: #7df596;
+          transform: translateY(-1px);
+        }
+        .arrow {
+          width: 16px;
+          height: 16px;
+          transition: transform 0.25s ease;
+        }
+      }
+      .info_rdv:hover .arrow {
+        transform: translateX(4px);
+      }
+      .info_methode {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+        cursor: pointer;
+        gap: 10px;
+        padding: 16px 28px;
+        border-radius: 2px;
+        transition: 0.25s;
+        color: var(--white);
+        background: transparent;
+        border: 1.5px solid var(--navy);
+        border-color: rgba(255, 255, 255, 0.35);
+
+        &:hover {
+          background: transparent;
+          color: var(--blue);
+          border: 1.5px solid var(--blue);
+        }
       }
     }
   }

@@ -40,6 +40,11 @@
         margin: 0 auto;
         width: 30%;
         margin-bottom: 2rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: var(--gray-bg);
+        }
 
         h6 {
           color: rgb(7, 168, 255);
