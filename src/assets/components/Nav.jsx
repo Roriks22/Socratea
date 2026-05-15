@@ -3,7 +3,7 @@ const Nav = () => {
         <div className='nav-container'>
             <div className="nav-left">
                 <div className="logo">
-                    <img src="../../../public/images/SOCRATEA - Logo original.png" alt="Logo_SOCRATEA" />
+                    <img src="../../../public/images/SOCRATEA.png" alt="Logo_SOCRATEA" />
                 </div>
                 <h1>SOCRATEA</h1>
             </div>
