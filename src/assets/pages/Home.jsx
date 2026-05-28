@@ -1,9 +1,9 @@
 const Home = () => {
     return (
         <section className="entreprise-recherche">
-            <div className="home">
+            <div className="container home">
             <div className="home-top">
-                <span>- pour qui nous travaillons</span>
+                <span>pour qui nous travaillons</span>
                 <h3>Trois situations dans lesquelles vous vous reconnaîtrez.</h3>
                 <p>Nous accompagnons des entreprises qui partagent une exigence commune : avoir des chiffres fiables, à jour, et compris. Au-delà de l'effectif ou du chiffre d'affaires, c'est la maturité d'organisation qui qualifie une collaboration.</p>
             </div>

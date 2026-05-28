@@ -8,9 +8,23 @@
     .home-top {
       text-align: left;
       span {
-        color: rgb(7, 168, 255);
-        text-align: left;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        letter-spacing: 0.16em;
         text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        color: rgb(7, 168, 255);
+        text-transform: uppercase;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 28px;
+          height: 1px;
+          background: rgb(7, 168, 255);
+        }
       }
       h3 {
         font-size: 2rem;

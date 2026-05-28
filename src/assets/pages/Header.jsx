@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <section className="header-page">
+        <section className="container header-page">
             <div className="header-top">  
             <p className="info-header"><i class="fa-solid fa-circle"></i>Cabinet d'expertise comptable - ouverture septembre 2026</p>
             <h1 className="titre_1">Ancré dans l'expertise. <br />

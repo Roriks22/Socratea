@@ -1,7 +1,7 @@
 const Apropos = () => {
   return (
     <section className="a_propos">
-      <div className="container_apropos">
+      <div className="container apropos">
         <div className="apropos_left">
           <img
             src="../../../public/images/Julien - 2026 02 08 - complet.jpg"

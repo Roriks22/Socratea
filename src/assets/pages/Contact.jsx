@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
         <section className="contact">
-            <div className="texte-contact">
+            <div className="container texte-contact">
                 <div className="container">
             <span className="rdv-pris">PRENDRE RENDEZ-VOUS</span>
             <h2>30 minutes pour vérifier <span>si nous sommes faits pour travailler ensemble.</span></h2>

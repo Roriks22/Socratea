@@ -3,9 +3,9 @@ import LivrableWireframe from "../components/LivrableWireframe";
 const Livrables = () => {
   return (
     <section className="livrables">
-      <div className="livrables-deroulement">
+      <div className="container livrables-deroulement">
         <div className="livrables-header">
-          <span>- ce que vous recevez</span>
+          <span>ce que vous recevez</span>
           <h3>
             Des livrables pensés pour le dirigeant, pas pour l'administration.
           </h3>

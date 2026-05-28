@@ -1,9 +1,9 @@
 const Services = () => {
   return (
     <section className="services">
-      <div className="services-deroulement">
+      <div className="container services-deroulement">
         <div className="services-header">
-          <span>- Nos services</span>
+          <span>Nos services</span>
           <h3>Quatre pôles, structurés autour de vos besoins.</h3>
           <p>
             Chaque pôle est traité avec la même exigence. Le périmètre retenu
