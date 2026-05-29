@@ -1,4 +1,4 @@
-import LivrableWireframe from "../components/LivrableWireframe";
+import LivrableWireframe from "../../components/LivrableWireframe";
 
 const Livrables = () => {
   return (

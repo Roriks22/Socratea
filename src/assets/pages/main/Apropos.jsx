@@ -4,7 +4,7 @@ const Apropos = () => {
       <div className="container apropos">
         <div className="apropos_left">
           <img
-            src="../../../public/images/Julien - 2026 02 08 - complet.jpg"
+            src="/images/Julien - 2026 02 08 - complet.jpg"
             alt="Julien_JACQUESSON"
           />
         </div>

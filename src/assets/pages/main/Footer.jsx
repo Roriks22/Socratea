@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-top">
                     <div className="footer-brand">
-                        <a href=""><img src="../../../public/images/SOCRATEA.png" alt="Logo"/>SOCRATEA</a>
+                        <a href=""><img src="/images/SOCRATEA.png" alt="Logo"/>SOCRATEA</a>
                         <p>Cabinet d'expertise comptable orienté PME. Comptabilité, pilotage, automatisation des flux, paie, juridique. 100 % dématérialisé — partout en France.</p>
                         <a href="#" className="footer-linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>Suivre sur Linkedin</a>
                     </div>

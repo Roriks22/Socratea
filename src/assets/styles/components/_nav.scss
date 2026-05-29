@@ -29,11 +29,15 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    h5 {
-      cursor: pointer;
-      transition: all 0.5s ease;
-      &:hover {
-        color: rgb(7, 168, 255);
+
+    a {
+      color: var(--white);
+      h5 {
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          color: rgb(7, 168, 255);
+        }
       }
     }
     .prise-rdv {
