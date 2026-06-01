@@ -1,0 +1,26 @@
+import { Link } from "react-router-dom";
+
+const AproposHeader = () => {
+  return (
+    <section id="page-hero">
+      <div className="container aprps-inner">
+        <div className="breadcrumb">
+          <Link to="/">Accueil</Link>
+          <span className="sep">/</span>
+          <span className="current">À propos</span>
+        </div>
+        <h1>
+          Julien JACQUESSON <br />
+          <span>Expert-comptable diplômé.</span>
+        </h1>
+        <p className="aprps-lead">
+          Un parcours partagé entre l'audit et la direction financière. Une
+          raison d'être simple : produire les comptes est un passage obligé,
+          aider le dirigeant à piloter en est un autre.
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default AproposHeader;

@@ -1,0 +1,106 @@
+#page-hero {
+  .aprps-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 880px;
+    text-align: left;
+
+    .breadcrumb {
+      font-size: 0.8125rem;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 28px;
+      text-transform: uppercase;
+
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--lime);
+        }
+      }
+      .sep {
+        color: rgba(255, 255, 255, 0.3);
+        margin: 0px 10px;
+      }
+      .current {
+        color: var(--blue);
+      }
+    }
+    h1 {
+      color: var(--white);
+      margin-bottom: 24px;
+
+      span {
+        color: var(--blue);
+        font-style: italic;
+        font-weight: 400;
+        display: block;
+        padding-top: 50px;
+      }
+    }
+    p {
+      font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 640px;
+      font-weight: 300;
+      padding-top: 2rem;
+    }
+  }
+}
+.aprps-home {
+  position: relative;
+  padding: 120px 0px;
+  background: var(--white);
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 0.9fr 1.3fr;
+    gap: 80px;
+
+    .about-portrait {
+      img {
+        width: 500px;
+        object-fit: cover;
+      }
+    }
+    .about-content {
+      text-align: left;
+
+      h2 {
+        font-size: 2.5rem;
+        color: var(--navy);
+        margin-top: 20px;
+        margin-bottom: 32px;
+
+        span {
+          color: var(--blue);
+        }
+      }
+      .aprps1 {
+        color: var(--navy);
+        font-family: var(--font-display);
+        font-size: clamp(1.25rem, 2vw, 1.5rem);
+        font-style: italic;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        max-width: 620px;
+      }
+      .aprps2 {
+        color: var(--gray-text);
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+      .aprps3 {
+        color: var(--gray-text);
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

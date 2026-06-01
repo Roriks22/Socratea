@@ -8,12 +8,13 @@ import Apropos from "./assets/pages/main/Apropos";
 import Contact from "./assets/pages/main/Contact";
 import Footer from "./assets/pages/main/Footer";
 import MethodeHeader from "./assets/pages/methode/MethodeHeader";
-import ServicesPage from "./assets/pages/services/services";
-import AproposPage from "./assets/pages/apropos/Apropos";
-import ContactPage from "./assets/pages/contact/Contact";
+import ServicesHeader from "./assets/pages/services/ServicesHeader";
+import AproposHeader from "./assets/pages/apropos/AproposHeader";
+import ContactHeader from "./assets/pages/contact/ContactHeader";
 import MethodeEtapes from "./assets/pages/methode/MethodeEtapes";
 import MethodeHome from "./assets/pages/methode/MethodeHome";
 import MethodeEngagement from "./assets/pages/methode/MethodeEngagement";
+import AproposHome from "./assets/pages/apropos/AproposHome";
 
 function App() {
   return (
@@ -43,9 +44,17 @@ function App() {
             </>
           }
         />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/apropos" element={<AproposPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/services" element={<ServicesHeader />} />
+        <Route
+          path="/apropos"
+          element={
+            <>
+              {" "}
+              <AproposHeader /> <AproposHome />
+            </>
+          }
+        />
+        <Route path="/contact" element={<ContactHeader />} />
       </Routes>
     </>
   );
