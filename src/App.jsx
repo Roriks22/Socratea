@@ -12,6 +12,8 @@ import ServicesPage from "./assets/pages/services/services";
 import AproposPage from "./assets/pages/apropos/Apropos";
 import ContactPage from "./assets/pages/contact/Contact";
 import MethodeEtapes from "./assets/pages/methode/MethodeEtapes";
+import MethodeHome from "./assets/pages/methode/MethodeHome";
+import MethodeEngagement from "./assets/pages/methode/MethodeEngagement";
 
 function App() {
   return (
@@ -36,7 +38,8 @@ function App() {
           path="/methode"
           element={
             <>
-              <MethodeHeader /> <MethodeEtapes />
+              <MethodeHeader /> <MethodeEtapes /> <MethodeHome />{" "}
+              <MethodeEngagement /> <Contact /> <Footer />
             </>
           }
         />
