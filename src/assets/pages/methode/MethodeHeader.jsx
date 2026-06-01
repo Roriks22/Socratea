@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Methode = () => {
   return (
     <section id="methode">
       <div className="container methode-inner">
         <div className="breadcrumb">
-          <a href="">Accueil</a>
+          <Link to="/">Accueil</Link>
           <span className="sep">/</span>
           <span className="current">Notre méthode</span>
         </div>
