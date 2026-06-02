@@ -15,6 +15,9 @@ import MethodeEtapes from "./assets/pages/methode/MethodeEtapes";
 import MethodeHome from "./assets/pages/methode/MethodeHome";
 import MethodeEngagement from "./assets/pages/methode/MethodeEngagement";
 import AproposHome from "./assets/pages/apropos/AproposHome";
+import AproposConviction from "./assets/pages/apropos/AproposConviction";
+import AproposDiplome from "./assets/pages/apropos/AproposDiplome";
+import AproposLocal from "./assets/pages/apropos/AproposLocal";
 
 function App() {
   return (
@@ -50,7 +53,8 @@ function App() {
           element={
             <>
               {" "}
-              <AproposHeader /> <AproposHome />
+              <AproposHeader /> <AproposHome /> <AproposConviction />{" "}
+              <AproposDiplome /> <AproposLocal /> <Contact /> <Footer />
             </>
           }
         />

@@ -104,3 +104,109 @@
     }
   }
 }
+.aprps-conviction {
+  position: relative;
+  background: var(--gray-bg);
+  padding: 120px 0;
+
+  .prose {
+    max-width: 720px;
+    margin: 0px auto;
+    text-align: left;
+
+    h3 {
+      margin-top: 24px;
+      color: var(--navy);
+      margin-bottom: 16px;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .conviction-texte {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      color: var(--gray-text);
+    }
+    blockquote {
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--navy);
+      line-height: 1.5;
+      border-left: 3px solid var(--blue);
+      padding: 8px 24px;
+      margin: 32px 0px;
+    }
+  }
+}
+.aprps-diplome {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+
+  .section-diplome {
+    text-align: left;
+    max-width: 780px;
+    margin-bottom: 72px;
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: 3rem;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+      margin-top: 24px;
+    }
+  }
+  .credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 48px;
+    gap: 0px;
+    border-top: 1px solid var(--gray-line);
+    border-left: 1px solid var(--gray-line);
+
+    .credential {
+      padding: 32px;
+      border-right: 1px solid var(--gray-line);
+      border-bottom: 1px solid var(--gray-line);
+      text-align: left;
+
+      .label {
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--blue);
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+      .value {
+        font-size: 1.125rem;
+        color: var(--navy);
+        font-weight: 500;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+.aprps-local {
+  position: relative;
+  padding: 120px 0;
+  background: var(--navy);
+
+  .section-local {
+    text-align: left;
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 24px;
+      color: var(--white);
+      font-size: 3rem;
+    }
+    p {
+      max-width: 900px;
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 16px;
+    }
+  }
+}
