@@ -45,16 +45,21 @@
     }
     .services-footer {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
       gap: 20px;
       .pole-services {
-        background: white;
-        border: 1px solid gray;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: var(--white);
+        border: 1px solid var(--gray-line);
         padding: 40px;
         border-radius: 4px;
-        transition: all 0.3s ease;
-        position: relative;
+        transition: 0.3s;
         overflow: hidden;
+        text-align: left;
+        cursor: pointer;
 
         &::before {
           content: "";
@@ -67,8 +72,8 @@
           transition: width 0.4s ease;
         }
         &:hover {
+          border-color: var(--navy);
           border-top-color: rgb(7, 168, 255);
-          transform: translateY(-2px);
           box-shadow: 0 12px 30px rgba(13, 45, 77, 0.08);
         }
         &:hover::before {
@@ -107,6 +112,7 @@
             }
 
             i {
+              font-size: 0.6rem;
               transition: transform 0.25s ease;
             }
             &:hover i {

@@ -4,28 +4,28 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="container header-page">
-      <div className="header-top">
-        <p className="info-header">
-          <i class="fa-solid fa-circle"></i>Cabinet d'expertise comptable -
-          ouverture septembre 2026
-        </p>
-        <h1 className="titre_1">
+    <section className="hero">
+      <div className="container hero-inner">
+        <div className="hero-tag reveal reveal-1">
+          <span className="dot"></span>
+          <span>Cabinet d'expertise comptable - ouverture septembre 2026</span>
+        </div>
+        <h1 className="reveal reveal-2">
           Ancré dans l'expertise. <br />
+          <span>En mouvement vers votre avenir.</span>
         </h1>
-        <h1 className="titre_2">En mouvement vers votre avenir.</h1>
-        <h4>
+        <p className="hero-lead reveal reveal-3">
           Une information financière disponible en cours d'année, pas uniquement
           à la clôture. Pour les dirigeants de PME qui veulent piloter leur
           activité — pas seulement être en règle.
-        </h4>
-        <div className="info-group">
+        </p>
+        <div className="hero-cta-group reveal reveal-4">
           <a
             href="https://calendly.com/socratea"
             target="_blank"
             rel="noopener"
           >
-            <button className="info_rdv">
+            <button className="btn btn-primary">
               Prendre rendez-vous
               <svg
                 className="arrow"
@@ -39,23 +39,26 @@ const Header = () => {
               </svg>
             </button>
           </a>
-          <button className="info_methode" onClick={() => navigate("/methode")}>
+          <button
+            className="btn btn-secondary on-dark"
+            onClick={() => navigate("/methode")}
+          >
             Découvrir la méthode
           </button>
         </div>
-      </div>
-      <div className="header-bottom">
-        <div className="experience">
-          <h5>expérience</h5>
-          <p>14 ans - audit & direction financière</p>
-        </div>
-        <div className="experience">
-          <h5>intervention</h5>
-          <p>Partout en France</p>
-        </div>
-        <div className="experience">
-          <h5>fonctionnement</h5>
-          <p>100% dématérialisé</p>
+        <div className="hero-meta reveal reveal-5">
+          <div className="experience">
+            <h5>expérience</h5>
+            <p>14 ans - audit & direction financière</p>
+          </div>
+          <div className="experience">
+            <h5>intervention</h5>
+            <p>Partout en France</p>
+          </div>
+          <div className="experience">
+            <h5>fonctionnement</h5>
+            <p>100% dématérialisé</p>
+          </div>
         </div>
       </div>
     </section>

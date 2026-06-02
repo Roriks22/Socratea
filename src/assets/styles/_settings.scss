@@ -218,87 +218,87 @@ code {
   transform: translateX(4px);
 }
 
-#page-hero {
+.page-hero {
   background: var(--navy);
   color: var(--white);
-  padding: 100px 0 100px;
+  padding: 180px 0 100px;
   position: relative;
   overflow: hidden;
-  #page-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-      radial-gradient(
-        ellipse at 85% 30%,
-        rgba(7, 168, 255, 0.1) 0%,
-        transparent 55%
-      ),
-      radial-gradient(
-        ellipse at 15% 90%,
-        rgba(4, 209, 219, 0.05) 0%,
-        transparent 55%
-      );
-    pointer-events: none;
+}
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(
+      ellipse at 85% 30%,
+      rgba(7, 168, 255, 0.1) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 15% 90%,
+      rgba(4, 209, 219, 0.05) 0%,
+      transparent 55%
+    );
+  pointer-events: none;
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.4;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+.page-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 880px;
+  text-align: left;
+
+  .breadcrumb {
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 28px;
+    text-transform: uppercase;
+
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--lime);
+      }
+    }
+    .sep {
+      color: rgba(255, 255, 255, 0.3);
+      margin: 0px 10px;
+    }
+    .current {
+      color: var(--blue);
+    }
   }
-  #page-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    opacity: 0.4;
-    pointer-events: none;
-    mix-blend-mode: overlay;
+  h1 {
+    color: var(--white);
+    margin-bottom: 24px;
+
+    span {
+      color: var(--blue);
+      font-style: italic;
+      font-weight: 400;
+      display: block;
+      padding-top: 50px;
+    }
   }
-  .page-hero-inner {
-    position: relative;
-    z-index: 2;
-    max-width: 880px;
-    text-align: left;
-
-    .breadcrumb {
-      font-size: 0.8125rem;
-      letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.5);
-      margin-bottom: 28px;
-      text-transform: uppercase;
-
-      a {
-        color: rgba(255, 255, 255, 0.7);
-        text-decoration: none;
-        transition: all 0.2s ease;
-
-        &:hover {
-          color: var(--lime);
-        }
-      }
-      .sep {
-        color: rgba(255, 255, 255, 0.3);
-        margin: 0px 10px;
-      }
-      .current {
-        color: var(--blue);
-      }
-    }
-    h1 {
-      color: var(--white);
-      margin-bottom: 24px;
-
-      span {
-        color: var(--blue);
-        font-style: italic;
-        font-weight: 400;
-        display: block;
-        padding-top: 50px;
-      }
-    }
-    .page-hero-lead {
-      font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.82);
-      max-width: 640px;
-      font-weight: 300;
-      padding-top: 2rem;
-    }
+  .page-hero-lead {
+    font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 640px;
+    font-weight: 300;
+    padding-top: 2rem;
   }
 }

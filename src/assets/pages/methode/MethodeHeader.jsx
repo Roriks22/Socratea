@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Methode = () => {
   return (
-    <section id="page-hero">
+    <section className="page-hero">
       <div className="container page-hero-inner">
         <div className="breadcrumb">
           <Link to="/">Accueil</Link>
