@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Methode = () => {
   return (
-    <section id="methode">
-      <div className="container methode-inner">
+    <section id="page-hero">
+      <div className="container page-hero-inner">
         <div className="breadcrumb">
           <Link to="/">Accueil</Link>
           <span className="sep">/</span>
@@ -13,7 +13,7 @@ const Methode = () => {
           Un cadre clair.
           <span>Des engagements tenus.</span>
         </h1>
-        <p className="methode-lead">
+        <p className="page-hero-lead">
           Une organisation cadrée, partagée avec vous dès le premier échange. Ce
           n'est pas une contrainte, c'est ce qui nous permet de produire les
           livrables dans les délais — dossier après dossier.

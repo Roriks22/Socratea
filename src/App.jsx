@@ -18,6 +18,8 @@ import AproposHome from "./assets/pages/apropos/AproposHome";
 import AproposConviction from "./assets/pages/apropos/AproposConviction";
 import AproposDiplome from "./assets/pages/apropos/AproposDiplome";
 import AproposLocal from "./assets/pages/apropos/AproposLocal";
+import ServicesPoles from "./assets/pages/services/ServicesPoles";
+import ServicesForfait from "./assets/pages/services/ServicesForfait";
 
 function App() {
   return (
@@ -47,7 +49,16 @@ function App() {
             </>
           }
         />
-        <Route path="/services" element={<ServicesHeader />} />
+        <Route
+          path="/services"
+          element={
+            <>
+              {" "}
+              <ServicesHeader /> <ServicesPoles /> <ServicesForfait />{" "}
+              <Contact /> <Footer />
+            </>
+          }
+        />
         <Route
           path="/apropos"
           element={

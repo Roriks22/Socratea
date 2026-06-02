@@ -21,7 +21,9 @@ const Services = () => {
                 les restitutions en cours d'année qui vous donnent une vraie
                 visibilité sur votre activité.
               </p>
-              <span className="service-link">En savoir plus<i class="fa-solid fa-arrow-right"></i></span>
+              <span className="service-link">
+                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+              </span>
             </div>
           </div>
 
@@ -34,7 +36,9 @@ const Services = () => {
                 factures, banques, outils métier. L'automatisation est un moyen
                 — jamais une fin.
               </p>
-              <span className="service-link">En savoir plus<i class="fa-solid fa-arrow-right"></i></span>
+              <span className="service-link">
+                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+              </span>
             </div>
           </div>
           <div className="pole-services">
@@ -46,7 +50,9 @@ const Services = () => {
                 — pas une délégation à un tiers. Un seul interlocuteur, une
                 seule responsabilité.
               </p>
-              <span className="service-link">En savoir plus<i class="fa-solid fa-arrow-right"></i></span>
+              <span className="service-link">
+                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+              </span>
             </div>
           </div>
           <div className="pole-services">
@@ -57,7 +63,9 @@ const Services = () => {
                 Les actes courants annuels et les opérations ponctuelles. En
                 coordination avec vos conseils lorsque l'opération le justifie.
               </p>
-              <span className="service-link">En savoir plus<i class="fa-solid fa-arrow-right"></i></span>
+              <span className="service-link">
+                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+              </span>
             </div>
           </div>
         </div>
