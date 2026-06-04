@@ -1,0 +1,132 @@
+.page-hero-inner {
+  .pole03 {
+    padding-top: 24px;
+    line-height: 10px;
+  }
+}
+.pole3-positionnement {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+  text-align: left;
+
+  .prose {
+    max-width: 720px;
+    margin: 0 auto;
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      font-size: 1.5rem;
+      color: var(--navy);
+    }
+    p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      color: var(--gray-text);
+    }
+    blockquote {
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--navy);
+      line-height: 1.5;
+      border-left: 3px solid var(--blue);
+      padding: 8px 24px;
+      margin: 32px 0px;
+    }
+  }
+}
+.pole3-couverture {
+  position: relative;
+  padding: 120px 0;
+  background: var(--gray-bg);
+
+  .section-header-couverture {
+    max-width: 780px;
+    margin-bottom: 72px;
+    text-align: left;
+
+    h2 {
+      color: var(--navy);
+      margin-top: 24px;
+      margin-bottom: 24px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.65;
+      color: var(--gray-text);
+      max-width: 640px;
+    }
+  }
+  .feature-list {
+    text-align: left;
+    max-width: 840px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    border-top: 1px solid var(--gray-line);
+    margin: 40px 0px;
+
+    li {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      align-items: start;
+      gap: 24px;
+      padding: 24px 0px;
+      border-bottom: 1px solid var(--gray-line);
+      list-style: none;
+
+      .feat-num {
+        font-style: italic;
+        color: var(--blue);
+        font-size: 1.125rem;
+        font-weight: 400;
+      }
+      div {
+        display: block;
+        unicode-bidi: isolate;
+
+        strong {
+          display: block;
+          color: var(--navy);
+          font-size: 1.0625rem;
+          margin-bottom: 6px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 0.9375rem;
+          color: var(--gray-text);
+          line-height: 1.6;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+.pole3-objectif {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+
+  .prose {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: left;
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      color: var(--navy);
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      color: var(--gray-text);
+    }
+  }
+}

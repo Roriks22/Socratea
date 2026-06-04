@@ -28,7 +28,7 @@ const ServicesPoles = () => {
               bancaires, notes de frais, interfaces avec vos outils métier.
               L'automatisation est un moyen — jamais une fin.
             </p>
-            <Link to="/" className="service-link">
+            <Link to="/services-automatisation" className="service-link">
               Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
@@ -41,7 +41,7 @@ const ServicesPoles = () => {
               de paie. Un seul interlocuteur, une seule responsabilité — pas de
               délégation à un tiers.
             </p>
-            <Link to="/" className="service-link">
+            <Link to="/services-paie" className="service-link">
               Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
@@ -54,7 +54,7 @@ const ServicesPoles = () => {
               structurantes : constitution, cession, restructuration. En
               coordination avec vos conseils lorsque l'opération le justifie.
             </p>
-            <Link to="/" className="service-link">
+            <Link to="/services-juridique" className="service-link">
               Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
             </Link>
           </div>

@@ -24,6 +24,17 @@ import Pole1Header from "./assets/pages/services/Pole1/Pole1Header";
 import Pole1Home from "./assets/pages/services/Pole1/Pole1Home";
 import Pole1Livrable from "./assets/pages/services/Pole1/Pole1LIvrable";
 import Pole1Objectif from "./assets/pages/services/Pole1/Pole1Objectif";
+import Pole2Header from "./assets/pages/services/Pole2/Pole2Header";
+import Pole2Home from "./assets/pages/services/Pole2/Pole2Home";
+import Pole2Deroulement from "./assets/pages/services/Pole2/Pole2Deroulement";
+import Pole2Objectif from "./assets/pages/services/Pole2/Pole2Objectif";
+import Pole2Contexte from "./assets/pages/services/Pole2/Pole2Contexte";
+import Pole3Header from "./assets/pages/services/Pole3/POle3Header";
+import Pole3Positionnement from "./assets/pages/services/Pole3/Pole3Positionnement";
+import Pole3Couverture from "./assets/pages/services/Pole3/Pole3Couverture";
+import Pole3Objectif from "./assets/pages/services/Pole3/Pole3Objectif";
+import Pole4Header from "./assets/pages/services/Pole4/Pole4Header";
+import Pole4Formalites from "./assets/pages/services/Pole4/Pole4Formalites";
 
 function App() {
   return (
@@ -73,6 +84,34 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/services-automatisation"
+          element={
+            <>
+              <Pole2Header /> <Pole2Home /> <Pole2Deroulement />{" "}
+              <Pole2Objectif /> <Pole2Contexte />
+              <Contact /> <Footer />{" "}
+            </>
+          }
+        />
+        <Route
+          path="/services-paie"
+          element={
+            <>
+              {" "}
+              <Pole3Header /> <Pole3Positionnement /> <Pole3Couverture />{" "}
+              <Pole3Objectif /> <Contact /> <Footer />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/services-juridique"
+          element={
+            <>
+              <Pole4Header /> <Pole4Formalites />
+            </>
+          }
+        ></Route>
         <Route
           path="/apropos"
           element={
