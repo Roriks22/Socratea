@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Services = () => {
   return (
     <section className="services">
@@ -21,9 +23,9 @@ const Services = () => {
                 les restitutions en cours d'année qui vous donnent une vraie
                 visibilité sur votre activité.
               </p>
-              <span className="service-link">
+              <Link to="/services-comptabilite" className="service-link">
                 En savoir plus<i class="fa-solid fa-arrow-right"></i>
-              </span>
+              </Link>
             </div>
           </div>
 

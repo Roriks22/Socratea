@@ -20,6 +20,10 @@ import AproposDiplome from "./assets/pages/apropos/AproposDiplome";
 import AproposLocal from "./assets/pages/apropos/AproposLocal";
 import ServicesPoles from "./assets/pages/services/ServicesPoles";
 import ServicesForfait from "./assets/pages/services/ServicesForfait";
+import Pole1Header from "./assets/pages/services/Pole1/Pole1Header";
+import Pole1Home from "./assets/pages/services/Pole1/Pole1Home";
+import Pole1Livrable from "./assets/pages/services/Pole1/Pole1LIvrable";
+import Pole1Objectif from "./assets/pages/services/Pole1/Pole1Objectif";
 
 function App() {
   return (
@@ -56,6 +60,16 @@ function App() {
               {" "}
               <ServicesHeader /> <ServicesPoles /> <ServicesForfait />{" "}
               <Contact /> <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services-comptabilite"
+          element={
+            <>
+              {" "}
+              <Pole1Header /> <Pole1Home /> <Pole1Livrable /> <Pole1Objectif />{" "}
+              <Contact /> <Footer />{" "}
             </>
           }
         />

@@ -15,7 +15,7 @@ const ServicesPoles = () => {
               visibilité — flash mensuel, situation trimestrielle, analyses sur
               mesure.
             </p>
-            <Link to="/" className="service-link">
+            <Link to="/services-comptabilite" className="service-link">
               Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
