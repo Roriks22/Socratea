@@ -35,6 +35,8 @@ import Pole3Couverture from "./assets/pages/services/Pole3/Pole3Couverture";
 import Pole3Objectif from "./assets/pages/services/Pole3/Pole3Objectif";
 import Pole4Header from "./assets/pages/services/Pole4/Pole4Header";
 import Pole4Formalites from "./assets/pages/services/Pole4/Pole4Formalites";
+import Pole4Operations from "./assets/pages/services/Pole4/Pole4Operations";
+import Pole4Sens from "./assets/pages/services/Pole4/Pole4Sens";
 
 function App() {
   return (
@@ -108,7 +110,8 @@ function App() {
           path="/services-juridique"
           element={
             <>
-              <Pole4Header /> <Pole4Formalites />
+              <Pole4Header /> <Pole4Formalites /> <Pole4Operations />{" "}
+              <Pole4Sens /> <Contact /> <Footer />
             </>
           }
         ></Route>

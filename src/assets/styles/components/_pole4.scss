@@ -71,3 +71,77 @@
     }
   }
 }
+.pole4-operations {
+  position: relative;
+  background: var(--gray-bg);
+  padding: 120px 0;
+
+  .section-header-operations {
+    max-width: 780px;
+    margin-bottom: 72px;
+    text-align: left;
+
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      color: var(--navy);
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.65;
+      color: var(--gray-text);
+      max-width: 640px;
+    }
+  }
+  .two-col-operations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 80px;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+
+    div {
+      display: block;
+      unicode-bidi: isolate;
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        color: var(--navy);
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: var(--gray-text);
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
+.pole4-sens {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+
+  .prose {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: left;
+
+    h3 {
+      margin-top: 24px;
+      color: var(--navy);
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      color: var(--gray-text);
+    }
+  }
+}
