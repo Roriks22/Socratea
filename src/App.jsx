@@ -37,6 +37,8 @@ import Pole4Header from "./assets/pages/services/Pole4/Pole4Header";
 import Pole4Formalites from "./assets/pages/services/Pole4/Pole4Formalites";
 import Pole4Operations from "./assets/pages/services/Pole4/Pole4Operations";
 import Pole4Sens from "./assets/pages/services/Pole4/Pole4Sens";
+import ContactFormulaire from "./assets/pages/contact/ContactFormulaire";
+import ContactAgenda from "./assets/pages/contact/ContactAgenda";
 
 function App() {
   return (
@@ -125,7 +127,16 @@ function App() {
             </>
           }
         />
-        <Route path="/contact" element={<ContactHeader />} />
+        <Route
+          path="/contact"
+          element={
+            <>
+              {" "}
+              <ContactHeader /> <ContactFormulaire /> <ContactAgenda />{" "}
+              <Footer />{" "}
+            </>
+          }
+        />
       </Routes>
     </>
   );

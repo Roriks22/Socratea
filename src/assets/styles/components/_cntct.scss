@@ -7,3 +7,233 @@
     }
   }
 }
+.contact-formulaire {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+
+    .calendly-panel {
+      position: relative;
+      color: var(--white);
+      background: var(--navy);
+      padding: 48px;
+      border-radius: 4px;
+      overflow: hidden;
+      text-align: left;
+
+      &::before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        inset: 0px;
+        background: radial-gradient(
+          at 0% 100%,
+          rgba(7, 168, 255, 0.12) 0%,
+          transparent 60%
+        );
+      }
+      h3 {
+        color: var(--white);
+        font-size: 1.625rem;
+        margin-bottom: 16px;
+        margin-top: 20px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1rem;
+        line-height: 1.65;
+        margin-bottom: 32px;
+      }
+      .calendly-features {
+        margin-bottom: 32px;
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: flex-start;
+          color: rgba(255, 255, 255, 0.85);
+          font-size: 0.9375rem;
+          gap: 10px;
+          padding: 8px 0px;
+          unicode-bidi: isolate;
+
+          &::before {
+            content: "✓";
+            color: var(--lime);
+            font-weight: 700;
+            flex-shrink: 0;
+          }
+        }
+      }
+      div {
+        margin-top: 36px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.8125rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-style: italic;
+      }
+    }
+    .form-panel {
+      padding: 48px;
+      background: var(--white);
+      border: 1px solid var(--gray-line);
+      border-radius: 4px;
+      text-align: left;
+
+      h3 {
+        font-size: 1.375rem;
+        margin-bottom: 12px;
+        margin-top: 16px;
+        color: var(--navy);
+      }
+      p {
+        font-size: 0.9375rem;
+        margin-bottom: 28px;
+        color: var(--gray-text);
+      }
+      form {
+        display: block;
+        unicode-bidi: isolate;
+
+        .form-group {
+          margin-bottom: 20px;
+
+          label {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--navy);
+            font-weight: 600;
+            margin-bottom: 8px;
+            cursor: default;
+          }
+          input {
+            width: 100%;
+            font-size: 0.9375rem;
+            color: var(--navy);
+            padding: 12px 14px;
+            border: 1px solid var(--gray-line);
+            border-radius: 2px;
+            background: var(--white);
+            transition: border-color 0.2s;
+
+            &:focus {
+              border-color: var(--blue);
+            }
+          }
+          textarea {
+            resize: vertical;
+            min-height: 120px;
+            width: 100%;
+            font-size: 0.9375rem;
+            color: var(--navy);
+            padding: 12px 14px;
+            border: 1px solid var(--gray-line);
+            border-radius: 2px;
+            background: var(--white);
+            transition: border-color 0.2s;
+
+            &:focus {
+              border-color: var(--blue);
+            }
+          }
+        }
+        button {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .contact-info {
+    margin-top: 60px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-top: 1px solid var(--gray-line);
+    gap: 32px;
+
+    .contact-info-block {
+      text-align: left;
+      .label {
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--blue);
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.0625rem;
+        color: var(--navy);
+        line-height: 1.5;
+
+        span {
+          color: var(--gray-text);
+          font-size: 0.85rem;
+          font-style: normal;
+        }
+        a {
+          font-size: 1.0625rem;
+          color: var(--navy);
+          line-height: 1.5;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.contact-agenda {
+  position: relative;
+  padding: 120px 0;
+  padding-top: 60px;
+  background: var(--gray-bg);
+
+  .section-header-agenda {
+    text-align: center;
+    margin: 0px auto 40px;
+    max-width: 640px;
+
+    .eyebrow {
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 24px;
+      color: var(--navy);
+      font-size: 2rem;
+    }
+  }
+  .calendly-inline-widget {
+    position: relative;
+    min-width: 320px;
+    height: 700px;
+    background: var(--white);
+    border-radius: 4px;
+    overflow: hidden;
+
+    span {
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 24px;
+    }
+  }
+  p {
+    margin-top: 20px;
+    color: var(--navy);
+    font-size: 0.8rem;
+  }
+}
