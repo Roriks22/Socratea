@@ -16,7 +16,7 @@ const ServicesPoles = () => {
               mesure.
             </p>
             <Link to="/services-comptabilite" className="service-link">
-              Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
+              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
           <div className="service-card">
@@ -29,7 +29,7 @@ const ServicesPoles = () => {
               L'automatisation est un moyen — jamais une fin.
             </p>
             <Link to="/services-automatisation" className="service-link">
-              Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
+              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
           <div className="service-card">
@@ -42,7 +42,7 @@ const ServicesPoles = () => {
               délégation à un tiers.
             </p>
             <Link to="/services-paie" className="service-link">
-              Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
+              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
           <div className="service-card">
@@ -55,7 +55,7 @@ const ServicesPoles = () => {
               coordination avec vos conseils lorsque l'opération le justifie.
             </p>
             <Link to="/services-juridique" className="service-link">
-              Voir le pôle en détail<i class="fa-solid fa-arrow-right"></i>
+              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
         </div>

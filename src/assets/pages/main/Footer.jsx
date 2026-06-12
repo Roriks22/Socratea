@@ -21,7 +21,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener"
             >
-              <i class="fa-brands fa-linkedin"></i>Suivre sur Linkedin
+              <i className="fa-brands fa-linkedin"></i>Suivre sur Linkedin
             </a>
           </div>
           <div className="footer-col">
@@ -62,7 +62,7 @@ const Footer = () => {
             <ul>
               <li>
                 21, rue Charlemagne <br />
-                88480 Vers-sur-Selle
+                80480 Vers-sur-Selle
               </li>
               <li>
                 <a href="mailto:cabinet.socratea@gmail.com">
@@ -79,7 +79,7 @@ const Footer = () => {
           <div className="footer_credit">
             <span className="ordre-mention">
               SOCRATEA EURL . Expert-comptable inscrit à l'ordre - Région
-              Hauts-de-Frabce
+              Hauts-de-France
             </span>
           </div>
           <div className="footer-legal">

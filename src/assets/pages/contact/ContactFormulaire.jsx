@@ -1,4 +1,26 @@
+import { useRef } from "react";
+import emailJs from "@emailjs/browser";
+
 const ContactFormulaire = () => {
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailJs
+      .sendForm(
+        "service_tp3zq7m",
+        "template_5s51k6w",
+        form.current,
+        "jSSo6WRLCJRaBcHL5"
+      )
+      .then(() => {
+        alert("Message envoyé !");
+      })
+      .catch(() => {
+        alert("Erreur lors de l'envoi.");
+      });
+  };
   return (
     <section className="contact-formulaire">
       <div className="container">
@@ -47,25 +69,35 @@ const ContactFormulaire = () => {
               Si vous préférez formuler votre demande par écrit, nous vous
               répondons sous 48h ouvrées.
             </p>
-            <form action="#" method="post" noValidate>
+            <form
+              action="#"
+              method="post"
+              noValidate
+              ref={form}
+              onSubmit={handleSubmit}
+            >
               <div className="form-group">
-                <label for="nom">Nom et prénom *</label>
+                <label htmlFor="nom">Nom *</label>
                 <input type="text" id="nom" name="nom" required />
               </div>
               <div className="form-group">
-                <label for="societe">Société</label>
-                <input type="text" id="societe" name="societe" />
+                <label htmlFor="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" required />
               </div>
               <div className="form-group">
-                <label for="email">E-mail *</label>
+                <label htmlFor="societe">Société *</label>
+                <input type="text" id="societe" name="societe" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">E-mail *</label>
                 <input type="email" id="email" name="email" required />
               </div>
               <div className="form-group">
-                <label for="telephone">Téléphone</label>
+                <label htmlFor="telephone">Téléphone</label>
                 <input type="tel" id="telephone" name="telephone" />
               </div>
               <div className="form-group">
-                <label for="message">Votre message *</label>
+                <label htmlFor="message">Votre message *</label>
                 <textarea
                   name="message"
                   id="message"
@@ -73,6 +105,13 @@ const ContactFormulaire = () => {
                   required
                   placeholder="Quelques mots sur votre activité et votre besoin"
                 ></textarea>
+                <div className="checkbox-group">
+                  <input type="checkbox" required id="rgpd" />
+                  <label htmlFor="rgpd">
+                    J'accepte que les informations saisies soient utilisées afin
+                    d'être recontacté dans le cadre de ma demande. *
+                  </label>
+                </div>
               </div>
               <button type="submit" className="btn btn-secondary">
                 Envoyer le message

@@ -24,7 +24,7 @@ const Services = () => {
                 visibilité sur votre activité.
               </p>
               <Link to="/services-comptabilite" className="service-link">
-                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
               </Link>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Services = () => {
                 — jamais une fin.
               </p>
               <Link to="/services-automatisation" className="service-link">
-                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
               </Link>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Services = () => {
                 seule responsabilité.
               </p>
               <Link to="/services-paie" className="service-link">
-                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
               </Link>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Services = () => {
                 coordination avec vos conseils lorsque l'opération le justifie.
               </p>
               <Link to="/services-juridique" className="service-link">
-                En savoir plus<i class="fa-solid fa-arrow-right"></i>
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
               </Link>
             </div>
           </div>
