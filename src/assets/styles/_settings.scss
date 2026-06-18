@@ -71,7 +71,12 @@
   text-decoration: none;
 
   &::selection {
-    background: pink;
+    background: rgba(7, 168, 255, 0.25);
+    color: inherit;
+  }
+  &::-moz-selection {
+    background: rgba(7, 168, 255, 0.25);
+    color: inherit;
   }
 }
 html {

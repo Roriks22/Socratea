@@ -127,7 +127,11 @@
             &:focus {
               border-color: var(--blue);
             }
+            &:required:user-invalid {
+              border-color: #d66b6b;
+            }
           }
+
           textarea {
             resize: vertical;
             min-height: 120px;
@@ -142,6 +146,9 @@
 
             &:focus {
               border-color: var(--blue);
+            }
+            &:required:user-invalid {
+              border-color: #d66b6b;
             }
           }
           .checkbox-group {
@@ -190,6 +197,26 @@
               user-select: none;
               margin-bottom: 0;
             }
+          }
+        }
+        .form-message {
+          padding: 14px 18px;
+          border-radius: 4px;
+          margin-bottom: 20px;
+          font-size: 0.875rem;
+          line-height: 1.5;
+          border: 1px solid transparent;
+          animation: fadeIn 0.3s ease;
+
+          &.success {
+            background: rgba(100, 241, 128, 0.12);
+            border-color: rgba(100, 241, 128, 0.3);
+            color: #207a38;
+          }
+          &.error {
+            background: rgba(214, 107, 107, 0.12);
+            border-color: rgba(214, 107, 107, 0.3);
+            color: #b43a3a;
           }
         }
         button {
@@ -282,5 +309,16 @@
     margin-top: 20px;
     color: var(--navy);
     font-size: 0.8rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

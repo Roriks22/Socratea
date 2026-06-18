@@ -15,14 +15,14 @@ const Footer = () => {
               automatisation des flux, paie, juridique. 100 % dématérialisé —
               partout en France.
             </p>
-            <a
-              href="#"
+            <Link
+              to="https://www.linkedin.com/in/jacquesson-julien-b72870a9/"
               className="footer-linkedin"
               target="_blank"
               rel="noopener"
             >
               <i className="fa-brands fa-linkedin"></i>Suivre sur Linkedin
-            </a>
+            </Link>
           </div>
           <div className="footer-col">
             <h4>Cabinet</h4>

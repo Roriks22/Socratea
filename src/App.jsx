@@ -39,10 +39,12 @@ import Pole4Operations from "./assets/pages/services/Pole4/Pole4Operations";
 import Pole4Sens from "./assets/pages/services/Pole4/Pole4Sens";
 import ContactFormulaire from "./assets/pages/contact/ContactFormulaire";
 import ContactAgenda from "./assets/pages/contact/ContactAgenda";
+import ScrollToTop from "./assets/components/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Nav />
       <Routes>
         <Route

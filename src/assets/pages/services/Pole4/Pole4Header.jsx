@@ -8,6 +8,7 @@ const Pole4Header = () => {
           <Link to="/">Accueil</Link>
           <span className="sep">/</span>
           <Link to="/services">Nos services</Link>
+          <span className="sep">/</span>
           <span className="current">Juridique & accompagnement</span>
         </div>
         <h1 className="pole4">

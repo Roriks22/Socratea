@@ -1,25 +1,51 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailJs from "@emailjs/browser";
 
 const ContactFormulaire = () => {
   const form = useRef();
+  const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailJs
-      .sendForm(
+    if (!form.current.checkValidity()) {
+      setStatus({
+        type: "error",
+        message:
+          "Merci de compléter tous les champs obligatoires avant l'envoi.",
+      });
+      form.current.reportValidity();
+      return;
+    }
+    setLoading(true);
+
+    try {
+      await emailJs.sendForm(
         "service_tp3zq7m",
         "template_5s51k6w",
         form.current,
         "jSSo6WRLCJRaBcHL5"
-      )
-      .then(() => {
-        alert("Message envoyé !");
-      })
-      .catch(() => {
-        alert("Erreur lors de l'envoi.");
+      );
+      setStatus({
+        type: "success",
+        message:
+          "Votre message a bien été envoyé. Nous vous répondrons sous 48h ouvrées.",
       });
+      setTimeout(() => {
+        setStatus(null);
+      }, 5000);
+      form.current.reset();
+    } catch (error) {
+      console.error(error);
+
+      setStatus({
+        type: "error",
+        message:
+          "Une erreur est survenue lors de l'envoi. Merci de réessayer ultérieurement.",
+      });
+    }
+    setLoading(false);
   };
   return (
     <section className="contact-formulaire">
@@ -113,8 +139,17 @@ const ContactFormulaire = () => {
                   </label>
                 </div>
               </div>
-              <button type="submit" className="btn btn-secondary">
-                Envoyer le message
+              {status && (
+                <div className={`form-message ${status.type}`}>
+                  {status.message}
+                </div>
+              )}
+              <button
+                type="submit"
+                className="btn btn-secondary"
+                disabled={loading}
+              >
+                {loading ? "Envoi en cours..." : "Envoyer le message"}
               </button>
             </form>
           </div>
