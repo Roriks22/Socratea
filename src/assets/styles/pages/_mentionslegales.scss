@@ -1,0 +1,35 @@
+.mentions-home {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+
+  .legal-content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: left;
+
+    h2:first-child {
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+      color: var(--navy);
+    }
+    p {
+      margin-bottom: 16px;
+      color: var(--gray-text);
+
+      a {
+        color: inherit;
+        transition: all 0.25s ease;
+
+        &:hover {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+}

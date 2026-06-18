@@ -40,6 +40,10 @@ import Pole4Sens from "./assets/pages/services/Pole4/Pole4Sens";
 import ContactFormulaire from "./assets/pages/contact/ContactFormulaire";
 import ContactAgenda from "./assets/pages/contact/ContactAgenda";
 import ScrollToTop from "./assets/components/ScrollToTop";
+import MentionsHeader from "./assets/pages/MentionsLegales/MentionsHeader";
+import MentionsHome from "./assets/pages/MentionsLegales/MentionsHome";
+import ConfidentialiteHeader from "./assets/pages/confidentialite/ConfidentialiteHeader";
+import ConfidentialiteHome from "./assets/pages/confidentialite/ConfidentialiteHome";
 
 function App() {
   return (
@@ -109,7 +113,7 @@ function App() {
               <Pole3Objectif /> <Contact /> <Footer />
             </>
           }
-        ></Route>
+        />
         <Route
           path="/services-juridique"
           element={
@@ -118,7 +122,7 @@ function App() {
               <Pole4Sens /> <Contact /> <Footer />
             </>
           }
-        ></Route>
+        />
         <Route
           path="/apropos"
           element={
@@ -136,6 +140,22 @@ function App() {
               {" "}
               <ContactHeader /> <ContactFormulaire /> <ContactAgenda />{" "}
               <Footer />{" "}
+            </>
+          }
+        />
+        <Route
+          path="/mentions-legales"
+          element={
+            <>
+              <MentionsHeader /> <MentionsHome /> <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/confidentialite"
+          element={
+            <>
+              <ConfidentialiteHeader /> <ConfidentialiteHome /> <Footer />
             </>
           }
         />

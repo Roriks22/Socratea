@@ -1,0 +1,36 @@
+.confidentialite-home {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+  text-align: left;
+
+  .legal-content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    h2:first-child {
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+      color: var(--navy);
+    }
+    p {
+      margin-bottom: 16px;
+      color: var(--gray-text);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        color: var(--gray-text);
+        padding: 12px 0;
+        border-bottom: 1px solid var(--gray-line);
+      }
+    }
+  }
+}
