@@ -13,7 +13,7 @@ const ContactHeader = () => {
           30 minutes pour comprendre <br />
           <span>si nous sommes faits pour travailler ensemble.</span>
         </h1>
-        <p className="page-hero-lead">
+        <p className="page-hero-lead p-contact">
           Un premier rendez-vous sans engagement pour échanger sur votre
           activité, vos attentes et vos contraintes. Si SOCRATEA n'est pas
           adapté à votre situation, nous vous le dirons clairement — et nous

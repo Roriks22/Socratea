@@ -12,7 +12,7 @@ const ConfidentialiteHeader = () => {
         <h1>
           Politique <br /> <span>de confidentialité.</span>{" "}
         </h1>
-        <p className="page-hero-lead">
+        <p className="page-hero-lead p-confidentialite">
           Le cabinet SOCRATEA est attaché à la protection des données
           personnelles. La présente politique décrit les traitements mis en
           œuvre, leurs finalités et les droits dont vous disposez, conformément

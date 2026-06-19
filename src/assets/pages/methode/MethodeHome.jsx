@@ -2,12 +2,12 @@ const MethodeHome = () => {
   return (
     <section className="methode-home">
       <div className="container">
-        <div className="section-header">
+        <div className="section-home">
           <span className="eyebrow">La chaîne de production</span>
-          <h2>
+          <h3>
             Comment vos chiffres <br />
-            <span>sont produits chaque mois.</span>
-          </h2>
+            <em className="em-blue">sont produits chaque mois.</em>
+          </h3>
           <p>
             Un processus standardisé, reproductible, qui garantit à la fois la
             régularité des livrables et la fiabilité de l'information. Voici ce

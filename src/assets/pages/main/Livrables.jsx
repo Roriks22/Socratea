@@ -7,7 +7,9 @@ const Livrables = () => {
         <div className="livrables-header">
           <span>ce que vous recevez</span>
           <h3>
-            Des livrables pensés pour le dirigeant, pas pour l'administration.
+            Des livrables pensés pour le dirigeant,
+            <br />
+            <em>pas pour l'administration.</em>
           </h3>
           <p>
             La tenue comptable est un socle nécessaire. L'objectif est ailleurs
@@ -69,7 +71,7 @@ const Livrables = () => {
               </div>
             </div>
           </div>
-            <LivrableWireframe />
+          <LivrableWireframe />
         </div>
       </div>
     </section>

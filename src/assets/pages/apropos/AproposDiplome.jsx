@@ -4,7 +4,7 @@ const AproposDiplome = () => {
       <div className="container">
         <div className="section-diplome">
           <span className="eyebrow">Pour rappel</span>
-          <h2>Les éléments qui engagent.</h2>
+          <h3>Les éléments qui engagent.</h3>
         </div>
         <div className="credentials-grid">
           <div className="credential">

@@ -1,3 +1,9 @@
+.page-hero-inner {
+  .p-services {
+    max-width: 800px;
+  }
+}
+
 .services-poles {
   position: relative;
   padding: 120px 0;
@@ -93,21 +99,23 @@
     margin-bottom: 40px;
     text-align: left;
 
-    h2 {
-      margin-top: 24px;
-      margin-bottom: 24px;
-      font-size: 3rem;
-      color: var(--navy);
+    h3 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: rgba(0, 0, 0, 0.734);
+      width: 60%;
+      line-height: 1.3;
 
-      span {
+      em {
         font-style: italic;
+        color: var(--blue);
       }
     }
     p {
-      font-size: 1.125rem;
-      line-height: 1.65;
-      color: var(--gray-text);
-      max-width: 640px;
+      color: rgba(0, 0, 0, 0.734);
+      margin-top: 1rem;
+      width: 42%;
+      margin-bottom: 5rem;
     }
   }
   .two-col {

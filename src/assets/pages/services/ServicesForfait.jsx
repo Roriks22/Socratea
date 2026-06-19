@@ -4,9 +4,11 @@ const ServicesForfait = () => {
       <div className="container">
         <div className="section-forfait">
           <span className="eyebrow">Construction de l'offre</span>
-          <h2>
-            Un forfait <span>construit avec vous, pour vous.</span>
-          </h2>
+          <h3>
+            Un forfait construit avec vous,
+            <br />
+            <em className="em-blue">pour vous.</em>
+          </h3>
           <p>
             L'offre n'est pas standardisée : elle se construit en fonction du
             profil de votre entreprise, des pôles retenus et du périmètre précis

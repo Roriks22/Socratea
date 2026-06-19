@@ -1,12 +1,14 @@
 .page-hero-inner {
   .h1-contact {
-    padding-top: 24px;
-    line-height: 0;
     span {
-      line-height: 70px;
+      white-space: nowrap;
     }
   }
+  .p-contact {
+    max-width: 800px;
+  }
 }
+
 .contact-formulaire {
   position: relative;
   padding: 120px 0;

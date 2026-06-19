@@ -13,7 +13,7 @@ const ServicesHeader = () => {
           Quatre pôles, <br />
           <span>structurés autour de vos besoins.</span>
         </h1>
-        <p className="page-hero-lead">
+        <p className="page-hero-lead p-services">
           La comptabilité et le pilotage constituent le socle ; trois pôles
           complémentaires s'y articulent pour vous faire gagner du temps,
           fiabiliser vos processus et sécuriser vos obligations. Le périmètre

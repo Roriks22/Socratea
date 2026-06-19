@@ -6,7 +6,11 @@ const Services = () => {
       <div className="container services-deroulement">
         <div className="services-header">
           <span>Nos services</span>
-          <h3>Quatre pôles, structurés autour de vos besoins.</h3>
+          <h3>
+            Quatre pôles,
+            <br />
+            <em>structurés autour de vos besoins.</em>
+          </h3>
           <p>
             Chaque pôle est traité avec la même exigence. Le périmètre retenu
             pour votre entreprise est défini en toute transparence lors du
