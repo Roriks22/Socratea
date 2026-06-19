@@ -10,8 +10,8 @@ const AproposHeader = () => {
           <span className="current">À propos</span>
         </div>
         <h1>
-          Julien JACQUESSON <br />
-          <span>Expert-comptable diplômé.</span>
+          Julien Jacquesson
+          <span>Expert-comptable diplômé</span>
         </h1>
         <p className="page-hero-lead">
           Un parcours partagé entre l'audit et la direction financière. Une
