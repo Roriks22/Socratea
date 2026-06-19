@@ -4,7 +4,9 @@ const Pole2Deroulement = () => {
       <div className="container">
         <div className="section-header-pole2">
           <span className="eyebrow">Les chantiers que nous traitons</span>
-          <h2>Quatre circuits qui gagnent à être structurés.</h2>
+          <h2>
+            Quatre circuits qui gagnent <br />à être structurés.
+          </h2>
           <p>
             Ces chantiers peuvent être menés séparément ou conjointement, selon
             votre situation de départ et vos priorités. Ils sont cadrés avec

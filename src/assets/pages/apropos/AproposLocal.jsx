@@ -6,11 +6,10 @@ const AproposLocal = () => {
           <span className="eyebrow">
             Un cabinet ancré localement, accessible partout.
           </span>
-          <h3>
+          <h2>
             Basé en Somme,
-            <br />
-            <em className="em-blue">à l'écoute de la France entière.</em>
-          </h3>
+            <br />à l'écoute de la France entière.
+          </h2>
           <p>
             Le siège est à Vers-sur-Selle, à quelques kilomètres d'Amiens. C'est
             une base ancrée dans les Hauts-de-France, une région que je connais

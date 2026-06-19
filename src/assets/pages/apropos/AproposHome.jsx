@@ -11,11 +11,7 @@ const AproposHome = () => {
           </div>
           <div className="about-content">
             <span className="eyebrow">Le fondateur</span>
-            <h3>
-              Un parcours,
-              <br />
-              <em className="em-blue">une conviction.</em>
-            </h3>
+            <h3>Un parcours, une conviction.</h3>
             <p className="aprps1">
               « J'ai vu les chiffres des deux côtés : celui de l'auditeur qui
               vérifie, et celui du dirigeant financier qui décide avec. »

@@ -4,10 +4,10 @@ const MethodeEngagement = () => {
       <div className="container">
         <div className="section-engagement">
           <span className="eyebrow">L'engagement réciproque</span>
-          <h3>
-            Nos engagements ne tiennent <br />{" "}
-            <em className="em-blue">que si les vôtres sont tenus aussi.</em>
-          </h3>
+          <h2>
+            Nos engagements ne tiennent <br />
+            que si les vôtres sont tenus aussi.
+          </h2>
           <p>
             Le respect de nos délais repose sur une collaboration équilibrée.
             Ces conditions ne sont pas un filtre commercial : elles découlent

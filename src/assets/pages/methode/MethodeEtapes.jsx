@@ -4,10 +4,9 @@ const MethodeEtapes = () => {
       <div className="container">
         <div className="section-header">
           <span className="eyebrow">Trois étapes</span>
-          <h3>
-            De la première prise de contact <br />
-            <em className="em-blue">à la restitution régulière.</em>
-          </h3>
+          <h2>
+            De la première prise de contact <br />à la restitution régulière.
+          </h2>
           <p>
             La collaboration est structurée en trois temps. Chaque étape a son
             objectif, ses livrables et ses engagements — pour les deux parties.

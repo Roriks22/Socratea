@@ -4,7 +4,10 @@ const Pole4Operations = () => {
       <div className="container">
         <div className="section-header-operations">
           <span className="eyebrow">Les opérations ponctuelles</span>
-          <h2>Aux étapes qui comptent vraiment.</h2>
+          <h2>
+            Aux étapes <br />
+            qui comptent vraiment.
+          </h2>
           <p>
             Certaines opérations sortent du cadre courant : elles structurent
             l'avenir de votre entreprise ou mobilisent plusieurs disciplines à

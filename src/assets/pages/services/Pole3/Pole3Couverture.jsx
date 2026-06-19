@@ -4,7 +4,10 @@ const Pole3Couverture = () => {
       <div className="container">
         <div className="section-header-couverture">
           <span className="eyebrow">Ce qui est produit</span>
-          <h2>Une couverture complète du cycle de paie.</h2>
+          <h2>
+            Une couverture complète <br />
+            du cycle de paie.
+          </h2>
           <p>
             L'ensemble des productions relève d'un forfait défini par nombre de
             bulletins et événements de paie habituels. Les cas non prévus

@@ -4,10 +4,10 @@ const Home = () => {
       <div className="container home">
         <div className="home-top">
           <span>pour qui nous travaillons</span>
-          <h3>
-            Trois situations dans lesquelles <br />{" "}
-            <em>vous vous reconnaîtrez.</em>
-          </h3>
+          <h2>
+            Trois situations dans lesquelles <br />
+            vous vous reconnaîtrez.
+          </h2>
           <p>
             Nous accompagnons des entreprises qui partagent une exigence commune
             : avoir des chiffres fiables, à jour, et compris. Au-delà de

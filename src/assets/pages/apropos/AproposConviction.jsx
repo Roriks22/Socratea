@@ -4,11 +4,7 @@ const AproposConviction = () => {
       <div className="container">
         <div className="prose">
           <span className="eyebrow">La conviction</span>
-          <h3>
-            Une comptabilité qui ne sert à rien avant avril,
-            <br />
-            <em className="em-blue">c'est dommage.</em>
-          </h3>
+          <h3>Une comptabilité qui ne sert à rien avant avril</h3>
           <p className="conviction-texte">
             La plupart des dirigeants de PME reçoivent leurs comptes annuels
             trois à quatre mois après la clôture. À ce moment-là, l'information

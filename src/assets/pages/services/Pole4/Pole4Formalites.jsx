@@ -4,7 +4,10 @@ const Pole4Formalites = () => {
       <div className="container">
         <div className="section-header-formalites">
           <span className="eyebrow">Les actes juridiques courants</span>
-          <h2>Les formalités annuelles, traitées dans les délais.</h2>
+          <h2>
+            Les formalités annuelles, <br />
+            traitées dans les délais.
+          </h2>
           <p>
             Chaque année, votre société doit remplir un certain nombre
             d'obligations juridiques. Nous les prenons en charge dans le cadre

@@ -4,7 +4,10 @@ const Pole2Contexte = () => {
       <div className="container">
         <div className="pole2-texte">
           <span className="eyebrow">Un contexte favorable</span>
-          <h2>La réforme de la facturation électronique.</h2>
+          <h2>
+            La réforme de la facturation <br />
+            électronique.
+          </h2>
           <p>
             Le passage progressif à la facturation électronique entre
             entreprises transforme en profondeur la chaîne de traitement des

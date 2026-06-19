@@ -7,8 +7,8 @@ const Pole1Livrable = () => {
         <div className="section-header-livrable1">
           <span className="eyebrow">Les livrables de pilotage</span>
           <h2>
-            Vos information financière,
-            <span>tout au long de l'année.</span>
+            Vos information financière, <br />
+            tout au long de l'année.
           </h2>
           <p>
             C'est ici que SOCRATEA se distingue. Vous ne recevez pas seulement

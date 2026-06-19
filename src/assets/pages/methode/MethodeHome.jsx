@@ -4,10 +4,10 @@ const MethodeHome = () => {
       <div className="container">
         <div className="section-home">
           <span className="eyebrow">La chaîne de production</span>
-          <h3>
+          <h2>
             Comment vos chiffres <br />
-            <em className="em-blue">sont produits chaque mois.</em>
-          </h3>
+            sont produits chaque mois.
+          </h2>
           <p>
             Un processus standardisé, reproductible, qui garantit à la fois la
             régularité des livrables et la fiabilité de l'information. Voici ce

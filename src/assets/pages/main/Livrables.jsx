@@ -6,11 +6,11 @@ const Livrables = () => {
       <div className="container livrables-deroulement">
         <div className="livrables-header">
           <span>ce que vous recevez</span>
-          <h3>
+          <h2>
             Des livrables pensés pour le dirigeant,
             <br />
-            <em>pas pour l'administration.</em>
-          </h3>
+            pas pour l'administration.
+          </h2>
           <p>
             La tenue comptable est un socle nécessaire. L'objectif est ailleurs
             : vous donner une lecture rapide, fiable et régulière de votre

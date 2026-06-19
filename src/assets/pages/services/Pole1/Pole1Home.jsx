@@ -4,7 +4,10 @@ const Pole1Home = () => {
       <div className="container">
         <div className="section-header-pole1">
           <span className="eyebrow">Le socle réglementaire</span>
-          <h2>Les obligations, tenues sans concession.</h2>
+          <h2>
+            Les obligations, <br />
+            tenues sans concession.
+          </h2>
           <p>
             La tenue comptable et les obligations fiscales et sociales sont
             produites avec la rigueur d'un commissariat : exhaustivité,
