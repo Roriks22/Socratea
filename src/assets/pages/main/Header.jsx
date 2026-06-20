@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import useReveal from "../../components/useReveal";
 
 const Header = () => {
+  useReveal();
   const navigate = useNavigate();
 
   return (

@@ -1,8 +1,11 @@
+import useReveal from "../../components/useReveal";
+
 const MethodeEngagement = () => {
+  useReveal();
   return (
     <section className="methode-engagement">
       <div className="container">
-        <div className="section-engagement">
+        <div className="section-engagement reveal reveal-1">
           <span className="eyebrow">L'engagement réciproque</span>
           <h2>
             Nos engagements ne tiennent <br />
@@ -15,7 +18,7 @@ const MethodeEngagement = () => {
             donner les moyens d'un accompagnement qui tienne la distance.
           </p>
         </div>
-        <div className="engagement">
+        <div className="engagement reveal reveal-2">
           <div className="engagement-inner">
             <div className="engagement-intro">
               <h3>Ce que nous attendons de vous</h3>

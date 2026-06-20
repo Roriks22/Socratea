@@ -1,8 +1,11 @@
+import useReveal from "../../../components/useReveal";
+
 const Pole2Deroulement = () => {
+  useReveal();
   return (
     <section className="pole2-deroulement">
       <div className="container">
-        <div className="section-header-pole2">
+        <div className="section-header-pole2 reveal reveal-1">
           <span className="eyebrow">Les chantiers que nous traitons</span>
           <h2>
             Quatre circuits qui gagnent <br />à être structurés.
@@ -13,7 +16,7 @@ const Pole2Deroulement = () => {
             vous avant toute intervention.
           </p>
         </div>
-        <ul className="feature-list">
+        <ul className="feature-list reveal reveal-2">
           <li>
             <span className="feat-num">i.</span>
             <div>

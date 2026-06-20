@@ -1,8 +1,11 @@
+import useReveal from "../../components/useReveal";
+
 const MethodeHome = () => {
+  useReveal();
   return (
     <section className="methode-home">
       <div className="container">
-        <div className="section-home">
+        <div className="section-home reveal reveal-1">
           <span className="eyebrow">La chaîne de production</span>
           <h2>
             Comment vos chiffres <br />
@@ -15,7 +18,7 @@ const MethodeHome = () => {
             recevez.
           </p>
         </div>
-        <div className="process-flow">
+        <div className="process-flow reveal reveal-2">
           <div className="process-step">
             <h4>Collecte</h4>
             <p>

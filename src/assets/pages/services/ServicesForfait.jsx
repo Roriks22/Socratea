@@ -1,8 +1,11 @@
+import useReveal from "../../components/useReveal";
+
 const ServicesForfait = () => {
+  useReveal();
   return (
     <section className="services-forfait">
       <div className="container">
-        <div className="section-forfait">
+        <div className="section-forfait reveal reveal-1">
           <span className="eyebrow">Construction de l'offre</span>
           <h2>
             Un forfait construit avec vous,
@@ -17,7 +20,7 @@ const ServicesForfait = () => {
             d'année.
           </p>
         </div>
-        <div className="two-col">
+        <div className="two-col reveal reveal-2">
           <div className="col">
             <h3>Ce qui est toujours inclus</h3>
             <p>

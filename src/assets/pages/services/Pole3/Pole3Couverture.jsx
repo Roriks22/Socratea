@@ -1,8 +1,11 @@
+import useReveal from "../../../components/useReveal";
+
 const Pole3Couverture = () => {
+  useReveal();
   return (
     <section className="pole3-couverture">
       <div className="container">
-        <div className="section-header-couverture">
+        <div className="section-header-couverture reveal reveal-1">
           <span className="eyebrow">Ce qui est produit</span>
           <h2>
             Une couverture complète <br />
@@ -15,7 +18,7 @@ const Pole3Couverture = () => {
             part — pas de facturation surprise en fin d'année.
           </p>
         </div>
-        <ul className="feature-list">
+        <ul className="feature-list reveal reveal-2">
           <li>
             <span className="feat-num">i.</span>
             <div>

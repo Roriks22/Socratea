@@ -1,8 +1,11 @@
+import useReveal from "../../../components/useReveal";
+
 const Pole4Formalites = () => {
+  useReveal();
   return (
     <section className="pole4-formalites">
       <div className="container">
-        <div className="section-header-formalites">
+        <div className="section-header-formalites reveal reveal-1">
           <span className="eyebrow">Les actes juridiques courants</span>
           <h2>
             Les formalités annuelles, <br />
@@ -15,7 +18,7 @@ const Pole4Formalites = () => {
             annuels.
           </p>
         </div>
-        <ul className="feature-list">
+        <ul className="feature-list reveal reveal-2">
           <li>
             <span className="feat-num">i.</span>
             <div>

@@ -1,10 +1,12 @@
 import LivrableWireframe from "../../../components/LivrableWireframe";
+import useReveal from "../../../components/useReveal";
 
 const Pole1Livrable = () => {
+  useReveal();
   return (
     <section className="pole1-livrable">
       <div className="container">
-        <div className="section-header-livrable1">
+        <div className="section-header-livrable1 reveal reveal-1">
           <span className="eyebrow">Les livrables de pilotage</span>
           <h2>
             Vos information financière, <br />
@@ -17,7 +19,7 @@ const Pole1Livrable = () => {
             décider.
           </p>
         </div>
-        <div className="livrables-wrap">
+        <div className="livrables-wrap reveal reveal-2">
           <ul className="livrables-list">
             <li>
               <span className="freq">Mensuel</span>

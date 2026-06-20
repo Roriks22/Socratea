@@ -1,8 +1,11 @@
+import useReveal from "../../components/useReveal";
+
 const MethodeEtapes = () => {
+  useReveal();
   return (
     <section className="methode-etapes">
       <div className="container">
-        <div className="section-header">
+        <div className="section-header reveal reveal-1">
           <span className="eyebrow">Trois étapes</span>
           <h2>
             De la première prise de contact <br />à la restitution régulière.
@@ -12,7 +15,7 @@ const MethodeEtapes = () => {
             objectif, ses livrables et ses engagements — pour les deux parties.
           </p>
         </div>
-        <div className="methode-steps">
+        <div className="methode-steps reveal reveal-2">
           <div className="step">
             <div className="step-number">i.</div>
             <h3>Qualification</h3>

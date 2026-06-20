@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import useReveal from "../../components/useReveal";
 
 const Services = () => {
+  useReveal();
   return (
     <section className="services">
       <div className="container services-deroulement">
-        <div className="services-header">
+        <div className="services-header reveal reveal-1">
           <span>Nos services</span>
           <h2>
             Quatre pôles,
@@ -17,7 +19,7 @@ const Services = () => {
             cadrage initial.
           </p>
         </div>
-        <div className="services-footer">
+        <div className="services-footer reveal reveal-2">
           <div className="pole-services">
             <div className="pole-texte">
               <span>pôle 01</span>

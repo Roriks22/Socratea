@@ -1,8 +1,12 @@
+import useReveal from "../../components/useReveal";
+
 const Home = () => {
+  useReveal();
+
   return (
     <section className="entreprise-recherche">
       <div className="container home">
-        <div className="home-top">
+        <div className="home-top reveal">
           <span>pour qui nous travaillons</span>
           <h2>
             Trois situations dans lesquelles <br />
@@ -16,7 +20,7 @@ const Home = () => {
           </p>
         </div>
         <div className="home-bottom">
-          <div className="entreprise-concerne">
+          <div className="entreprise-concerne reveal reveal-1">
             <h6>
               <span>01</span>TPE digitalisé
             </h6>
@@ -31,7 +35,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="entreprise-concerne">
+          <div className="entreprise-concerne reveal reveal-2">
             <h6>
               <span>02</span>PME en développement
             </h6>
@@ -46,7 +50,7 @@ const Home = () => {
               interlocuteur qui comprenne ce qui est en jeu.
             </p>
           </div>
-          <div className="entreprise-concerne">
+          <div className="entreprise-concerne reveal reveal-3">
             <h6>
               <span>03</span>PME structurée & multi-entités
             </h6>

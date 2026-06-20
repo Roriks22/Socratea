@@ -1,8 +1,11 @@
+import useReveal from "../../../components/useReveal";
+
 const Pole4Operations = () => {
+  useReveal();
   return (
     <section className="pole4-operations">
       <div className="container">
-        <div className="section-header-operations">
+        <div className="section-header-operations reveal reveal-1">
           <span className="eyebrow">Les opérations ponctuelles</span>
           <h2>
             Aux étapes <br />
@@ -15,7 +18,7 @@ const Pole4Operations = () => {
             autres conseils.
           </p>
         </div>
-        <div className="two-col-operations">
+        <div className="two-col-operations reveal reveal-2">
           <div>
             <h3>Où nous intervenons</h3>
             <p>
