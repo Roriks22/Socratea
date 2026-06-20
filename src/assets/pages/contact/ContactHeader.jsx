@@ -9,9 +9,10 @@ const ContactHeader = () => {
           <span className="sep">/</span>
           <span className="current">Contact</span>
         </div>
-        <h1 className="h1-contact">
-          30 minutes pour comprendre
-          <span>si nous sommes faits pour travailler ensemble.</span>
+        <h1 className="page-hero-h1">
+          30 minutes
+          <br />
+          <span>pour faire connaissance.</span>
         </h1>
         <p className="page-hero-lead p-contact">
           Un premier rendez-vous sans engagement pour échanger sur votre

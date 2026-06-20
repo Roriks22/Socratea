@@ -9,8 +9,8 @@ const AproposHeader = () => {
           <span className="sep">/</span>
           <span className="current">À propos</span>
         </div>
-        <h1>
-          Julien Jacquesson
+        <h1 className="page-hero-h1">
+          Julien Jacquesson <br />
           <span>Expert-comptable diplômé</span>
         </h1>
         <p className="page-hero-lead">

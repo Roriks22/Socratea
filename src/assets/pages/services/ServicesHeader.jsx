@@ -9,15 +9,15 @@ const ServicesHeader = () => {
           <span className="sep">/</span>
           <span className="current">Nos services</span>
         </div>
-        <h1>
+        <h1 className="hero-inner-h1">
           Quatre pôles, <br />
-          <span>structurés autour de vos besoins.</span>
+          <span>autour de vos besoins.</span>
         </h1>
         <p className="page-hero-lead p-services">
-          La comptabilité et le pilotage constituent le socle ; trois pôles
-          complémentaires s'y articulent pour vous faire gagner du temps,
-          fiabiliser vos processus et sécuriser vos obligations. Le périmètre
-          retenu pour votre entreprise est défini lors du cadrage initial.
+          La comptabilité et le pilotage constituent le socle ; 4 pôles
+          complémentaires pour vous faire gagner du temps, fiabiliser vos
+          processus et sécuriser vos obligations. Le périmètre retenu pour votre
+          entreprise est défini lors du cadrage initial.
         </p>
       </div>
     </section>

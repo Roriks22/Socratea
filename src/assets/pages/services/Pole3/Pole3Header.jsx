@@ -12,8 +12,8 @@ const Pole3Header = () => {
           <span className="current">Paie externalisée</span>
         </div>
         <h1 className="pole03">
-          Pôle 03 - Paie <br />
-          <span>externalisée.</span>
+          Pôle 03 <br />
+          <span>paie externalisée.</span>
         </h1>
         <p className="page-hero-lead">
           L'externalisation de la paie est sensible. Elle engage la relation

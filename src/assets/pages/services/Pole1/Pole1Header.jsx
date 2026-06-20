@@ -12,9 +12,9 @@ const Pole1Header = () => {
           <span className="current">Comptabilité & pilotage</span>
         </div>
         <h1>
-          Pôle 01 - Comptabilité
+          Pôle 01
           <br />
-          <span>et pilotage</span>
+          <span>comptabilité et pilotage</span>
         </h1>
         <p className="page-hero-lead">
           Le socle réglementaire est nécessaire ; ce qui compte, c'est ce que

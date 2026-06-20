@@ -9,8 +9,8 @@ const Methode = () => {
           <span className="sep">/</span>
           <span className="current">Notre méthode</span>
         </div>
-        <h1>
-          Un cadre clair.
+        <h1 className="page-hero-h1">
+          Un cadre clair. <br />
           <span>Des engagements tenus.</span>
         </h1>
         <p className="page-hero-lead">

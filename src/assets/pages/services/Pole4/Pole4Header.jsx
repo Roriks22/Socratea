@@ -12,8 +12,8 @@ const Pole4Header = () => {
           <span className="current">Juridique & accompagnement</span>
         </div>
         <h1 className="pole4">
-          Pôle 04 - Juridique <br />
-          <span>et accompagnement.</span>
+          Pôle 04 <br />
+          <span>juridique.</span>
         </h1>
         <p className="page-hero-lead">
           Les formalités annuelles, sans lesquelles une société ne peut

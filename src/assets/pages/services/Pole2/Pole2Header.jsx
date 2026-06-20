@@ -11,13 +11,15 @@ const Pole2Header = () => {
           <span className="sep">/</span>
           <span className="current">Automatisation des flux</span>
         </div>
-        <h1 className="pole02">
-          Pôle 02 - Automatisation <span>des flux</span>
+        <h1>
+          Pôle 02 <br />
+          <span>automatisation des flux</span>
         </h1>
-        <p>
-          Nous structurons et simplifions vos circuits administratifs pour faire
-          gagner du temps à vos équipes et fiabiliser l'information en amont de
-          la comptabilité.
+        <p className="page-hero-lead">
+          Nous analysons, structurons et automatisons les flux qui alimentent
+          votre gestion quotidienne. Facturation, collecte de pièces, validation
+          interne ou transmission des données : chaque étape est pensée pour
+          limiter les interventions manuelles.
         </p>
       </div>
     </section>
