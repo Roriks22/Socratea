@@ -1,13 +1,12 @@
+import julienimage from "../../../../public/images/Julien - 2026 02 08 - complet.jpg";
+
 const AproposHome = () => {
   return (
     <section className="aprps-home">
       <div className="container">
         <div className="about-inner">
           <div className="about-portrait">
-            <img
-              src="/images/Julien - 2026 02 08 - complet.jpg"
-              alt="Julien_JACQUESSON"
-            />
+            <img src={julienimage} alt="Julien_JACQUESSON" />
           </div>
           <div className="about-content">
             <span className="eyebrow">Le fondateur</span>

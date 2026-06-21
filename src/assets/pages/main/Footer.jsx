@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "../../../../public/images/SOCRATEA.png";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <Link to="/">
-              <img src="/images/SOCRATEA.png" alt="Logo" />
+              <img src={logo} alt="Logo" />
               SOCRATEA
             </Link>
             <p>

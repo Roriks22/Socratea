@@ -1,12 +1,11 @@
+import julienimage from "../../../../public/images/Julien - 2026 02 08 - complet.jpg";
+
 const Apropos = () => {
   return (
     <section className="a_propos">
       <div className="container apropos">
         <div className="apropos_left">
-          <img
-            src="/images/Julien - 2026 02 08 - complet.jpg"
-            alt="Julien_JACQUESSON"
-          />
+          <img src={julienimage} alt="Julien_JACQUESSON" />
         </div>
         <div className="apropos-right">
           <span>à propos</span>

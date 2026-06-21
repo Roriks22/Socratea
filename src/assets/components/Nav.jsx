@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../../../public/images/SOCRATEA.png";
 
 const Nav = () => {
   return (
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="socratea">
-          <img src="/images/SOCRATEA.png" alt="Logo_SOCRATEA" />
+          <img src={logo} alt="Logo_SOCRATEA" />
           SOCRATEA
         </Link>
         <nav className="nav">
