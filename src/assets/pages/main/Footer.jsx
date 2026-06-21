@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../../../public/images/SOCRATEA.png";
+import logo from "../../../../public/images/socratea-logo.png";
 const Footer = () => {
   return (
     <footer className="footer">
