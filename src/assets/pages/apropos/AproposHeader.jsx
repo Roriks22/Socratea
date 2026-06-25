@@ -16,9 +16,9 @@ const AproposHeader = () => {
           <span>Expert-comptable diplômé</span>
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          Un parcours partagé entre l'audit et la direction financière. Une
-          raison d'être simple : produire les comptes est un passage obligé,
-          aider le dirigeant à piloter en est un autre.
+          Quatorze années entre l’audit et la direction financière ont façonné
+          une conviction : des comptes fiables sont indispensables, mais ils
+          prennent toute leur valeur lorsqu’ils aident à décider.
         </p>
       </div>
     </section>

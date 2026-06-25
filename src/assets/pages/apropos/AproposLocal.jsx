@@ -3,24 +3,22 @@ const AproposLocal = () => {
     <section className="aprps-local">
       <div className="container">
         <div className="section-local">
-          <span className="eyebrow">
-            Un cabinet ancré localement, accessible partout.
-          </span>
+          <span className="eyebrow">Notre présence</span>
           <h2>
-            Basé en Somme,
-            <br />à l'écoute de la France entière.
+            La proximité,
+            <br />
+            ne se mesure pas en kilomètres.
           </h2>
           <p>
-            Le siège est à Vers-sur-Selle, à quelques kilomètres d'Amiens. C'est
-            une base ancrée dans les Hauts-de-France, une région que je connais
-            et dont j'entends participer au tissu économique.
+            SOCRATEA est installé près d’Amiens. Nous privilégions une relation
+            directe, des échanges réguliers et des rencontres en présentiel
+            chaque fois qu’elles apportent une vraie valeur.
           </p>
           <p>
-            Le fonctionnement 100 % dématérialisé du cabinet permet d'intervenir
-            partout en France avec le même niveau d'exigence et de réactivité
-            qu'en proximité directe. Nos clients les plus éloignés n'ont aucun
-            désavantage sur nos clients régionaux — c'est une condition que nous
-            nous imposons.
+            Notre organisation dématérialisée nous permet également
+            d’accompagner des entreprises partout en France. Rendez-vous sur
+            place, téléphone ou visioconférence : le mode d’échange s’adapte à
+            votre organisation et à vos besoins.
           </p>
         </div>
       </div>

@@ -17,8 +17,8 @@ const Header = () => {
           En mouvement vers votre avenir. <br />
         </h1>
         <h2>
-          Vos chiffres ne doivent pas seulement être justes. <br />{" "}
-          <span>Ils doivent vous faire avancer.</span>
+          Vos chiffres ne doivent pas seulement être justes. Ils doivent vous
+          faire avancer.
         </h2>
         <p className="hero-lead reveal reveal-3">
           SOCRATEA est un cabinet d'expertise comptable qui sécurise votre

@@ -12,23 +12,22 @@ const AproposHome = () => {
             <span className="eyebrow">Le fondateur</span>
             <h3>Un parcours, une conviction.</h3>
             <p className="aprps1">
-              « J'ai vu les chiffres des deux côtés : celui de l'auditeur qui
-              vérifie, et celui du dirigeant financier qui décide avec. »
+              « J’ai vu les chiffres des deux côtés : celui de l’auditeur qui
+              vérifie, et celui du directeur financier qui décide avec. C’est ce
+              double regard que j’apporte à mes clients. »
             </p>
             <p className="aprps2">
-              Expert-comptable diplômé, j'ai exercé pendant sept ans en cabinet
-              d'audit, sur des missions de commissariat aux comptes et
-              d'accompagnement de PME. Puis sept ans en entreprise, comme
-              directeur administratif et financier d'un groupe multi-sites :
-              onze établissements, une équipe financière à structurer, des
-              décisions à préparer pour la direction générale.
+              J’ai d’abord exercé pendant sept ans en cabinet d’audit,
+              principalement sur des missions de commissariat aux comptes et
+              d’accompagnement de PME. J’ai ensuite rejoint un groupe de onze
+              établissements comme directeur administratif et financier, avec
+              pour mission de structurer la fonction financière, d’accompagner
+              les équipes et d’éclairer les décisions de la direction générale.
             </p>
             <p className="aprps3">
-              Ce double parcours n'est pas un cumul de postes. C'est la raison
-              même pour laquelle SOCRATEA existe. J'ai produit des comptes
-              pendant des années, et j'ai aussi été celui qui les utilise pour
-              décider. Ces deux métiers n'ont pas les mêmes contraintes, ni les
-              mêmes priorités — et très peu de cabinets les font dialoguer.
+              Ce double parcours m'a appris à concilier deux exigences : la
+              fiabilité de l'information financière et son utilité réelle pour
+              le dirigeant. C'est de cette double expérience qu'est né SOCRATEA.
             </p>
           </div>
         </div>

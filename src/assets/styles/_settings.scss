@@ -278,11 +278,15 @@ code {
   content: "";
   position: absolute;
   left: -50px;
-  top: 130px;
+  top: 120px;
   width: 4px;
-  height: 145px;
+  height: 110px;
   background: var(--blue);
   border-radius: 999px;
+}
+
+.page-hero-inner h1 {
+  font-size: 3.5rem;
 }
 
 .breadcrumb {

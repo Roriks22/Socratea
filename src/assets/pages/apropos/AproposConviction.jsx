@@ -4,31 +4,27 @@ const AproposConviction = () => {
       <div className="container">
         <div className="prose">
           <span className="eyebrow">La conviction</span>
-          <h3>Une comptabilité qui ne sert à rien avant avril</h3>
+          <h3>Des comptes fiables, mais pas seulement.</h3>
           <p className="conviction-texte">
-            La plupart des dirigeants de PME reçoivent leurs comptes annuels
-            trois à quatre mois après la clôture. À ce moment-là, l'information
-            est historique : les décisions ont été prises sur autre chose —
-            l'intuition, les relevés bancaires, des tableurs intermédiaires.
+            Une comptabilité fiable, des obligations fiscales respectées et des
+            comptes annuels établis : c’est indispensable. Mais l’information
+            financière prend toute sa valeur lorsqu’elle aide le dirigeant à
+            comprendre son activité, à anticiper et à décider.
           </p>
           <p className="conviction-texte">
-            C'est une situation paradoxale. La comptabilité est construite, mois
-            après mois, mais l'information qu'elle produit n'est lisible que
-            bien après coup. Pendant ce temps, le dirigeant pilote sans lecture
-            consolidée de sa propre activité.
+            Trésorerie, marge, activité, principaux écarts : ces repères doivent
+            pouvoir être suivis suffisamment régulièrement pour identifier les
+            points de vigilance, anticiper les besoins et éclairer les
+            décisions.
           </p>
           <p className="conviction-texte">
-            SOCRATEA a été créé pour corriger ce décalage. L'idée n'est pas
-            nouvelle ; la singularité est dans l'exécution. Tenir une
-            comptabilité suffisamment rigoureuse et suffisamment fréquente pour
-            pouvoir produire chaque mois une situation lisible demande une
-            organisation cadrée, des outils alignés, et la volonté de ne pas
-            s'endormir sur le socle annuel.
+            C’est la conviction à l’origine de SOCRATEA : associer la rigueur de
+            l’expertise comptable à une information plus claire, plus régulière
+            et réellement utile au pilotage de l’entreprise.
           </p>
           <blockquote>
-            Des comptes à jour changent la nature des conversations qu'un
-            dirigeant peut avoir avec son banquier, avec ses associés, avec
-            lui-même.
+            Une information fiable n’a de valeur que si elle arrive assez tôt
+            pour éclairer une décision.
           </blockquote>
         </div>
       </div>

@@ -16,7 +16,6 @@ import MethodeHome from "./assets/pages/methode/MethodeHome";
 import MethodeEngagement from "./assets/pages/methode/MethodeEngagement";
 import AproposHome from "./assets/pages/apropos/AproposHome";
 import AproposConviction from "./assets/pages/apropos/AproposConviction";
-import AproposDiplome from "./assets/pages/apropos/AproposDiplome";
 import AproposLocal from "./assets/pages/apropos/AproposLocal";
 import ServicesPoles from "./assets/pages/services/ServicesPoles";
 import ServicesForfait from "./assets/pages/services/ServicesForfait";
@@ -129,7 +128,7 @@ function App() {
             <>
               {" "}
               <AproposHeader /> <AproposHome /> <AproposConviction />{" "}
-              <AproposDiplome /> <AproposLocal /> <Contact /> <Footer />
+              <AproposLocal /> <Contact /> <Footer />
             </>
           }
         />

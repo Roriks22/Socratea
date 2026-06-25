@@ -59,6 +59,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
+      margin-bottom: 5rem;
 
       .entreprise-concerne {
         background: white;
@@ -68,7 +69,6 @@
         margin-left: 1rem;
         margin: 0 auto;
         width: auto;
-        margin-bottom: 2rem;
         transition: all 0.2s ease;
 
         &:hover {

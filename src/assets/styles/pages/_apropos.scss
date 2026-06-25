@@ -81,11 +81,13 @@
         gap: 20px;
 
         .btn-click-parcours {
+          font-size: 1rem;
           background: transparent;
           border: 1.5px solid gray;
           color: white;
           border-color: rgba(255, 255, 255, 0.35);
           padding: 15px;
+          cursor: pointer;
           transition: all 0.2s ease;
 
           &:hover {
