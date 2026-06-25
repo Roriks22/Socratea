@@ -7,17 +7,17 @@ const Livrables = () => {
     <section className="livrables">
       <div className="container livrables-deroulement">
         <div className="livrables-header reveal reveal-1">
-          <span>ce que vous recevez</span>
+          <span>Votre suivi</span>
           <h2>
-            Des livrables pensés pour le dirigeant,
+            Des chiffres utiles,
             <br />
-            pas pour l'administration.
+            au bon moment.
           </h2>
           <p>
-            La tenue comptable est un socle nécessaire. L'objectif est ailleurs
-            : vous donner une lecture rapide, fiable et régulière de votre
-            activité — pour que chaque décision s'appuie sur des chiffres à
-            jour.
+            SOCRATEA ne se limite pas à établir vos comptes une fois par an.
+            Selon les besoins de votre entreprise, vous disposez de restitutions
+            régulières pour suivre votre activité, comprendre vos résultats et
+            repérer les points qui méritent votre attention.
           </p>
         </div>
         <div className="livrables-footer reveal reveal-2">
@@ -27,10 +27,14 @@ const Livrables = () => {
                 <span>Mensuel</span>
               </div>
               <div className="livrables-text">
-                <h3>Flash mensuel de pilotage</h3>
+                <h3>Flash mensuel et Flash J+5</h3>
                 <p>
-                  Trésorerie, marge, CA cumulé, principales échéances. Un
-                  document synthétique, lisible en quelques minutes.
+                  Trésorerie, marge, activité, principaux écarts : retrouvez
+                  rapidement les indicateurs essentiels pour savoir où vous en
+                  êtes. Le Flash J+5 peut être mis en place lorsque vos
+                  informations sont transmises de manière complète et dans les
+                  délais convenus. Il est construit avec vous, autour des
+                  indicateurs qui comptent vraiment pour votre entreprise.
                 </p>
               </div>
             </div>
@@ -39,10 +43,12 @@ const Livrables = () => {
                 <span>Trimestriel</span>
               </div>
               <div className="livrables-text">
-                <h3>Situation comptable arrêtée</h3>
+                <h3>Situation trimestrielle arrêtée</h3>
                 <p>
-                  Bilan et compte de résultat intermédiaires. Une photo réelle
-                  pour calibrer les décisions du trimestre suivant.
+                  Lorsque votre entreprise a besoin d’un point d’étape plus
+                  approfondi, une situation comptable trimestrielle peut être
+                  arrêtée, contrôlée et commentée. Vous mesurez ainsi votre
+                  progression et ajustez vos priorités sur une base plus fiable.
                 </p>
               </div>
             </div>
@@ -51,11 +57,12 @@ const Livrables = () => {
                 <span>Annuel</span>
               </div>
               <div className="livrables-text">
-                <h3>Clôture et bilan commenté</h3>
+                <h3>Comptes annuels commentés</h3>
                 <p>
-                  Comptes annuels, obligations fiscales et sociales, et une
-                  restitution qui explique les chiffres — pas seulement les
-                  produit.
+                  Vos comptes annuels sont établis dans le respect de vos
+                  obligations, mais aussi expliqués. Vous comprenez les
+                  principaux événements de l’exercice, leurs conséquences et les
+                  points à anticiper pour la suite.
                 </p>
               </div>
             </div>
@@ -66,9 +73,10 @@ const Livrables = () => {
               <div className="livrables-text">
                 <h3>Analyses ponctuelles</h3>
                 <p>
-                  Rentabilité d'un projet, préparation d'un dossier bancaire,
-                  projection de trésorerie, impact d'une décision. Sur périmètre
-                  défini.
+                  Investissement, recrutement, évolution de la marge, besoin de
+                  trésorerie : lorsqu’une décision importante se présente,
+                  SOCRATEA vous aide à mesurer ses conséquences et à comparer
+                  les différentes possibilités.
                 </p>
               </div>
             </div>

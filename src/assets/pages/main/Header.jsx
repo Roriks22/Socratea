@@ -14,12 +14,24 @@ const Header = () => {
         </div>
         <h1 className="reveal reveal-2">
           Ancré dans l'expertise. <br />
-          <span>En mouvement vers votre avenir.</span>
+          En mouvement vers votre avenir. <br />
         </h1>
+        <h2>
+          Vos chiffres ne doivent pas seulement être justes. <br />{" "}
+          <span>Ils doivent vous faire avancer.</span>
+        </h2>
         <p className="hero-lead reveal reveal-3">
-          Une information financière disponible en cours d'année, pas uniquement
-          à la clôture. Pour les dirigeants de PME qui veulent piloter leur
-          activité — pas seulement être en règle.
+          SOCRATEA est un cabinet d'expertise comptable qui sécurise votre
+          comptabilité, vos obligations fiscales et vos comptes annuels. Mais
+          notre rôle ne s'arrête pas à produire des chiffres : nous les rendons
+          plus clairs, plus réguliers et réellement utiles pour piloter votre
+          entreprise. Trésorerie, marge, activité, points de vigilance : vous
+          disposez de repères concrets pour comprendre votre situation,
+          anticiper vos besoins et décider au bon moment. Quand votre
+          organisation vous ralentit, nous vous aidons à lever les freins :
+          simplification des processus, automatisation des tâches répétitives,
+          connexion de vos outils et développement d'applications adaptées à
+          votre fonctionnement.
         </p>
         <div className="hero-cta-group reveal reveal-4">
           <a
@@ -45,22 +57,8 @@ const Header = () => {
             className="btn btn-secondary on-dark"
             onClick={() => navigate("/methode")}
           >
-            Découvrir la méthode
+            Découvrir notre méthode
           </button>
-        </div>
-        <div className="hero-meta reveal reveal-5">
-          <div className="experience">
-            <h5>expérience</h5>
-            <p>14 ans - audit & direction financière</p>
-          </div>
-          <div className="experience">
-            <h5>intervention</h5>
-            <p>Partout en France</p>
-          </div>
-          <div className="experience">
-            <h5>fonctionnement</h5>
-            <p>100% dématérialisé</p>
-          </div>
         </div>
       </div>
     </section>

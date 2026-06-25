@@ -1,4 +1,4 @@
-import julienimage from "../../../../public/images/julien-complet.jpg";
+import julienimage from "../../../../public/images/julien-complet.png";
 
 const Apropos = () => {
   return (

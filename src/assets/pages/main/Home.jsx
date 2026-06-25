@@ -7,38 +7,31 @@ const Home = () => {
     <section className="entreprise-recherche">
       <div className="container home">
         <div className="home-top reveal">
-          <span>pour qui nous travaillons</span>
+          <span>Vos enjeux</span>
           <h2>
-            Trois situations dans lesquelles <br />
-            vous vous reconnaîtrez.
+            Votre entreprise évolue. <br />
+            Vos besoins aussi.
           </h2>
           <p>
-            Nous accompagnons des entreprises qui partagent une exigence commune
-            : avoir des chiffres fiables, à jour, et compris. Au-delà de
-            l'effectif ou du chiffre d'affaires, c'est la maturité
-            d'organisation qui qualifie une collaboration.
+            Tenir une comptabilité fiable et respecter ses obligations reste
+            essentiel. Mais lorsque l’activité se développe, d’autres besoins
+            apparaissent : comprendre plus rapidement ses résultats, maîtriser
+            des flux plus complexes et faire évoluer une organisation qui montre
+            ses limites.
           </p>
         </div>
         <div className="home-bottom">
           <div className="entreprise-concerne reveal reveal-1">
-            <h6>
-              <span>01</span>TPE digitalisé
-            </h6>
-            <h5>
-              Votre entreprise est de taille modeste, mais vous avez choisi dès
-              le départ des outils modernes.
-            </h5>
+            <h5>Vos chiffres arrivent trop tard</h5>
             <p>
-              Vous attendez d'un cabinet qu'il fonctionne à votre rythme : sans
-              papier, sans déplacement inutile, avec un périmètre de mission
-              clair et des échanges efficaces.
+              Vous découvrez parfois vos résultats trop tard pour ajuster vos
+              décisions. Trésorerie, marge, activité : vous avez besoin de
+              repères plus réguliers pour comprendre votre situation et réagir
+              au bon moment.
             </p>
           </div>
 
           <div className="entreprise-concerne reveal reveal-2">
-            <h6>
-              <span>02</span>PME en développement
-            </h6>
             <h5>
               Votre entreprise grandit. Vos décisions ne peuvent plus attendre
               la clôture annuelle.
@@ -51,17 +44,22 @@ const Home = () => {
             </p>
           </div>
           <div className="entreprise-concerne reveal reveal-3">
-            <h6>
-              <span>03</span>PME structurée & multi-entités
-            </h6>
-            <h5>
-              Votre activité est complexe, avec plusieurs structures et des flux
-              volumineux.
-            </h5>
+            <h5>Votre activité se complexifie</h5>
             <p>
-              Vous cherchez un cabinet capable de fiabiliser, de superviser et
-              de produire une information consolidée cohérente — pas seulement
-              de tenir les comptes.
+              Plusieurs entités, des flux croisés, des interlocuteurs qui se
+              multiplient : ce qui fonctionnait bien à une certaine taille
+              devient difficile à tenir. Vous avez besoin d’une organisation
+              comptable et financière qui suive votre rythme sans perdre en
+              fiabilité.
+            </p>
+          </div>
+          <div className="entreprise-concerne reveal reveal-4">
+            <h5>Votre organisation vous fait perdre du temps</h5>
+            <p>
+              Documents transmis par plusieurs canaux, ressaisies, fichiers
+              dispersés, tâches répétitives : vos équipes passent trop de temps
+              à faire circuler l’information, alors qu’elle devrait être plus
+              simple à collecter, à contrôler et à exploiter.
             </p>
           </div>
         </div>
