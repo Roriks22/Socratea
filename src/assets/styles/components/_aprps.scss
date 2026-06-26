@@ -51,7 +51,7 @@
 .aprps-conviction {
   position: relative;
   background: var(--gray-bg);
-  padding: 120px 0;
+  padding: 5rem 0;
 
   .prose {
     max-width: 720px;
@@ -132,7 +132,7 @@
 }
 .aprps-local {
   position: relative;
-  padding: 120px 0;
+  padding: 5rem 0;
   background: var(--navy);
 
   .section-local {
@@ -144,7 +144,6 @@
       margin-top: 24px;
       margin-bottom: 24px;
       font-size: clamp(1.5rem, 4vw, 2.5rem);
-      font-weight: 900;
       letter-spacing: 0.02em;
       line-height: 1.15;
 

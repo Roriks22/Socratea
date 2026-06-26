@@ -1,6 +1,7 @@
 .livrables {
   background: #ffff;
   padding-top: 5rem;
+  padding-bottom: 3rem;
   min-height: 90vh;
 
   .livrables-deroulement {
@@ -58,11 +59,10 @@
       }
     }
     .livrables-footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      margin-top: -2rem;
       .livrables-left {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
         width: 800px;
         .livrables-clients {

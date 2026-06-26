@@ -11,7 +11,7 @@ const Apropos = () => {
         </div>
         <div className="apropos-right">
           <span>à propos</span>
-          <h3>Julien Jacquesson, expert-comptable diplômé</h3>
+          <h3>Julien Jacquesson, expert-comptable</h3>
           <p className="texte_1">
             « J’ai vu les chiffres des deux côtés : celui de l’auditeur qui
             vérifie, et celui du directeur financier qui décide avec. C’est ce

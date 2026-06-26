@@ -1,4 +1,3 @@
-import LivrableWireframe from "../../components/LivrableWireframe";
 import useReveal from "../../components/useReveal";
 
 const Livrables = () => {
@@ -81,7 +80,6 @@ const Livrables = () => {
               </div>
             </div>
           </div>
-          <LivrableWireframe />
         </div>
       </div>
     </section>

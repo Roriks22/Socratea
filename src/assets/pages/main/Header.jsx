@@ -10,30 +10,36 @@ const Header = () => {
       <div className="container hero-inner">
         <div className="hero-tag reveal reveal-1">
           <span className="dot"></span>
-          <span>Cabinet d'expertise comptable - ouverture septembre 2026</span>
+          <span>Cabinet d'expertise comptable</span>
         </div>
         <h1 className="reveal reveal-2">
           Ancré dans l'expertise. <br />
           En mouvement vers votre avenir. <br />
         </h1>
-        <h2>
-          Vos chiffres ne doivent pas seulement être justes. Ils doivent vous
-          faire avancer.
+        <h2 className="reveal reveal-3">
+          Vos chiffres ne doivent pas seulement être justes.
+          <span>Ils doivent vous faire avancer.</span>
         </h2>
-        <p className="hero-lead reveal reveal-3">
-          SOCRATEA est un cabinet d'expertise comptable qui sécurise votre
-          comptabilité, vos obligations fiscales et vos comptes annuels. Mais
-          notre rôle ne s'arrête pas à produire des chiffres : nous les rendons
-          plus clairs, plus réguliers et réellement utiles pour piloter votre
-          entreprise. Trésorerie, marge, activité, points de vigilance : vous
-          disposez de repères concrets pour comprendre votre situation,
-          anticiper vos besoins et décider au bon moment. Quand votre
-          organisation vous ralentit, nous vous aidons à lever les freins :
-          simplification des processus, automatisation des tâches répétitives,
-          connexion de vos outils et développement d'applications adaptées à
-          votre fonctionnement.
-        </p>
-        <div className="hero-cta-group reveal reveal-4">
+        <div className="hero-lead reveal reveal-4">
+          <p>
+            SOCRATEA est un cabinet d'expertise comptable qui sécurise votre
+            comptabilité, vos obligations fiscales et vos comptes annuels.
+          </p>
+          <p>
+            Mais notre rôle ne s'arrête pas à produire des chiffres : nous les
+            rendons plus clairs, plus réguliers et réellement utiles pour
+            piloter votre entreprise. Trésorerie, marge, activité, points de
+            vigilance : vous disposez de repères concrets pour comprendre votre
+            situation, anticiper vos besoins et décider au bon moment.
+          </p>
+          <p>
+            Quand votre organisation vous ralentit, nous vous aidons à lever les
+            freins : simplification des processus, automatisation des tâches
+            répétitives, connexion de vos outils et développement d'applications
+            adaptées à votre fonctionnement.
+          </p>
+        </div>
+        <div className="hero-cta-group reveal reveal-5">
           <a
             href="https://calendly.com/socratea"
             target="_blank"
