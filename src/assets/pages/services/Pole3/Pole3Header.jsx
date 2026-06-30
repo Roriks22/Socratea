@@ -11,16 +11,20 @@ const Pole3Header = () => {
           <span className="sep">/</span>
           <Link to="/services">Nos services</Link>
           <span className="sep">/</span>
-          <span className="current">Paie externalisée</span>
+          <span className="current">Social et paie</span>
         </div>
         <h1 className="pole03 reveal reveal-2">
-          Pôle 03 <br />
-          <span>paie externalisée.</span>
+          Social et paie <br />
+          <span>Une gestion claire, des échéances maîtrisées.</span>
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          L'externalisation de la paie est sensible. Elle engage la relation
-          avec vos salariés et votre conformité sociale. Notre positionnement
-          est clair : ce que nous produisons, nous le supervisons nous-mêmes.
+          La paie engage votre relation avec vos salariés et ne laisse pas de
+          place à l’improvisation. SOCRATEA organise la collecte des variables,
+          suit les échéances et coordonne les travaux nécessaires à
+          l’établissement des bulletins et des déclarations sociales. Vous
+          gardez un interlocuteur identifié pour comprendre les points
+          importants, anticiper les situations sensibles et prendre les bonnes
+          décisions.
         </p>
       </div>
     </section>

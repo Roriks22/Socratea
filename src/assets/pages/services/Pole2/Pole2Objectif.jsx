@@ -4,31 +4,33 @@ const Pole2Objectif = () => {
       <div className="container">
         <div className="two-col">
           <div>
-            <span className="eyebrow">Cadrage</span>
-            <h3>D'abord comprendre.</h3>
+            <span className="eyebrow">Comprendre votre fonctionnement</span>
+            <h3>Partir de ce qui existe vraiment.</h3>
             <p>
-              Nous commençons par cartographier vos circuits existants : qui
-              fait quoi, avec quels outils, avec quelles anomalies récurrentes.
-              C'est cette cartographie qui identifie les vrais points de
-              friction — pas les a priori.
+              Nous regardons comment l’information circule aujourd’hui : qui
+              intervient, quels outils sont utilisés, où apparaissent les
+              ressaisies, les blocages ou les erreurs.
             </p>
             <p>
-              Un plan d'action est ensuite proposé, priorisé par impact et par
-              coût. Vous arbitrez ; nous mettons en œuvre.
+              Cela permet d’identifier ce qui peut être simplifié rapidement et
+              ce qui nécessite une réponse plus structurée. Les priorités sont
+              définies avec vous, en fonction du gain attendu et de l’effort
+              nécessaire.
             </p>
           </div>
           <div>
-            <span className="eyebrow">Mise en oeuvre</span>
-            <h3>Ensuite outiller.</h3>
+            <span className="eyebrow">Mettre en place la bonne solution</span>
+            <h3>Faire évoluer sans tout bouleverser.</h3>
             <p>
-              Le paramétrage est réalisé avec les outils déjà présents dans
-              votre environnement chaque fois que c'est possible — pour éviter
-              la multiplication des abonnements et des interfaces.
+              Nous privilégions les outils que vous utilisez déjà lorsqu’ils
+              répondent au besoin. Lorsque ce n’est pas suffisant, nous pouvons
+              connecter des solutions, automatiser un processus ou développer
+              une application adaptée.
             </p>
             <p>
-              Chaque chantier inclut une phase de test, une phase de bascule
-              contrôlée, et un accompagnement de vos équipes sur les nouvelles
-              pratiques.
+              La mise en place est testée et ajustée avec vos équipes, pour que
+              la nouvelle organisation s’intègre naturellement à leur quotidien
+              et reste simple à faire vivre.
             </p>
           </div>
         </div>

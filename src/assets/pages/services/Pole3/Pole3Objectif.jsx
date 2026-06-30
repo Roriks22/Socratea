@@ -3,19 +3,20 @@ const Pole3Objectif = () => {
     <section className="pole3-objectif">
       <div className="container">
         <div className="prose">
-          <span className="eyebrow">Pour qui ce pôle a du sens</span>
-          <h3>Des effectifs où chaque situation est singulière.</h3>
+          <span className="eyebrow">
+            Un accompagnement qui vous aide au quotidien
+          </span>
+          <h3>Des situations variées, un suivi qui reste clair.</h3>
           <p>
-            Ce pôle s'adresse aux entreprises qui ont des effectifs salariés,
-            qui préfèrent externaliser pour sécuriser la conformité sociale, et
-            qui veulent néanmoins garder un dialogue simple avec un
-            interlocuteur qui connaît leur dossier.
+            Recrutements, temps partiel, primes, absences, évolutions de contrat
+            ou départs : la paie se complexifie vite dès que l’équipe grandit ou
+            que les situations changent.
           </p>
           <p>
-            Il est particulièrement adapté aux PME qui doivent gérer des
-            situations variées — temps partiel, heures supplémentaires, contrats
-            atypiques, événements imprévus — et qui trouvent peu de valeur dans
-            les offres standardisées des plateformes automatiques.
+            SOCRATEA vous aide à organiser les informations, à respecter les
+            échéances et à repérer les points qui nécessitent votre attention.
+            Vous gardez une gestion claire, sans avoir à traiter seul chaque
+            situation particulière.
           </p>
         </div>
       </div>

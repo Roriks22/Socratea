@@ -11,17 +11,21 @@ const Pole2Header = () => {
           <span className="sep">/</span>
           <Link to="/services">Nos services</Link>
           <span className="sep">/</span>
-          <span className="current">Automatisation des flux</span>
+          <span className="current">
+            Automatisation et structuration des flux
+          </span>
         </div>
         <h1 className="reveal reveal-2">
-          Pôle 02 <br />
-          <span>automatisation des flux</span>
+          Automatisation et structuration des flux <br />
+          <span>Des outils adaptés à votre façon de travailler.</span>
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          Nous analysons, structurons et automatisons les flux qui alimentent
-          votre gestion quotidienne. Facturation, collecte de pièces, validation
-          interne ou transmission des données : chaque étape est pensée pour
-          limiter les interventions manuelles.
+          Nous partons de votre organisation, de vos outils et de ce qui vous
+          fait perdre du temps. SOCRATEA simplifie les circuits d’information,
+          automatise les tâches répétitives, connecte vos outils lorsque cela
+          est utile et peut développer des applications adaptées à vos besoins.
+          L’objectif : des processus plus fluides, des données plus fiables et
+          une organisation capable d’évoluer avec votre entreprise.
         </p>
       </div>
     </section>

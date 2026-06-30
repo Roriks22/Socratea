@@ -12,13 +12,14 @@ const Methode = () => {
           <span className="current">Notre méthode</span>
         </div>
         <h1 className="page-hero-h1 reveal reveal-2">
-          Un cadre clair. <br />
-          <span>Des engagements tenus.</span>
+          Une organisation claire, <br />
+          <span>dès le départ.</span>
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          Une organisation cadrée, partagée avec vous dès le premier échange. Ce
-          n'est pas une contrainte, c'est ce qui nous permet de produire les
-          livrables dans les délais — dossier après dossier.
+          Dès les premiers échanges, nous mettons en place avec vous une façon
+          de travailler adaptée à votre entreprise : quoi transmettre, quand et
+          par quel canal. Moins d’allers-retours, moins d’informations perdues,
+          et des chiffres fiables quand vous en avez besoin.
         </p>
       </div>
     </section>

@@ -3,21 +3,27 @@ const Pole4Sens = () => {
     <section className="pole4-sens">
       <div className="container">
         <div className="prose">
-          <span className="eyebrow">Pour qui ce pôle a du sens</span>
-          <h3>Un interlocuteur qui comprend l'enchaînement.</h3>
+          <span className="eyebrow">Un suivi coordonné</span>
+          <h3>
+            Un même point de repère, même lorsque plusieurs experts
+            interviennent.
+          </h3>
           <p>
-            Les opérations importantes de la vie d'une entreprise mobilisent
-            toujours plusieurs dimensions : juridique, fiscale, financière,
-            organisationnelle. Pouvoir en parler avec un seul interlocuteur qui
-            connaît déjà votre dossier — et qui sait à quel moment faire
-            intervenir un autre conseil — fait gagner du temps et évite les
-            incohérences.
+            Les décisions importantes dépassent souvent un seul cadre. Une
+            réorganisation, une entrée d’associé ou une transmission peut avoir
+            des conséquences juridiques, fiscales, financières et
+            opérationnelles.
           </p>
           <p>
-            C'est le positionnement de ce pôle : être votre point d'entrée sur
-            les sujets à dimension économique, et orchestrer avec les autres
-            conseils quand le sujet le demande.
+            SOCRATEA vous aide à relier ces dimensions, à préparer les
+            informations utiles et à coordonner les échanges avec vos autres
+            conseils. Vous évitez les redites, les ruptures d’information et les
+            décisions prises sans vision d’ensemble.
           </p>
+          <blockquote>
+            Vous gardez un interlocuteur qui connaît votre entreprise et veille
+            à la cohérence de l’ensemble.
+          </blockquote>
         </div>
       </div>
     </section>

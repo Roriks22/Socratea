@@ -3,22 +3,19 @@ const Pole2Contexte = () => {
     <section className="pole2-contexte">
       <div className="container">
         <div className="pole2-texte">
-          <span className="eyebrow">Un contexte favorable</span>
-          <h2>
-            La réforme de la facturation <br />
-            électronique.
-          </h2>
+          <span className="eyebrow">Facturation électronique</span>
+          <h2>Bien plus qu’un changement de format.</h2>
           <p>
-            Le passage progressif à la facturation électronique entre
-            entreprises transforme en profondeur la chaîne de traitement des
-            factures. Pour les entreprises qui n'ont pas encore structuré leurs
-            circuits, c'est un chantier contraint. Pour celles qui s'y préparent
-            en amont, c'est l'occasion de moderniser l'ensemble du processus.
+            La facturation électronique ne consiste pas seulement à choisir une
+            plateforme agréée. Elle amène aussi à revoir la façon dont les
+            factures sont créées, reçues, contrôlées, validées et intégrées dans
+            vos outils.
           </p>
           <p>
-            Nous accompagnons cette transition avec une logique de pragmatisme :
-            mettre en conformité, oui — et en profiter pour rendre le processus
-            plus efficace qu'avant.
+            SOCRATEA vous aide à adapter ces circuits à votre organisation, à
+            limiter les doubles saisies et à fiabiliser les données. L’objectif
+            n’est pas d’ajouter une complexité supplémentaire, mais de rendre le
+            traitement des factures plus simple et plus fiable au quotidien.
           </p>
         </div>
       </div>

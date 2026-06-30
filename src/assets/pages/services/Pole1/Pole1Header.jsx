@@ -14,15 +14,15 @@ const Pole1Header = () => {
           <span className="current">Comptabilité & pilotage</span>
         </div>
         <h1 className="reveal reveal-2">
-          Pôle 01
+          Comptabilité et pilotage
           <br />
-          <span>comptabilité et pilotage</span>
+          <span>Des chiffres fiables, au bon moment.</span>
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          Le socle réglementaire est nécessaire ; ce qui compte, c'est ce que
-          nous en faisons. Ce pôle porte notre différenciation : vous donner une
-          lecture de votre activité en cours d'année, pas uniquement à la
-          clôture.
+          SOCRATEA sécurise votre comptabilité, vos obligations fiscales et vos
+          comptes annuels. Mais notre rôle ne s’arrête pas à produire des
+          chiffres : nous vous aidons à les comprendre, à suivre votre activité
+          plus régulièrement et à voir plus tôt ce qui mérite votre attention.
         </p>
       </div>
     </section>

@@ -3,23 +3,23 @@ const Pole3Positionnement = () => {
     <section className="pole3-positionnement">
       <div className="container">
         <div className="prose">
-          <span className="eyebrow">Notre positionnement</span>
-          <h3>Pas de délégation à un tiers.</h3>
+          <span className="eyebrow">Notre rôle</span>
+          <h3>Un interlocuteur identifié pour vos sujets sociaux.</h3>
           <p>
-            Beaucoup de cabinets sous-traitent la paie à des prestataires
-            spécialisés ou à des plateformes automatisées, en se contentant d'un
-            rôle d'interface. Ce n'est pas notre modèle.
+            La paie ne se résume pas à l’établissement d’un bulletin. Elle
+            repose sur des informations fiables, des échéances bien suivies et
+            des réponses claires lorsqu’une situation évolue.
           </p>
           <p>
-            Nous produisons la paie au sein du cabinet, sous la supervision
-            directe de l'expert-comptable. Vous avez un seul interlocuteur
-            responsable, qui connaît votre dossier et qui traite vos demandes —
-            pas un numéro de hotline renvoyant vers un back-office distant.
+            SOCRATEA centralise vos demandes, organise la transmission des
+            variables et coordonne le suivi des bulletins et des déclarations
+            sociales. Vous savez à qui vous adresser, ce qui est attendu et
+            quels sujets nécessitent votre attention.
           </p>
           <blockquote>
-            La paie n'est pas qu'un bulletin : c'est un point de contact
-            sensible avec vos salariés. Elle mérite une attention qui ne se
-            délègue pas.
+            Sur la paie, l’essentiel est de disposer des bonnes informations au
+            bon moment et de savoir vers qui se tourner lorsqu’une question se
+            pose.
           </blockquote>
         </div>
       </div>

@@ -6,39 +6,39 @@ const Pole4Operations = () => {
     <section className="pole4-operations">
       <div className="container">
         <div className="section-header-operations reveal reveal-1">
-          <span className="eyebrow">Les opérations ponctuelles</span>
+          <span className="eyebrow">
+            Les opérations qui font évoluer votre société
+          </span>
           <h2>
-            Aux étapes <br />
-            qui comptent vraiment.
+            Préparer chaque étape, <br />
+            avec les bons interlocuteurs.
           </h2>
           <p>
-            Certaines opérations sortent du cadre courant : elles structurent
-            l'avenir de votre entreprise ou mobilisent plusieurs disciplines à
-            la fois. Pour celles-ci, nous intervenons en coordination avec vos
-            autres conseils.
+            Création, entrée d’un associé, financement, réorganisation, cession
+            ou transmission : certaines décisions engagent durablement votre
+            entreprise. SOCRATEA vous aide à en mesurer les conséquences, à
+            préparer l’opération et à coordonner les intervenants nécessaires.
           </p>
         </div>
         <div className="two-col-operations reveal reveal-2">
           <div>
-            <h3>Où nous intervenons</h3>
+            <h3>Structurer la décision</h3>
             <p>
-              Constitution et création de sociétés, choix de la forme juridique,
-              montages intégrant plusieurs structures. Cessions et transmissions
-              d'entreprise côté cédant comme côté repreneur — dimension
-              financière, fiscale et organisationnelle. Restructurations :
-              apports, fusions simplifiées, changements de statuts
-              significatifs. Préparation des dossiers bancaires structurants.
+              Nous intervenons sur les dimensions comptables, fiscales et
+              financières, ainsi que sur les actes juridiques qui relèvent de
+              notre champ d’intervention. Simulations, choix du schéma,
+              préparation des documents ou dossier de financement : vous
+              disposez d’une vision plus claire avant de vous engager.
             </p>
           </div>
           <div>
-            <h3>Où nous savons passer la main</h3>
+            <h3>Réunir les bonnes expertises</h3>
             <p>
-              Les contentieux, les opérations complexes relevant du droit des
-              affaires pur, les dossiers impliquant des problématiques
-              patrimoniales familiales : ce ne sont pas nos métiers. Nous
-              travaillons alors avec l'avocat ou le notaire adapté — le vôtre ou
-              un de nos partenaires de confiance — en gardant la cohérence
-              économique de l'opération.
+              Lorsque l’opération nécessite l’intervention d’un avocat, d’un
+              notaire ou d’un autre spécialiste, nous travaillons avec le
+              professionnel de votre choix. Nous veillons à la cohérence des
+              informations, des décisions et du calendrier pour que chacun
+              intervienne au bon moment.
             </p>
           </div>
         </div>

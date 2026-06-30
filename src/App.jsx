@@ -13,7 +13,6 @@ import AproposHeader from "./assets/pages/apropos/AproposHeader";
 import ContactHeader from "./assets/pages/contact/ContactHeader";
 import MethodeEtapes from "./assets/pages/methode/MethodeEtapes";
 import MethodeHome from "./assets/pages/methode/MethodeHome";
-import MethodeEngagement from "./assets/pages/methode/MethodeEngagement";
 import AproposHome from "./assets/pages/apropos/AproposHome";
 import AproposConviction from "./assets/pages/apropos/AproposConviction";
 import AproposLocal from "./assets/pages/apropos/AproposLocal";
@@ -68,8 +67,8 @@ function App() {
           path="/methode"
           element={
             <>
-              <MethodeHeader /> <MethodeEtapes /> <MethodeHome />{" "}
-              <MethodeEngagement /> <Contact /> <Footer />
+              <MethodeHeader /> <MethodeEtapes /> <MethodeHome /> <Contact />{" "}
+              <Footer />
             </>
           }
         />

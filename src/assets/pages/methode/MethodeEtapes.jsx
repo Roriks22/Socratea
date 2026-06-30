@@ -8,45 +8,46 @@ const MethodeEtapes = () => {
         <div className="section-header reveal reveal-1">
           <span className="eyebrow">Trois étapes</span>
           <h2>
-            De la première prise de contact <br />à la restitution régulière.
+            Du premier échange à un accompagnement qui évolue avec votre
+            entreprise.
           </h2>
           <p>
-            La collaboration est structurée en trois temps. Chaque étape a son
-            objectif, ses livrables et ses engagements — pour les deux parties.
+            Nous prenons le temps de comprendre votre activité, puis nous
+            organisons la mission pour partir sur de bonnes bases. Une fois le
+            suivi lancé, il évolue avec votre entreprise, ses priorités et ses
+            outils.
           </p>
         </div>
         <div className="methode-steps reveal reveal-2">
           <div className="step">
-            <div className="step-number">i.</div>
-            <h3>Qualification</h3>
+            <div className="step-number">01</div>
+            <h3>Comprendre votre entreprise</h3>
             <p>
-              Un premier rendez-vous de 30 minutes pour comprendre votre
-              activité, vos attentes et vos contraintes. Nous vérifions ensemble
-              si SOCRATEA correspond à votre situation. Si ce n'est pas le bon
-              moment ou le bon cabinet pour vous, nous vous le disons — et nous
-              vous orientons si nous le pouvons.
+              Un premier échange pour parler de votre activité, de votre
+              organisation et de ce que vous attendez réellement de votre
+              cabinet. Nous vérifions ensemble que l’approche SOCRATEA
+              correspond à vos besoins et à votre façon de travailler.
             </p>
           </div>
           <div className="step">
-            <div className="step-number">ii.</div>
-            <h3>Cadrage</h3>
+            <div className="step-number">02</div>
+            <h3>Préparer le démarrage</h3>
             <p>
-              Une fois l'adéquation confirmée, nous formalisons la mission :
-              périmètre exact, livrables attendus, calendrier de transmission,
-              responsabilités de chacun. Les éventuels hors-forfait sont définis
-              dès le départ, par écrit. Vous savez exactement ce qui est inclus
-              — et ce qui ne l'est pas.
+              Une fois la mission définie, nous organisons la reprise du
+              dossier, les accès, les outils et le calendrier de transmission.
+              L’objectif est simple : démarrer sans flottement, avec une
+              organisation claire pour vous comme pour nous.
             </p>
           </div>
           <div className="step">
-            <div className="step-number">iii.</div>
-            <h3>Production & pilotage</h3>
+            <div className="step-number">03</div>
+            <h3>Piloter et faire évoluer</h3>
             <p>
-              La mission démarre. Collecte dématérialisée, traitement
-              standardisé, livrables réguliers. Des points de restitution sont
-              planifiés à l'avance — où l'on parle chiffres, mais aussi
-              décisions à prendre. Le cabinet n'est pas un prestataire passif :
-              c'est un interlocuteur financier.
+              Nous suivons votre comptabilité tout au long de l’année, avec des
+              restitutions régulières et des échanges sur les points qui
+              comptent. Quand votre entreprise évolue, nous faisons évoluer
+              l’accompagnement : nouveaux indicateurs, processus simplifiés,
+              automatisations ou applications adaptées.
             </p>
           </div>
         </div>

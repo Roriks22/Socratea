@@ -6,37 +6,37 @@ const ServicesForfait = () => {
     <section className="services-forfait">
       <div className="container">
         <div className="section-forfait reveal reveal-1">
-          <span className="eyebrow">Construction de l'offre</span>
+          <span className="eyebrow">Votre accompagnement</span>
           <h2>
-            Un forfait construit avec vous,
+            Une mission définie pour vous,
             <br />
-            pour vous.
+            pas une formule toute faite.
           </h2>
           <p>
-            L'offre n'est pas standardisée : elle se construit en fonction du
-            profil de votre entreprise, des pôles retenus et du périmètre précis
-            de chaque mission. Les éventuels hors-forfait sont identifiés et
-            chiffrés dès le cadrage — pour éviter les surprises en cours
-            d'année.
+            Nous partons de votre organisation, de vos outils et de vos
+            priorités pour construire une mission réellement adaptée. Ce qui est
+            pris en charge, le rythme des échanges et les honoraires sont posés
+            clairement dès le départ. Et si votre entreprise change,
+            l’accompagnement peut changer avec elle.
           </p>
         </div>
         <div className="two-col reveal reveal-2">
           <div className="col">
-            <h3>Ce qui est toujours inclus</h3>
+            <h3>Un cadre clair dès le départ</h3>
             <p>
-              La tenue des comptes à périmètre défini, les déclarations fiscales
-              et sociales courantes, les livrables de pilotage selon la
-              fréquence convenue, les points de restitution planifiés, les
-              contacts usuels avec l'administration.
+              Comptabilité, pilotage, paie, juridique, automatisation : nous
+              définissons ensemble les sujets sur lesquels vous avez besoin de
+              nous et le niveau d’accompagnement attendu. Vous savez ce qui est
+              prévu et comment les honoraires sont construits.
             </p>
           </div>
           <div className="col">
-            <h3>Ce qui relève du hors-forfait</h3>
+            <h3>Quand vos besoins évoluent</h3>
             <p>
-              Les missions ponctuelles identifiées au cadrage — opérations de
-              restructuration, dossiers de financement structurants,
-              accompagnement sur des événements exceptionnels. Chiffré à
-              l'avance, jamais facturé au fil de l'eau sans votre accord.
+              Un recrutement, un financement, une nouvelle entité, de nouveaux
+              indicateurs ou une application à mettre en place : nous adaptons
+              la mission lorsque cela devient utile. Nous en parlons avec vous
+              et chiffrons l’intervention avant de commencer.
             </p>
           </div>
         </div>

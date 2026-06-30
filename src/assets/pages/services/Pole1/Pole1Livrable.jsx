@@ -1,79 +1,89 @@
-import LivrableWireframe from "../../../components/LivrableWireframe";
 import useReveal from "../../../components/useReveal";
 
-const Pole1Livrable = () => {
+const Livrables = () => {
   useReveal();
   return (
-    <section className="pole1-livrable">
-      <div className="container">
-        <div className="section-header-livrable1 reveal reveal-1">
-          <span className="eyebrow">Les livrables de pilotage</span>
+    <section className="pole1-livrables">
+      <div className="container livrables-deroulement">
+        <div className="livrables-header reveal reveal-1">
+          <span>Votre suivi</span>
           <h2>
-            Vos information financière, <br />
-            tout au long de l'année.
+            Des chiffres utiles,
+            <br />
+            au bon moment.
           </h2>
           <p>
-            C'est ici que SOCRATEA se distingue. Vous ne recevez pas seulement
-            des comptes annuels : vous recevez, selon la fréquence retenue dans
-            votre contrat, des restitutions construites pour vous aider à
-            décider.
+            SOCRATEA ne se limite pas à établir vos comptes une fois par an.
+            Selon les besoins de votre entreprise, vous disposez de restitutions
+            régulières pour suivre votre activité, comprendre vos résultats et
+            repérer les points qui méritent votre attention.
           </p>
         </div>
-        <div className="livrables-wrap reveal reveal-2">
-          <ul className="livrables-list">
-            <li>
-              <span className="freq">Mensuel</span>
-              <div>
-                <strong>Flash mensuel de pilotage</strong>
+        <div className="livrables-footer reveal reveal-2">
+          <div className="livrables-left">
+            <div className="livrables-clients">
+              <div className="livrables-span">
+                <span>Mensuel</span>
+              </div>
+              <div className="livrables-text">
+                <h3>Flash mensuel et Flash J+5</h3>
                 <p>
-                  Publié dans les cinq jours ouvrés suivant la clôture du mois.
-                  Trésorerie, marge brute, CA cumulé, principales échéances à
-                  venir, points d'attention. Lisible en quelques minutes —
-                  l'essentiel tient sur une page.
+                  Trésorerie, marge, activité, principaux écarts : retrouvez
+                  rapidement les indicateurs essentiels pour savoir où vous en
+                  êtes. Le Flash J+5 peut être mis en place lorsque vos
+                  informations sont transmises de manière complète et dans les
+                  délais convenus. Il est construit avec vous, autour des
+                  indicateurs qui comptent vraiment pour votre entreprise.
                 </p>
               </div>
-            </li>
-            <li>
-              <span className="freq">Trimestriel</span>
-              <div>
-                <strong>Situation comptable arrêtée</strong>
+            </div>
+            <div className="livrables-clients">
+              <div className="livrables-span">
+                <span>Trimestriel</span>
+              </div>
+              <div className="livrables-text">
+                <h3>Situation trimestrielle arrêtée</h3>
                 <p>
-                  Bilan et compte de résultat intermédiaires, arrêtés avec la
-                  rigueur d'une clôture. Une base fiable pour préparer un
-                  financement, négocier avec un partenaire, ou simplement
-                  calibrer vos décisions du trimestre suivant.
+                  Lorsque votre entreprise a besoin d’un point d’étape plus
+                  approfondi, une situation comptable trimestrielle peut être
+                  arrêtée, contrôlée et commentée. Vous mesurez ainsi votre
+                  progression et ajustez vos priorités sur une base plus fiable.
                 </p>
               </div>
-            </li>
-            <li>
-              <span className="freq">Annuel</span>
-              <div>
-                <strong>Bilan commenté</strong>
+            </div>
+            <div className="livrables-clients">
+              <div className="livrables-span">
+                <span>Annuel</span>
+              </div>
+              <div className="livrables-text">
+                <h3>Comptes annuels commentés</h3>
                 <p>
-                  Au-delà de la liasse réglementaire : une note de synthèse qui
-                  analyse l'exercice, met en perspective les évolutions, et
-                  pointe les zones à surveiller pour l'année suivante.
+                  Vos comptes annuels sont établis dans le respect de vos
+                  obligations, mais aussi expliqués. Vous comprenez les
+                  principaux événements de l’exercice, leurs conséquences et les
+                  points à anticiper pour la suite.
                 </p>
               </div>
-            </li>
-            <li>
-              <span className="freq">À la demande</span>
-              <div>
-                <strong>Analyses ponctuelles</strong>
+            </div>
+            <div className="livrables-clients">
+              <div className="livrables-span">
+                <span>À la demande</span>
+              </div>
+              <div className="livrables-text">
+                <h3>Analyses ponctuelles</h3>
                 <p>
-                  Projection de trésorerie à 6 ou 12 mois, rentabilité d'un
-                  projet, préparation de dossier bancaire, simulation d'impact
-                  d'une décision structurante. Sur périmètre défini et chiffré à
-                  l'avance.
+                  Investissement, recrutement, évolution de la marge, besoin de
+                  trésorerie : lorsqu’une décision importante se présente,
+                  SOCRATEA vous aide à mesurer ses conséquences et à comparer
+                  les différentes possibilités.
                 </p>
               </div>
-            </li>
-          </ul>
-          <LivrableWireframe />
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Pole1Livrable;
+export default Livrables;

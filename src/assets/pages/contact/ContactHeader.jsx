@@ -17,10 +17,12 @@ const ContactHeader = () => {
           <span>pour faire connaissance.</span>
         </h1>
         <p className="page-hero-lead p-contact reveal reveal-3">
-          Un premier rendez-vous sans engagement pour échanger sur votre
-          activité, vos attentes et vos contraintes. Si SOCRATEA n'est pas
-          adapté à votre situation, nous vous le dirons clairement — et nous
-          vous orienterons si nous le pouvons.
+          Ce premier échange, sans engagement, nous permet de comprendre votre
+          activité, votre organisation et ce que vous attendez de votre
+          expert-comptable. De votre côté, vous découvrez l’approche SOCRATEA et
+          pouvez vérifier qu’elle correspond à ce que vous recherchez. Si ce
+          n’est pas le cas, nous vous le dirons et nous vous orienterons si nous
+          le pouvons.
         </p>
       </div>
     </section>

@@ -6,49 +6,51 @@ const Pole4Formalites = () => {
     <section className="pole4-formalites">
       <div className="container">
         <div className="section-header-formalites reveal reveal-1">
-          <span className="eyebrow">Les actes juridiques courants</span>
+          <span className="eyebrow">Le suivi juridique courant</span>
           <h2>
-            Les formalités annuelles, <br />
-            traitées dans les délais.
+            Les décisions de votre société <br />
+            formalisées au bon moment.
           </h2>
           <p>
-            Chaque année, votre société doit remplir un certain nombre
-            d'obligations juridiques. Nous les prenons en charge dans le cadre
-            de la mission courante, en coordination avec le dépôt des comptes
-            annuels.
+            Approbation des comptes, affectation du résultat, changement de
+            siège ou de dirigeant : ces décisions doivent être préparées,
+            documentées et déclarées dans les délais. SOCRATEA vous accompagne
+            sur les actes qui relèvent de sa mission et coordonne les autres
+            intervenants lorsque le sujet l’exige.
           </p>
         </div>
         <ul className="feature-list reveal reveal-2">
           <li>
-            <span className="feat-num">i.</span>
+            <span className="feat-num">01</span>
             <div>
               <strong>Approbation des comptes annuels</strong>
               <p>
-                Rédaction du procès-verbal d'assemblée générale, du rapport de
-                gestion le cas échéant, et des documents associés. Dépôt au
-                greffe dans les délais légaux.
+                Nous préparons les décisions d’approbation, les documents
+                associés et les formalités nécessaires. Le calendrier juridique
+                reste ainsi cohérent avec la clôture de l’exercice et les
+                obligations de votre société.
               </p>
             </div>
           </li>
           <li>
-            <span className="feat-num">ii.</span>
+            <span className="feat-num">02</span>
             <div>
-              <strong>Décisions relatives aux résultats</strong>
+              <strong>Affectation du résultat</strong>
               <p>
-                Affectation du résultat, décision de distribution de dividendes,
-                report à nouveau. Formalisées avec les implications fiscales
-                associées.
+                Distribution de dividendes, mise en réserve ou report à nouveau
+                : nous formalisons la décision retenue et vous aidons à en
+                comprendre les principales conséquences comptables et fiscales.
               </p>
             </div>
           </li>
           <li>
-            <span className="feat-num">iii.</span>
+            <span className="feat-num">03</span>
             <div>
-              <strong>Formalités courantes</strong>
+              <strong>Évolutions de la société</strong>
               <p>
-                Changement de siège, modification de gérance, transfert de
-                capital, modifications statutaires simples. Les formalités qui
-                ne nécessitent pas l'intervention d'un avocat.
+                Transfert de siège, changement de dirigeant, modification du
+                capital ou mise à jour des statuts : nous vous accompagnons sur
+                ces opérations, dans le respect de notre champ d’intervention.
               </p>
             </div>
           </li>

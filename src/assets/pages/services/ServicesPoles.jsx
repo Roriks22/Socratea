@@ -1,62 +1,84 @@
 import { Link } from "react-router-dom";
+import useReveal from "../../components/useReveal";
 
-const ServicesPoles = () => {
+const Services = () => {
+  useReveal();
   return (
     <section className="services-poles">
-      <div className="container">
-        <div className="services-grid">
-          <div className="service-card">
-            <div className="service-number">Pôle 01</div>
-            <h3>Comptabilité & pilotage</h3>
-            <p>
-              Le cœur de la mission. Tenue comptable, déclarations fiscales et
-              sociales, clôture annuelle. Et la différence SOCRATEA : des
-              restitutions en cours d'année qui vous donnent une vraie
-              visibilité — flash mensuel, situation trimestrielle, analyses sur
-              mesure.
-            </p>
-            <Link to="/services-comptabilite" className="service-link">
-              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
-            </Link>
+      <div className="container services-deroulement">
+        <div className="services-header reveal reveal-1">
+          <span>Nos expertises</span>
+          <h2>
+            Un accompagnement construit
+            <br />
+            autour de votre entreprise.
+          </h2>
+          <p>
+            La comptabilité constitue le socle de notre intervention. Autour
+            d’elle, SOCRATEA adapte ses interventions à vos besoins : pilotage,
+            organisation des flux, paie ou juridique. Vous bénéficiez ainsi d’un
+            accompagnement cohérent, sans multiplier les interlocuteurs.
+          </p>
+        </div>
+        <div className="services-footer reveal reveal-2">
+          <div className="pole-services">
+            <div className="pole-texte">
+              <span>01</span>
+              <h5>Comptabilité & pilotage</h5>
+              <p>
+                Comptabilité, fiscalité, comptes annuels, suivi de trésorerie,
+                marge, activité : nous sécurisons vos obligations tout en vous
+                donnant des repères utiles pour piloter votre entreprise.
+              </p>
+              <Link to="/services-comptabilite" className="service-link">
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+              </Link>
+            </div>
           </div>
-          <div className="service-card">
-            <div className="service-number">Pôle 02</div>
-            <h3>Automatisation des flux</h3>
-            <p>
-              Nous structurons et simplifions les circuits administratifs qui
-              font perdre du temps : factures fournisseurs, rapprochements
-              bancaires, notes de frais, interfaces avec vos outils métier.
-              L'automatisation est un moyen — jamais une fin.
-            </p>
-            <Link to="/services-automatisation" className="service-link">
-              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
-            </Link>
+
+          <div className="pole-services">
+            <div className="pole-texte">
+              <span>02</span>
+              <h5>Automatisation et structuration des flux</h5>
+              <p>
+                Nous simplifions vos processus, limitons les ressaisies et
+                faisons mieux circuler l’information. Connexion de vos outils,
+                automatisation de tâches ou développement d’applications :
+                chaque solution répond à un besoin concret.
+              </p>
+              <Link to="/services-automatisation" className="service-link">
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+              </Link>
+            </div>
           </div>
-          <div className="service-card">
-            <div className="service-number">Pôle 03</div>
-            <h3>Paie externalisée</h3>
-            <p>
-              La production de votre paie avec une supervision directe du
-              cabinet. Bulletins, déclarations sociales, gestion des événements
-              de paie. Un seul interlocuteur, une seule responsabilité — pas de
-              délégation à un tiers.
-            </p>
-            <Link to="/services-paie" className="service-link">
-              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
-            </Link>
+          <div className="pole-services">
+            <div className="pole-texte">
+              <span>03</span>
+              <h5>Social et paie</h5>
+              <p>
+                Bulletins de paie, déclarations sociales, collecte des variables
+                et respect des échéances : votre gestion sociale s’appuie sur
+                une organisation claire et un suivi régulier.
+              </p>
+              <Link to="/services-paie" className="service-link">
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+              </Link>
+            </div>
           </div>
-          <div className="service-card">
-            <div className="service-number">Pôle 04</div>
-            <h3>Juridique & accompagnement</h3>
-            <p>
-              Les actes juridiques courants annuels — approbation des comptes,
-              formalités — ainsi que les opérations ponctuelles plus
-              structurantes : constitution, cession, restructuration. En
-              coordination avec vos conseils lorsque l'opération le justifie.
-            </p>
-            <Link to="/services-juridique" className="service-link">
-              Voir le pôle en détail<i className="fa-solid fa-arrow-right"></i>
-            </Link>
+          <div className="pole-services">
+            <div className="pole-texte">
+              <span>04</span>
+              <h5>Juridique</h5>
+              <p>
+                Approbation des comptes, secrétariat juridique courant ou
+                opérations ponctuelles : nous vous accompagnons dans les
+                principales étapes de la vie de votre entreprise, en lien avec
+                vos autres conseils lorsque cela est nécessaire.
+              </p>
+              <Link to="/services-juridique" className="service-link">
+                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -64,4 +86,4 @@ const ServicesPoles = () => {
   );
 };
 
-export default ServicesPoles;
+export default Services;

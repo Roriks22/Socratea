@@ -312,11 +312,15 @@ code {
   content: "";
   position: absolute;
   left: -50px;
-  top: 130px;
+  top: 120px;
   width: 4px;
-  height: 145px;
+  height: 110px;
   background: var(--blue);
   border-radius: 999px;
+}
+
+.page-hero-inner h1 {
+  font-size: 3.5rem;
 }
 
 .breadcrumb {
@@ -383,60 +387,45 @@ h1 span {
   font-weight: 300;
 }
 
-@-webkit-keyframes fadeUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(14px);
-            transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(14px);
-            transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 .reveal {
   opacity: 0;
-  -webkit-animation: fadeUp 0.8s ease-out forwards;
-          animation: fadeUp 0.8s ease-out forwards;
+  -webkit-transform: translateY(40px) scale(0.98);
+          transform: translateY(40px) scale(0.98);
+  -webkit-transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), -webkit-transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), -webkit-transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), -webkit-transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.revealed {
+  opacity: 1;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
 }
 
 .reveal-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .reveal-2 {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .reveal-3 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .reveal-4 {
-  -webkit-animation-delay: 0.55s;
-          animation-delay: 0.55s;
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
 }
 
 .reveal-5 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 .header {
@@ -577,15 +566,14 @@ h1 span {
 .hero .hero-inner {
   position: relative;
   text-align: left;
-  margin-top: 2rem;
 }
 .hero .hero-inner::before {
   content: "";
   position: absolute;
   left: -50px;
-  top: 120px;
+  top: 100px;
   width: 4px;
-  height: 200px;
+  height: 120px;
   background: var(--blue);
   border-radius: 999px;
 }
@@ -605,7 +593,6 @@ h1 span {
   font-weight: 500;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 20px;
 }
 .hero .hero-inner .hero-tag .dot {
   width: 6px;
@@ -615,16 +602,30 @@ h1 span {
   -webkit-box-shadow: 0 0 10px var(--lime);
           box-shadow: 0 0 10px var(--lime);
 }
-.hero .hero-inner .reveal-2 {
+.hero .hero-inner h1.reveal-2 {
   color: var(--white);
-  margin-bottom: 32px;
   max-width: 1000px;
-  font-size: clamp(4rem, 7vw, 7rem);
-  line-height: 0.95;
-  letter-spacing: -0.06em;
-  padding-top: 2rem;
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.001em;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero .hero-inner h2 {
+  max-width: 1100px;
+  margin: 0 0 42px;
+  font-size: clamp(2.2rem, 3vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.92);
+}
+.hero .hero-inner h2 span {
+  display: block;
+  color: var(--lime);
   font-weight: 600;
-  white-space: nowrap;
+}
+.hero .hero-inner .hero-lead {
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,66 +633,23 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 15px;
 }
-.hero .hero-inner .reveal-2 span {
-  color: rgba(255, 255, 255, 0.65);
-  font-weight: 300;
-  letter-spacing: -0.02em;
-  font-size: 0.72em;
-  margin-top: 18px;
-}
-.hero .hero-inner .hero-lead {
-  font-size: clamp(1.125rem, 1.6vw, 1.3125rem);
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.82);
-  max-width: 800px;
-  margin-bottom: 48px;
+.hero .hero-inner .hero-lead p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 1rem;
+  line-height: 1.9;
   font-weight: 300;
 }
 .hero .hero-inner .hero-cta-group {
+  margin-top: 2rem;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.hero .hero-inner .hero-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 80px;
-  margin-top: 100px;
-  border-top: 1px solid rgba(128, 128, 128, 0.783);
-  width: 102%;
-}
-.hero .hero-inner .hero-meta .experience {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.hero .hero-inner .hero-meta .experience h5 {
-  margin-top: 2rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: var(--white);
-  font-weight: 500;
-  letter-spacing: -0.05;
-}
-.hero .hero-inner .hero-meta .experience p {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.12em;
-  font-style: normal;
-  white-space: nowrap;
 }
 
 .entreprise-recherche {
@@ -705,8 +663,6 @@ h1 span {
 }
 .entreprise-recherche .home .home-top {
   text-align: left;
-  -webkit-animation: fadeUp;
-          animation: fadeUp;
 }
 .entreprise-recherche .home .home-top span {
   font-size: 0.8125rem;
@@ -757,43 +713,24 @@ h1 span {
   width: 80%;
 }
 .entreprise-recherche .home .home-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 5rem;
 }
 .entreprise-recherche .home .home-bottom .entreprise-concerne {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: white;
   padding: 25px;
   border: 1px solid;
   text-align: left;
   margin-left: 1rem;
   margin: 0 auto;
-  width: 30%;
-  margin-bottom: 2rem;
+  width: auto;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .entreprise-recherche .home .home-bottom .entreprise-concerne:hover {
   background: var(--gray-bg);
-}
-.entreprise-recherche .home .home-bottom .entreprise-concerne h6 {
-  color: rgb(7, 168, 255);
-  font-size: 0.8rem;
-  margin-bottom: 2rem;
-}
-.entreprise-recherche .home .home-bottom .entreprise-concerne h6 span {
-  color: rgba(0, 0, 0, 0.734);
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-  margin-right: 0.5rem;
 }
 .entreprise-recherche .home .home-bottom .entreprise-concerne h5 {
   color: rgba(0, 0, 0, 0.734);
@@ -802,7 +739,7 @@ h1 span {
 }
 .entreprise-recherche .home .home-bottom .entreprise-concerne p {
   color: rgb(104, 114, 129);
-  width: 80%;
+  width: 90%;
   font-size: 0.9rem;
   margin-top: 1rem;
 }
@@ -810,6 +747,7 @@ h1 span {
 .livrables {
   background: white;
   padding-top: 5rem;
+  padding-bottom: 3rem;
   min-height: 90vh;
 }
 .livrables .livrables-deroulement {
@@ -868,34 +806,37 @@ h1 span {
   width: 80%;
 }
 .livrables .livrables-deroulement .livrables-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-top: -2rem;
+}
+.livrables .livrables-deroulement .livrables-footer .livrables-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 800px;
 }
 .livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
   background: white;
   padding: 25px;
   border-top: 1px solid;
   text-align: left;
   width: 80%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-span {
-  width: 60%;
-  height: 30px;
+  width: 600px;
   font-size: 0.8rem;
 }
 .livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-span span {
-  width: 100%;
   color: rgb(7, 168, 255);
   border: 1px solid;
   padding: 5px;
-}
-.livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-text {
-  margin-left: 2rem;
 }
 .livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-text h3 {
   color: rgba(0, 0, 0, 0.734);
@@ -1137,6 +1078,9 @@ h1 span {
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   gap: 20px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .services .services-deroulement .services-footer .pole-services {
   position: relative;
@@ -1156,6 +1100,7 @@ h1 span {
   overflow: hidden;
   text-align: left;
   cursor: pointer;
+  height: 100%;
 }
 .services .services-deroulement .services-footer .pole-services::before {
   content: "";
@@ -1178,25 +1123,41 @@ h1 span {
   width: 100%;
 }
 .services .services-deroulement .services-footer .pole-services .pole-texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 280px;
   padding-left: 30px;
   text-align: left;
   cursor: pointer;
+  margin-top: -1rem;
 }
 .services .services-deroulement .services-footer .pole-services .pole-texte span {
   color: rgb(7, 168, 255);
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: -3rem;
 }
 .services .services-deroulement .services-footer .pole-services .pole-texte h5 {
   color: rgba(0, 0, 0, 0.734);
   font-size: 1.1rem;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
 .services .services-deroulement .services-footer .pole-services .pole-texte p {
+  margin-top: auto;
   color: rgb(104, 114, 129);
   padding-bottom: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .services .services-deroulement .services-footer .pole-services .pole-texte .service-link {
+  margin-top: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1314,11 +1275,13 @@ h1 span {
   gap: 20px;
 }
 .a_propos .apropos .apropos-right .btn-parcours .btn-click-parcours {
+  font-size: 1rem;
   background: transparent;
   border: 1.5px solid gray;
   color: white;
   border-color: rgba(255, 255, 255, 0.35);
   padding: 15px;
+  cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -1333,7 +1296,7 @@ h1 span {
   text-align: center;
   position: relative;
   background: var(--navy);
-  padding: 140px 0px;
+  padding: 80px 0px;
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -1384,19 +1347,13 @@ h1 span {
 .contact .texte-contact .container h2 {
   color: var(--white);
   margin-bottom: 24px;
-  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  font-size: 2.5rem;
   letter-spacing: -0.02em;
   line-height: 1.12;
   font-weight: 500;
 }
-.contact .texte-contact .container h2 span {
-  color: var(--blue);
-  display: block;
-  font-style: italic;
-  font-weight: 400;
-}
 .contact .texte-contact .container p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.78);
   margin-bottom: 40px;
   line-height: 1.65;
@@ -1662,7 +1619,7 @@ h1 span {
   left: 0;
   top: 10px;
   width: 4px;
-  height: 85%;
+  height: 88%;
   background: var(--blue);
   border-radius: 2px;
 }
@@ -1685,21 +1642,21 @@ h1 span {
   border-top: 2px solid var(--navy);
 }
 .methode-etapes .methode-steps .step .step-number {
-  font-size: 3.5rem;
+  font-size: 1rem;
   font-weight: 400;
-  color: var(--navy);
+  color: var(--blue);
   line-height: 1;
   margin-bottom: 20px;
   font-style: italic;
 }
 .methode-etapes .methode-steps .step h3 {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--navy);
 }
 .methode-etapes .methode-steps .step p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   line-height: 1.65;
   color: var(--gray-text);
 }
@@ -1716,7 +1673,6 @@ h1 span {
 .methode-home .section-home h2 {
   position: relative;
   padding-left: 28px;
-  font-size: 2rem;
   color: var(--navy);
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin-top: 2rem;
@@ -1757,21 +1713,21 @@ h1 span {
 .methode-home .process-flow .process-step::before {
   content: counter(proc, decimal-leading-zero);
   font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-style: italic;
   color: var(--blue);
   letter-spacing: 0.1em;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 .methode-home .process-flow .process-step h4 {
-  font-size: 1.0625rem;
+  font-size: 1.25rem;
   color: var(--navy);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 500;
 }
 .methode-home .process-flow .process-step p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.55;
 }
@@ -1961,7 +1917,7 @@ h1 span {
 .aprps-conviction {
   position: relative;
   background: var(--gray-bg);
-  padding: 120px 0;
+  padding: 5rem 0;
 }
 .aprps-conviction .prose {
   max-width: 720px;
@@ -2037,7 +1993,7 @@ h1 span {
 
 .aprps-local {
   position: relative;
-  padding: 120px 0;
+  padding: 5rem 0;
   background: var(--navy);
 }
 .aprps-local .section-local {
@@ -2049,7 +2005,7 @@ h1 span {
   margin-top: 24px;
   margin-bottom: 24px;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  font-weight: 900;
+  letter-spacing: 0.02em;
   line-height: 1.15;
 }
 .aprps-local .section-local h2::before {
@@ -2074,14 +2030,71 @@ h1 span {
   padding: 120px 0;
   background: var(--white);
 }
-.services-poles .services-grid {
+.services-poles .services-deroulement {
+  width: 80%;
+  margin: 0 auto;
+}
+.services-poles .services-deroulement .services-header {
+  text-align: left;
+}
+.services-poles .services-deroulement .services-header span {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  color: rgb(7, 168, 255);
+  text-transform: uppercase;
+}
+.services-poles .services-deroulement .services-header span:before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: rgb(7, 168, 255);
+}
+.services-poles .services-deroulement .services-header h2 {
+  position: relative;
+  padding-left: 28px;
+  font-size: 2rem;
+  color: var(--navy);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-top: 2rem;
+  line-height: 1.15;
+}
+.services-poles .services-deroulement .services-header h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 85%;
+  background: var(--blue);
+  border-radius: 2px;
+}
+.services-poles .services-deroulement .services-header p {
+  color: rgba(0, 0, 0, 0.734);
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding-left: 28px;
+  width: 80%;
+}
+.services-poles .services-deroulement .services-footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 1040px;
   margin: 0 auto;
   gap: 20px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
-.services-poles .services-grid .service-card {
+.services-poles .services-deroulement .services-footer .pole-services {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2099,8 +2112,9 @@ h1 span {
   overflow: hidden;
   text-align: left;
   cursor: pointer;
+  height: 100%;
 }
-.services-poles .services-grid .service-card::before {
+.services-poles .services-deroulement .services-footer .pole-services::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2111,62 +2125,75 @@ h1 span {
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
-.services-poles .services-grid .service-card:hover {
+.services-poles .services-deroulement .services-footer .pole-services:hover {
   border-color: var(--navy);
   border-top-color: rgb(7, 168, 255);
   -webkit-box-shadow: 0 12px 30px rgba(13, 45, 77, 0.08);
           box-shadow: 0 12px 30px rgba(13, 45, 77, 0.08);
 }
-.services-poles .services-grid .service-card:hover::before {
+.services-poles .services-deroulement .services-footer .pole-services:hover::before {
   width: 100%;
 }
-.services-poles .services-grid .service-card .service-number {
-  font-size: 0.875rem;
-  color: var(--blue);
-  letter-spacing: 0.08em;
-  margin-bottom: 20px;
-  font-style: italic;
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 280px;
+  padding-left: 30px;
+  text-align: left;
+  cursor: pointer;
+  margin-top: -1rem;
 }
-.services-poles .services-grid .service-card h3 {
-  margin-bottom: 16px;
-  font-size: 1.375rem;
-  color: var(--navy);
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte span {
+  color: rgb(7, 168, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: -3rem;
 }
-.services-poles .services-grid .service-card p {
-  font-size: 0.9375rem;
-  line-height: 1.65;
-  margin-bottom: 24px;
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte h5 {
+  color: rgba(0, 0, 0, 0.734);
+  font-size: 1.1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte p {
+  margin-top: auto;
+  color: rgb(104, 114, 129);
+  padding-bottom: 1rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: var(--gray-text);
 }
-.services-poles .services-grid .service-card .service-link {
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte .service-link {
+  margin-top: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--navy);
+  color: rgba(0, 0, 0, 0.734);
   font-weight: 600;
-  font-size: 0.875rem;
   letter-spacing: 0.02em;
   gap: 8px;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.services-poles .services-grid .service-card .service-link:hover {
-  color: var(--blue);
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte .service-link:hover {
+  color: rgb(7, 168, 255);
 }
-.services-poles .services-grid .service-card .service-link i {
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte .service-link i {
   font-size: 0.6rem;
   -webkit-transition: -webkit-transform 0.25s ease;
   transition: -webkit-transform 0.25s ease;
   transition: transform 0.25s ease;
   transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
-.services-poles .services-grid .service-card .service-link:hover i {
+.services-poles .services-deroulement .services-footer .pole-services .pole-texte .service-link:hover i {
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
@@ -2213,7 +2240,7 @@ h1 span {
       -ms-flex-align: start;
           align-items: start;
   gap: 80px;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .services-forfait .two-col .col {
@@ -2289,7 +2316,7 @@ h1 span {
 .pole1-home .feature-list li .feat-num {
   font-style: italic;
   color: var(--blue);
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .pole1-home .feature-list li div {
@@ -2298,28 +2325,53 @@ h1 span {
 .pole1-home .feature-list li div strong {
   display: block;
   color: var(--navy);
-  font-size: 1.0625rem;
-  margin-bottom: 6px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 .pole1-home .feature-list li div p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.6;
   margin: 0px;
 }
 
-.pole1-livrable {
-  background: var(--gray-bg);
-  position: relative;
-  padding: 120px 0;
+.pole1-livrables {
+  background: rgb(242, 246, 251);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  min-height: 90vh;
 }
-.pole1-livrable .section-header-livrable1 {
-  max-width: 780px;
-  margin-bottom: 72px;
+.pole1-livrables .livrables-deroulement {
+  width: 80%;
+  margin: 0 auto;
+}
+.pole1-livrables .livrables-deroulement .livrables-header {
   text-align: left;
 }
-.pole1-livrable .section-header-livrable1 h2 {
+.pole1-livrables .livrables-deroulement .livrables-header span {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  color: rgb(7, 168, 255);
+  text-transform: uppercase;
+}
+.pole1-livrables .livrables-deroulement .livrables-header span:before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: rgb(7, 168, 255);
+}
+.pole1-livrables .livrables-deroulement .livrables-header h2 {
   position: relative;
   padding-left: 28px;
   font-size: 2rem;
@@ -2328,84 +2380,64 @@ h1 span {
   margin-top: 2rem;
   line-height: 1.15;
 }
-.pole1-livrable .section-header-livrable1 h2::before {
+.pole1-livrables .livrables-deroulement .livrables-header h2::before {
   content: "";
   position: absolute;
   left: 0;
   top: 10px;
   width: 4px;
-  height: 85%;
+  height: 90%;
   background: var(--blue);
   border-radius: 2px;
 }
-.pole1-livrable .section-header-livrable1 p {
+.pole1-livrables .livrables-deroulement .livrables-header p {
   color: rgba(0, 0, 0, 0.734);
   margin-top: 1rem;
   margin-bottom: 5rem;
   padding-left: 28px;
   width: 80%;
 }
-.pole1-livrable .livrables-wrap {
+.pole1-livrables .livrables-deroulement .livrables-footer {
+  margin-top: -2rem;
+}
+.pole1-livrables .livrables-deroulement .livrables-footer .livrables-left {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 100px;
+  width: 800px;
 }
-.pole1-livrable .livrables-wrap .livrables-list {
-  list-style: none;
-  border-top: 1px solid var(--gray-line);
-}
-.pole1-livrable .livrables-wrap .livrables-list li {
-  display: grid;
-  grid-template-columns: 110px 440px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  gap: 24px;
-  padding: 24px 0px;
-  border-bottom: 1px solid var(--gray-line);
-}
-.pole1-livrable .livrables-wrap .livrables-list li .freq {
-  font-style: italic;
-  font-size: 0.8125rem;
-  color: var(--blue);
-  text-align: center;
-  justify-self: start;
-  padding: 5px 10px;
-  border: 1px solid var(--blue);
-  border-radius: 2px;
-  white-space: nowrap;
-}
-.pole1-livrable .livrables-wrap .livrables-list li div {
-  display: block;
-  unicode-bidi: isolate;
+.pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  background: rgb(242, 246, 251);
+  padding: 25px;
+  border-top: 1px solid;
   text-align: left;
+  width: 80%;
+  margin-bottom: 1rem;
 }
-.pole1-livrable .livrables-wrap .livrables-list li div strong {
-  display: block;
-  color: var(--navy);
-  font-weight: 600;
-  font-size: 1.0625rem;
-  margin-bottom: 6px;
+.pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-span {
+  width: 600px;
+  font-size: 0.8rem;
 }
-.pole1-livrable .livrables-wrap .livrables-list li div p {
-  font-size: 0.9375rem;
-  color: var(--gray-text);
-  line-height: 1.6;
+.pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-span span {
+  color: rgb(7, 168, 255);
+  border: 1px solid;
+  padding: 5px;
 }
-.pole1-livrable .livrables-wrap .dashboard-mockup {
-  width: 530px;
-  max-width: 100%;
-  height: 600px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  padding: 32px;
-  position: relative;
-  -webkit-box-shadow: 0 20px 50px rgba(13, 45, 77, 0.06), 0 40px 80px rgba(13, 45, 77, 0.04);
-          box-shadow: 0 20px 50px rgba(13, 45, 77, 0.06), 0 40px 80px rgba(13, 45, 77, 0.04);
+.pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-text h3 {
+  color: rgba(0, 0, 0, 0.734);
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+.pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-text p {
+  color: rgb(104, 114, 129);
+  font-size: 1rem;
 }
 
 .pole1-objectif {
@@ -2479,7 +2511,7 @@ h1 span {
 
 .pole2-deroulement {
   position: relative;
-  padding: 120px 0;
+  padding: 80px 0;
   background: var(--gray-bg);
 }
 .pole2-deroulement .section-header-pole2 {
@@ -2535,7 +2567,7 @@ h1 span {
 .pole2-deroulement .feature-list li .feat-num {
   font-style: italic;
   color: var(--blue);
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .pole2-deroulement .feature-list li div {
@@ -2546,12 +2578,12 @@ h1 span {
 .pole2-deroulement .feature-list li div strong {
   display: block;
   color: var(--navy);
-  font-size: 1.0625rem;
-  margin-bottom: 6px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 .pole2-deroulement .feature-list li div p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.6;
   margin: 0px;
@@ -2598,7 +2630,7 @@ h1 span {
 }
 .pole2-contexte .pole2-texte {
   text-align: left;
-  max-width: 720px;
+  max-width: 900px;
   display: block;
   unicode-bidi: isolate;
 }
@@ -2608,7 +2640,7 @@ h1 span {
   margin-top: 24px;
   margin-bottom: 24px;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.15;
 }
 .pole2-contexte .pole2-texte h2::before {
@@ -2622,6 +2654,7 @@ h1 span {
   border-radius: 2px;
 }
 .pole2-contexte .pole2-texte p {
+  max-width: 720px;
   font-size: 1.0625rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.8);
@@ -2719,7 +2752,7 @@ h1 span {
 .pole3-couverture .feature-list li .feat-num {
   font-style: italic;
   color: var(--blue);
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .pole3-couverture .feature-list li div {
@@ -2729,12 +2762,12 @@ h1 span {
 .pole3-couverture .feature-list li div strong {
   display: block;
   color: var(--navy);
-  font-size: 1.0625rem;
-  margin-bottom: 6px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 .pole3-couverture .feature-list li div p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.6;
   margin: 0px;
@@ -2821,7 +2854,7 @@ h1 span {
 .pole4-formalites .feature-list li .feat-num {
   font-style: italic;
   color: var(--blue);
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .pole4-formalites .feature-list li div {
@@ -2831,12 +2864,12 @@ h1 span {
 .pole4-formalites .feature-list li div strong {
   display: block;
   color: var(--navy);
-  font-size: 1.0625rem;
-  margin-bottom: 6px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 .pole4-formalites .feature-list li div p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.6;
   margin: 0px;
@@ -2920,12 +2953,23 @@ h1 span {
   color: var(--navy);
   margin-bottom: 16px;
   font-size: 1.5rem;
+  line-height: 1.3;
 }
 .pole4-sens .prose p {
   font-size: 1.0625rem;
   line-height: 1.7;
   margin-bottom: 22px;
   color: var(--gray-text);
+}
+.pole4-sens .prose blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--navy);
+  line-height: 1.5;
+  border-left: 3px solid var(--blue);
+  padding: 8px 24px;
+  margin: 32px 0px;
+  font-weight: 500;
 }
 
 .contact-formulaire {
@@ -3114,12 +3158,20 @@ h1 span {
   font-size: 0.6rem;
   line-height: 1.6;
   color: var(--gray-text);
-  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   margin-bottom: 0;
+  text-transform: initial;
+}
+.contact-formulaire .contact-layout .form-panel form .form-group .checkbox-group label a {
+  color: var(--gray-text);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.contact-formulaire .contact-layout .form-panel form .form-group .checkbox-group label a:hover {
+  color: var(--blue);
 }
 .contact-formulaire .contact-layout .form-panel form .form-message {
   padding: 14px 18px;
@@ -3147,41 +3199,6 @@ h1 span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.contact-formulaire .contact-info {
-  margin-top: 60px;
-  padding-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  border-top: 1px solid var(--gray-line);
-  gap: 32px;
-}
-.contact-formulaire .contact-info .contact-info-block {
-  text-align: left;
-}
-.contact-formulaire .contact-info .contact-info-block .label {
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--blue);
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.contact-formulaire .contact-info .contact-info-block p {
-  font-size: 1.0625rem;
-  color: var(--navy);
-  line-height: 1.5;
-}
-.contact-formulaire .contact-info .contact-info-block p span {
-  color: var(--gray-text);
-  font-size: 0.85rem;
-  font-style: normal;
-}
-.contact-formulaire .contact-info .contact-info-block p a {
-  font-size: 1.0625rem;
-  color: var(--navy);
-  line-height: 1.5;
-  text-decoration: none;
-}
 
 .contact-agenda {
   position: relative;
@@ -3208,6 +3225,9 @@ h1 span {
   margin-bottom: 24px;
   color: var(--navy);
   font-size: 2rem;
+}
+.contact-agenda .section-header-agenda p {
+  text-align: justify;
 }
 .contact-agenda .calendly-inline-widget {
   position: relative;

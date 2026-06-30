@@ -12,14 +12,15 @@ const ServicesHeader = () => {
           <span className="current">Nos services</span>
         </div>
         <h1 className="hero-inner-h1 reveal reveal-2">
-          Quatre pôles, <br />
-          <span>autour de vos besoins.</span>
+          Quatre expertises. <br />
+          <span>Une seule vision de votre entreprise.</span>
         </h1>
         <p className="page-hero-lead p-services reveal reveal-3">
-          La comptabilité et le pilotage constituent le socle ; 4 pôles
-          complémentaires pour vous faire gagner du temps, fiabiliser vos
-          processus et sécuriser vos obligations. Le périmètre retenu pour votre
-          entreprise est défini lors du cadrage initial.
+          La comptabilité et le pilotage forment le socle de notre intervention.
+          Selon vos besoins, SOCRATEA vous accompagne aussi dans l’organisation
+          et l’automatisation de vos flux, la paie et le juridique courant. Vous
+          bénéficiez ainsi d’un accompagnement cohérent, sans multiplier les
+          interlocuteurs ni traiter chaque sujet séparément.
         </p>
       </div>
     </section>

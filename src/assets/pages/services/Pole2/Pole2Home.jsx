@@ -4,21 +4,24 @@ const Pole2Home = () => {
       <div className="container">
         <div className="prose">
           <span className="eyebrow">Notre approche</span>
-          <h3>L'automatisation n'est pas une fin.</h3>
+          <h3>Simplifier ce qui vous ralentit.</h3>
           <p>
-            Automatiser un processus coûte du temps de paramétrage et peut
-            introduire ses propres risques. Chaque chantier doit être justifié
-            par un gain réel : fiabilisation des données, réduction des tâches à
-            faible valeur ajoutée, accélération des circuits de validation.
+            Nous ne partons pas d’un outil, mais de votre façon de travailler.
+            Nous regardons où l’information se perd, où les équipes
+            ressaisissent, où les validations prennent trop de temps. Puis nous
+            définissons avec vous la réponse la plus adaptée : faire évoluer un
+            processus, connecter des outils, automatiser une tâche ou développer
+            une application.
           </p>
           <p>
-            Notre rôle est d'identifier avec vous ce qui mérite d'être
-            automatisé — et ce qu'il vaut mieux laisser en manuel. Pas d'effet
-            de mode, pas de technologie pour la technologie.
+            Chaque solution doit apporter un bénéfice concret : gagner du temps,
+            fiabiliser les données ou rendre le travail plus fluide. Si elle ne
+            simplifie pas réellement votre quotidien, nous ne la mettons pas en
+            place.
           </p>
           <blockquote>
-            La bonne automatisation est celle que personne ne remarque, parce
-            qu'elle libère du temps sans rien casser.
+            La bonne solution n’est pas la plus complexe. C’est celle qui vous
+            simplifie vraiment la vie.
           </blockquote>
         </div>
       </div>

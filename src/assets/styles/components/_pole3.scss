@@ -90,7 +90,7 @@
       .feat-num {
         font-style: italic;
         color: var(--blue);
-        font-size: 1.125rem;
+        font-size: 0.8rem;
         font-weight: 400;
       }
       div {
@@ -100,12 +100,12 @@
         strong {
           display: block;
           color: var(--navy);
-          font-size: 1.0625rem;
-          margin-bottom: 6px;
+          font-size: 1.25rem;
+          margin-bottom: 10px;
           font-weight: 600;
         }
         p {
-          font-size: 0.9375rem;
+          font-size: 1rem;
           color: var(--gray-text);
           line-height: 1.6;
           margin: 0px;

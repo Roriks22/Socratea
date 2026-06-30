@@ -181,9 +181,18 @@
               font-size: 0.6rem;
               line-height: 1.6;
               color: var(--gray-text);
-              cursor: pointer;
               user-select: none;
               margin-bottom: 0;
+              text-transform: initial;
+
+              a {
+                color: var(--gray-text);
+                transition: all 0.2s ease;
+
+                &:hover {
+                  color: var(--blue);
+                }
+              }
             }
           }
         }
@@ -214,43 +223,6 @@
       }
     }
   }
-  .contact-info {
-    margin-top: 60px;
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    border-top: 1px solid var(--gray-line);
-    gap: 32px;
-
-    .contact-info-block {
-      text-align: left;
-      .label {
-        font-size: 0.75rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--blue);
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 1.0625rem;
-        color: var(--navy);
-        line-height: 1.5;
-
-        span {
-          color: var(--gray-text);
-          font-size: 0.85rem;
-          font-style: normal;
-        }
-        a {
-          font-size: 1.0625rem;
-          color: var(--navy);
-          line-height: 1.5;
-          text-decoration: none;
-        }
-      }
-    }
-  }
 }
 .contact-agenda {
   position: relative;
@@ -273,6 +245,9 @@
       margin-bottom: 24px;
       color: var(--navy);
       font-size: 2rem;
+    }
+    p {
+      text-align: justify;
     }
   }
   .calendly-inline-widget {

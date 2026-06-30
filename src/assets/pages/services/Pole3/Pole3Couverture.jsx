@@ -6,60 +6,62 @@ const Pole3Couverture = () => {
     <section className="pole3-couverture">
       <div className="container">
         <div className="section-header-couverture reveal reveal-1">
-          <span className="eyebrow">Ce qui est produit</span>
+          <span className="eyebrow">Votre gestion sociale au quotidien</span>
           <h2>
-            Une couverture complète <br />
-            du cycle de paie.
+            Une paie suivie, <br />
+            mois après mois.
           </h2>
           <p>
-            L'ensemble des productions relève d'un forfait défini par nombre de
-            bulletins et événements de paie habituels. Les cas non prévus
-            initialement sont identifiés dès qu'ils se présentent et chiffrés à
-            part — pas de facturation surprise en fin d'année.
+            La qualité de la paie dépend autant des informations transmises que
+            du traitement qui en est fait. Nous organisons le calendrier,
+            suivons les bulletins et les déclarations, et vous accompagnons
+            lorsque la situation d’un salarié évolue.
           </p>
         </div>
         <ul className="feature-list reveal reveal-2">
           <li>
-            <span className="feat-num">i.</span>
+            <span className="feat-num">01</span>
             <div>
-              <strong>Bulletins de salaire</strong>
+              <strong>Collecter les variables de paie</strong>
               <p>
-                Établissement mensuel, intégration des éléments variables,
-                contrôles de cohérence, distribution sécurisée via coffre-fort
-                numérique.
+                Salaires, primes, absences, congés ou avantages : nous vous
+                indiquons les éléments à transmettre et le calendrier à
+                respecter. Les informations sont centralisées et vérifiées avant
+                leur prise en compte dans la paie.
               </p>
             </div>
           </li>
           <li>
-            <span className="feat-num">ii.</span>
+            <span className="feat-num">02</span>
             <div>
-              <strong>Déclarations sociales</strong>
+              <strong>Établir les bulletins et les déclarations</strong>
               <p>
-                DSN mensuelle, déclarations événementielles, suivi des appels de
-                cotisations. Télétransmission dans les délais, vérification des
-                accusés de réception.
+                Les bulletins sont établis chaque mois et les déclarations
+                sociales sont suivies dans les délais. Les accusés de réception
+                et les éventuelles anomalies font l’objet d’un contrôle.
               </p>
             </div>
           </li>
           <li>
-            <span className="feat-num">iii.</span>
+            <span className="feat-num">03</span>
             <div>
-              <strong>Événements de paie</strong>
+              <strong>Prendre en compte les événements des salariés</strong>
               <p>
-                Entrées, sorties, arrêts maladie, congés, primes
-                exceptionnelles, modifications de contrat. Traités au fil de
-                l'eau, jamais repoussés à la fin du mois.
+                Embauche, arrêt de travail, évolution de rémunération, congé ou
+                départ : nous vous aidons à traiter les événements qui ont un
+                impact sur la paie et les formalités associées.
               </p>
             </div>
           </li>
           <li>
-            <span className="feat-num">iv.</span>
+            <span className="feat-num">04</span>
             <div>
-              <strong>Documents légaux</strong>
+              <strong>Préparer les documents nécessaires</strong>
               <p>
-                Attestations employeur, certificats de travail, reçus pour solde
-                de tout compte, documents de fin de contrat. Établis à la
-                demande, dans les formes requises.
+                Attestations, contrats de travail, certificats de travail et
+                documents de fin de contrat sont préparés lorsqu’ils sont
+                nécessaires. Vous savez ce qui doit être transmis, à quel moment
+                et quelles démarches restent à effectuer.
               </p>
             </div>
           </li>

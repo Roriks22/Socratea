@@ -11,17 +11,19 @@ const Pole4Header = () => {
           <span className="sep">/</span>
           <Link to="/services">Nos services</Link>
           <span className="sep">/</span>
-          <span className="current">Juridique & accompagnement</span>
+          <span className="current">Juridique</span>
         </div>
         <h1 className="pole4 reveal reveal-2">
-          Pôle 04 <br />
-          <span>juridique.</span>
+          Juridique <br />
+          <span>Sécuriser les étapes importantes de votre entreprise.</span>
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          Les formalités annuelles, sans lesquelles une société ne peut
-          fonctionner, et les opérations ponctuelles qui marquent la vie d'une
-          entreprise. Avec le sens des limites : ce qui relève du cabinet, ce
-          qui relève d'un avocat ou d'un notaire.
+          Approbation des comptes, modifications statutaires ou opérations
+          ponctuelles : SOCRATEA vous accompagne dans les démarches juridiques
+          liées à la vie de votre entreprise. Lorsque la situation nécessite une
+          expertise particulière, nous travaillons avec votre avocat, votre
+          notaire ou vos autres conseils pour que chacun intervienne au bon
+          moment.
         </p>
       </div>
     </section>

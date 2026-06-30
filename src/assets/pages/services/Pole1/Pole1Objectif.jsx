@@ -3,24 +3,25 @@ const Pole1Objectif = () => {
     <section className="pole1-objectif">
       <div className="container">
         <div className="prose">
-          <span className="eyebrow">Pour qui ce pôle a du sens</span>
-          <h3>Vous pilotez réellement votre entreprise.</h3>
+          <span className="eyebrow">
+            Quand cet accompagnement prend tout son sens
+          </span>
+          <h3>Quand attendre la clôture ne suffit plus.</h3>
           <p>
-            Ce pôle s'adresse aux dirigeants qui veulent — ou qui doivent —
-            prendre des décisions financières en cours d'année. Préparer un
-            investissement, négocier un découvert, ajuster une politique
-            tarifaire, valider un recrutement : toutes ces décisions gagnent à
-            s'appuyer sur des chiffres à jour plutôt que sur des intuitions.
+            Un recrutement à décider, un investissement à financer, une marge
+            qui se tend ou une nouvelle activité à lancer : dans ces moments,
+            vous avez besoin de comprendre rapidement ce qui se passe dans votre
+            entreprise.
           </p>
           <p>
-            À l'inverse, si votre activité est très stable et que vous vous
-            satisfaites d'un point de situation une fois par an, le rapport
-            valeur-prix de ce pôle ne sera pas optimal pour vous. Nous vous le
-            dirons lors du premier rendez-vous.
+            SOCRATEA vous aide à suivre les bons indicateurs, à repérer les
+            écarts et à mesurer les conséquences de vos décisions. Le niveau de
+            suivi s’adapte à votre activité : pas de tableau de bord pour le
+            principe, seulement des informations qui vous sont réellement
+            utiles.
           </p>
           <blockquote>
-            La comptabilité est un passage obligé. Le pilotage financier est un
-            choix.
+            Vos chiffres doivent vous aider à agir, pas seulement à constater.
           </blockquote>
         </div>
       </div>
