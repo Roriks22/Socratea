@@ -42,6 +42,7 @@ import MentionsHeader from "./assets/pages/MentionsLegales/MentionsHeader";
 import MentionsHome from "./assets/pages/MentionsLegales/MentionsHome";
 import ConfidentialiteHeader from "./assets/pages/confidentialite/ConfidentialiteHeader";
 import ConfidentialiteHome from "./assets/pages/confidentialite/ConfidentialiteHome";
+import AproposSocratea from "./assets/pages/apropos/AproposSocratea";
 
 function App() {
   return (
@@ -127,7 +128,7 @@ function App() {
             <>
               {" "}
               <AproposHeader /> <AproposHome /> <AproposConviction />{" "}
-              <AproposLocal /> <Contact /> <Footer />
+              <AproposSocratea /> <AproposLocal /> <Contact /> <Footer />
             </>
           }
         />

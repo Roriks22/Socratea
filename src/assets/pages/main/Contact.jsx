@@ -14,7 +14,7 @@ const Contact = () => {
           </p>
           <div className="btn_creneau">
             <a
-              href="https://calendly.com/socratea"
+              href="https://www.cal.eu/socratea"
               target="_blank"
               rel="noopener"
               className="btn_reserve"

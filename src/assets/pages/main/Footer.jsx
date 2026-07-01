@@ -46,7 +46,9 @@ const Footer = () => {
             <h4>Services</h4>
             <ul>
               <li>
-                <Link to="/services-comptabilite">Comptabilité & pilotage</Link>
+                <Link to="/services-comptabilite">
+                  Comptabilité et pilotage
+                </Link>
               </li>
               <li>
                 <Link to="/services-automatisation">

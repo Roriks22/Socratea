@@ -1,17 +1,4 @@
-import { useEffect } from "react";
-import { InlineWidget } from "react-calendly";
-
 const ContactAgenda = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
   return (
     <section className="contact-agenda">
       <div className="container">
@@ -24,8 +11,15 @@ const ContactAgenda = () => {
             confirmation du rendez-vous et le lien de connexion par e-mail.
           </p>
         </div>
-        <div className="calendly-inline-widget">
-          <InlineWidget url="https://calendly.com/socratea" />
+        <div className="cal-inline-widget">
+          <iframe
+            src="https://www.cal.eu/socratea"
+            width="100%"
+            height="850"
+            frameBorder="0"
+            style={{ border: "none", borderRadius: "12px" }}
+            title="Prendre rendez-vous"
+          />
         </div>
       </div>
     </section>

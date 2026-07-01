@@ -116,7 +116,7 @@
   }
   .process-flow {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     counter-reset: proc 0;
     gap: 20px;
 

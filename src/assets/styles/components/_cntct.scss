@@ -247,10 +247,11 @@
       font-size: 2rem;
     }
     p {
+      color: var(--gray-text);
       text-align: justify;
     }
   }
-  .calendly-inline-widget {
+  .cal-inline-widget {
     position: relative;
     min-width: 320px;
     height: 700px;
@@ -258,20 +259,9 @@
     border-radius: 4px;
     overflow: hidden;
 
-    span {
-      display: inline-flex;
-      justify-content: center;
-      margin-bottom: 24px;
+    iframe {
+      color: red;
     }
-    h2 {
-      margin-top: 20px;
-      margin-bottom: 24px;
-    }
-  }
-  p {
-    margin-top: 20px;
-    color: var(--navy);
-    font-size: 0.8rem;
   }
 }
 

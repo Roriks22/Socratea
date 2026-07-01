@@ -26,7 +26,7 @@ const Livrables = () => {
                 <span>Mensuel</span>
               </div>
               <div className="livrables-text">
-                <h3>Flash mensuel et Flash J+5</h3>
+                <h3>Flash mensuel J+5</h3>
                 <p>
                   Trésorerie, marge, activité, principaux écarts : retrouvez
                   rapidement les indicateurs essentiels pour savoir où vous en
