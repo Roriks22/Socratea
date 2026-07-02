@@ -5,6 +5,8 @@ const MentionsHome = () => {
     <section className="mentions-home">
       <div className="container">
         <div className="legal-content">
+          <h1>Mentions légales</h1>
+          <span>Dernière mise à jour : 26 Juin 2026</span>
           <h2>Éditeur du site</h2>
           <p>
             Le présent site est édité dans le cadre du projet{" "}

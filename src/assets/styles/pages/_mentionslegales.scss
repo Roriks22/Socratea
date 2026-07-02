@@ -1,6 +1,6 @@
 .mentions-home {
   position: relative;
-  padding: 120px 0;
+  padding-bottom: 40px;
   background: var(--white);
 
   .legal-content {
@@ -8,6 +8,15 @@
     margin: 0 auto;
     padding: 60px 0;
     text-align: left;
+
+    h1 {
+      color: var(--navy);
+      font-size: 2.5rem;
+    }
+
+    span {
+      color: var(--gray-text);
+    }
 
     h2:first-child {
       margin-top: 0;

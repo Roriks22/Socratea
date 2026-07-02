@@ -1,35 +1,111 @@
 .confidentialite-home {
   position: relative;
-  padding: 120px 0;
+  padding-bottom: 40px;
   background: var(--white);
   text-align: left;
 
   .legal-content {
-    max-width: 760px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 60px 0;
 
-    h2:first-child {
-      margin-top: 0;
+    h1 {
+      color: var(--navy);
+      font-size: 2.5rem;
+    }
+    span {
+      display: inline-block;
+      margin-top: 18px;
+      margin-bottom: 40px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(7, 168, 255, 0.08);
+      color: var(--blue);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .premier-h2 {
+      padding-top: 36px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
     }
     h2 {
-      margin-top: 48px;
-      margin-bottom: 16px;
-      font-size: 1.5rem;
+      position: relative;
+      padding-left: 22px;
+      margin-top: 56px;
+      margin-bottom: 18px;
+      font-size: 1.55rem;
       color: var(--navy);
+      font-weight: 600;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 41px;
+        width: 4px;
+        height: 22px;
+        border-radius: 5px;
+        background: var(--blue);
+      }
+    }
+    h2:not(:first-of-type) {
+      padding-top: 36px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
     }
     p {
-      margin-bottom: 16px;
       color: var(--gray-text);
+      line-height: 1.9;
+      max-width: 900px;
+
+      a {
+        color: var(--navy);
+        text-decoration: none;
+        transition: all 0.25s ease;
+
+        &:hover {
+          color: var(--blue);
+        }
+      }
+      strong {
+        color: var(--navy);
+      }
+
+      .strong-tel {
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--blue);
+        }
+      }
+      .titre-strong {
+        font-size: 1.2rem;
+        line-height: 3;
+      }
     }
     ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
+      margin: 20px 0 24px;
 
       li {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 14px;
+        line-height: 1.8;
         color: var(--gray-text);
-        padding: 12px 0;
-        border-bottom: 1px solid var(--gray-line);
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 12px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: var(--blue);
+          box-shadow: 0 0 0 5px rgba(7, 168, 255, 0.12);
+        }
       }
     }
   }

@@ -15,10 +15,10 @@ const ConfidentialiteHeader = () => {
           Politique <br /> <span>de confidentialité.</span>{" "}
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          Le cabinet SOCRATEA est attaché à la protection des données
-          personnelles. La présente politique décrit les traitements mis en
-          œuvre, leurs finalités et les droits dont vous disposez, conformément
-          au RGPD et à la loi Informatique et Libertés.
+          Le cabinet SOCRATEA veille à la protection de vos données
+          personnelles. Cette page vous explique quelles informations peuvent
+          être recueillies sur le site, pourquoi elles sont utilisées, combien
+          de temps elles sont conservées et quels sont vos droits.
         </p>
       </div>
     </section>
