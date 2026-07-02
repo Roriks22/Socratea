@@ -7,7 +7,7 @@ const MentionsHome = () => {
         <div className="legal-content">
           <h1>Mentions légales</h1>
           <span>Dernière mise à jour : 26 Juin 2026</span>
-          <h2>Éditeur du site</h2>
+          <h2 className="premier-h2">Éditeur du site</h2>
           <p>
             Le présent site est édité dans le cadre du projet{" "}
             <strong>SOCRATEA.</strong> <br />
@@ -60,9 +60,33 @@ const MentionsHome = () => {
           </p>
           <h2>Conception et réalisation</h2>
           <p>
-            Conception éditoriale : <strong>SOCRATEA</strong> <br />
-            Conception et développement du site : <strong>RomDevix</strong>
+            Conception éditoriale : <strong>SOCRATEA</strong>
           </p>
+          <div className="developer-card">
+            <h3>Développement du site</h3>
+            <p>
+              Site conçu et développé par : <strong>RomDevix</strong>,
+              développeur Full Stack spécialisé dans la création de sites web
+              modernes, applications web et solutions sur mesure.
+            </p>
+            <div className="developer-links">
+              <a
+                href="https://www.instagram.com/romdevix"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-instagram"></i>Instagram
+              </a>
+              <a
+                href="https://www.tiktok.com/@romdevix"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-tiktok"></i>TikTok
+              </a>
+            </div>
+          </div>
+
           <h2>Hébergement</h2>
           <p>
             Le site est hébergé par : <br />
