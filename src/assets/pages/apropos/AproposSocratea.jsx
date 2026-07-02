@@ -6,7 +6,7 @@ const AproposSocratea = () => {
       <div className="section-socratea">
         <div className="socratea-texte">
           <span className="eyebrow">Derrière SOCRATEA</span>
-          <h2>Au fait, pourquoi SOCRATEA</h2>
+          <h2>Au fait, pourquoi SOCRATEA ?</h2>
           <p>
             Non, SOCRATEA ne vient pas de Socrate. Vous n’aurez pas à préparer
             une dissertation avant de me contacter.
