@@ -1,12 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../../../public/images/socratea-logo.png";
 const Footer = () => {
+  const location = useLocation();
+
+  const handleScrollTop = (path) => {
+    if (location.pathname === path) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <Link to="/">
+            <Link to="/" onClick={() => handleScrollTop("/")}>
               <img src={logo} alt="Logo" />
               SOCRATEA
             </Link>
@@ -32,13 +42,19 @@ const Footer = () => {
             <h4>Cabinet</h4>
             <ul>
               <li>
-                <Link to="/methode">Notre méthode</Link>
+                <Link to="/methode" onClick={() => handleScrollTop("/methode")}>
+                  Notre méthode
+                </Link>
               </li>
               <li>
-                <Link to="/apropos">À propos</Link>
+                <Link to="/apropos" onClick={() => handleScrollTop("/apropos")}>
+                  À propos
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={() => handleScrollTop("/contact")}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -46,20 +62,36 @@ const Footer = () => {
             <h4>Services</h4>
             <ul>
               <li>
-                <Link to="/services-comptabilite">
+                <Link
+                  to="/services-comptabilite"
+                  onClick={() => handleScrollTop("/services-comptabilite")}
+                >
                   Comptabilité et pilotage
                 </Link>
               </li>
               <li>
-                <Link to="/services-automatisation">
+                <Link
+                  to="/services-automatisation"
+                  onClick={() => handleScrollTop("/services-automatisation")}
+                >
                   Automatisation et structuration des flux
                 </Link>
               </li>
               <li>
-                <Link to="/services-paie">Social et paie</Link>
+                <Link
+                  to="/services-paie"
+                  onClick={() => handleScrollTop("/services-paie")}
+                >
+                  Social et paie
+                </Link>
               </li>
               <li>
-                <Link to="/services-juridique">Juridique</Link>
+                <Link
+                  to="/services-juridique"
+                  onClick={() => handleScrollTop("/services-juridique")}
+                >
+                  Juridique
+                </Link>
               </li>
             </ul>
           </div>
@@ -92,8 +124,18 @@ const Footer = () => {
             </span> */}
           </div>
           <div className="footer-legal">
-            <Link to="/mentions-legales">Mentions légales</Link>
-            <Link to="/confidentialite">Politique de confidentialité</Link>
+            <Link
+              to="/mentions-legales"
+              onClick={() => handleScrollTop("/mentions-legales")}
+            >
+              Mentions légales
+            </Link>
+            <Link
+              to="/confidentialite"
+              onClick={() => handleScrollTop("/confidentialite")}
+            >
+              Politique de confidentialité
+            </Link>
             <span>© 2026</span>
           </div>
         </div>
