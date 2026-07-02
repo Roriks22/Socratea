@@ -66,7 +66,7 @@ const ContactFormulaire = () => {
               <li>Quelques mots sur votre activité suffisent</li>
             </ul>
             <a
-              href="https://calendly.com/socratea"
+              href="https://www.cal.eu/socratea"
               target="_blank"
               rel="noopener"
               className="btn btn-primary"
