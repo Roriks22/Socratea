@@ -40,11 +40,7 @@ const Header = () => {
           </p>
         </div>
         <div className="hero-cta-group reveal reveal-5">
-          <a
-            href="https://calendly.com/socratea"
-            target="_blank"
-            rel="noopener"
-          >
+          <a href="https://www.cal.eu/socratea" target="_blank" rel="noopener">
             <button className="btn btn-primary">
               Prendre rendez-vous
               <svg
