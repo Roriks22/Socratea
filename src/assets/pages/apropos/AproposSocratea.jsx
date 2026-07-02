@@ -1,4 +1,4 @@
-import socratea from "../../../../public/images/Socratea1.webp";
+import socratea from "../../../../public/images/Socratea.webp";
 
 const AproposSocratea = () => {
   return (

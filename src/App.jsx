@@ -51,6 +51,7 @@ import CabinetsApproche from "./assets/pages/pourlescabinets/CabinetsApproche";
 import CabinetsDeroulement from "./assets/pages/pourlescabinets/CabinetsDeroulement";
 import CabinetsContact from "./assets/pages/pourlescabinets/CabinetsContact";
 import ServicesCabinets from "./assets/pages/services/ServicesCabinets";
+import QuestionsHeader from "./assets/pages/questionsfrequentes/QuestionsHeader";
 
 function App() {
   return (
@@ -158,6 +159,15 @@ function App() {
               <CabinetsHeader /> <CabinetsHome /> <CabinetsObjectifs />{" "}
               <CabinetsCollaboration /> <CabinetsApproche />{" "}
               <CabinetsDeroulement /> <CabinetsContact /> <Footer />{" "}
+            </>
+          }
+        />
+        <Route
+          path="/questions-frequentes"
+          element={
+            <>
+              {" "}
+              <QuestionsHeader /> <Footer />{" "}
             </>
           }
         />
