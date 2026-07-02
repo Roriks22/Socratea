@@ -56,6 +56,22 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/pour-les-cabinets"
+                  onClick={() => handleScrollTop("/pour-les-cabinets")}
+                >
+                  Pour les cabinets
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/questions-frequentes"
+                  onClick={() => handleScrollTop("/questions-frequentes")}
+                >
+                  Questions fréquentes
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="footer-col">

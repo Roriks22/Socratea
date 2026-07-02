@@ -213,3 +213,44 @@
     }
   }
 }
+.services-cabinets {
+  position: relative;
+  padding: 120px 0;
+  background: var(--white);
+
+  .section-services-cabinets {
+    text-align: left;
+
+    h2 {
+      position: relative;
+      padding-left: 28px;
+      font-size: 2rem;
+      color: var(--navy);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-top: 2rem;
+      line-height: 1.15;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 4px;
+        height: 90%;
+        background: var(--blue);
+        border-radius: 2px;
+      }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.734);
+      margin-top: 1rem;
+      padding-left: 28px;
+      width: 80%;
+    }
+  }
+  .hero-cta-group {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+  }
+}

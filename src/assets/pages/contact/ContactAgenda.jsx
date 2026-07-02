@@ -1,6 +1,6 @@
 const ContactAgenda = () => {
   return (
-    <section className="contact-agenda">
+    <section id="agenda" className="contact-agenda">
       <div className="container">
         <div className="section-header-agenda">
           <span className="eyebrow">Prendre rendez-vous</span>

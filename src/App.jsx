@@ -43,6 +43,14 @@ import MentionsHome from "./assets/pages/MentionsLegales/MentionsHome";
 import ConfidentialiteHeader from "./assets/pages/confidentialite/ConfidentialiteHeader";
 import ConfidentialiteHome from "./assets/pages/confidentialite/ConfidentialiteHome";
 import AproposSocratea from "./assets/pages/apropos/AproposSocratea";
+import CabinetsHeader from "./assets/pages/pourlescabinets/CabinetsHeader";
+import CabinetsHome from "./assets/pages/pourlescabinets/CabinetsHome";
+import CabinetsObjectifs from "./assets/pages/pourlescabinets/CabinetsObjectifs";
+import CabinetsCollaboration from "./assets/pages/pourlescabinets/CabinetsCollaboration";
+import CabinetsApproche from "./assets/pages/pourlescabinets/CabinetsApproche";
+import CabinetsDeroulement from "./assets/pages/pourlescabinets/CabinetsDeroulement";
+import CabinetsContact from "./assets/pages/pourlescabinets/CabinetsContact";
+import ServicesCabinets from "./assets/pages/services/ServicesCabinets";
 
 function App() {
   return (
@@ -79,7 +87,7 @@ function App() {
             <>
               {" "}
               <ServicesHeader /> <ServicesPoles /> <ServicesForfait />{" "}
-              <Contact /> <Footer />
+              <ServicesCabinets /> <Contact /> <Footer />
             </>
           }
         />
@@ -139,6 +147,17 @@ function App() {
               {" "}
               <ContactHeader /> <ContactFormulaire /> <ContactAgenda />{" "}
               <Footer />{" "}
+            </>
+          }
+        />
+        <Route
+          path="/pour-les-cabinets"
+          element={
+            <>
+              {" "}
+              <CabinetsHeader /> <CabinetsHome /> <CabinetsObjectifs />{" "}
+              <CabinetsCollaboration /> <CabinetsApproche />{" "}
+              <CabinetsDeroulement /> <CabinetsContact /> <Footer />{" "}
             </>
           }
         />

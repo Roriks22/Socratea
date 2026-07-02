@@ -23,10 +23,10 @@ const ContactFormulaire = () => {
 
     try {
       await emailJs.sendForm(
-        "service_tp3zq7m",
-        "template_5s51k6w",
+        "service_31cqayr",
+        "template_bugiqjl",
         form.current,
-        "jSSo6WRLCJRaBcHL5"
+        "OQwCs9qYrJTZ853m1"
       );
       setStatus({
         type: "success",
@@ -49,7 +49,7 @@ const ContactFormulaire = () => {
     setLoading(false);
   };
   return (
-    <section className="contact-formulaire">
+    <section id="formulaire" className="contact-formulaire">
       <div className="container">
         <div className="contact-layout">
           <div className="calendly-panel">
@@ -103,11 +103,11 @@ const ContactFormulaire = () => {
                 <input type="text" id="nom" name="nom" required />
               </div>
               <div className="form-group">
-                <label htmlFor="societe">Entreprise *</label>
-                <input type="text" id="societe" name="societe" required />
+                <label htmlFor="entreprise">Entreprise *</label>
+                <input type="text" id="enreprise" name="entreprise" required />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Adresse e-mail *</label>
+                <label htmlFor="adresse e-mail">Adresse e-mail *</label>
                 <input type="email" id="email" name="email" required />
               </div>
               <div className="form-group">
