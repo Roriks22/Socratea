@@ -27,7 +27,7 @@ import Pole2Home from "./assets/pages/services/Pole2/Pole2Home";
 import Pole2Deroulement from "./assets/pages/services/Pole2/Pole2Deroulement";
 import Pole2Objectif from "./assets/pages/services/Pole2/Pole2Objectif";
 import Pole2Contexte from "./assets/pages/services/Pole2/Pole2Contexte";
-import Pole3Header from "./assets/pages/services/Pole3/POle3Header";
+import Pole3Header from "./assets/pages/services/Pole3/Pole3Header";
 import Pole3Positionnement from "./assets/pages/services/Pole3/Pole3Positionnement";
 import Pole3Couverture from "./assets/pages/services/Pole3/Pole3Couverture";
 import Pole3Objectif from "./assets/pages/services/Pole3/Pole3Objectif";
