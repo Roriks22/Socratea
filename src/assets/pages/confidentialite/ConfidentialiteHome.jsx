@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const ConfidentialiteHome = () => {
   return (
     <section className="confidentialite-home">
@@ -12,7 +10,7 @@ const ConfidentialiteHome = () => {
             <strong>SOCRATEA EURL,</strong>représentée par Julien Jacquesson,
             gérant. <br />
             21, rue Charlemagne — 80480 Vers-sur-Selle <br />
-            E-mail : <Link to="mailto:cabinet.socratea@gmail.com"></Link>
+            E-mail : <a to="mailto:cabinet.socratea@gmail.com"></a>
           </p>
           <h2>Données collectées</h2>
           <p>

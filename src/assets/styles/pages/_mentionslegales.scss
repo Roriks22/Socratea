@@ -4,7 +4,7 @@
   background: var(--white);
 
   .legal-content {
-    max-width: 760px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 60px 0;
     text-align: left;
@@ -21,10 +21,18 @@
     p {
       margin-bottom: 16px;
       color: var(--gray-text);
-
+      line-height: 1.8;
       a {
         color: inherit;
         transition: all 0.25s ease;
+
+        &:hover {
+          color: var(--blue);
+        }
+      }
+      .strong-tel {
+        cursor: pointer;
+        transition: all 0.2s ease;
 
         &:hover {
           color: var(--blue);

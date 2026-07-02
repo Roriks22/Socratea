@@ -16,9 +16,8 @@ const MentionsHeader = () => {
           <span>légales.</span>
         </h1>
         <p className="page-hero-lead reveal reveal-3">
-          Les informations légales relatives au cabinet SOCRATEA EURL et au
-          présent site, conformément aux obligations applicables aux
-          experts-comptables inscrits à l'Ordre.
+          Retrouvez ici les informations relatives à l’éditeur, à l’hébergement
+          et au fonctionnement du site SOCRATEA.
         </p>
       </div>
     </section>

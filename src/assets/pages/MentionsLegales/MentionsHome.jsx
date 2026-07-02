@@ -7,66 +7,155 @@ const MentionsHome = () => {
         <div className="legal-content">
           <h2>Éditeur du site</h2>
           <p>
-            <strong>SOCRATEA EURL</strong>- Société d'expertise comptable <br />
-            Société unipersonnelle à responsabilité limitée au capital de{" "}
-            <em>[montant à préciser]</em>€ <br />
-            Siège social : 21, rue Charlemagne — 80480 Vers-sur-Selle (France){" "}
+            Le présent site est édité dans le cadre du projet{" "}
+            <strong>SOCRATEA.</strong> <br />
+            SOCRATEA est une entreprise unipersonnelle à responsabilité limitée
+            au capital de <strong>10 000 euros,</strong> dont le siège social
+            est situé : <br />
+            21, rue Charlemagne <br />
+            80480 Vers-sur-Selle <br />
+            La société est actuellement en cours d’immatriculation au registre
+            du commerce et des sociétés d’Amiens. <br />
+            Numéro SIREN : <em>[en cours d'attribution]</em> <br />
+            Numéro de TVA intracommunautaire : <em>
+              [en cours d'attribution]
+            </em>{" "}
             <br />
-            SIREN : <em>[numéro à préciser]</em> - RSC d'Amiens <br />
-            N° de TVA intracommunautaire : <em>[à précider]</em> <br />
-            Représentant légal : Julien Jacquesson, gérant
+            Téléphone : <strong className="strong-tel">
+              06 86 50 61 29
+            </strong>{" "}
+            <br />
+            Adresse électronique :{" "}
+            <strong>
+              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
+                julien.jacquesson@socratea-expertise.fr
+              </Link>
+            </strong>
           </p>
           <h2>Directeur de la publication</h2>
-          <p>Julien Jacquesson, en qualité de gérant de SOCRATEA EURL.</p>
-          <h2>Contact</h2>
           <p>
-            E-mail :{" "}
-            <Link to="mailto:cabinet.socratea@gmail.com">
-              cabinet.socratea@gmail.com
-            </Link>{" "}
-            <br />
-            Téléphone : <Link to="tel:+33686506129">06 86 50 61 29</Link>
+            Le directeur de la publication est{" "}
+            <strong>Julien Jacquesson</strong>, en qualité de gérant de
+            SOCRATEA.
           </p>
-          <h2>Inscription à l'Ordre</h2>
+          <h2>Activité professionnelle</h2>
           <p>
-            Membre de l'Ordre des Experts-Comptables de la région{" "}
-            <strong>Hauts-de-France</strong>. <br />
-            Inscription au Tableau de l'Ordre —{" "}
-            <em>[numéro d'inscription à préciser]</em>. <br />
+            SOCRATEA exerce une activité d’expertise comptable réglementée en
+            France. <br />
+            La société est inscrite au tableau de l’Ordre des experts-comptables
+            de la région Hauts-de-France sous le numéro
+            <em>[numéro d’inscription de la société]</em>. <br />
+            Julien Jacquesson est inscrit au tableau de l’Ordre des
+            experts-comptables sous le numéro{" "}
+            <em>[numéro d’inscription de la personne physique]</em>. <br />
+            Autorité professionnelle compétente : <br />{" "}
+            <strong>
+              Conseil régional de l’Ordre des experts-comptables des
+              Hauts-de-France <br /> 10, rue de Tenremonde <br /> 59040 Lille
+              Cedex <br />{" "}
+            </strong>
+            <strong className="strong-tel">03 20 15 80 80</strong>
           </p>
-          <h2>Assurance responsabilité civile professionnelle</h2>
+          <h2>Conception et réalisation</h2>
           <p>
-            Le cabinet est assuré au titre de sa responsabilité civile
-            professionnelle conformément aux exigences de la profession, auprès
-            de <em>[compagnie à préciser]</em>. <br />
-            Couverture géographique : France et Union européenne.
+            Conception éditoriale : <strong>SOCRATEA</strong> <br />
+            Conception et développement du site : <strong>RomDevix</strong>
           </p>
-          <h2>Hébergement du site</h2>
+          <h2>Hébergement</h2>
           <p>
-            Le présent site est hébergé par : <br />{" "}
-            <em>[nom de l'hébergeur — à compléter par le prestataire]</em>{" "}
-            <br /> <em>[adresse, téléphone]</em>
+            Le site est hébergé par : <br />
+            <strong>OVH SAS</strong> <br />
+            Société par actions simplifiée au capital de 50 000 000 euros <br />{" "}
+            RCS Lille Métropole 424 761 419 <br />
+            2 rue Kellermann <br />
+            59100 Roubaix <br />
+            France <br />
+            Téléphone :{" "}
+            <strong className="strong-tel">+33 9 72 10 10 07</strong>
           </p>
           <h2>Propriété intellectuelle</h2>
           <p>
-            L'ensemble des contenus présents sur le site (textes, images, charte
-            graphique, logo, structure, code) est la propriété exclusive de
-            SOCRATEA EURL ou de ses ayants droit. Toute reproduction,
-            représentation, modification ou diffusion, totale ou partielle, sans
-            autorisation préalable écrite est interdite.
+            Le site, sa structure et les éléments qui le composent, notamment
+            les textes, photographies, illustrations, éléments graphiques, logos
+            et signes distinctifs, sont protégés par les dispositions
+            applicables à la propriété intellectuelle. <br />
+            Sauf mention contraire, ces éléments appartiennent à SOCRATEA ou
+            sont utilisés avec l’autorisation de leurs titulaires. <br />
+            Toute reproduction, représentation, adaptation, diffusion ou
+            exploitation de tout ou partie du site, par quelque procédé que ce
+            soit, nécessite l’autorisation écrite préalable de SOCRATEA, sauf
+            dans les cas expressément autorisés par la loi.
           </p>
-          <h2>Crédits</h2>
+          <h2>Contenu du site</h2>
           <p>
-            Conception et développement : <em>[prestataire à préciser]</em>.{" "}
-            <br /> Typographies : Fraunces et Manrope, distribuées via Google
-            Fonts (SIL Open Font License).
+            SOCRATEA veille à fournir des informations aussi exactes et à jour
+            que possible. <br />
+            Les contenus publiés sur le site présentent de manière générale le
+            projet, l’approche et les futurs domaines d’intervention de
+            SOCRATEA. Ils ne constituent ni une consultation personnalisée ni un
+            conseil adapté à une situation particulière. <br />
+            La nature et l’étendue de toute future intervention seront définies
+            en fonction de la situation du client et du périmètre de la mission
+            convenue. <br />
+            SOCRATEA peut modifier, compléter ou mettre à jour les contenus du
+            site à tout moment.
           </p>
-          <h2>Loi applicable</h2>
+          <h2>Liens vers des services externes</h2>
           <p>
-            Les présentes mentions légales sont soumises au droit français. Tout
-            litige relatif à leur interprétation ou à leur exécution relève de
-            la compétence exclusive des tribunaux français, sous réserve de
-            l'application impérative d'une autre loi.
+            Le site peut contenir des liens vers des sites, plateformes ou
+            services exploités par des tiers. <br />
+            SOCRATEA ne maîtrise pas le contenu, la disponibilité ou le
+            fonctionnement de ces services externes et ne peut être tenue
+            responsable des informations ou services qu’ils proposent.
+          </p>
+          <h2>Données personnelles</h2>
+          <p>
+            Les modalités de collecte et de traitement des données personnelles,
+            les services tiers utilisés ainsi que les conditions d’exercice de
+            vos droits sont présentés dans la page{" "}
+            <strong>
+              {" "}
+              <Link to="/confidentialite">Politique de confidentialité.</Link>
+            </strong>{" "}
+            <br />
+            Pour toute question relative à vos données personnelles, vous pouvez
+            écrire à : <br />{" "}
+            <strong>
+              {" "}
+              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
+                julien.jacquesson@socratea-expertise.fr
+              </Link>
+            </strong>
+          </p>
+          <h2>Cookies et services tiers</h2>
+          <p>
+            Le site peut utiliser des services tiers nécessaires à son
+            fonctionnement, notamment pour la prise de rendez-vous ou l’envoi de
+            formulaires. <br />
+            Les informations relatives aux cookies, aux traceurs et aux
+            éventuels mécanismes de consentement sont précisées dans la{" "}
+            <strong>
+              {" "}
+              <Link to="/confidentialite">Politique de confidentialité.</Link>
+            </strong>{" "}
+          </p>
+          <h2>Contact</h2>
+          <p>
+            Pour toute question concernant le site ou son contenu : <br />
+            <strong>SOCRATEA</strong> <br />
+            21 rue Charlemagne <br />
+            80480 Vers-sur-Selle <br />
+            Téléphone : <strong className="strong-tel">
+              06 86 50 61 29
+            </strong>{" "}
+            <br />
+            Adresse électronique :{" "}
+            <strong>
+              {" "}
+              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
+                julien.jacquesson@socratea-expertise.fr
+              </Link>
+            </strong>
           </p>
         </div>
       </div>
