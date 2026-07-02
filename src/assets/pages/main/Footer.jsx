@@ -58,14 +58,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/pour-les-cabinets"
-                  onClick={() => handleScrollTop("/pour-les-cabinets")}
-                >
-                  Pour les cabinets
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/questions-frequentes"
                   onClick={() => handleScrollTop("/questions-frequentes")}
                 >
@@ -107,6 +99,14 @@ const Footer = () => {
                   onClick={() => handleScrollTop("/services-juridique")}
                 >
                   Juridique
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/pour-les-cabinets"
+                  onClick={() => handleScrollTop("/pour-les-cabinets")}
+                >
+                  Pour les cabinets
                 </Link>
               </li>
             </ul>
