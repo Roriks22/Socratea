@@ -52,6 +52,9 @@ import CabinetsDeroulement from "./assets/pages/pourlescabinets/CabinetsDeroulem
 import CabinetsContact from "./assets/pages/pourlescabinets/CabinetsContact";
 import ServicesCabinets from "./assets/pages/services/ServicesCabinets";
 import QuestionsHeader from "./assets/pages/questionsfrequentes/QuestionsHeader";
+import FAQHome from "./assets/pages/questionsfrequentes/FAQHome";
+import FAQFotter from "./assets/pages/questionsfrequentes/FAQFotter";
+import ContactFAQ from "./assets/pages/contact/ContactFAQ";
 
 function App() {
   return (
@@ -146,8 +149,8 @@ function App() {
           element={
             <>
               {" "}
-              <ContactHeader /> <ContactFormulaire /> <ContactAgenda />{" "}
-              <Footer />{" "}
+              <ContactHeader /> <ContactFAQ /> <ContactFormulaire />{" "}
+              <ContactAgenda /> <Footer />{" "}
             </>
           }
         />
@@ -167,7 +170,7 @@ function App() {
           element={
             <>
               {" "}
-              <QuestionsHeader /> <Footer />{" "}
+              <QuestionsHeader /> <FAQHome /> <FAQFotter /> <Footer />{" "}
             </>
           }
         />
