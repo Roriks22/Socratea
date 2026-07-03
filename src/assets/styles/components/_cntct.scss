@@ -295,14 +295,39 @@
   }
   .cal-inline-widget {
     position: relative;
-    min-width: 320px;
-    height: 700px;
+    height: auto;
+    max-height: 600px;
     background: var(--white);
     border-radius: 4px;
     overflow: hidden;
 
-    iframe {
-      color: red;
+    .cal-consent-placeholder {
+      h3 {
+        color: var(--navy);
+        padding-top: 20px;
+      }
+      p {
+        color: var(--gray-text);
+        padding: 20px;
+      }
+      button {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .cal-privacy-link {
+        color: var(--gray-text);
+
+        a {
+          color: var(--gray-text);
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: var(--blue);
+          }
+        }
+      }
     }
   }
 }

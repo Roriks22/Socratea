@@ -8,7 +8,6 @@ const ServicesCabinets = () => {
     <section className="services-cabinets">
       <div className="container">
         <div className="section-services-cabinets reveal reveal-1">
-          <span className="eyebrow">Vous êtes expert-comptable ?</span>
           <h2>
             Certaines expertises peuvent aussi être mises au service de votre
             cabinet.

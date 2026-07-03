@@ -124,14 +124,13 @@ const ContactFormulaire = () => {
                   placeholder="Parlez-nous de votre activité et de votre besoin."
                 ></textarea>
                 <div className="checkbox-group">
-                  <input type="checkbox" required id="rgpd" />
                   <label htmlFor="rgpd">
-                    J’accepte que les informations transmises soient utilisées
-                    pour répondre à ma demande. En savoir plus dans notre{" "}
+                    Les informations transmises sont utilisées par SOCRATEA pour
+                    répondre à votre demande. Pour en savoir plus sur leur
+                    utilisation et sur vos droits, consultez notre {""}
                     <Link to="/confidentialite">
                       politique de confidentialité.
                     </Link>
-                    *
                   </label>
                 </div>
               </div>

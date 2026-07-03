@@ -1,4 +1,8 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const ContactAgenda = () => {
+  const [agendaLoaded, setAgendaLoaded] = useState(false);
   return (
     <section id="agenda" className="contact-agenda">
       <div className="container">
@@ -12,14 +16,38 @@ const ContactAgenda = () => {
           </p>
         </div>
         <div className="cal-inline-widget">
-          <iframe
-            src="https://www.cal.eu/socratea"
-            width="100%"
-            height="850"
-            frameBorder="0"
-            style={{ border: "none", borderRadius: "12px" }}
-            title="Prendre rendez-vous"
-          />
+          {!agendaLoaded ? (
+            <div className="cal-consent-placeholder">
+              <h3>Afficher l’agenda</h3>
+              <p>
+                Pour vous proposer les créneaux disponibles, cette page doit
+                charger le service Cal.eu. Ce service peut traiter certaines
+                données techniques et utiliser des cookies nécessaires à son
+                fonctionnement.
+              </p>
+              <button
+                type="button"
+                className="btn-primary"
+                onClick={() => setAgendaLoaded(true)}
+              >
+                Afficher les créneaux disponibles
+              </button>
+              <p className="cal-privacy-link">
+                Pour en savoir plus, consultez notre{" "}
+                <Link to="/confidentialite">politique de confidentialité</Link>.
+              </p>
+            </div>
+          ) : (
+            <iframe
+              src="https://www.cal.eu/socratea"
+              width="100%"
+              height="850"
+              frameBorder="0"
+              loading="lazy"
+              style={{ border: "none", borderRadius: "12px" }}
+              title="Prendre rendez-vous avec SOCRATEA"
+            />
+          )}
         </div>
       </div>
     </section>

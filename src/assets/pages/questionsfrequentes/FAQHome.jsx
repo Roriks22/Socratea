@@ -56,9 +56,9 @@ const faqData = [
     category: "Vos chiffres, vos outils et votre organisation",
     questions: [
       {
-        question: "Qu’est-ce que le Flash mensuel ?",
+        question: "Qu’est-ce que le Flash mensuel J+5 ?",
         answer:
-          "Le premier échange dure environ 30 minutes et se déroule en visioconférence. Il nous permet de comprendre votre activité, votre organisation et vos attentes. \n\nDe votre côté, vous découvrez l’approche SOCRATEA et pouvez vérifier qu’elle vous convient. Ce rendez-vous est sans engagement.",
+          "Le Flash mensuel est une restitution courte qui permet de suivre régulièrement les principaux indicateurs de votre entreprise, sans attendre la clôture annuelle.\n\nSon contenu dépend de votre activité et de vos priorités : trésorerie, chiffre d’affaires, marge, charges, rentabilité ou tout autre indicateur réellement utile à vos décisions.",
       },
       {
         question:
