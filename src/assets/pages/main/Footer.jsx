@@ -82,7 +82,8 @@ const Footer = () => {
                   to="/services-automatisation"
                   onClick={() => handleScrollTop("/services-automatisation")}
                 >
-                  Automatisation et structuration des flux
+                  Automatisation <br />
+                  et structuration des flux
                 </Link>
               </li>
               <li>

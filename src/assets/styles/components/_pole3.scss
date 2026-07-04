@@ -2,7 +2,7 @@
   position: relative;
   padding: 120px 0;
   background: var(--white);
-  text-align: left;
+  text-align: justify;
 
   .prose {
     max-width: 720px;
@@ -39,7 +39,7 @@
   .section-header-couverture {
     max-width: 780px;
     margin-bottom: 72px;
-    text-align: left;
+    text-align: justify;
 
     h2 {
       position: relative;
@@ -70,7 +70,7 @@
     }
   }
   .feature-list {
-    text-align: left;
+    text-align: justify;
     max-width: 840px;
     display: grid;
     grid-template-columns: 1fr;
@@ -122,7 +122,7 @@
   .prose {
     max-width: 720px;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
 
     h3 {
       margin-top: 24px;

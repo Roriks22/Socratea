@@ -4,7 +4,7 @@
   background: var(--white);
 
   .section-header-pole1 {
-    text-align: left;
+    text-align: justify;
     max-width: 1000px;
     margin-bottom: 72px;
 
@@ -59,7 +59,7 @@
         font-weight: 400;
       }
       div {
-        text-align: left;
+        text-align: justify;
 
         strong {
           display: block;
@@ -89,7 +89,7 @@
     margin: 0 auto;
 
     .livrables-header {
-      text-align: left;
+      text-align: justify;
 
       span {
         font-size: 0.8125rem;
@@ -152,7 +152,7 @@
           background: rgb(242, 246, 251);
           padding: 25px;
           border-top: 1px solid;
-          text-align: left;
+          text-align: justify;
           width: 80%;
           margin-bottom: 1rem;
 
@@ -188,7 +188,7 @@
   background: var(--white);
 
   .prose {
-    text-align: left;
+    text-align: justify;
     max-width: 720px;
     margin: 0px auto;
 

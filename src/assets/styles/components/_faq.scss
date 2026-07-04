@@ -6,7 +6,7 @@
   .faq-header {
     max-width: 760px;
     margin-bottom: 80px;
-    text-align: left;
+    text-align: justify;
 
     h2 {
       margin: 24px 0;
@@ -32,7 +32,7 @@
       color: var(--navy);
       font-size: 1.7rem;
       margin-bottom: 36px;
-      text-align: left;
+      text-align: justify;
     }
   }
   .faq-item {
@@ -90,7 +90,7 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
-      text-align: left;
+      text-align: justify;
 
       span {
         color: var(--navy);
@@ -151,7 +151,7 @@
   }
 
   .section-faq-footer {
-    text-align: left;
+    text-align: justify;
     h2 {
       position: relative;
       padding-left: 28px;

@@ -8,7 +8,7 @@
     margin: 0 auto;
 
     .services-header {
-      text-align: left;
+      text-align: justify;
 
       span {
         font-size: 0.8125rem;
@@ -73,7 +73,7 @@
         border-radius: 4px;
         transition: 0.3s;
         overflow: hidden;
-        text-align: left;
+        text-align: justify;
         cursor: pointer;
         height: 100%;
 
@@ -101,7 +101,7 @@
           flex-direction: column;
           height: 280px;
           padding-left: 30px;
-          text-align: left;
+          text-align: justify;
           cursor: pointer;
           margin-top: -1rem;
           span {
@@ -157,7 +157,7 @@
 
   .section-forfait {
     margin-bottom: 40px;
-    text-align: left;
+    text-align: justify;
 
     h2 {
       position: relative;
@@ -196,7 +196,7 @@
     margin: 0 auto;
 
     .col {
-      text-align: left;
+      text-align: justify;
 
       h3 {
         font-size: 1.5rem;
@@ -219,7 +219,7 @@
   background: var(--white);
 
   .section-services-cabinets {
-    text-align: left;
+    text-align: justify;
 
     h2 {
       margin-top: 1rem;

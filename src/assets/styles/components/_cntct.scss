@@ -4,7 +4,7 @@
   background: var(--gray-bg);
 
   .section-contact-faq {
-    text-align: left;
+    text-align: justify;
 
     h2 {
       position: relative;
@@ -57,7 +57,7 @@
       padding: 48px;
       border-radius: 4px;
       overflow: hidden;
-      text-align: left;
+      text-align: justify;
 
       &::before {
         content: "";
@@ -117,7 +117,7 @@
       background: var(--white);
       border: 1px solid var(--gray-line);
       border-radius: 4px;
-      text-align: left;
+      text-align: justify;
 
       h3 {
         font-size: 1.375rem;

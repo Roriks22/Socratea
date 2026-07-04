@@ -6,7 +6,7 @@
   .prose {
     max-width: 720px;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
 
     h3 {
       margin-top: 24px;
@@ -42,7 +42,7 @@
   background: var(--gray-bg);
 
   .section-header-pole2 {
-    text-align: left;
+    text-align: justify;
     max-width: 780px;
     margin-bottom: 72px;
 
@@ -100,7 +100,7 @@
       div {
         display: block;
         unicode-bidi: isolate;
-        text-align: left;
+        text-align: justify;
 
         strong {
           display: block;
@@ -131,7 +131,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: start;
     gap: 80px;
-    text-align: left;
+    text-align: justify;
 
     div {
       display: block;
@@ -159,7 +159,7 @@
   color: var(--white);
 
   .pole2-texte {
-    text-align: left;
+    text-align: justify;
     max-width: 900px;
     display: block;
     unicode-bidi: isolate;

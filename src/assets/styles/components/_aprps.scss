@@ -15,7 +15,7 @@
       }
     }
     .about-content {
-      text-align: left;
+      text-align: justify;
 
       h3 {
         font-size: 2rem;
@@ -56,7 +56,7 @@
   .prose {
     max-width: 720px;
     margin: 0px auto;
-    text-align: left;
+    text-align: justify;
 
     h3 {
       font-size: 2rem;
@@ -96,7 +96,7 @@
 
     .socratea-texte {
       grid-column: 2;
-      text-align: left;
+      text-align: justify;
       width: 860px;
       h2 {
         margin-top: 2rem;
@@ -140,7 +140,7 @@
   background: var(--white);
 
   .section-diplome {
-    text-align: left;
+    text-align: justify;
     max-width: 780px;
     margin-bottom: 72px;
 
@@ -162,7 +162,7 @@
       padding: 32px;
       border-right: 1px solid var(--gray-line);
       border-bottom: 1px solid var(--gray-line);
-      text-align: left;
+      text-align: justify;
 
       .label {
         font-size: 0.75rem;
@@ -187,7 +187,7 @@
   background: var(--navy);
 
   .section-local {
-    text-align: left;
+    text-align: justify;
 
     h2 {
       position: relative;
