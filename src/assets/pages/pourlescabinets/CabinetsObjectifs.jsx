@@ -22,12 +22,11 @@ const CabinetsObjectifs = () => {
             </p>
           </div>
           <div className="process-step">
-            <h4>Produire ou réviser</h4>
+            <h4>Construire un pilotage adapté</h4>
             <p>
-              Selon votre organisation, SOCRATEA prend en charge la production
-              comptable ou s’appuie sur les travaux déjà réalisés dans votre
-              entreprise. L’intervention s’adapte à la mission, au
-              fonctionnement de vos équipes et au cadre comptable applicable.
+              Mettre en place des indicateurs, un tableau de bord ou une analyse
+              permettant à votre client de mieux suivre son activité, ses
+              marges, sa trésorerie ou sa rentabilité.
             </p>
           </div>
           <div className="process-step">

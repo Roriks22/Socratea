@@ -11,7 +11,7 @@ const Pole1Header = () => {
           <span className="sep">/</span>
           <Link to="/services">Nos services</Link>
           <span className="sep">/</span>
-          <span className="current">Comptabilité & pilotage</span>
+          <span className="current">Comptabilité et pilotage</span>
         </div>
         <h1 className="reveal reveal-2">
           Comptabilité et pilotage

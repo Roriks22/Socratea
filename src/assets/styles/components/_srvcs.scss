@@ -215,13 +215,14 @@
 }
 .services-cabinets {
   position: relative;
-  padding: 120px 0;
+  padding: 60px 0;
   background: var(--white);
 
   .section-services-cabinets {
     text-align: left;
 
     h2 {
+      margin-top: 1rem;
       position: relative;
       padding-left: 28px;
       font-size: 2rem;

@@ -8,7 +8,7 @@ const ContactFAQ = () => {
     <section className="contact-faq">
       <div className="container">
         <div className="section-contact-faq reveal reveal-1">
-          <span className="eyebrow">Vous êtes expert-comptable ?</span>
+          <span className="eyebrow">Questions fréquentes</span>
           <h2>Une question avant de nous contacter ?</h2>
           <p>
             Retrouvez les réponses les plus fréquentes sur notre page dédiée.

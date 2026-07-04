@@ -24,7 +24,7 @@ const Services = () => {
           <div className="pole-services">
             <div className="pole-texte">
               <span>01</span>
-              <h5>Comptabilité & pilotage</h5>
+              <h5>Comptabilité et pilotage</h5>
               <p>
                 Comptabilité, fiscalité, comptes annuels, suivi de trésorerie,
                 marge, activité : nous sécurisons vos obligations tout en vous

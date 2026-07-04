@@ -99,30 +99,26 @@ const ContactFormulaire = () => {
               onSubmit={handleSubmit}
             >
               <div className="form-group">
-                <label htmlFor="nom">Nom et prénom*</label>
-                <input type="text" id="nom" name="nom" required />
-              </div>
-              <div className="form-group">
+                <label htmlFor="nom">Nom et prénom *</label>
+                <input id="nom" name="nom" required />
+
                 <label htmlFor="entreprise">Entreprise *</label>
-                <input type="text" id="enreprise" name="entreprise" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="adresse e-mail">Adresse e-mail *</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div className="form-group">
+                <input id="entreprise" name="entreprise" required />
+
+                <label htmlFor="email">Adresse e-mail *</label>
+                <input id="email" name="email" type="email" required />
+
                 <label htmlFor="telephone">Téléphone</label>
-                <input type="tel" id="telephone" name="telephone" />
-              </div>
-              <div className="form-group">
+                <input id="telephone" name="telephone" type="tel" />
                 <label htmlFor="message">Votre message *</label>
                 <textarea
-                  name="message"
                   id="message"
+                  name="message"
                   rows="5"
                   required
                   placeholder="Parlez-nous de votre activité et de votre besoin."
-                ></textarea>
+                  required
+                />
                 <div className="checkbox-group">
                   <label htmlFor="rgpd">
                     Les informations transmises sont utilisées par SOCRATEA pour

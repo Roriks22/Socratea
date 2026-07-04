@@ -29,7 +29,7 @@ const Pole1Home = () => {
                 Selon votre organisation, nous prenons en charge la production
                 comptable, révisons les travaux réalisés par vos équipes ou
                 intervenons sur un périmètre défini. Les contrôles sont adaptés
-                à la mission et aux points de risque de votre entreprise.
+                à la mission et aux zones de risque de votre entreprise.
               </p>
             </div>
           </li>

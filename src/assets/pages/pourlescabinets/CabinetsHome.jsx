@@ -17,7 +17,7 @@ const CabinetsHome = () => {
           <li>
             <span className="feat-num">01</span>
             <div>
-              <strong>Renforcer un dossier client</strong>
+              <strong>Intervenir en appui sur un dossier client</strong>
               <p>
                 Analyse de données, contrôle de gestion, construction
                 d’indicateurs, fiabilisation des flux ou problématique
@@ -39,7 +39,7 @@ const CabinetsHome = () => {
           <li>
             <span className="feat-num">02</span>
             <div>
-              <strong>Faire évoluer l’organisation du cabinet</strong>
+              <strong>Accompagner l’évolution de votre cabinet</strong>
               <p>
                 Ressaisies, contrôles répétitifs, informations dispersées,
                 fichiers difficiles à maintenir ou outils qui communiquent mal :

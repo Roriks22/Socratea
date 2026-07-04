@@ -73,9 +73,10 @@ const Livrables = () => {
                 <h3>Analyses ponctuelles</h3>
                 <p>
                   Investissement, recrutement, évolution de la marge, besoin de
-                  trésorerie : lorsqu’une décision importante se présente,
-                  SOCRATEA vous aide à mesurer ses conséquences et à comparer
-                  les différentes possibilités.
+                  trésorerie, prévisionnel ou comparaison de scénarios :
+                  lorsqu’une décision importante se présente, SOCRATEA vous aide
+                  à en mesurer les conséquences et à choisir l’option la plus
+                  adaptée.
                 </p>
               </div>
             </div>

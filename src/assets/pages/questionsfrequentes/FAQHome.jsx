@@ -23,7 +23,7 @@ const faqData = [
       {
         question: "Comment se passe le premier rendez-vous ?",
         answer:
-          "Le premier échange dure environ 30 minutes et se déroule en visioconférence. Il nous permet de comprendre votre activité, votre organisation et vos attentes. \n\nDe votre côté, vous découvrez l’approche SOCRATEA et pouvez vérifier qu’elle vous convient. Ce rendez-vous est sans engagement.",
+          "Le premier échange dure environ 30 minutes. Il nous permet de comprendre votre activité, votre organisation et vos attentes. \n\nDe votre côté, vous découvrez l’approche SOCRATEA et pouvez vérifier qu’elle vous convient. Ce rendez-vous est sans engagement.",
       },
     ],
   },
@@ -64,7 +64,7 @@ const faqData = [
         question:
           "Le Flash mensuel J+5 est-il proposé à toutes les entreprises ?",
         answer:
-          "Le Flash mensuel J+5 est une restitution courte qui permet de suivre régulièrement les principaux indicateurs de votre entreprise, sans attendre la clôture annuelle. \n\nSon contenu dépend de votre activité et de vos priorités : trésorerie, chiffre d’affaires, marge, charges, rentabilité ou tout autre indicateur réellement utile à vos décisions. \n\nIl permet, lorsque l’organisation le rend possible, de disposer rapidement des principaux indicateurs après la fin du mois. \n\nSa mise en place dépend notamment de la disponibilité des informations, de la qualité des flux, du calendrier convenu et des contrôles nécessaires. Nous vérifions donc avec vous si ce rythme est pertinent et réaliste.",
+          "Oui, le Flash mensuel J+5 peut être proposé à toute entreprise, mais il doit être adapté à son organisation. \n\nL’objectif est de vous fournir, rapidement après la fin du mois, une vision claire de vos principaux indicateurs : trésorerie, chiffre d’affaires, marge, charges, rentabilité ou tout autre élément utile à vos décisions. \n\nLe niveau de détail et le délai de restitution dépendent toutefois de la disponibilité des informations, de la qualité des flux, du calendrier convenu et des contrôles nécessaires. \n\nLorsque l’organisation existante ne permet pas encore un suivi à J+5, nous construisons avec vous une trajectoire progressive pour fiabiliser les données, automatiser ce qui peut l’être et rendre ce rythme réaliste.",
       },
       {
         question: "Devrai-je changer tous mes outils ?",
