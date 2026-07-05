@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 100vh;
+  padding: 150px 0 140px;
   display: flex;
   align-items: center;
   background:
@@ -43,6 +43,7 @@
   }
   .hero-inner {
     position: relative;
+    max-width: 1100px;
     text-align: justify;
     &::before {
       content: "";
