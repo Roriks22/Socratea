@@ -1,9 +1,9 @@
 .a_propos {
-  padding-top: 5rem;
-  min-height: 90vh;
-  padding-bottom: 5rem;
-  position: relative;
-  overflow: hidden;
+  padding: 120px 0;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
 
   &:before {
     content: "";
@@ -32,8 +32,14 @@
 
     .apropos_left {
       margin-right: 4rem;
+
+      @media (max-width: 1024px) {
+        margin-right: 0;
+      }
       img {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
         object-fit: cover;
       }
     }
@@ -66,9 +72,16 @@
       h3 {
         margin-top: 20px;
         margin-bottom: 36px;
-        font-size: 2.2rem;
-        line-height: 40px;
+        font-size: 2rem;
         color: white;
+        text-align: left;
+        width: 100%;
+        max-width: 65ch;
+
+        @media (max-width: 600px) {
+          font-size: 1.5rem;
+          text-align: left;
+        }
       }
       .texte_1 {
         font-size: clamp(1.25rem, 2vw, 1.5rem);
@@ -77,13 +90,32 @@
         color: white;
         line-height: 1.5;
         margin-bottom: 32px;
+        width: 100%;
+        max-width: 65ch;
+
+        @media (max-width: 600px) {
+          font-size: 1rem;
+          text-align: left;
+        }
+        @media (max-width: 500px) {
+          max-width: 400px;
+        }
       }
       .texte_2 {
         color: rgba(255, 255, 255, 0.8);
         font-size: 1.0625rem;
         line-height: 1.7;
         margin-bottom: 20px;
-        max-width: 620px;
+        width: 100%;
+        max-width: 65ch;
+
+        @media (max-width: 600px) {
+          font-size: 1rem;
+          text-align: left;
+        }
+        @media (max-width: 500px) {
+          max-width: 400px;
+        }
       }
       .btn-parcours {
         margin-top: 36px;

@@ -38,96 +38,107 @@ const Footer = () => {
               <i className="fa-brands fa-linkedin"></i>Suivre sur Linkedin
             </Link>
           </div>
-          <div className="footer-col">
-            <h4>Cabinet</h4>
-            <ul>
-              <li>
-                <Link to="/methode" onClick={() => handleScrollTop("/methode")}>
-                  Notre méthode
-                </Link>
-              </li>
-              <li>
-                <Link to="/apropos" onClick={() => handleScrollTop("/apropos")}>
-                  À propos
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" onClick={() => handleScrollTop("/contact")}>
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/questions-frequentes"
-                  onClick={() => handleScrollTop("/questions-frequentes")}
-                >
-                  Questions fréquentes
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>Services</h4>
-            <ul>
-              <li>
-                <Link
-                  to="/services-comptabilite"
-                  onClick={() => handleScrollTop("/services-comptabilite")}
-                >
-                  Comptabilité et pilotage
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services-automatisation"
-                  onClick={() => handleScrollTop("/services-automatisation")}
-                >
-                  Automatisation <br />
-                  et structuration des flux
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services-paie"
-                  onClick={() => handleScrollTop("/services-paie")}
-                >
-                  Social et paie
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services-juridique"
-                  onClick={() => handleScrollTop("/services-juridique")}
-                >
-                  Juridique
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/pour-les-cabinets"
-                  onClick={() => handleScrollTop("/pour-les-cabinets")}
-                >
-                  Pour les cabinets
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                21, rue Charlemagne <br />
-                80480 Vers-sur-Selle
-              </li>
-              <li>
-                <a href="mailto:julien.jacquesson@socratea-expertise.fr">
-                  julien.jacquesson@socratea-expertise.fr
-                </a>
-              </li>
-              <li className="telephone">
-                <a href="tel:+33686506129"></a>06 86 50 61 29
-              </li>
-            </ul>
+          <div className="footer-col-bottom">
+            <div className="footer-col">
+              <h4>Cabinet</h4>
+              <ul>
+                <li>
+                  <Link
+                    to="/methode"
+                    onClick={() => handleScrollTop("/methode")}
+                  >
+                    Notre méthode
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/apropos"
+                    onClick={() => handleScrollTop("/apropos")}
+                  >
+                    À propos
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    onClick={() => handleScrollTop("/contact")}
+                  >
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/questions-frequentes"
+                    onClick={() => handleScrollTop("/questions-frequentes")}
+                  >
+                    Questions fréquentes
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li>
+                  <Link
+                    to="/services-comptabilite"
+                    onClick={() => handleScrollTop("/services-comptabilite")}
+                  >
+                    Comptabilité et pilotage
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services-automatisation"
+                    onClick={() => handleScrollTop("/services-automatisation")}
+                  >
+                    Automatisation <br />
+                    et structuration des flux
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services-paie"
+                    onClick={() => handleScrollTop("/services-paie")}
+                  >
+                    Social et paie
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services-juridique"
+                    onClick={() => handleScrollTop("/services-juridique")}
+                  >
+                    Juridique
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/pour-les-cabinets"
+                    onClick={() => handleScrollTop("/pour-les-cabinets")}
+                  >
+                    Pour les cabinets
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Contact</h4>
+              <ul>
+                <li>
+                  21, rue Charlemagne <br />
+                  80480 Vers-sur-Selle
+                </li>
+                <li>
+                  <a href="mailto:julien.jacquesson@socratea-expertise.fr">
+                    julien.jacquesson@socratea-expertise.fr
+                  </a>
+                </li>
+                <li className="telephone">
+                  <a href="tel:+33686506129"></a>06 86 50 61 29
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="footer-bottom">
@@ -153,7 +164,6 @@ const Footer = () => {
             >
               Politique de confidentialité
             </Link>
-            <span>© 2026</span>
           </div>
         </div>
       </div>
