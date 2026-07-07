@@ -131,30 +131,30 @@ body.lightbox-open {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading);
+  color: var(--navy);
   font-weight: 500;
-  color: var(--text-h);
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  font-variation-settings: "opsz" 96;
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  font-size: clamp(2.5rem, 6.5vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  letter-spacing: -0.02em;
 }
+h3 {
+  font-size: clamp(1.1875rem, 1.8vw, 1.4375rem);
+  font-weight: 500;
+}
+
 p {
   margin: 0;
 }
@@ -383,4 +383,10 @@ h1 {
 }
 .reveal-5 {
   transition-delay: 0.7s;
+}
+
+section {
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
 }

@@ -1,15 +1,26 @@
 .livrables {
   background: #ffff;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  min-height: 90vh;
+  padding: 120px 0;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
 
   .livrables-deroulement {
-    width: 80%;
     margin: 0 auto;
 
     .livrables-header {
       text-align: justify;
+
+      @media (max-width: 600px) {
+        text-align: left;
+      }
 
       span {
         font-size: 0.8125rem;
@@ -21,6 +32,9 @@
         gap: 14px;
         color: rgb(7, 168, 255);
         text-transform: uppercase;
+        @media (max-width: 600px) {
+          padding-left: 15px;
+        }
 
         &:before {
           content: "";
@@ -39,15 +53,24 @@
         margin-top: 2rem;
         line-height: 1.15;
 
+        @media (max-width: 600px) {
+          text-align: left;
+          padding-left: 15px;
+        }
+
         &::before {
           content: "";
           position: absolute;
           left: 0;
           top: 10px;
           width: 4px;
-          height: 90%;
+          height: 85%;
           background: var(--blue);
           border-radius: 2px;
+
+          @media (max-width: 600px) {
+            display: none;
+          }
         }
       }
       p {
@@ -55,16 +78,21 @@
         margin-top: 1rem;
         margin-bottom: 5rem;
         padding-left: 28px;
-        width: 80%;
+        @media (max-width: 600px) {
+          padding-left: 15px;
+        }
       }
     }
     .livrables-footer {
       margin-top: -2rem;
       .livrables-left {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 
-        width: 800px;
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
         .livrables-clients {
           display: flex;
           flex-direction: column;
@@ -73,8 +101,13 @@
           padding: 25px;
           border-top: 1px solid;
           text-align: justify;
-          width: 80%;
           margin-bottom: 1rem;
+
+          @media (max-width: 600px) {
+            text-align: left;
+            padding: 25px 0;
+            padding-left: 15px;
+          }
 
           .livrables-span {
             width: 600px;

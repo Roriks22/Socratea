@@ -148,34 +148,14 @@ body.lightbox-open {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading);
+  color: var(--navy);
   font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-}
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-}
-@media (max-width: 1024px) {
-  h2 {
-    font-size: 20px;
-  }
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  font-variation-settings: "opsz" 96;
 }
 
 p {
@@ -434,6 +414,12 @@ h1 span {
           transition-delay: 0.7s;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 80px 0;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -613,6 +599,17 @@ h1 span {
   background: rgba(255, 255, 255, 0.06);
   color: var(--blue);
 }
+.header .mobile-menu ul li .nav-cta {
+  display: block;
+  padding: 16px 20px;
+  color: var(--navy);
+  background: var(--lime);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
 .header .mobile-menu.open {
   max-height: 500px;
   opacity: 1;
@@ -652,9 +649,41 @@ h1 span {
   letter-spacing: -0.08em;
   pointer-events: none;
 }
+@media (max-width: 1700px) {
+  .hero::after {
+    font-size: 15rem;
+  }
+}
+@media (max-width: 1450px) {
+  .hero::after {
+    font-size: 12rem;
+    right: 100px;
+  }
+}
+@media (max-width: 1100px) {
+  .hero::after {
+    font-size: 10rem;
+    right: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .hero::after {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 630px) {
+  .hero::after {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 400px) {
+  .hero::after {
+    font-size: 4rem;
+    right: 10px;
+  }
+}
 .hero .hero-inner {
   position: relative;
-  max-width: 1100px;
   text-align: justify;
 }
 .hero .hero-inner::before {

@@ -13,9 +13,10 @@ const Header = () => {
           <span>Cabinet d'expertise comptable</span>
         </div>
         <h1 className="reveal reveal-2">
-          Ancré dans l'expertise. <br />
-          En mouvement vers votre avenir. <br />
+          Ancré dans l'expertise.
+          <span>En mouvement vers votre avenir.</span>
         </h1>
+
         <h2 className="reveal reveal-3">
           Vos chiffres ne doivent pas seulement être justes.
           <span>Ils doivent vous faire avancer.</span>

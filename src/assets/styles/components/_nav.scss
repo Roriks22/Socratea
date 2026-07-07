@@ -143,6 +143,16 @@
             color: var(--blue);
           }
         }
+        .nav-cta {
+          display: block;
+          padding: 16px 20px;
+          color: var(--navy);
+          background: var(--lime);
+          font-size: 1rem;
+          font-weight: 500;
+          border-radius: 10px;
+          transition: 0.25s;
+        }
       }
     }
     &.open {
