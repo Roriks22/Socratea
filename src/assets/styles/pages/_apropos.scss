@@ -95,10 +95,6 @@
 
         @media (max-width: 600px) {
           font-size: 1rem;
-          text-align: left;
-        }
-        @media (max-width: 500px) {
-          max-width: 400px;
         }
       }
       .texte_2 {
@@ -108,13 +104,13 @@
         margin-bottom: 20px;
         width: 100%;
         max-width: 65ch;
+        text-align: justify;
 
         @media (max-width: 600px) {
           font-size: 1rem;
-          text-align: left;
         }
-        @media (max-width: 500px) {
-          max-width: 400px;
+        @media (max-width: 320px) {
+          text-align: left;
         }
       }
       .btn-parcours {
@@ -122,6 +118,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+
+        @media (max-width: 1025px) {
+          justify-content: center;
+        }
 
         .btn-click-parcours {
           font-size: 1rem;

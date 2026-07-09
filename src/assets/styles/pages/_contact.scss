@@ -50,6 +50,14 @@
     color: rgba(255, 255, 255, 0.78);
     margin-bottom: 40px;
     line-height: 1.65;
+    text-align: justify;
+    width: 100%;
+    max-width: 870px;
+    margin: 0 auto;
+
+    @media (max-width: 395px) {
+      text-align: center;
+    }
   }
   .btn_creneau {
     margin-top: 36px;

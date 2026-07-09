@@ -12,94 +12,106 @@
     }
   }
 
-  .home {
-    margin: 0 auto;
-    .home-top {
+  .home-top {
+    text-align: justify;
+
+    span {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      color: rgb(7, 168, 255);
+      text-transform: uppercase;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 1px;
+        background: rgb(7, 168, 255);
+      }
+    }
+    h2 {
+      position: relative;
+      padding-left: 28px;
+      color: var(--navy);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-top: 2rem;
+      line-height: 1.15;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--blue);
+        border-radius: 2px;
+      }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.734);
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+      padding-left: 28px;
+      width: 100%;
+      max-width: 72ch;
       text-align: justify;
 
-      @media (max-width: 350px) {
-        padding: 0;
-        padding-left: 20px;
+      @media (max-width: 600px) {
+        padding-left: 15px;
+      }
+      @media (max-width: 370px) {
         text-align: left;
       }
+    }
+  }
+  .home-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 5rem;
 
-      span {
-        font-size: 0.8125rem;
-        font-weight: 600;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        display: inline-flex;
-        align-items: center;
-        gap: 14px;
-        color: rgb(7, 168, 255);
-        text-transform: uppercase;
+    .entreprise-concerne {
+      background: white;
+      padding: 25px;
+      border: 1px solid;
+      text-align: justify;
+      margin-left: 1rem;
+      margin: 0 auto;
+      width: auto;
+      transition: all 0.2s ease;
 
-        &:before {
-          content: "";
-          display: inline-block;
-          width: 28px;
-          height: 1px;
-          background: rgb(7, 168, 255);
-        }
+      &:hover {
+        background: var(--gray-bg);
       }
-      h2 {
-        position: relative;
-        padding-left: 28px;
-        font-size: 2rem;
-        color: var(--navy);
-        font-size: clamp(2.5rem, 4vw, 2.5rem);
-        margin-top: 2rem;
-        line-height: 1.15;
 
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 10px;
-          width: 4px;
-          height: 85%;
-          background: var(--blue);
-          border-radius: 2px;
+      h5 {
+        color: rgba(0, 0, 0, 0.734);
+        font-size: 1rem;
+        width: 90%;
+
+        @media (max-width: 550px) {
+          text-align: left;
         }
       }
       p {
-        color: rgba(0, 0, 0, 0.734);
+        color: rgb(104, 114, 129);
+        width: 90%;
+        font-size: 0.9rem;
         margin-top: 1rem;
-        margin-bottom: 5rem;
-        padding-left: 28px;
-        max-width: 72ch;
-      }
-    }
-    .home-bottom {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-      margin-bottom: 5rem;
 
-      .entreprise-concerne {
-        background: white;
-        padding: 25px;
-        border: 1px solid;
-        text-align: justify;
-        margin-left: 1rem;
-        margin: 0 auto;
-        width: auto;
-        transition: all 0.2s ease;
-
-        &:hover {
-          background: var(--gray-bg);
-        }
-
-        h5 {
-          color: rgba(0, 0, 0, 0.734);
-          font-size: 1rem;
-          width: 90%;
-        }
-        p {
-          color: rgb(104, 114, 129);
-          width: 90%;
-          font-size: 0.9rem;
-          margin-top: 1rem;
+        @media (max-width: 450px) {
+          text-align: left;
         }
       }
     }
