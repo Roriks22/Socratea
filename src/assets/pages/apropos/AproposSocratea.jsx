@@ -4,6 +4,9 @@ const AproposSocratea = () => {
   return (
     <section className="apropos-socratea">
       <div className="section-socratea">
+        <div className="socratea-image">
+          <img src={socratea} alt="Socratea" />
+        </div>
         <div className="socratea-texte">
           <span className="eyebrow">Derrière SOCRATEA</span>
           <h2>Au fait, pourquoi SOCRATEA ?</h2>
@@ -43,7 +46,6 @@ const AproposSocratea = () => {
             Ancré dans l’expertise. En mouvement vers votre avenir.
           </blockquote>
         </div>
-        <img src={socratea} alt="Socratea" />
       </div>
     </section>
   );
