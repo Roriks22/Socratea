@@ -3,8 +3,17 @@
   padding: 120px 0;
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .services-deroulement {
-    width: 80%;
     margin: 0 auto;
 
     .services-header {
@@ -21,6 +30,10 @@
         color: rgb(7, 168, 255);
         text-transform: uppercase;
 
+        @media (max-width: 600px) {
+          padding-left: 15px;
+        }
+
         &:before {
           content: "";
           display: inline-block;
@@ -32,19 +45,24 @@
       h2 {
         position: relative;
         padding-left: 28px;
-        font-size: 2rem;
         color: var(--navy);
         font-size: clamp(1.5rem, 4vw, 2.5rem);
         margin-top: 2rem;
         line-height: 1.15;
 
+        @media (max-width: 600px) {
+          text-align: left;
+          padding-left: 15px;
+        }
+
         &::before {
           content: "";
           position: absolute;
           left: 0;
-          top: 10px;
+          top: 0;
+          bottom: 0;
           width: 4px;
-          height: 85%;
+          height: 100%;
           background: var(--blue);
           border-radius: 2px;
         }
@@ -55,6 +73,12 @@
         margin-bottom: 5rem;
         padding-left: 28px;
         width: 80%;
+
+        @media (max-width: 600px) {
+          width: auto;
+          padding-left: 15px;
+          text-align: left;
+        }
       }
     }
     .services-footer {
@@ -63,6 +87,10 @@
       margin: 0 auto;
       gap: 20px;
       align-items: stretch;
+
+      @media (max-width: 1084px) {
+        grid-template-columns: 1fr;
+      }
       .pole-services {
         position: relative;
         display: flex;
@@ -76,6 +104,11 @@
         text-align: justify;
         cursor: pointer;
         height: 100%;
+
+        @media (max-width: 500px) {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
 
         &::before {
           content: "";
@@ -104,11 +137,25 @@
           text-align: justify;
           cursor: pointer;
           margin-top: -1rem;
+
+          @media (max-width: 1084px) {
+            height: auto;
+          }
+          @media (max-width: 500px) {
+            padding-left: 0;
+          }
+          @media (max-width: 490px) {
+            text-align: left;
+          }
           span {
             color: rgb(7, 168, 255);
             font-size: 1rem;
             font-weight: 600;
             margin-left: -3rem;
+
+            @media (max-width: 500px) {
+              margin-left: 0;
+            }
           }
           h5 {
             color: rgba(0, 0, 0, 0.734);
@@ -155,6 +202,16 @@
   padding: 120px 0;
   background: var(--gray-bg);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-forfait {
     margin-bottom: 40px;
     text-align: justify;
@@ -162,19 +219,24 @@
     h2 {
       position: relative;
       padding-left: 28px;
-      font-size: 2rem;
       color: var(--navy);
       font-size: clamp(1.5rem, 4vw, 2.5rem);
       margin-top: 2rem;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 90%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -185,6 +247,12 @@
       margin-bottom: 5rem;
       padding-left: 28px;
       width: 80%;
+
+      @media (max-width: 600px) {
+        width: auto;
+        padding-left: 15px;
+        text-align: left;
+      }
     }
   }
   .two-col {
@@ -195,8 +263,16 @@
     max-width: 1000px;
     margin: 0 auto;
 
+    @media (max-width: 720px) {
+      grid-template-columns: 1fr;
+    }
+
     .col {
       text-align: justify;
+
+      @media (max-width: 600px) {
+        padding-left: 15px;
+      }
 
       h3 {
         font-size: 1.5rem;
@@ -218,25 +294,41 @@
   padding: 60px 0;
   background: var(--white);
 
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-services-cabinets {
     text-align: justify;
 
+    span {
+      letter-spacing: 0.05em;
+    }
+
     h2 {
-      margin-top: 1rem;
       position: relative;
+      margin-top: 1rem;
       padding-left: 28px;
-      font-size: 2rem;
       color: var(--navy);
       font-size: clamp(1.5rem, 4vw, 2.5rem);
       line-height: 1.15;
+      text-align: left;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
 
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 90%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -246,11 +338,28 @@
       margin-top: 1rem;
       padding-left: 28px;
       width: 80%;
+
+      @media (max-width: 600px) {
+        width: auto;
+        padding-left: 15px;
+        text-align: left;
+      }
     }
   }
   .hero-cta-group {
     margin-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     display: flex;
+
+    @media (max-width: 443px) {
+      width: 100%;
+    }
+
+    button {
+      gap: 30px;
+      @media (max-width: 463px) {
+        font-size: 0.8rem;
+      }
+    }
   }
 }

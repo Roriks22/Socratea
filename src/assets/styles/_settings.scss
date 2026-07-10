@@ -121,6 +121,10 @@ body.lightbox-open {
   display: inline-flex;
   align-items: center;
   gap: 14px;
+
+  @media (max-width: 600px) {
+    padding-left: 15px;
+  }
 }
 .eyebrow::before {
   content: "";
