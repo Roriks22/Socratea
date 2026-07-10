@@ -226,27 +226,28 @@ const ContactFormulaire = () => {
               <li>Un échange sans engagement</li>
               <li>Quelques mots sur votre activité suffisent</li>
             </ul>
-
-            <a
-              href="https://www.cal.eu/socratea"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              Choisir un créneau
-              <svg
-                className="arrow"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                aria-hidden="true"
-                focusable="false"
+            <div className="button-layout">
+              <a
+                href="https://www.cal.eu/socratea"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
               >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </a>
+                Choisir un créneau
+                <svg
+                  className="arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div className="form-panel">
