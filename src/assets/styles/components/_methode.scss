@@ -4,9 +4,19 @@
   background: #ffffff;
   text-align: justify;
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-header {
-    max-width: 80%;
-    margin-bottom: 72px;
+    margin: 0 auto;
+    text-align: left;
 
     .eyebrow {
       &::before {
@@ -25,13 +35,19 @@
       margin-top: 2rem;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 88%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -42,6 +58,12 @@
       margin-bottom: 5rem;
       padding-left: 28px;
       width: 80%;
+
+      @media (max-width: 600px) {
+        width: auto;
+        padding-left: 15px;
+        text-align: left;
+      }
     }
   }
   .methode-steps {
@@ -54,6 +76,15 @@
       position: relative;
       padding-top: 32px;
       border-top: 2px solid var(--navy);
+
+      @media (max-width: 600px) {
+        width: auto;
+        padding-left: 15px;
+      }
+
+      @media (max-width: 400px) {
+        text-align: left;
+      }
 
       .step-number {
         font-size: 1rem;
@@ -81,6 +112,16 @@
   background: var(--gray-bg);
   padding: 120px 0px;
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-home {
     max-width: 780px;
     margin-bottom: 72px;
@@ -94,13 +135,19 @@
       margin-top: 2rem;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -111,6 +158,12 @@
       margin-bottom: 5rem;
       padding-left: 28px;
       width: 80%;
+
+      @media (max-width: 600px) {
+        width: auto;
+        padding-left: 15px;
+        text-align: left;
+      }
     }
   }
   .process-flow {
@@ -118,6 +171,10 @@
     grid-template-columns: 1fr 1fr;
     counter-reset: proc 0;
     gap: 20px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
 
     .process-step {
       position: relative;
@@ -127,6 +184,11 @@
       border: 1px solid var(--gray-line);
       border-radius: 4px;
       text-align: justify;
+
+      @media (max-width: 600px) {
+        padding-left: 15px;
+        text-align: left;
+      }
 
       &::before {
         content: counter(proc, decimal-leading-zero);
@@ -156,6 +218,16 @@
   position: relative;
   padding: 120px 0;
   background: var(--white);
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
 
   .section-engagement {
     max-width: 780px;
