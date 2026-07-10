@@ -9,7 +9,9 @@ const ConfidentialiteHeader = () => {
         <div className="breadcrumb reveal reveal-1">
           <Link to="/">Accueil</Link>
           <span className="sep">/</span>
-          <span className="current">Politique de confidentialité</span>
+          <span className="current politique">
+            Politique de confidentialité
+          </span>
         </div>
         <h1 className="reveal reveal-2">
           Politique <br /> <span>de confidentialité.</span>{" "}

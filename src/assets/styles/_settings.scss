@@ -307,7 +307,6 @@ code {
   padding-left: clamp(12px, 2vw, 32px);
   color: var(--white);
   font-weight: 500;
-  line-height: 1.15;
   letter-spacing: -0.03em;
   font-size: clamp(1.8rem, 6vw, 4rem);
   margin-top: 2rem;
@@ -319,8 +318,8 @@ code {
     content: "";
     position: absolute;
     left: 0;
-    top: 20px;
-    bottom: 20px;
+    top: 30px;
+    bottom: 30px;
     width: 4px;
     background: var(--blue);
     border-radius: 2px;
