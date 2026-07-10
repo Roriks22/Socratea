@@ -101,7 +101,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/a-propos" onClick={() => setMenuOpen(false)}>
+            <Link to="/apropos" onClick={() => setMenuOpen(false)}>
               A propos
             </Link>
           </li>

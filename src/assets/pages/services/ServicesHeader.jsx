@@ -15,13 +15,16 @@ const ServicesHeader = () => {
           Quatre expertises. <br />
           <span>Une seule vision de votre entreprise.</span>
         </h1>
-        <p className="page-hero-lead p-services reveal reveal-3">
-          La comptabilité et le pilotage forment le socle de notre intervention.
-          Selon vos besoins, SOCRATEA vous accompagne aussi dans l’organisation
-          et l’automatisation de vos flux, la paie et le juridique courant. Vous
-          bénéficiez ainsi d’un accompagnement cohérent, sans multiplier les
-          interlocuteurs ni traiter chaque sujet séparément.
-        </p>
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            La comptabilité et le pilotage forment le socle de notre
+            intervention. Selon vos besoins, SOCRATEA vous accompagne aussi dans
+            l’organisation et l’automatisation de vos flux, la paie et le
+            juridique courant. Vous bénéficiez ainsi d’un accompagnement
+            cohérent, sans multiplier les interlocuteurs ni traiter chaque sujet
+            séparément.
+          </p>
+        </div>
       </div>
     </section>
   );

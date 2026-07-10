@@ -17,14 +17,16 @@ const CabinetsHeader = () => {
           Une expertise complémentaire, <br />
           <span>quand vous en avez besoin.</span>
         </h1>
-        <p className="page-hero-lead reveal reveal-3">
-          Un dossier demande un regard particulier ? Votre organisation vous
-          fait perdre du temps ? SOCRATEA peut intervenir à vos côtés sur une
-          mission définie ou concevoir une solution adaptée au fonctionnement de
-          votre cabinet. <br />
-          Vous restez maître de la mission et de la relation avec votre client.
-          Nous apportons la compétence complémentaire.
-        </p>{" "}
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            Un dossier demande un regard particulier ? Votre organisation vous
+            fait perdre du temps ? SOCRATEA peut intervenir à vos côtés sur une
+            mission définie ou concevoir une solution adaptée au fonctionnement
+            de votre cabinet. <br />
+            Vous restez maître de la mission et de la relation avec votre
+            client. Nous apportons la compétence complémentaire.
+          </p>
+        </div>
         <div className="hero-cta-group reveal reveal-4">
           <button
             className="btn btn-primary"

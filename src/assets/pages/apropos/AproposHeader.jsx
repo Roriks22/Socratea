@@ -15,11 +15,13 @@ const AproposHeader = () => {
           Julien Jacquesson <br />
           <span>Expert-comptable</span>
         </h1>
-        <p className="page-hero-lead reveal reveal-3">
-          Quatorze années entre l’audit et la direction financière ont façonné
-          une conviction : des comptes fiables sont indispensables, mais ils
-          prennent toute leur valeur lorsqu’ils aident à décider.
-        </p>
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            Quatorze années entre l’audit et la direction financière ont façonné
+            une conviction : des comptes fiables sont indispensables, mais ils
+            prennent toute leur valeur lorsqu’ils aident à décider.
+          </p>
+        </div>
       </div>
     </section>
   );

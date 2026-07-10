@@ -16,14 +16,16 @@ const ContactHeader = () => {
           <br />
           <span>pour faire connaissance.</span>
         </h1>
-        <p className="page-hero-lead p-contact reveal reveal-3">
-          Ce premier échange, sans engagement, nous permet de comprendre votre
-          activité, votre organisation et ce que vous attendez de votre
-          expert-comptable. De votre côté, vous découvrez l’approche SOCRATEA et
-          pouvez vérifier qu’elle correspond à ce que vous recherchez. Si ce
-          n’est pas le cas, nous vous le dirons et nous vous orienterons si nous
-          le pouvons.
-        </p>
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            Ce premier échange, sans engagement, nous permet de comprendre votre
+            activité, votre organisation et ce que vous attendez de votre
+            expert-comptable. De votre côté, vous découvrez l’approche SOCRATEA
+            et pouvez vérifier qu’elle correspond à ce que vous recherchez. Si
+            ce n’est pas le cas, nous vous le dirons et nous vous orienterons si
+            nous le pouvons.
+          </p>
+        </div>
       </div>
     </section>
   );

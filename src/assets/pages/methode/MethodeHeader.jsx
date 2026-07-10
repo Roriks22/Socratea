@@ -15,12 +15,14 @@ const Methode = () => {
           Une organisation claire, <br />
           <span>dès le départ.</span>
         </h1>
-        <p className="page-hero-lead reveal reveal-3">
-          Dès les premiers échanges, nous mettons en place avec vous une façon
-          de travailler adaptée à votre entreprise : quoi transmettre, quand et
-          par quel canal. Moins d’allers-retours, moins d’informations perdues,
-          et des chiffres fiables quand vous en avez besoin.
-        </p>
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            Dès les premiers échanges, nous mettons en place avec vous une façon
+            de travailler adaptée à votre entreprise : quoi transmettre, quand
+            et par quel canal. Moins d’allers-retours, moins d’informations
+            perdues, et des chiffres fiables quand vous en avez besoin.
+          </p>
+        </div>
       </div>
     </section>
   );

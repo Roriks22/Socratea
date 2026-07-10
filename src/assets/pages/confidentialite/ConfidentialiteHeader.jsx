@@ -14,12 +14,14 @@ const ConfidentialiteHeader = () => {
         <h1 className="reveal reveal-2">
           Politique <br /> <span>de confidentialité.</span>{" "}
         </h1>
-        <p className="page-hero-lead reveal reveal-3">
-          Le cabinet SOCRATEA veille à la protection de vos données
-          personnelles. Cette page vous explique quelles informations peuvent
-          être recueillies sur le site, pourquoi elles sont utilisées, combien
-          de temps elles sont conservées et quels sont vos droits.
-        </p>
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            Le cabinet SOCRATEA veille à la protection de vos données
+            personnelles. Cette page vous explique quelles informations peuvent
+            être recueillies sur le site, pourquoi elles sont utilisées, combien
+            de temps elles sont conservées et quels sont vos droits.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -15,10 +15,12 @@ const MentionsHeader = () => {
           Mentions <br />
           <span>légales.</span>
         </h1>
-        <p className="page-hero-lead reveal reveal-3">
-          Retrouvez ici les informations relatives à l’éditeur, à l’hébergement
-          et au fonctionnement du site SOCRATEA.
-        </p>
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            Retrouvez ici les informations relatives à l’éditeur, à
+            l’hébergement et au fonctionnement du site SOCRATEA.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -225,7 +225,7 @@ code {
 
 .page-hero {
   position: relative;
-  min-height: 75vh;
+  padding: 120px 0 140px;
   display: flex;
   align-items: center;
   background:
@@ -236,6 +236,13 @@ code {
     ),
     linear-gradient(180deg, var(--navy-deep), var(--navy));
   overflow: hidden;
+
+  @media (max-width: 900px) {
+    padding: 120px 0;
+  }
+  @media (max-width: 400px) {
+    padding: 95px 0 60px;
+  }
 }
 
 .page-hero::before {
@@ -258,14 +265,23 @@ code {
 .page-hero::after {
   content: "SOCRATEA";
   position: absolute;
-  right: 200px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 18rem;
+  right: clamp(10px, 8vw, 200px);
+  font-size: clamp(4rem, 15vw, 18rem);
   font-weight: 700;
   color: rgba(255, 255, 255, 0.02);
   letter-spacing: -0.08em;
   pointer-events: none;
+
+  @media (max-width: 350px) {
+    right: 10px;
+  }
+}
+.container {
+  @media (max-width: 350px) {
+    padding: 0;
+  }
 }
 
 .page-hero-inner {
@@ -279,19 +295,45 @@ code {
   }
 }
 
-.page-hero-inner::before {
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: 120px;
-  width: 4px;
-  height: 110px;
-  background: var(--blue);
-  border-radius: 999px;
-}
-
 .page-hero-inner h1 {
-  font-size: 3.5rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  white-space: normal;
+  padding-left: clamp(12px, 2vw, 32px);
+  color: var(--white);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-size: clamp(1.8rem, 6vw, 4rem);
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  overflow-wrap: normal;
+  text-align: left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 4px;
+    background: var(--blue);
+    border-radius: 2px;
+  }
+
+  @media (max-width: 600px) {
+    text-align: left;
+    padding-left: 15px;
+  }
+  span {
+    display: block;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: inherit;
+    white-space: normal;
+  }
 }
 
 .breadcrumb {
@@ -302,6 +344,10 @@ code {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+
+  @media (max-width: 600px) {
+    padding-left: 15px;
+  }
 
   a {
     color: rgba(255, 255, 255, 0.55);
@@ -345,16 +391,25 @@ h1 {
 }
 
 .page-hero-lead {
-  margin-top: 42px;
+  width: 100%;
+  max-width: 72ch;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
-  max-width: 720px;
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1rem;
+    line-height: 1.9;
+    font-weight: 300;
+    text-align: justify;
 
-  font-size: 1.1rem;
-  line-height: 1.85;
-
-  color: rgba(255, 255, 255, 0.75);
-
-  font-weight: 300;
+    @media (max-width: 600px) {
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
 }
 
 .reveal {
