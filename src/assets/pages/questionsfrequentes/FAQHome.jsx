@@ -108,6 +108,7 @@ const FAQHome = () => {
                 >
                   <button
                     className="faq-question"
+                    aria-expanded={open === id}
                     onClick={() => setOpen(open === id ? null : id)}
                   >
                     <span>{item.question}</span>

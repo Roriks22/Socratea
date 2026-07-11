@@ -3,6 +3,12 @@
   padding: 60px 0;
   background: var(--white);
 
+  .container {
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+
   .faq-header {
     max-width: 760px;
     margin-bottom: 80px;
@@ -11,12 +17,23 @@
     h2 {
       margin: 24px 0;
       color: var(--navy);
-      font-size: 2.5rem;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      text-align: left;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
     }
     p {
       color: var(--gray-text);
       line-height: 1.8;
       font-size: 1rem;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
     }
   }
   .faq-category {
@@ -30,9 +47,18 @@
     }
     h3 {
       color: var(--navy);
-      font-size: 1.7rem;
+      font-size: clamp(1.2rem, 4vw, 2rem);
       margin-bottom: 36px;
       text-align: justify;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+    }
+    @media (max-width: 600px) {
+      padding: 24px 15px;
+      border-radius: 14px;
     }
   }
   .faq-item {
@@ -44,6 +70,12 @@
     background: var(--white);
     border: 1px solid rgba(8, 20, 40, 0.06);
     transition: 0.25s;
+
+    @media (max-width: 600px) {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 18px;
+    }
 
     &::before {
       content: "";
@@ -75,10 +107,11 @@
         transform: rotate(180deg);
       }
       .faq-answer {
-        max-height: 400px;
+        max-height: 420px;
         padding-bottom: 28px;
-        opacity: 1;
         padding-top: 20px;
+        opacity: 1;
+        overflow-y: auto;
       }
     }
     .faq-question {
@@ -90,13 +123,22 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
-      text-align: justify;
+      text-align: left;
+
+      @media (max-width: 520px) {
+        flex-direction: column;
+      }
 
       span {
         color: var(--navy);
         font-size: 1.15rem;
         font-weight: 500;
         line-height: 1.4;
+
+        @media (max-width: 600px) {
+          text-align: left;
+          padding-left: 15px;
+        }
       }
       .faq-icon {
         width: 42px;
@@ -106,6 +148,10 @@
         background: rgba(7, 168, 255, 0.08);
         color: var(--blue);
         transition: 0.3s;
+
+        @media (max-width: 520px) {
+          margin-top: 10px;
+        }
       }
     }
     .faq-answer {
@@ -120,9 +166,28 @@
       padding: 0;
       margin: 0 28px;
       border-top: 1px solid rgba(0, 0, 0, 0.05);
+      scrollbar-width: thin;
+      scrollbar-color: var(--blue) transparent;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--blue);
+        border-radius: 10px;
+      }
+
+      @media (max-width: 600px) {
+        padding-left: 15px;
+        text-align: left;
+        height: auto;
+      }
 
       p {
-        max-width: 900px;
+        width: 100%;
         color: var(--gray-text);
         line-height: 1.8;
 
@@ -160,16 +225,22 @@
       font-size: clamp(1.5rem, 4vw, 2.5rem);
       letter-spacing: 0.02em;
       line-height: 1.15;
+      color: var(--white);
 
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 65%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
+      }
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
       }
     }
     p {
@@ -177,6 +248,12 @@
       line-height: 1.7;
       color: rgba(255, 255, 255, 0.8);
       margin-top: 16px;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 1rem;
+      }
     }
   }
   .hero-cta-group {
@@ -185,5 +262,12 @@
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     display: flex;
     gap: 16px;
+
+    @media (max-width: 440px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
   }
 }
