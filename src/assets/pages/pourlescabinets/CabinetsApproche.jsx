@@ -3,7 +3,7 @@ const CabinetsApproche = () => {
     <section className="cabinets-approche">
       <div className="container">
         <div className="section-cabinets-approche">
-          <span className="eyebrow">
+          <span className="eyebrow span-cabinet">
             À la croisée du chiffre, du terrain et des outils
           </span>
           <h2>

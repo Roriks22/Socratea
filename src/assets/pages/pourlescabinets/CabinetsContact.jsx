@@ -8,7 +8,7 @@ const CabinetsContact = () => {
     <section className="cabinets-contact">
       <div className="container">
         <div className="section-cabinets-contact reveal reveal-1">
-          <span className="eyebrow">Collaborer avec SOCRATEA</span>
+          <span className="eyebrow span-cabinet">Collaborer avec SOCRATEA</span>
           <h2>
             Un dossier à renforcer ?
             <br />

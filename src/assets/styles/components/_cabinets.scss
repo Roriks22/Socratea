@@ -3,10 +3,30 @@
   padding: 120px 0;
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-cabinets {
+    width: 100%;
     text-align: justify;
-    max-width: 1000px;
     margin-bottom: 72px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+
+    .span-cabinet {
+      @media (max-width: 362px) {
+        letter-spacing: 0.09em;
+      }
+    }
 
     h2 {
       position: relative;
@@ -17,13 +37,19 @@
       margin-top: 2rem;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -45,6 +71,10 @@
       border-bottom: 1px solid var(--gray-line);
       list-style: none;
 
+      @media (max-width: 600px) {
+        grid-template-columns: 15px 1fr;
+      }
+
       .feat-num {
         font-style: italic;
         color: var(--blue);
@@ -60,11 +90,19 @@
           font-size: 1.25rem;
           margin-bottom: 10px;
           font-weight: 600;
+
+          @media (max-width: 474px) {
+            text-align: left;
+          }
         }
         p {
           font-size: 1rem;
           color: var(--gray-text);
           line-height: 1.8;
+
+          @media (max-width: 414px) {
+            text-align: left;
+          }
         }
       }
     }
@@ -74,10 +112,29 @@
   background: var(--gray-bg);
   padding: 120px 0px;
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-cabinets-objectifs {
+    width: 100%;
     max-width: 780px;
     margin-bottom: 72px;
     text-align: justify;
+
+    @media (max-width: 600px) {
+      margin-bottom: 40px;
+    }
+
+    .span-cabinet {
+      letter-spacing: 0.06em;
+    }
 
     h2 {
       position: relative;
@@ -87,13 +144,19 @@
       margin-top: 2rem;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -105,6 +168,10 @@
     counter-reset: proc 0;
     gap: 20px;
 
+    @media (max-width: 821px) {
+      grid-template-columns: 1fr;
+    }
+
     .process-step {
       position: relative;
       counter-increment: proc 1;
@@ -113,6 +180,11 @@
       border: 1px solid var(--gray-line);
       border-radius: 4px;
       text-align: justify;
+
+      @media (max-width: 600px) {
+        padding-left: 15px;
+        text-align: left;
+      }
 
       &::before {
         content: counter(proc, decimal-leading-zero);
@@ -143,16 +215,32 @@
   padding: 120px 0;
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .prose {
-    max-width: 720px;
     margin: 0 auto;
     text-align: justify;
 
     h3 {
-      margin-top: 24px;
-      margin-bottom: 24px;
+      font-size: clamp(1.2rem, 4vw, 2rem);
+      margin-top: 2rem;
       color: var(--navy);
-      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 65ch;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
 
       span {
         color: var(--blue);
@@ -163,9 +251,16 @@
       line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        padding-left: 15px;
+      }
+      @media (max-width: 400px) {
+        text-align: left;
+      }
     }
     blockquote {
-      font-family: var(--font-display);
       font-style: italic;
       font-size: 1.25rem;
       color: var(--navy);
@@ -173,16 +268,28 @@
       border-left: 3px solid var(--blue);
       padding: 8px 24px;
       margin: 32px 0px;
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        padding-left: 15px;
+      }
     }
   }
 }
 .cabinets-approche {
   position: relative;
-  padding: 5rem 0;
+  padding: 60px 0;
   background: var(--gray-bg);
 
   .section-cabinets-approche {
     text-align: justify;
+
+    .span-cabinet {
+      @media (max-width: 564px) {
+        text-align: left;
+        letter-spacing: 0.06em;
+      }
+    }
 
     h2 {
       position: relative;
@@ -194,13 +301,19 @@
       letter-spacing: 0.02em;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -210,6 +323,13 @@
       line-height: 1.7;
       color: var(--gray-text);
       margin-top: 16px;
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        width: auto;
+        padding-left: 15px;
+        text-align: left;
+      }
     }
   }
 }
@@ -218,10 +338,31 @@
   padding: 120px 0;
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-cabinets-deroulement {
     text-align: justify;
+    width: 100%;
     max-width: 1000px;
     margin-bottom: 72px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+
+    .span-cabinet {
+      @media (max-width: 300px) {
+        letter-spacing: 0.09em;
+      }
+    }
 
     h2 {
       position: relative;
@@ -232,13 +373,19 @@
       margin-top: 2rem;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -260,6 +407,10 @@
       border-bottom: 1px solid var(--gray-line);
       list-style: none;
 
+      @media (max-width: 600px) {
+        grid-template-columns: 15px 1fr;
+      }
+
       .feat-num {
         font-style: italic;
         color: var(--blue);
@@ -275,11 +426,19 @@
           font-size: 1.25rem;
           margin-bottom: 10px;
           font-weight: 600;
+
+          @media (max-width: 364px) {
+            text-align: left;
+          }
         }
         p {
           font-size: 1rem;
           color: var(--gray-text);
           line-height: 1.8;
+
+          @media (max-width: 401px) {
+            text-align: left;
+          }
         }
       }
     }
@@ -287,7 +446,7 @@
 }
 .cabinets-contact {
   position: relative;
-  padding: 5rem 0;
+  padding: 60px 0;
   background: var(--navy);
 
   &::before {
@@ -304,8 +463,15 @@
 
   .section-cabinets-contact {
     text-align: justify;
+
+    .span-cabinet {
+      @media (max-width: 355px) {
+        letter-spacing: 0.09em;
+      }
+    }
     h2 {
       position: relative;
+      color: var(--white);
       padding-left: 28px;
       margin-top: 24px;
       margin-bottom: 24px;
@@ -313,13 +479,19 @@
       letter-spacing: 0.02em;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -329,6 +501,12 @@
       line-height: 1.7;
       color: rgba(255, 255, 255, 0.8);
       margin-top: 16px;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 1rem;
+      }
     }
   }
   .hero-cta-group {
@@ -337,5 +515,10 @@
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     display: flex;
     gap: 16px;
+
+    @media (max-width: 440px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

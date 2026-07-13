@@ -7,7 +7,9 @@ const CabinetsHome = () => {
     <section className="cabinets-home">
       <div className="container">
         <div className="section-cabinets reveal reveal-1">
-          <span className="eyebrow">Deux façons de collaborer</span>
+          <span className="eyebrow span-cabinet">
+            Deux façons de collaborer
+          </span>
           <h2>
             Sur vos dossiers, <br />
             ou dans votre cabinet.

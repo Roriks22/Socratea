@@ -7,7 +7,7 @@ const CabinetsDeroulement = () => {
     <section className="cabinets-deroulement">
       <div className="container">
         <div className="section-cabinets-deroulement reveal reveal-1">
-          <span className="eyebrow">Une collaboration simple</span>
+          <span className="eyebrow span-cabinet">Une collaboration simple</span>
           <h2>
             Un besoin défini. Un cadre clair. <br />
             Une intervention ciblée.

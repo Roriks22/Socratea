@@ -6,7 +6,9 @@ const CabinetsObjectifs = () => {
     <section className="cabinets-objectifs">
       <div className="container">
         <div className="section-cabinets-objectifs reveal reveal-1">
-          <span className="eyebrow">Quelques exemples concrets</span>
+          <span className="eyebrow span-cabinet">
+            Quelques exemples concrets
+          </span>
           <h2>
             Des besoins précis, <br />
             des réponses adaptées.
