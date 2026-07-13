@@ -7,7 +7,9 @@ const Pole1Home = () => {
     <section className="pole1-home">
       <div className="container">
         <div className="section-header-pole1 reveal reveal-1">
-          <span className="eyebrow">Le socle comptable et fiscal</span>
+          <span className="eyebrow span-pole1">
+            Le socle comptable et fiscal
+          </span>
           <h2>
             Une comptabilité fiable, <br />
             adaptée à votre organisation.

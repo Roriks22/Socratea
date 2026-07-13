@@ -3338,32 +3338,73 @@ h1 span {
   }
 }
 
+@media (max-width: 494px) {
+  .span-services {
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+
+@media (max-width: 494px) {
+  .current-compta {
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+
 .pole1-home {
   position: relative;
   padding: 120px 0;
   background: var(--white);
 }
+@media (max-width: 768px) {
+  .pole1-home {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 350px) {
+  .pole1-home .container {
+    padding: 0;
+  }
+}
 .pole1-home .section-header-pole1 {
   text-align: justify;
+  width: 100%;
   max-width: 1000px;
   margin-bottom: 72px;
+}
+@media (max-width: 600px) {
+  .pole1-home .section-header-pole1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 378px) {
+  .pole1-home .section-header-pole1 .span-pole1 {
+    letter-spacing: 0.07em;
+  }
 }
 .pole1-home .section-header-pole1 h2 {
   position: relative;
   padding-left: 28px;
-  font-size: 2rem;
   color: var(--navy);
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin-top: 2rem;
   line-height: 1.15;
 }
+@media (max-width: 600px) {
+  .pole1-home .section-header-pole1 h2 {
+    text-align: left;
+    padding-left: 15px;
+  }
+}
 .pole1-home .section-header-pole1 h2::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 0;
+  bottom: 0;
   width: 4px;
-  height: 85%;
+  height: 100%;
   background: var(--blue);
   border-radius: 2px;
 }
@@ -3372,7 +3413,12 @@ h1 span {
   margin-top: 1rem;
   margin-bottom: 5rem;
   padding-left: 28px;
-  width: 80%;
+}
+@media (max-width: 600px) {
+  .pole1-home .section-header-pole1 p {
+    text-align: left;
+    padding-left: 15px;
+  }
 }
 .pole1-home .feature-list {
   display: grid;
@@ -3392,6 +3438,11 @@ h1 span {
   border-bottom: 1px solid var(--gray-line);
   list-style: none;
 }
+@media (max-width: 600px) {
+  .pole1-home .feature-list li {
+    grid-template-columns: 15px 1fr;
+  }
+}
 .pole1-home .feature-list li .feat-num {
   font-style: italic;
   color: var(--blue);
@@ -3408,21 +3459,38 @@ h1 span {
   margin-bottom: 10px;
   font-weight: 600;
 }
+@media (max-width: 463px) {
+  .pole1-home .feature-list li div strong {
+    text-align: left;
+  }
+}
 .pole1-home .feature-list li div p {
   font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.6;
   margin: 0px;
 }
+@media (max-width: 382px) {
+  .pole1-home .feature-list li div p {
+    text-align: left;
+  }
+}
 
 .pole1-livrables {
   background: rgb(242, 246, 251);
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  min-height: 90vh;
+  padding: 120px 0;
+}
+@media (max-width: 768px) {
+  .pole1-livrables {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 350px) {
+  .pole1-livrables ‡ .container {
+    padding: 0;
+  }
 }
 .pole1-livrables .livrables-deroulement {
-  width: 80%;
   margin: 0 auto;
 }
 .pole1-livrables .livrables-deroulement .livrables-header {
@@ -3453,19 +3521,24 @@ h1 span {
 .pole1-livrables .livrables-deroulement .livrables-header h2 {
   position: relative;
   padding-left: 28px;
-  font-size: 2rem;
   color: var(--navy);
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin-top: 2rem;
   line-height: 1.15;
 }
+@media (max-width: 600px) {
+  .pole1-livrables .livrables-deroulement .livrables-header h2 {
+    text-align: left;
+    padding-left: 15px;
+  }
+}
 .pole1-livrables .livrables-deroulement .livrables-header h2::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 0;
   width: 4px;
-  height: 90%;
+  height: 100%;
   background: var(--blue);
   border-radius: 2px;
 }
@@ -3474,15 +3547,25 @@ h1 span {
   margin-top: 1rem;
   margin-bottom: 5rem;
   padding-left: 28px;
-  width: 80%;
+  width: 100%;
+  max-width: 72ch;
+}
+@media (max-width: 600px) {
+  .pole1-livrables .livrables-deroulement .livrables-header p {
+    padding-left: 15px;
+  }
 }
 .pole1-livrables .livrables-deroulement .livrables-footer {
   margin-top: -2rem;
 }
 .pole1-livrables .livrables-deroulement .livrables-footer .livrables-left {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+@media (max-width: 600px) {
+  .pole1-livrables .livrables-deroulement .livrables-footer .livrables-left {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 .pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients {
   display: -webkit-box;
@@ -3497,8 +3580,14 @@ h1 span {
   padding: 25px;
   border-top: 1px solid;
   text-align: justify;
-  width: 80%;
   margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients {
+    text-align: left;
+    padding: 25px 0;
+    padding-left: 15px;
+  }
 }
 .pole1-livrables .livrables-deroulement .livrables-footer .livrables-left .livrables-clients .livrables-span {
   width: 600px;
@@ -3524,16 +3613,39 @@ h1 span {
   padding: 120px 0;
   background: var(--white);
 }
+@media (max-width: 768px) {
+  .pole1-objectif {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 350px) {
+  .pole1-objectif .container {
+    padding: 0;
+  }
+}
 .pole1-objectif .prose {
   text-align: justify;
-  max-width: 720px;
   margin: 0px auto;
 }
+@media (max-width: 565px) {
+  .pole1-objectif .prose .span-pole1 {
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
 .pole1-objectif .prose h3 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  margin-top: 2rem;
   color: var(--navy);
-  font-size: 1.5rem;
-  margin-bottom: 24px;
-  margin-top: 24px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 65ch;
+}
+@media (max-width: 600px) {
+  .pole1-objectif .prose h3 {
+    text-align: left;
+    padding-left: 15px;
+  }
 }
 .pole1-objectif .prose p {
   font-size: 1.0625rem;
@@ -3541,15 +3653,31 @@ h1 span {
   margin-bottom: 22px;
   color: var(--gray-text);
 }
+@media (max-width: 600px) {
+  .pole1-objectif .prose p {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .pole1-objectif .prose p {
+    text-align: left;
+  }
+}
 .pole1-objectif .prose blockquote {
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--navy);
   line-height: 1.5;
   border-left: 3px solid var(--blue);
   padding: 8px 24px;
   margin: 32px 0px;
-  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .pole1-objectif .prose blockquote {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
 }
 
 .pole2-home {
@@ -5195,7 +5323,6 @@ h1 span {
 .cabinets-deroulement .section-cabinets-deroulement h2 {
   position: relative;
   padding-left: 28px;
-  font-size: 2rem;
   color: var(--navy);
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin-top: 2rem;

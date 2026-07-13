@@ -1,29 +1,67 @@
+.span-services {
+  @media (max-width: 494px) {
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+
+.current-compta {
+  @media (max-width: 494px) {
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
 .pole1-home {
   position: relative;
   padding: 120px 0;
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-header-pole1 {
     text-align: justify;
+    width: 100%;
     max-width: 1000px;
     margin-bottom: 72px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+
+    .span-pole1 {
+      @media (max-width: 378px) {
+        letter-spacing: 0.07em;
+      }
+    }
 
     h2 {
       position: relative;
       padding-left: 28px;
-      font-size: 2rem;
       color: var(--navy);
       font-size: clamp(1.5rem, 4vw, 2.5rem);
       margin-top: 2rem;
       line-height: 1.15;
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
 
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -33,7 +71,11 @@
       margin-top: 1rem;
       margin-bottom: 5rem;
       padding-left: 28px;
-      width: 80%;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
     }
   }
   .feature-list {
@@ -52,6 +94,10 @@
       border-bottom: 1px solid var(--gray-line);
       list-style: none;
 
+      @media (max-width: 600px) {
+        grid-template-columns: 15px 1fr;
+      }
+
       .feat-num {
         font-style: italic;
         color: var(--blue);
@@ -67,12 +113,19 @@
           font-size: 1.25rem;
           margin-bottom: 10px;
           font-weight: 600;
+
+          @media (max-width: 463px) {
+            text-align: left;
+          }
         }
         p {
           font-size: 1rem;
           color: var(--gray-text);
           line-height: 1.6;
           margin: 0px;
+          @media (max-width: 382px) {
+            text-align: left;
+          }
         }
       }
     }
@@ -80,12 +133,18 @@
 }
 .pole1-livrables {
   background: rgb(242, 246, 251);
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  min-height: 90vh;
+  padding: 120px 0;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+  ‡ .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
 
   .livrables-deroulement {
-    width: 80%;
     margin: 0 auto;
 
     .livrables-header {
@@ -113,19 +172,23 @@
       h2 {
         position: relative;
         padding-left: 28px;
-        font-size: 2rem;
         color: var(--navy);
         font-size: clamp(1.5rem, 4vw, 2.5rem);
         margin-top: 2rem;
         line-height: 1.15;
 
+        @media (max-width: 600px) {
+          text-align: left;
+          padding-left: 15px;
+        }
+
         &::before {
           content: "";
           position: absolute;
           left: 0;
-          top: 10px;
+          top: 0;
           width: 4px;
-          height: 90%;
+          height: 100%;
           background: var(--blue);
           border-radius: 2px;
         }
@@ -135,16 +198,24 @@
         margin-top: 1rem;
         margin-bottom: 5rem;
         padding-left: 28px;
-        width: 80%;
+        width: 100%;
+        max-width: 72ch;
+
+        @media (max-width: 600px) {
+          padding-left: 15px;
+        }
       }
     }
     .livrables-footer {
       margin-top: -2rem;
       .livrables-left {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 
-        width: 800px;
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
         .livrables-clients {
           display: flex;
           flex-direction: column;
@@ -153,8 +224,13 @@
           padding: 25px;
           border-top: 1px solid;
           text-align: justify;
-          width: 80%;
           margin-bottom: 1rem;
+
+          @media (max-width: 600px) {
+            text-align: left;
+            padding: 25px 0;
+            padding-left: 15px;
+          }
 
           .livrables-span {
             width: 600px;
@@ -187,32 +263,67 @@
   padding: 120px 0;
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .prose {
     text-align: justify;
-    max-width: 720px;
     margin: 0px auto;
 
+    .span-pole1 {
+      @media (max-width: 565px) {
+        letter-spacing: 0.05em;
+        text-align: left;
+      }
+    }
+
     h3 {
+      font-size: clamp(1.2rem, 4vw, 2rem);
+      margin-top: 2rem;
       color: var(--navy);
-      font-size: 1.5rem;
-      margin-bottom: 24px;
-      margin-top: 24px;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 65ch;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
     }
     p {
       font-size: 1.0625rem;
       line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        padding-left: 15px;
+      }
+      @media (max-width: 400px) {
+        text-align: left;
+      }
     }
     blockquote {
       font-style: italic;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       color: var(--navy);
       line-height: 1.5;
       border-left: 3px solid var(--blue);
       padding: 8px 24px;
       margin: 32px 0px;
-      font-weight: 500;
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        padding-left: 15px;
+      }
     }
   }
 }
