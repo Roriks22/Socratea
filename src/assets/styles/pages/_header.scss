@@ -57,6 +57,7 @@
   }
 
   .hero-inner {
+    width: 100%;
     position: relative;
     text-align: left;
     z-index: 2;
@@ -91,6 +92,8 @@
     h1.reveal-2 {
       position: relative;
       width: 100%;
+      margin: 0 auto;
+      max-width: 1500px;
       display: block;
       white-space: normal;
       padding-left: clamp(12px, 2vw, 32px);
@@ -130,12 +133,13 @@
 
     h2 {
       width: 100%;
-      max-width: 72ch;
+      max-width: 90ch;
       margin: 0 0 42px;
       font-size: clamp(1.5rem, 4vw, 2.5rem);
       font-weight: 400;
       letter-spacing: -0.03em;
       color: rgba(255, 255, 255, 0.92);
+      margin-top: 2rem;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -150,7 +154,7 @@
     }
     .hero-lead {
       width: 100%;
-      max-width: 72ch;
+      max-width: 100ch;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -174,6 +178,8 @@
       padding-top: 40px;
       border-top: 1px solid rgba(255, 255, 255, 0.12);
       display: flex;
+      align-items: center;
+      justify-content: center;
       gap: 16px;
 
       @media (max-width: 550px) {

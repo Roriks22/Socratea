@@ -77,9 +77,12 @@
   }
   .home-bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-bottom: 5rem;
+    align-items: stretch;
+    @media (max-width: 830px) {
+      grid-template-columns: 1fr;
+    }
 
     .entreprise-concerne {
       background: white;
@@ -88,8 +91,8 @@
       text-align: justify;
       margin-left: 1rem;
       margin: 0 auto;
-      width: auto;
       transition: all 0.2s ease;
+      height: 100%;
 
       &:hover {
         background: var(--gray-bg);
@@ -98,15 +101,14 @@
       h5 {
         color: rgba(0, 0, 0, 0.734);
         font-size: 1rem;
-        width: 90%;
-
-        @media (max-width: 550px) {
-          text-align: left;
+        text-align: left;
+        min-height: 50px;
+        @media (max-width: 830px) {
+          min-height: auto;
         }
       }
       p {
         color: rgb(104, 114, 129);
-        width: 90%;
         font-size: 0.9rem;
         margin-top: 1rem;
 

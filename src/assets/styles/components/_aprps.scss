@@ -189,20 +189,12 @@
     padding: 80px 0;
   }
 
-  .container {
-    @media (max-width: 350px) {
-      padding: 0;
-    }
-  }
-
   .section-socratea {
     position: relative;
     align-items: center;
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
     @media (max-width: 1024px) {
-      position: relative;
-      display: grid;
       grid-template-columns: 1fr;
       align-items: center;
       gap: 60px;
@@ -217,7 +209,7 @@
       }
       img {
         width: 100%;
-        max-width: 500px;
+        max-width: 600px;
         height: auto;
         object-fit: cover;
 

@@ -754,6 +754,7 @@ h1 span {
   }
 }
 .hero .hero-inner {
+  width: 100%;
   position: relative;
   text-align: left;
   z-index: 2;
@@ -794,6 +795,8 @@ h1 span {
 .hero .hero-inner h1.reveal-2 {
   position: relative;
   width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
   display: block;
   white-space: normal;
   padding-left: clamp(12px, 2vw, 32px);
@@ -831,12 +834,13 @@ h1 span {
 }
 .hero .hero-inner h2 {
   width: 100%;
-  max-width: 72ch;
+  max-width: 90ch;
   margin: 0 0 42px;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 400;
   letter-spacing: -0.03em;
   color: rgba(255, 255, 255, 0.92);
+  margin-top: 2rem;
 }
 @media (max-width: 600px) {
   .hero .hero-inner h2 {
@@ -851,7 +855,7 @@ h1 span {
 }
 .hero .hero-inner .hero-lead {
   width: 100%;
-  max-width: 72ch;
+  max-width: 100ch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,6 +886,12 @@ h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 16px;
 }
 @media (max-width: 550px) {
@@ -983,9 +993,16 @@ h1 span {
 }
 .entreprise-recherche .home-bottom {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-bottom: 5rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+@media (max-width: 830px) {
+  .entreprise-recherche .home-bottom {
+    grid-template-columns: 1fr;
+  }
 }
 .entreprise-recherche .home-bottom .entreprise-concerne {
   background: white;
@@ -994,9 +1011,9 @@ h1 span {
   text-align: justify;
   margin-left: 1rem;
   margin: 0 auto;
-  width: auto;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  height: 100%;
 }
 .entreprise-recherche .home-bottom .entreprise-concerne:hover {
   background: var(--gray-bg);
@@ -1004,16 +1021,16 @@ h1 span {
 .entreprise-recherche .home-bottom .entreprise-concerne h5 {
   color: rgba(0, 0, 0, 0.734);
   font-size: 1rem;
-  width: 90%;
+  text-align: left;
+  min-height: 50px;
 }
-@media (max-width: 550px) {
+@media (max-width: 830px) {
   .entreprise-recherche .home-bottom .entreprise-concerne h5 {
-    text-align: left;
+    min-height: auto;
   }
 }
 .entreprise-recherche .home-bottom .entreprise-concerne p {
   color: rgb(104, 114, 129);
-  width: 90%;
   font-size: 0.9rem;
   margin-top: 1rem;
 }
@@ -2707,24 +2724,16 @@ h1 span {
     padding: 80px 0;
   }
 }
-@media (max-width: 350px) {
-  .apropos-socratea .container {
-    padding: 0;
-  }
-}
 .apropos-socratea .section-socratea {
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
 }
 @media (max-width: 1024px) {
   .apropos-socratea .section-socratea {
-    position: relative;
-    display: grid;
     grid-template-columns: 1fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2743,7 +2752,7 @@ h1 span {
 }
 .apropos-socratea .section-socratea .socratea-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
