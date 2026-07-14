@@ -104,7 +104,7 @@
 
     .span-pole2 {
       @media (max-width: 378px) {
-        letter-spacing: 0.06em;
+        text-align: left;
       }
     }
 
@@ -235,10 +235,7 @@
 
       .span-pole2 {
         @media (max-width: 436px) {
-          letter-spacing: 0.05em;
-        }
-        @media (max-width: 391px) {
-          letter-spacing: -0.07em;
+          text-align: left;
         }
       }
 

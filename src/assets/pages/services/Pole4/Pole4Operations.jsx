@@ -6,7 +6,7 @@ const Pole4Operations = () => {
     <section className="pole4-operations">
       <div className="container">
         <div className="section-header-operations reveal reveal-1">
-          <span className="eyebrow">
+          <span className="eyebrow span-pole4">
             Les opérations qui font évoluer votre société
           </span>
           <h2>

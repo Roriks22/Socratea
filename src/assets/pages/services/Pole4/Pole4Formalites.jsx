@@ -6,7 +6,7 @@ const Pole4Formalites = () => {
     <section className="pole4-formalites">
       <div className="container">
         <div className="section-header-formalites reveal reveal-1">
-          <span className="eyebrow">Le suivi juridique courant</span>
+          <span className="eyebrow span-pole4">Le suivi juridique courant</span>
           <h2>
             Les décisions de votre société <br />
             formalisées au bon moment.

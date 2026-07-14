@@ -9,22 +9,26 @@ const Pole4Header = () => {
         <div className="breadcrumb reveal reveal-1">
           <Link to="/">Accueil</Link>
           <span className="sep">/</span>
-          <Link to="/services">Nos services</Link>
+          <Link to="/services" className="span-services">
+            Nos services
+          </Link>
           <span className="sep">/</span>
-          <span className="current">Juridique</span>
+          <span className="current current-juridique">Juridique</span>
         </div>
         <h1 className="pole4 reveal reveal-2">
           Juridique <br />
           <span>Sécuriser les étapes importantes de votre entreprise.</span>
         </h1>
-        <p className="page-hero-lead reveal reveal-3">
-          Approbation des comptes, modifications statutaires ou opérations
-          ponctuelles : SOCRATEA vous accompagne dans les démarches juridiques
-          liées à la vie de votre entreprise. Lorsque la situation nécessite une
-          expertise particulière, nous travaillons avec votre avocat, votre
-          notaire ou vos autres conseils pour que chacun intervienne au bon
-          moment.
-        </p>
+        <div className="page-hero-lead reveal reveal-3">
+          <p>
+            Approbation des comptes, modifications statutaires ou opérations
+            ponctuelles : SOCRATEA vous accompagne dans les démarches juridiques
+            liées à la vie de votre entreprise. Lorsque la situation nécessite
+            une expertise particulière, nous travaillons avec votre avocat,
+            votre notaire ou vos autres conseils pour que chacun intervienne au
+            bon moment.
+          </p>
+        </div>
       </div>
     </section>
   );
