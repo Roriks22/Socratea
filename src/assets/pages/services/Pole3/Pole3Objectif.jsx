@@ -3,7 +3,7 @@ const Pole3Objectif = () => {
     <section className="pole3-objectif">
       <div className="container">
         <div className="prose">
-          <span className="eyebrow">
+          <span className="eyebrow span-pole3">
             Un accompagnement qui vous aide au quotidien
           </span>
           <h3>Des situations variées, un suivi qui reste clair.</h3>

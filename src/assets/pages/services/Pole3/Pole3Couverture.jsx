@@ -6,7 +6,9 @@ const Pole3Couverture = () => {
     <section className="pole3-couverture">
       <div className="container">
         <div className="section-header-couverture reveal reveal-1">
-          <span className="eyebrow">Votre gestion sociale au quotidien</span>
+          <span className="eyebrow span-pole3">
+            Votre gestion sociale au quotidien
+          </span>
           <h2>
             Une paie suivie, <br />
             mois après mois.

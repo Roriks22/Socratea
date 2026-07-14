@@ -1,8 +1,37 @@
+.span-services {
+  @media (max-width: 381px) {
+    letter-spacing: 0.01em;
+  }
+  @media (max-width: 303px) {
+    letter-spacing: -0.01em;
+  }
+}
+
+.current-social {
+  @media (max-width: 381px) {
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  @media (max-width: 303px) {
+    letter-spacing: -0.01em;
+  }
+}
+
 .pole3-positionnement {
   position: relative;
   padding: 120px 0;
   background: var(--white);
   text-align: justify;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
 
   .prose {
     max-width: 720px;
@@ -11,14 +40,27 @@
     h3 {
       margin-top: 24px;
       margin-bottom: 24px;
-      font-size: 1.5rem;
       color: var(--navy);
+      font-size: clamp(1.2rem, 4vw, 2rem);
+      text-align: left;
+
+      @media (max-width: 600px) {
+        padding-left: 15px;
+      }
     }
     p {
       font-size: 1.0625rem;
       line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        padding-left: 15px;
+      }
+      @media (max-width: 400px) {
+        text-align: left;
+      }
     }
     blockquote {
       font-style: italic;
@@ -28,6 +70,11 @@
       border-left: 3px solid var(--blue);
       padding: 8px 24px;
       margin: 32px 0px;
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        padding-left: 15px;
+      }
     }
   }
 }
@@ -36,27 +83,53 @@
   padding: 120px 0;
   background: var(--gray-bg);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .section-header-couverture {
-    max-width: 780px;
+    width: 100%;
+    max-width: 1000px;
     margin-bottom: 72px;
     text-align: justify;
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+
+    .span-pole3 {
+      @media (max-width: 439px) {
+        text-align: left;
+      }
+    }
 
     h2 {
       position: relative;
       padding-left: 28px;
-      font-size: 2rem;
       color: var(--navy);
       font-size: clamp(1.5rem, 4vw, 2.5rem);
       margin-top: 2rem;
       line-height: 1.15;
 
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
+
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0;
+        bottom: 0;
         width: 4px;
-        height: 85%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
@@ -66,12 +139,14 @@
       margin-top: 1rem;
       margin-bottom: 5rem;
       padding-left: 28px;
-      width: 80%;
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
     }
   }
   .feature-list {
-    text-align: justify;
-    max-width: 840px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 0px;
@@ -87,6 +162,10 @@
       border-bottom: 1px solid var(--gray-line);
       list-style: none;
 
+      @media (max-width: 600px) {
+        grid-template-columns: 15px 1fr;
+      }
+
       .feat-num {
         font-style: italic;
         color: var(--blue);
@@ -96,6 +175,7 @@
       div {
         display: block;
         unicode-bidi: isolate;
+        text-align: justify;
 
         strong {
           display: block;
@@ -103,12 +183,20 @@
           font-size: 1.25rem;
           margin-bottom: 10px;
           font-weight: 600;
+
+          @media (max-width: 489px) {
+            text-align: left;
+          }
         }
         p {
           font-size: 1rem;
           color: var(--gray-text);
           line-height: 1.6;
           margin: 0px;
+
+          @media (max-width: 471px) {
+            text-align: left;
+          }
         }
       }
     }
@@ -119,22 +207,49 @@
   padding: 120px 0;
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .container {
+    @media (max-width: 350px) {
+      padding: 0;
+    }
+  }
+
   .prose {
     max-width: 720px;
     margin: 0 auto;
     text-align: justify;
 
+    .span-pole3 {
+      @media (max-width: 550px) {
+        text-align: left;
+      }
+    }
+
     h3 {
       margin-top: 24px;
       margin-bottom: 24px;
       color: var(--navy);
-      font-size: 1.5rem;
+      font-size: clamp(1.2rem, 4vw, 2rem);
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+      }
     }
     p {
       font-size: 1.0625rem;
       line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
+
+      @media (max-width: 600px) {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 1rem;
+      }
     }
   }
 }
