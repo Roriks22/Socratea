@@ -1,19 +1,15 @@
 .span-services {
-  @media (max-width: 381px) {
-    letter-spacing: 0.01em;
+  @media (max-width: 494px) {
+    text-align: center;
   }
   @media (max-width: 303px) {
-    letter-spacing: -0.01em;
+    text-align: center;
   }
 }
 
 .current-social {
-  @media (max-width: 381px) {
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-  @media (max-width: 303px) {
-    letter-spacing: -0.01em;
+  @media (max-width: 402px) {
+    text-align: center;
   }
 }
 

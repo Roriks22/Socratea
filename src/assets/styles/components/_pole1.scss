@@ -1,14 +1,15 @@
 .span-services {
   @media (max-width: 494px) {
-    letter-spacing: 0.05em;
-    text-align: left;
+    text-align: center;
   }
 }
 
 .current-compta {
   @media (max-width: 494px) {
+    text-align: center;
+  }
+  @media (max-width: 320px) {
     letter-spacing: 0.05em;
-    text-align: left;
   }
 }
 .pole1-home {

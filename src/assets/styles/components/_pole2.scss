@@ -1,17 +1,18 @@
 .span-services {
-  @media (max-width: 494px) {
-    letter-spacing: 0.03em;
-    text-align: left;
+  @media (max-width: 546px) {
+    text-align: center;
   }
 }
 
 .current-auto {
   @media (max-width: 631px) {
-    letter-spacing: 0.03em;
     text-align: left;
   }
-  @media (max-width: 361px) {
+  @media (max-width: 546px) {
     text-align: center;
+  }
+  @media (max-width: 450px) {
+    letter-spacing: -0.05em;
   }
 }
 
