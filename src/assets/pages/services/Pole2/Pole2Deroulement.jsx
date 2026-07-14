@@ -6,7 +6,7 @@ const Pole2Deroulement = () => {
     <section className="pole2-deroulement">
       <div className="container">
         <div className="section-header-pole2 reveal reveal-1">
-          <span className="eyebrow">Quelques exemples concrets</span>
+          <span className="eyebrow span-pole2">Quelques exemples concrets</span>
           <h2>
             Des solutions concrètes, <br />à partir de vos irritants.
           </h2>

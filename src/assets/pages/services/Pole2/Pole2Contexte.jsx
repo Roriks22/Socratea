@@ -3,7 +3,7 @@ const Pole2Contexte = () => {
     <section className="pole2-contexte">
       <div className="container">
         <div className="pole2-texte">
-          <span className="eyebrow">Facturation électronique</span>
+          <span className="eyebrow span-pole2">Facturation électronique</span>
           <h2>Bien plus qu’un changement de format.</h2>
           <p>
             La facturation électronique ne consiste pas seulement à choisir une

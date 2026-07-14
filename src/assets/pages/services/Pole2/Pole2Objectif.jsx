@@ -4,7 +4,9 @@ const Pole2Objectif = () => {
       <div className="container">
         <div className="two-col">
           <div>
-            <span className="eyebrow">Comprendre votre fonctionnement</span>
+            <span className="eyebrow span-pole2">
+              Comprendre votre fonctionnement
+            </span>
             <h3>Partir de ce qui existe vraiment.</h3>
             <p>
               Nous regardons comment l’information circule aujourd’hui : qui
@@ -19,7 +21,9 @@ const Pole2Objectif = () => {
             </p>
           </div>
           <div>
-            <span className="eyebrow">Mettre en place la bonne solution</span>
+            <span className="eyebrow span-pole2">
+              Mettre en place la bonne solution
+            </span>
             <h3>Faire évoluer sans tout bouleverser.</h3>
             <p>
               Nous privilégions les outils que vous utilisez déjà lorsqu’ils
