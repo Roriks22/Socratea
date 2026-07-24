@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/Juridique/juridique.png";
-import heroSocialMobile from "../../../../public/images/Juridique/juridique.png";
+import heroSocialDesktop from "../../../../public/images/services.png";
+import heroSocialMobile from "../../../../public/images/services-mobile.png";
 
 const ServicesHeader = () => {
   useReveal();
