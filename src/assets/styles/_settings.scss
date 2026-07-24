@@ -266,22 +266,7 @@ code {
     );
   pointer-events: none;
 }
-.page-hero::after {
-  content: "SOCRATEA";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: clamp(10px, 8vw, 200px);
-  font-size: clamp(4rem, 15vw, 18rem);
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.02);
-  letter-spacing: -0.08em;
-  pointer-events: none;
 
-  @media (max-width: 350px) {
-    right: 10px;
-  }
-}
 .container {
   @media (max-width: 350px) {
     padding: 0;

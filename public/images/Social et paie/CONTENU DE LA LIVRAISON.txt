@@ -1,0 +1,19 @@
+LIVRAISON — SOCIAL ET PAIE — HERO SUR FOND UNI
+
+Correction appliquée : suppression complète du mot SOCRATEA en filigrane.
+
+Les textes, la composition, l'abstraction lumineuse et le point vert restent inchangés.
+
+00-Propositions visuelles
+- Hero ordinateur corrigé sur fond bleu uni.
+- Hero mobile corrigé sur fond bleu uni.
+
+01-Images spécifiques ordinateur
+- Extraction exacte du visuel horizontal corrigé.
+
+02-Images spécifiques mobile
+- Extraction exacte du visuel vertical corrigé.
+
+03-Images mixtes ordinateur + mobile
+- Aucun actif matriciel commun, car les deux compositions ont des orientations différentes.
+

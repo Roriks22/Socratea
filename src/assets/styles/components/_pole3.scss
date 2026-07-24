@@ -1,15 +1,183 @@
-.span-services {
-  @media (max-width: 494px) {
-    text-align: center;
-  }
-  @media (max-width: 303px) {
-    text-align: center;
+.page-hero--social {
+  padding: clamp(88px, 8vw, 120px) 0 clamp(72px, 8vw, 110px);
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(7, 168, 255, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(180deg, var(--navy-deep), var(--navy));
+  overflow: hidden;
+}
+
+/*
+ * Suppression du décor partagé :
+ * - aucun dégradé supplémentaire ;
+ * - aucun SOCRATEA en filigrane.
+ *
+ * Cela ne concerne que la page Social et paie.
+ */
+.page-hero--social::after {
+  display: none;
+  content: none;
+}
+
+.page-hero--social .social-hero {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(360px, 0.8fr);
+  align-items: center;
+  gap: clamp(16px, 3vw, 40px);
+
+  margin-top: 0;
+  text-align: left;
+}
+
+.social-hero__copy {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+
+  @media (max-width: 600px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
-.current-social {
-  @media (max-width: 402px) {
+.page-hero--social .breadcrumb {
+  margin-bottom: 50px;
+}
+
+.page-hero--social h1 {
+  max-width: 760px;
+  margin-bottom: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: clamp(20px, 2vw, 32px);
+  font-size: clamp(2.8rem, 4.6vw, 4.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.page-hero--social h1::before {
+  top: 0;
+  bottom: 0;
+}
+
+.page-hero--social h1 span {
+  margin-top: 14px;
+  color: var(--white);
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.page-hero--social .page-hero-lead {
+  max-width: 66ch;
+}
+
+.page-hero--social .page-hero-lead p {
+  font-size: 1rem;
+  line-height: 1.85;
+  text-align: justify;
+
+  @media (max-width: 320px) {
+    text-align: left;
+  }
+}
+
+.social-hero__visual {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  margin-left: clamp(1.5rem, 6.5vw, 8rem);
+  pointer-events: none;
+  user-select: none;
+
+  @media (max-width: 1330px) {
+    margin-left: 0;
+  }
+}
+
+.social-hero__visual img {
+  display: block;
+  width: clamp(560px, 42vw, 860px);
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================================================
+   TABLETTE ET MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .page-hero--social {
+    padding: 90px 0 56px;
+  }
+
+  .page-hero--social .social-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .social-hero__copy {
+    width: 100%;
+  }
+
+  .social-hero__visual {
+    width: min(100%, 520px);
+    margin: 0 auto;
+  }
+
+  .social-hero__visual img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-hero--social .social-hero {
+    gap: 24px;
+  }
+
+  .page-hero--social .breadcrumb {
     text-align: center;
+    gap: 8px;
+    margin-bottom: 34px;
+    padding-left: 0;
+  }
+
+  .page-hero--social h1 {
+    max-width: 100%;
+    margin-bottom: 32px;
+    padding-left: 20px;
+
+    font-size: clamp(2.2rem, 10vw, 3.25rem);
+    line-height: 1.08;
+  }
+
+  .page-hero--social h1 span {
+    margin-top: 18px;
+    font-size: 0.88em;
+    line-height: 1.12;
+  }
+
+  .page-hero--social .page-hero-lead p {
+    padding-left: 0;
+
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .social-hero__visual {
+    width: 100%;
+    max-width: 460px;
   }
 }
 
