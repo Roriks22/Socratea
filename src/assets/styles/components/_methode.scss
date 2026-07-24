@@ -95,12 +95,12 @@
         margin-left: 5rem;
       }
       @media (max-width: 900px) {
-        margin-left: 0;
+        margin-left: 5rem;
       }
 
       img {
         display: block;
-        width: clamp(800px, 72vw, 1000px);
+        width: clamp(800px, 72vw, 1100px);
         max-width: none;
         height: auto;
         object-fit: contain;
