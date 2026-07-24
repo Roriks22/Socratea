@@ -81,17 +81,26 @@
       justify-content: flex-end;
       width: 100%;
       margin: 0;
-      margin-left: clamp(1.5rem, 6.5vw, 8rem);
+      margin-left: clamp(1.5rem, 15vw, 15rem);
       pointer-events: none;
       user-select: none;
 
-      @media (max-width: 1330px) {
+      @media (max-width: 1400px) {
+        margin-left: 8rem;
+      }
+      @media (max-width: 1290px) {
+        margin-left: 6rem;
+      }
+      @media (max-width: 1220px) {
+        margin-left: 5rem;
+      }
+      @media (max-width: 900px) {
         margin-left: 0;
       }
 
       img {
         display: block;
-        width: clamp(560px, 42vw, 860px);
+        width: clamp(800px, 72vw, 1000px);
         max-width: none;
         height: auto;
         object-fit: contain;
