@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts//Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+}
+
 :root {
   --navy: #0d2d4d;
   --navy-deep: #091e36;
@@ -22,8 +37,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --sans: "Manrope", sans-serif;
+  --heading: "Fraunces", serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -142,7 +157,10 @@ h3 {
   font-weight: 500;
   letter-spacing: -0.015em;
   line-height: 1.12;
-  font-variation-settings: "opsz" 96;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0,
+    "opsz" 72;
 }
 
 h1 {
@@ -185,7 +203,7 @@ code {
   gap: 10px;
   padding: 16px 28px;
   border-radius: 2px;
-  font-family: var(--font-body);
+  font-family: var(--sans);
   font-weight: 600;
   font-size: 0.9375rem;
   letter-spacing: 0.01em;
