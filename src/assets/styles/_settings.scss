@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "Fraunces";
-  src: url("../fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
-    format("truetype");
+  font-family: "Serif";
+  src: url("../fonts/Serif/SourceSerif4-Regular.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -38,7 +37,7 @@
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: "Manrope", sans-serif;
-  --heading: "Fraunces", serif;
+  --heading: "Serif", serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);

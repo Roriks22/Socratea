@@ -6,7 +6,7 @@ import heroSocialMobile from "../../../../public/images/services-mobile.png";
 const ServicesHeader = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-juridique">
+    <section className="page-hero page-hero--social-services">
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
           <div className="breadcrumb reveal reveal-1">

@@ -60,11 +60,10 @@
         margin: 0 auto;
         max-width: 1500px;
         display: block;
-        white-space: normal;
         color: var(--white);
-        font-weight: 500;
-        letter-spacing: -0.03em;
-        font-size: clamp(1.8rem, 6vw, 4rem);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        font-size: clamp(1.8rem, 3vw, 4rem);
         margin-top: 2rem;
         padding-bottom: 2rem;
         overflow-wrap: normal;
@@ -77,19 +76,18 @@
         span {
           display: block;
           color: var(--white);
-          font-weight: 500;
-          letter-spacing: -0.03em;
+          font-weight: 600;
+          letter-spacing: -0.01em;
           font-size: inherit;
-          white-space: normal;
         }
       }
       h2 {
         width: 100%;
         max-width: 90ch;
         margin: 0 0 42px;
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
-        font-weight: 400;
-        letter-spacing: -0.03em;
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
+        font-weight: 600;
+        letter-spacing: -0.01em;
         color: rgba(255, 255, 255, 0.92);
         margin-top: 2rem;
 
@@ -184,7 +182,6 @@
           max-width: 100%;
           margin-bottom: 32px;
           padding-left: 20px;
-          font-size: clamp(2.2rem, 10vw, 3.25rem);
           line-height: 1.08;
 
           span {
