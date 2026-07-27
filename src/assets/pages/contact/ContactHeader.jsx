@@ -47,8 +47,8 @@ const ContactHeader = () => {
             draggable="false"
           />
           <div className="texte-contact-julien">
-            <h1>Julien Jacquesson</h1>
-            <h3>Expert-comptable</h3>
+            <h3>Julien Jacquesson</h3>
+            <h4>Expert-comptable</h4>
             <div className="hero-tag">
               <span className="dot"></span>
               <span>Echange sans engagement</span>

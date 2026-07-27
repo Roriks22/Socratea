@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Serif";
-  src: url("../fonts/Serif/SourceSerif4-Regular.ttf") format("truetype");
+  src: url("../fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -150,7 +151,9 @@ body.lightbox-open {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: var(--heading);
   color: var(--navy);
   font-variation-settings:
@@ -160,13 +163,13 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(3rem, 5vw, 5rem);
-  font-weight: 400;
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  font-weight: 500;
   line-height: 0.95;
   letter-spacing: -0.035em;
 }
 h2 {
-  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.025em;

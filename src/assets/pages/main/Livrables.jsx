@@ -1,4 +1,8 @@
 import useReveal from "../../components/useReveal";
+import flashMensuel from "../../../../public/images/flash-mensuel.png";
+import analysePonctuelle from "../../../../public/images/analyse-ponctuelle.png";
+import comptesAnnuels from "../../../../public/images/comptes-annuels.png";
+import situationTrimestrielle from "../../../../public/images/situation-trimestrielle.png";
 
 const Livrables = () => {
   useReveal();
@@ -23,10 +27,9 @@ const Livrables = () => {
           <div className="livrables-left">
             <div className="livrables-clients">
               <div className="livrables-span">
-                <span>Mensuel</span>
+                <img src={flashMensuel} alt="Flash-mensuel" />
               </div>
               <div className="livrables-text">
-                <h3>Flash mensuel J+5</h3>
                 <p>
                   Trésorerie, marge, activité, principaux écarts : retrouvez
                   rapidement les indicateurs essentiels pour savoir où vous en
@@ -39,10 +42,12 @@ const Livrables = () => {
             </div>
             <div className="livrables-clients">
               <div className="livrables-span">
-                <span>Trimestriel</span>
+                <img
+                  src={situationTrimestrielle}
+                  alt="Situation trimestrielle"
+                />
               </div>
               <div className="livrables-text">
-                <h3>Situation trimestrielle arrêtée</h3>
                 <p>
                   Lorsque votre entreprise a besoin d’un point d’étape plus
                   approfondi, une situation comptable trimestrielle peut être
@@ -53,7 +58,7 @@ const Livrables = () => {
             </div>
             <div className="livrables-clients">
               <div className="livrables-span">
-                <span>Annuel</span>
+                <img src={comptesAnnuels} alt="Comptes annuels" />
               </div>
               <div className="livrables-text">
                 <h3>Comptes annuels commentés</h3>
@@ -67,10 +72,9 @@ const Livrables = () => {
             </div>
             <div className="livrables-clients">
               <div className="livrables-span">
-                <span>À la demande</span>
+                <img src={analysePonctuelle} alt="Analyse ponctuelle" />
               </div>
               <div className="livrables-text">
-                <h3>Analyses ponctuelles</h3>
                 <p>
                   Investissement, recrutement, évolution de la marge, besoin de
                   trésorerie, prévisionnel ou comparaison de scénarios :

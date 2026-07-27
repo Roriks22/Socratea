@@ -55,6 +55,7 @@ import QuestionsHeader from "./assets/pages/questionsfrequentes/QuestionsHeader"
 import FAQHome from "./assets/pages/questionsfrequentes/FAQHome";
 import FAQFotter from "./assets/pages/questionsfrequentes/FAQFotter";
 import ContactFAQ from "./assets/pages/contact/ContactFAQ";
+import HeaderTexte from "./assets/pages/main/HeaderTexte";
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
           element={
             <>
               <Header />
+              <HeaderTexte />
               <Home />
               <Livrables />
               <Services />

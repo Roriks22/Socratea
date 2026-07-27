@@ -1,0 +1,78 @@
+.header-texte {
+  background: var(--white);
+
+  .header-grid {
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) 680px;
+    gap: 80px;
+    align-items: start;
+
+    .approche {
+      margin-top: 2rem;
+      text-align: left;
+      h2 {
+        margin-bottom: 45px;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--lime);
+        font-weight: 700;
+      }
+      p {
+        max-width: 1100px;
+        margin-bottom: 26px;
+        color: var(--gray-text);
+        text-align: justify;
+      }
+    }
+
+    .apropos-card {
+      background: var(--gray-bg);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 190px;
+      gap: 28px;
+      align-items: start;
+      overflow: visible;
+      min-height: 420px;
+
+      .apropos-text {
+        text-align: left;
+        h3 {
+          position: relative;
+          margin-bottom: 28px;
+          color: var(--navy);
+          padding-left: 18px;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--blue);
+            border-radius: 2px;
+          }
+        }
+        p {
+          color: var(--gray-text);
+          font-size: 0.95rem;
+          max-width: 300px;
+          text-align: left;
+          line-height: 2.2;
+        }
+      }
+      .apropos-photo {
+        margin-right: -2rem;
+        display: flex;
+        align-self: end;
+        justify-content: flex-end;
+        img {
+          width: 450px;
+          display: block;
+        }
+      }
+    }
+  }
+}
