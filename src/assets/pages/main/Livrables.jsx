@@ -61,7 +61,6 @@ const Livrables = () => {
                 <img src={comptesAnnuels} alt="Comptes annuels" />
               </div>
               <div className="livrables-text">
-                <h3>Comptes annuels commentés</h3>
                 <p>
                   Vos comptes annuels sont établis dans le respect de vos
                   obligations, mais aussi expliqués. Vous comprenez les
