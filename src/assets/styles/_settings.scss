@@ -153,9 +153,6 @@ h2,
 h3 {
   font-family: var(--heading);
   color: var(--navy);
-  font-weight: 500;
-  letter-spacing: -0.015em;
-  line-height: 1.12;
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0,
@@ -163,20 +160,30 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 6.5vw, 5rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 400;
-  letter-spacing: -0.025em;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
 }
 h2 {
-  font-size: clamp(2rem, 4.2vw, 3.25rem);
-  letter-spacing: -0.02em;
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 h3 {
-  font-size: clamp(1.1875rem, 1.8vw, 1.4375rem);
+  font-size: clamp(1.45rem, 2vw, 2rem);
   font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
 }
 
 p {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
   margin: 0;
 }
 
@@ -264,29 +271,30 @@ code {
   @media (max-width: 400px) {
     padding: 95px 0 60px;
   }
-}
 
-.page-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(
-      ellipse at 85% 30%,
-      rgba(7, 168, 255, 0.1) 0%,
-      transparent 55%
-    ),
-    radial-gradient(
-      ellipse at 15% 90%,
-      rgba(4, 209, 219, 0.05) 0%,
-      transparent 55%
-    );
-  pointer-events: none;
-}
+  .page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(
+        ellipse at 85% 30%,
+        rgba(7, 168, 255, 0.1) 0%,
+        transparent 55%
+      ),
+      radial-gradient(
+        ellipse at 15% 90%,
+        rgba(4, 209, 219, 0.05) 0%,
+        transparent 55%
+      );
+    pointer-events: none;
+  }
 
-.container {
-  @media (max-width: 350px) {
-    padding: 0;
+  .container {
+    max-width: 1600px;
+    @media (max-width: 350px) {
+      padding: 0;
+    }
   }
 }
 
@@ -310,7 +318,6 @@ code {
   color: var(--white);
   font-weight: 500;
   letter-spacing: -0.03em;
-  font-size: clamp(1.8rem, 6vw, 4rem);
   margin-top: 2rem;
   padding-bottom: 2rem;
   overflow-wrap: normal;
@@ -375,16 +382,6 @@ code {
 h1 {
   color: var(--white);
   margin: 0;
-  margin-bottom: 32px;
-  max-width: 1000px;
-  font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 0.95;
-  letter-spacing: -0.06em;
-  padding-top: 2rem;
-  font-weight: 600;
-  white-space: nowrap;
-  display: flex;
-  flex-direction: column;
 
   span {
     margin-top: 18px;
@@ -406,8 +403,6 @@ h1 {
     margin: 0;
     color: rgba(255, 255, 255, 0.74);
     font-size: 1rem;
-    line-height: 1.9;
-    font-weight: 300;
     text-align: justify;
 
     @media (max-width: 600px) {

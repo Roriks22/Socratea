@@ -39,9 +39,6 @@
         padding-top: 0;
         padding-bottom: 0;
         padding-left: clamp(20px, 2vw, 32px);
-        font-size: clamp(2.8rem, 4.6vw, 4.75rem);
-        line-height: 1.05;
-        letter-spacing: -0.04em;
 
         &::before {
           top: 0;
@@ -62,8 +59,6 @@
         max-width: 66ch;
 
         p {
-          font-size: 1rem;
-          line-height: 1.85;
           text-align: justify;
           @media (max-width: 405px) {
             text-align: left;
@@ -144,8 +139,6 @@
           max-width: 100%;
           margin-bottom: 32px;
           padding-left: 20px;
-          font-size: clamp(2.2rem, 10vw, 3.25rem);
-          line-height: 1.08;
 
           span {
             margin-top: 18px;
@@ -156,9 +149,6 @@
         .page-hero-lead {
           p {
             padding-left: 0;
-
-            font-size: 1rem;
-            line-height: 1.75;
           }
         }
       }
@@ -220,9 +210,8 @@
         position: relative;
         padding-left: 28px;
         color: var(--navy);
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
+
         margin-top: 2rem;
-        line-height: 1.15;
 
         @media (max-width: 600px) {
           text-align: left;
@@ -394,9 +383,8 @@
       position: relative;
       padding-left: 28px;
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+
       margin-top: 2rem;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -449,14 +437,11 @@
       }
 
       h3 {
-        font-size: 1.5rem;
         margin-bottom: 20px;
-        font-weight: 500;
+
         color: var(--navy);
       }
       p {
-        font-size: 1rem;
-        line-height: 1.7;
         color: var(--gray-text);
         margin-bottom: 18px;
       }
@@ -486,8 +471,7 @@
       margin-top: 1rem;
       padding-left: 28px;
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
-      line-height: 1.15;
+
       text-align: left;
 
       @media (max-width: 600px) {

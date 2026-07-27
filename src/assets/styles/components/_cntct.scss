@@ -40,9 +40,6 @@
         padding-top: 0;
         padding-bottom: 0;
         padding-left: clamp(20px, 2vw, 32px);
-        font-size: clamp(2.8rem, 4.6vw, 4.75rem);
-        line-height: 1.05;
-        letter-spacing: -0.04em;
 
         &::before {
           top: 0;
@@ -63,8 +60,6 @@
         max-width: 66ch;
 
         p {
-          font-size: 1rem;
-          line-height: 1.85;
           text-align: justify;
           @media (max-width: 397px) {
             text-align: left;
@@ -105,7 +100,6 @@
         }
 
         h1 {
-          font-size: 1.5rem;
           padding-left: 0;
 
           &::before {
@@ -116,10 +110,6 @@
           margin-top: -2.5rem;
           color: var(--blue);
           margin-bottom: 1rem;
-
-          @media (max-width: 600px) {
-            font-size: 1rem;
-          }
         }
         .hero-tag {
           display: inline-flex;
@@ -199,8 +189,6 @@
           max-width: 100%;
           margin-bottom: 32px;
           padding-left: 20px;
-          font-size: clamp(2.2rem, 10vw, 3.25rem);
-          line-height: 1.08;
 
           span {
             margin-top: 18px;
@@ -211,9 +199,6 @@
         .page-hero-lead {
           p {
             padding-left: 0;
-
-            font-size: 1rem;
-            line-height: 1.75;
           }
         }
       }
@@ -237,9 +222,8 @@
       position: relative;
       padding-left: 28px;
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+
       margin-top: 2rem;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -339,7 +323,7 @@
       }
       h3 {
         color: var(--white);
-        font-size: clamp(1.2rem, 4vw, 2rem);
+
         margin-bottom: 16px;
         margin-top: 20px;
         text-align: left;
@@ -350,12 +334,10 @@
       }
       p {
         color: rgba(255, 255, 255, 0.78);
-        font-size: 1rem;
-        line-height: 1.65;
+
         margin-bottom: 32px;
 
         @media (max-width: 600px) {
-          font-size: 1rem;
           padding-left: 15px;
         }
         @media (max-width: 475px) {
@@ -417,18 +399,15 @@
       }
 
       h3 {
-        font-size: clamp(1.2rem, 4vw, 2rem);
         margin-bottom: 12px;
         margin-top: 16px;
         color: var(--navy);
-        white-space: nowrap;
 
         @media (max-width: 335px) {
           text-align: left;
         }
       }
       p {
-        font-size: 0.9375rem;
         margin-bottom: 28px;
         color: var(--gray-text);
 
@@ -602,7 +581,6 @@
       margin-top: 20px;
       margin-bottom: 24px;
       color: var(--navy);
-      font-size: 2rem;
     }
     p {
       color: var(--gray-text);

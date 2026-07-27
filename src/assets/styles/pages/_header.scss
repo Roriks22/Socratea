@@ -9,6 +9,10 @@
     linear-gradient(180deg, var(--navy-deep), var(--navy));
   overflow: hidden;
 
+  .container {
+    max-width: 1600px;
+  }
+
   .social-hero {
     display: grid;
     grid-template-columns:
@@ -24,7 +28,6 @@
       position: relative;
       z-index: 2;
       min-width: 0;
-
       @media (max-width: 600px) {
         padding-left: 15px;
         padding-right: 15px;
@@ -58,12 +61,8 @@
         position: relative;
         width: 100%;
         margin: 0 auto;
-        max-width: 1500px;
         display: block;
         color: var(--white);
-        font-weight: 600;
-        letter-spacing: -0.01em;
-        font-size: clamp(1.8rem, 3vw, 4rem);
         margin-top: 2rem;
         padding-bottom: 2rem;
         overflow-wrap: normal;
@@ -71,6 +70,8 @@
         &::before {
           top: 0;
           bottom: 0;
+          width: 4px;
+          height: 100%;
         }
 
         span {
@@ -85,9 +86,6 @@
         width: 100%;
         max-width: 90ch;
         margin: 0 0 42px;
-        font-size: clamp(1.5rem, 2vw, 2.5rem);
-        font-weight: 600;
-        letter-spacing: -0.01em;
         color: rgba(255, 255, 255, 0.92);
         margin-top: 2rem;
 
@@ -182,7 +180,6 @@
           max-width: 100%;
           margin-bottom: 32px;
           padding-left: 20px;
-          line-height: 1.08;
 
           span {
             margin-top: 18px;

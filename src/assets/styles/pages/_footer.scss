@@ -132,11 +132,12 @@
         text-align: justify;
         h4 {
           color: var(--white);
-          font-size: 0.75rem;
-          letter-spacing: 0.12em;
+          font-size: 1.25rem;
           text-transform: uppercase;
           margin-bottom: 20px;
-          font-weight: 600;
+          font-weight: 500;
+          line-height: 1.2;
+          letter-spacing: -0.005em;
         }
         ul {
           display: flex;

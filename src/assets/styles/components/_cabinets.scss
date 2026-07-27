@@ -39,9 +39,6 @@
         padding-top: 0;
         padding-bottom: 0;
         padding-left: clamp(20px, 2vw, 32px);
-        font-size: clamp(2rem, 2.6vw, 3.2rem);
-        line-height: 1.05;
-        letter-spacing: -0.04em;
 
         &::before {
           top: 0;
@@ -62,8 +59,6 @@
         max-width: 66ch;
 
         p {
-          font-size: 1rem;
-          line-height: 1.85;
           text-align: justify;
           @media (max-width: 405px) {
             text-align: left;
@@ -144,8 +139,6 @@
           max-width: 100%;
           margin-bottom: 32px;
           padding-left: 20px;
-          font-size: clamp(2.2rem, 10vw, 3.25rem);
-          line-height: 1.08;
 
           span {
             margin-top: 18px;
@@ -156,9 +149,6 @@
         .page-hero-lead {
           p {
             padding-left: 0;
-
-            font-size: 1rem;
-            line-height: 1.75;
           }
         }
       }
@@ -205,11 +195,10 @@
     h2 {
       position: relative;
       padding-left: 28px;
-      font-size: 2rem;
+
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+
       margin-top: 2rem;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -270,9 +259,7 @@
           }
         }
         p {
-          font-size: 1rem;
           color: var(--gray-text);
-          line-height: 1.8;
 
           @media (max-width: 414px) {
             text-align: left;
@@ -314,9 +301,8 @@
       position: relative;
       padding-left: 28px;
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+
       margin-top: 2rem;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -374,11 +360,11 @@
         color: var(--navy);
         margin-bottom: 20px;
         font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.005em;
       }
       p {
-        font-size: 1rem;
         color: var(--gray-text);
-        line-height: 1.55;
       }
     }
   }
@@ -403,7 +389,6 @@
     text-align: justify;
 
     h3 {
-      font-size: clamp(1.2rem, 4vw, 2rem);
       margin-top: 2rem;
       color: var(--navy);
       margin-bottom: 2rem;
@@ -420,13 +405,10 @@
       }
     }
     p {
-      font-size: 1.0625rem;
-      line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
 
       @media (max-width: 600px) {
-        font-size: 1rem;
         padding-left: 15px;
       }
       @media (max-width: 400px) {
@@ -470,9 +452,6 @@
       padding-left: 28px;
       margin-top: 24px;
       margin-bottom: 24px;
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
-      letter-spacing: 0.02em;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -492,13 +471,10 @@
       }
     }
     p {
-      font-size: 1.0625rem;
-      line-height: 1.7;
       color: var(--gray-text);
       margin-top: 16px;
 
       @media (max-width: 600px) {
-        font-size: 1rem;
         width: auto;
         padding-left: 15px;
         text-align: left;
@@ -541,9 +517,8 @@
       position: relative;
       padding-left: 28px;
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+
       margin-top: 2rem;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -604,9 +579,7 @@
           }
         }
         p {
-          font-size: 1rem;
           color: var(--gray-text);
-          line-height: 1.8;
 
           @media (max-width: 401px) {
             text-align: left;
@@ -647,9 +620,6 @@
       padding-left: 28px;
       margin-top: 24px;
       margin-bottom: 24px;
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
-      letter-spacing: 0.02em;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -669,15 +639,12 @@
       }
     }
     p {
-      font-size: 1.0625rem;
-      line-height: 1.7;
       color: rgba(255, 255, 255, 0.8);
       margin-top: 16px;
 
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
-        font-size: 1rem;
       }
     }
   }

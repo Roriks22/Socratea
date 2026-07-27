@@ -40,9 +40,6 @@
         padding-top: 0;
         padding-bottom: 0;
         padding-left: clamp(20px, 2vw, 32px);
-        font-size: clamp(2.8rem, 4.6vw, 4.75rem);
-        line-height: 1.05;
-        letter-spacing: -0.04em;
 
         &::before {
           top: 0;
@@ -63,8 +60,6 @@
         max-width: 66ch;
 
         p {
-          font-size: 1rem;
-          line-height: 1.85;
           text-align: justify;
           @media (max-width: 397px) {
             text-align: left;
@@ -146,8 +141,6 @@
           max-width: 100%;
           margin-bottom: 32px;
           padding-left: 20px;
-          font-size: clamp(2.2rem, 10vw, 3.25rem);
-          line-height: 1.08;
 
           span {
             margin-top: 18px;
@@ -227,14 +220,12 @@
       h3 {
         margin-top: 20px;
         margin-bottom: 36px;
-        font-size: clamp(1.2rem, 4vw, 2rem);
         color: var(--navy);
         text-align: left;
         width: 100%;
         max-width: 65ch;
 
         @media (max-width: 600px) {
-          font-size: 1.5rem;
           text-align: left;
           padding-left: 15px;
         }
@@ -312,7 +303,6 @@
     text-align: justify;
 
     h3 {
-      font-size: clamp(1.2rem, 4vw, 2rem);
       margin-top: 2rem;
       color: var(--navy);
       margin-bottom: 2rem;
@@ -403,7 +393,6 @@
         margin-top: 20px;
         margin-bottom: 36px;
         color: var(--navy);
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
         text-align: left;
         width: 100%;
         max-width: 65ch;
@@ -418,12 +407,10 @@
       }
       p {
         color: var(--gray-text);
-        line-height: 1.7;
         margin-bottom: 0.5rem;
         max-width: 65ch;
 
         @media (max-width: 600px) {
-          font-size: 1rem;
           padding-left: 15px;
         }
         @media (max-width: 400px) {
@@ -470,7 +457,6 @@
     margin-bottom: 72px;
 
     h3 {
-      font-size: 2rem;
       margin-top: 2rem;
       color: var(--navy);
     }
@@ -529,9 +515,7 @@
       padding-left: 28px;
       margin-top: 24px;
       margin-bottom: 40px;
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
-      letter-spacing: 0.02em;
-      line-height: 1.15;
+
       color: var(--white);
 
       @media (max-width: 600px) {

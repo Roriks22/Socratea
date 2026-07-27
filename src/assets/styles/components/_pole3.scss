@@ -8,109 +8,90 @@
     ),
     linear-gradient(180deg, var(--navy-deep), var(--navy));
   overflow: hidden;
-}
 
-/*
- * Suppression du décor partagé :
- * - aucun dégradé supplémentaire ;
- * - aucun SOCRATEA en filigrane.
- *
- * Cela ne concerne que la page Social et paie.
- */
-.page-hero--social::after {
-  display: none;
-  content: none;
-}
-
-.page-hero--social .social-hero {
-  display: grid;
-  grid-template-columns:
-    minmax(0, 1.2fr)
-    minmax(360px, 0.8fr);
-  align-items: center;
-  gap: clamp(16px, 3vw, 40px);
-
-  margin-top: 0;
-  text-align: left;
-}
-
-.social-hero__copy {
-  position: relative;
-  z-index: 2;
-  min-width: 0;
-
-  @media (max-width: 600px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-.page-hero--social .breadcrumb {
-  margin-bottom: 50px;
-}
-
-.page-hero--social h1 {
-  max-width: 760px;
-  margin-bottom: 36px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: clamp(20px, 2vw, 32px);
-  font-size: clamp(2.8rem, 4.6vw, 4.75rem);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-}
-
-.page-hero--social h1::before {
-  top: 0;
-  bottom: 0;
-}
-
-.page-hero--social h1 span {
-  margin-top: 14px;
-  color: var(--white);
-  font-size: 0.9em;
-  font-weight: 500;
-  line-height: 1.08;
-  letter-spacing: -0.035em;
-}
-
-.page-hero--social .page-hero-lead {
-  max-width: 66ch;
-}
-
-.page-hero--social .page-hero-lead p {
-  font-size: 1rem;
-  line-height: 1.85;
-  text-align: justify;
-
-  @media (max-width: 320px) {
+  .social-hero {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1.2fr)
+      minmax(360px, 0.8fr);
+    align-items: center;
+    gap: clamp(16px, 3vw, 40px);
+    margin-top: 0;
     text-align: left;
+
+    .social-hero__copy {
+      position: relative;
+      z-index: 2;
+      min-width: 0;
+
+      @media (max-width: 600px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .breadcrumb {
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 36px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: clamp(20px, 2vw, 32px);
+
+        &::before {
+          top: 0;
+          bottom: 0;
+        }
+
+        span {
+          margin-top: 14px;
+          color: var(--white);
+          font-size: 0.9em;
+          font-weight: 500;
+          line-height: 1.08;
+          letter-spacing: -0.035em;
+        }
+      }
+
+      .page-hero-lead {
+        max-width: 66ch;
+
+        p {
+          text-align: justify;
+          @media (max-width: 405px) {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .social-hero__visual {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      margin: 0;
+      margin-left: clamp(1.5rem, 8.5vw, 10rem);
+      pointer-events: none;
+      user-select: none;
+
+      @media (max-width: 1330px) {
+        margin-left: 0;
+      }
+
+      img {
+        display: block;
+        width: clamp(560px, 62vw, 1000px);
+        max-width: none;
+        height: auto;
+        object-fit: contain;
+      }
+    }
   }
-}
-
-.social-hero__visual {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  margin: 0;
-  margin-left: clamp(1.5rem, 6.5vw, 8rem);
-  pointer-events: none;
-  user-select: none;
-
-  @media (max-width: 1330px) {
-    margin-left: 0;
-  }
-}
-
-.social-hero__visual img {
-  display: block;
-  width: clamp(560px, 42vw, 860px);
-  max-width: none;
-  height: auto;
-  object-fit: contain;
 }
 
 /* =========================================================
@@ -118,66 +99,66 @@
    ========================================================= */
 
 @media (max-width: 900px) {
-  .page-hero--social {
-    padding: 90px 0 56px;
-  }
+  .page-hero--social-juridique {
+    padding: 90px 0 0;
 
-  .page-hero--social .social-hero {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 40px;
-  }
+    .social-hero {
+      grid-template-columns: minmax(0, 1fr);
 
-  .social-hero__copy {
-    width: 100%;
-  }
+      .social-hero__copy {
+        width: 100%;
+      }
 
-  .social-hero__visual {
-    width: min(100%, 520px);
-    margin: 0 auto;
-  }
+      .social-hero__visual {
+        width: min(100%, 520px);
+        margin: 0 auto;
 
-  .social-hero__visual img {
-    max-width: 100%;
+        img {
+          max-width: 100%;
+          margin-top: -20rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 600px) {
-  .page-hero--social .social-hero {
-    gap: 24px;
-  }
+  .page-hero--social-juridique {
+    .social-hero {
+      gap: 24px;
 
-  .page-hero--social .breadcrumb {
-    text-align: center;
-    gap: 8px;
-    margin-bottom: 34px;
-    padding-left: 0;
-  }
+      .social-hero__copy {
+        .breadcrumb {
+          text-align: center;
+          gap: 8px;
+          margin-bottom: 34px;
+          padding-left: 0;
+        }
+        h1 {
+          max-width: 100%;
+          margin-bottom: 32px;
+          padding-left: 20px;
 
-  .page-hero--social h1 {
-    max-width: 100%;
-    margin-bottom: 32px;
-    padding-left: 20px;
-
-    font-size: clamp(2.2rem, 10vw, 3.25rem);
-    line-height: 1.08;
-  }
-
-  .page-hero--social h1 span {
-    margin-top: 18px;
-    font-size: 0.88em;
-    line-height: 1.12;
-  }
-
-  .page-hero--social .page-hero-lead p {
-    padding-left: 0;
-
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-
-  .social-hero__visual {
-    width: 100%;
-    max-width: 460px;
+          span {
+            margin-top: 18px;
+            font-size: 0.88em;
+            line-height: 1.12;
+          }
+        }
+        .page-hero-lead {
+          p {
+            padding-left: 0;
+          }
+        }
+      }
+      .social-hero__visual {
+        width: 100%;
+        max-width: 460px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
   }
 }
 
@@ -205,7 +186,6 @@
       margin-top: 24px;
       margin-bottom: 24px;
       color: var(--navy);
-      font-size: clamp(1.2rem, 4vw, 2rem);
       text-align: left;
 
       @media (max-width: 600px) {
@@ -213,13 +193,10 @@
       }
     }
     p {
-      font-size: 1.0625rem;
-      line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
 
       @media (max-width: 600px) {
-        font-size: 1rem;
         padding-left: 15px;
       }
       @media (max-width: 400px) {
@@ -277,9 +254,8 @@
       position: relative;
       padding-left: 28px;
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+
       margin-top: 2rem;
-      line-height: 1.15;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -353,10 +329,9 @@
           }
         }
         p {
-          font-size: 1rem;
           color: var(--gray-text);
-          line-height: 1.6;
-          margin: 0px;
+
+          margin: 0;
 
           @media (max-width: 471px) {
             text-align: left;
@@ -396,7 +371,6 @@
       margin-top: 24px;
       margin-bottom: 24px;
       color: var(--navy);
-      font-size: clamp(1.2rem, 4vw, 2rem);
 
       @media (max-width: 600px) {
         text-align: left;
@@ -404,15 +378,12 @@
       }
     }
     p {
-      font-size: 1.0625rem;
-      line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
 
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
-        font-size: 1rem;
       }
     }
   }

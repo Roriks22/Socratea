@@ -53,9 +53,6 @@
         padding-top: 0;
         padding-bottom: 0;
         padding-left: clamp(20px, 2vw, 32px);
-        font-size: clamp(2.8rem, 4.6vw, 4.75rem);
-        line-height: 1.05;
-        letter-spacing: -0.04em;
 
         &::before {
           top: 0;
@@ -76,8 +73,6 @@
         max-width: 66ch;
 
         p {
-          font-size: 1rem;
-          line-height: 1.85;
           text-align: justify;
           @media (max-width: 405px) {
             text-align: left;
@@ -171,8 +166,6 @@
           max-width: 100%;
           margin-bottom: 32px;
           padding-left: 20px;
-          font-size: clamp(2.2rem, 10vw, 3.25rem);
-          line-height: 1.08;
 
           span {
             margin-top: 18px;
@@ -183,9 +176,6 @@
         .page-hero-lead {
           p {
             padding-left: 0;
-
-            font-size: 1rem;
-            line-height: 1.75;
           }
         }
       }
@@ -234,9 +224,9 @@
       position: relative;
       padding-left: 28px;
       color: var(--navy);
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+
       margin-top: 2rem;
-      line-height: 1.15;
+
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
@@ -307,10 +297,8 @@
           }
         }
         p {
-          font-size: 1rem;
           color: var(--gray-text);
-          line-height: 1.6;
-          margin: 0px;
+          margin: 0;
           @media (max-width: 382px) {
             text-align: left;
           }
@@ -361,9 +349,8 @@
         position: relative;
         padding-left: 28px;
         color: var(--navy);
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
+
         margin-top: 2rem;
-        line-height: 1.15;
 
         @media (max-width: 600px) {
           text-align: left;
@@ -432,12 +419,10 @@
           .livrables-text {
             h3 {
               color: rgba(0, 0, 0, 0.734);
-              font-size: 1.1rem;
               padding-bottom: 0.5rem;
             }
             p {
               color: rgb(104, 114, 129);
-              font-size: 1rem;
             }
           }
         }
@@ -472,7 +457,6 @@
     }
 
     h3 {
-      font-size: clamp(1.2rem, 4vw, 2rem);
       margin-top: 2rem;
       color: var(--navy);
       margin-bottom: 2rem;
@@ -485,13 +469,10 @@
       }
     }
     p {
-      font-size: 1.0625rem;
-      line-height: 1.7;
       margin-bottom: 22px;
       color: var(--gray-text);
 
       @media (max-width: 600px) {
-        font-size: 1rem;
         padding-left: 15px;
       }
       @media (max-width: 400px) {

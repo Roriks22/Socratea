@@ -22,7 +22,7 @@
 
     h1 {
       color: var(--navy);
-      font-size: clamp(1.8rem, 6vw, 4rem);
+
       display: block;
       white-space: normal;
       overflow-wrap: normal;
@@ -56,9 +56,7 @@
       padding-left: 22px;
       margin-top: 56px;
       margin-bottom: 18px;
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
       color: var(--navy);
-      font-weight: 600;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -83,7 +81,6 @@
     }
     p {
       color: var(--gray-text);
-      line-height: 1.9;
       max-width: 1000px;
 
       @media (max-width: 600px) {
