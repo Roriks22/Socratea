@@ -89,7 +89,7 @@
       justify-content: flex-end;
       width: 100%;
       margin: 0;
-      margin-left: clamp(1.5rem, 20vw, 20rem);
+      margin-left: clamp(1.5rem, 5vw, 5rem);
       pointer-events: none;
       user-select: none;
 
@@ -408,12 +408,9 @@
           }
 
           .livrables-span {
-            width: 600px;
-            font-size: 0.8rem;
-            span {
-              color: rgb(7, 168, 255);
-              border: 1px solid;
-              padding: 5px;
+            img {
+              width: 80%;
+              background-image: white;
             }
           }
           .livrables-text {

@@ -179,6 +179,12 @@ h3 {
   line-height: 1.2;
   letter-spacing: -0.015em;
 }
+h4 {
+  font-size: clamp(1.15rem, 1.5vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
 
 p {
   font-family: var(--sans);

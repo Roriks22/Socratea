@@ -329,12 +329,11 @@
         background: transparent;
         z-index: 3;
       }
-      h3 {
-        max-width: 180px;
+      h4 {
         margin-top: 5px;
         margin-bottom: 20px;
         color: var(--navy);
-        text-align: left;
+        text-align: justify;
       }
       p {
         color: var(--gray-text);
@@ -352,13 +351,15 @@
   }
 
   .container {
+    max-width: none;
     @media (max-width: 350px) {
       padding: 0;
     }
   }
 
   .section-home {
-    max-width: 780px;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-bottom: 72px;
     text-align: justify;
 
@@ -400,53 +401,29 @@
       }
     }
   }
+  .process-photo {
+    margin-top: -8rem;
+    margin-left: -3rem;
+    img {
+      width: clamp(800px, 100vw, 2000px);
+    }
+  }
   .process-flow {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    counter-reset: proc 0;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
 
-    .process-step {
-      position: relative;
-      counter-increment: proc 1;
-      padding: 28px;
-      background: var(--white);
-      border: 1px solid var(--gray-line);
-      border-radius: 4px;
-      text-align: justify;
-
-      @media (max-width: 600px) {
-        padding-left: 15px;
-        text-align: left;
-      }
-
-      &::before {
-        content: counter(proc, decimal-leading-zero);
-        font-size: 0.8rem;
-        font-style: italic;
-        color: var(--blue);
-        letter-spacing: 0.1em;
-        display: block;
-        margin-bottom: 20px;
-      }
-      h4 {
-        font-size: 1.25rem;
-        color: var(--navy);
-        margin-bottom: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: -0.005em;
-      }
-      p {
-        color: var(--gray-text);
-      }
+    p {
+      color: var(--gray-text);
+      margin: 0 auto;
+      max-width: 400px;
     }
   }
 }
+
 .methode-engagement {
   position: relative;
   padding: 120px 0;

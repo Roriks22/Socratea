@@ -1,4 +1,5 @@
 import useReveal from "../../components/useReveal";
+import schemaMethodeHome from "../../../../public/images/schema-methodeHome.png";
 
 const MethodeHome = () => {
   useReveal();
@@ -17,6 +18,9 @@ const MethodeHome = () => {
             méthode reste la même : organiser les données, les fiabiliser et
             vous restituer ce qui compte vraiment.
           </p>
+        </div>
+        <div className="process-photo">
+          <img src={schemaMethodeHome} alt="Schema methode" />
         </div>
         <div className="process-flow reveal reveal-2">
           <div className="process-step">

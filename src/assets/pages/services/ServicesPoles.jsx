@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
+import serviceComptabilite from "../../../../public/images/service-comptabilite.png";
+import serviceAutomatisation from "../../../../public/images/service-automatisation.png";
+import serviceSocial from "../../../../public/images/service-social.png";
+import serviceJuridique from "../../../../public/images/service-juridique.png";
 
 const Services = () => {
   useReveal();
@@ -25,6 +29,7 @@ const Services = () => {
             <div className="pole-texte">
               <span>01</span>
               <h5>Comptabilité et pilotage</h5>
+              <img src={serviceComptabilite} alt="Service comptabilite" />
               <p>
                 Comptabilité, fiscalité, comptes annuels, suivi de trésorerie,
                 marge, activité : nous sécurisons vos obligations tout en vous
@@ -40,6 +45,7 @@ const Services = () => {
             <div className="pole-texte">
               <span>02</span>
               <h5>Automatisation et structuration des flux</h5>
+              <img src={serviceAutomatisation} alt="Service automatisation" />
               <p>
                 Nous simplifions vos processus, limitons les ressaisies et
                 faisons mieux circuler l’information. Connexion de vos outils,
@@ -55,6 +61,7 @@ const Services = () => {
             <div className="pole-texte">
               <span>03</span>
               <h5>Social et paie</h5>
+              <img src={serviceSocial} alt="Service social" />
               <p>
                 Bulletins de paie, déclarations sociales, collecte des variables
                 et respect des échéances : votre gestion sociale s’appuie sur
@@ -69,6 +76,7 @@ const Services = () => {
             <div className="pole-texte">
               <span>04</span>
               <h5>Juridique</h5>
+              <img src={serviceJuridique} alt="Service juridique" />
               <p>
                 Approbation des comptes, secrétariat juridique courant ou
                 opérations ponctuelles : nous vous accompagnons dans les

@@ -22,7 +22,7 @@ const MethodeEtapes = () => {
           <div className="timeline"></div>
           <div className="step">
             <div className="step-number">01</div>
-            <h3>Comprendre votre entreprise</h3>
+            <h4>Comprendre votre entreprise</h4>
             <p>
               Un premier échange pour parler de votre activité, de votre
               organisation et de ce que vous attendez réellement de votre
@@ -33,7 +33,7 @@ const MethodeEtapes = () => {
           <div className="step">
             <div className="step-line-dot"></div>
             <div className="step-number">02</div>
-            <h3>Préparer le démarrage</h3>
+            <h4>Préparer le démarrage</h4>
             <p>
               Une fois la mission définie, nous organisons la reprise du
               dossier, les accès, les outils et le calendrier de transmission.
@@ -44,7 +44,7 @@ const MethodeEtapes = () => {
           <div className="step">
             <div className="step-line-dot"></div>
             <div className="step-number">03</div>
-            <h3>Piloter et faire évoluer</h3>
+            <h4>Piloter et faire évoluer</h4>
             <p>
               Nous suivons votre comptabilité tout au long de l’année, avec des
               restitutions régulières et des échanges sur les points qui

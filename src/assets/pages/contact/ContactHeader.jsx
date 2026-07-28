@@ -30,31 +30,33 @@ const ContactHeader = () => {
             </p>
           </div>
         </div>
-        <picture
-          className="social-hero__visual reveal reveal-3"
-          aria-hidden="true"
-        >
-          <source media="(max-width: 900px)" srcSet={heroSocialMobile} />
+        <div className="photo-hero-visual">
+          <picture
+            className="social-hero__visual reveal reveal-3"
+            aria-hidden="true"
+          >
+            <source media="(max-width: 900px)" srcSet={heroSocialMobile} />
 
-          <img
-            src={heroSocialDesktop}
-            alt="illustration contact"
-            width="540"
-            height="700"
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            draggable="false"
-          />
-          <div className="texte-contact-julien">
-            <h3>Julien Jacquesson</h3>
-            <h4>Expert-comptable</h4>
-            <div className="hero-tag">
-              <span className="dot"></span>
-              <span>Echange sans engagement</span>
+            <img
+              src={heroSocialDesktop}
+              alt="illustration contact"
+              width="540"
+              height="700"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              draggable="false"
+            />
+            <div className="texte-contact-julien">
+              <h3>Julien Jacquesson</h3>
+              <h4>Expert-comptable</h4>
+              <div className="hero-tag">
+                <span className="dot"></span>
+                <span>Echange sans engagement</span>
+              </div>
             </div>
-          </div>
-        </picture>
+          </picture>
+        </div>
       </div>
     </section>
   );
