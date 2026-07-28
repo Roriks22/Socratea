@@ -19,6 +19,7 @@ const MethodeEtapes = () => {
           </p>
         </div>
         <div className="methode-steps reveal reveal-2">
+          <div className="timeline"></div>
           <div className="step">
             <div className="step-number">01</div>
             <h3>Comprendre votre entreprise</h3>
@@ -30,6 +31,7 @@ const MethodeEtapes = () => {
             </p>
           </div>
           <div className="step">
+            <div className="step-line-dot"></div>
             <div className="step-number">02</div>
             <h3>Préparer le démarrage</h3>
             <p>
@@ -40,6 +42,7 @@ const MethodeEtapes = () => {
             </p>
           </div>
           <div className="step">
+            <div className="step-line-dot"></div>
             <div className="step-number">03</div>
             <h3>Piloter et faire évoluer</h3>
             <p>
