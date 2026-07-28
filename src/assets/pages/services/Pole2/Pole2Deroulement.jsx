@@ -1,4 +1,8 @@
 import useReveal from "../../../components/useReveal";
+import automatiser from "../../../../../public/images/Automatiser.png";
+import centraliser from "../../../../../public/images/Centraliser.png";
+import developper from "../../../../../public/images/Developper.png";
+import connecter from "../../../../../public/images/Connecter.png";
 
 const Pole2Deroulement = () => {
   useReveal();
@@ -20,7 +24,10 @@ const Pole2Deroulement = () => {
         </div>
         <ul className="feature-list reveal reveal-2">
           <li>
-            <span className="feat-num">01</span>
+            <div className="left-feat">
+              <span className="feat-num">01</span>
+              <img src={centraliser} alt="image_centraliser" />
+            </div>
             <div>
               <strong>Centraliser les documents et les demandes</strong>
               <p>
@@ -32,7 +39,10 @@ const Pole2Deroulement = () => {
             </div>
           </li>
           <li>
-            <span className="feat-num">02</span>
+            <div className="left-feat">
+              <span className="feat-num">02</span>
+              <img src={connecter} alt="image_connecter" />
+            </div>
             <div>
               <strong>Faire circuler les données entre vos outils</strong>
               <p>
@@ -44,7 +54,10 @@ const Pole2Deroulement = () => {
             </div>
           </li>
           <li>
-            <span className="feat-num">03</span>
+            <div className="left-feat">
+              <span className="feat-num">03</span>
+              <img src={automatiser} alt="image_automatiser" />
+            </div>
             <div>
               <strong>Automatiser les tâches répétitives</strong>
               <p>
@@ -56,7 +69,10 @@ const Pole2Deroulement = () => {
             </div>
           </li>
           <li>
-            <span className="feat-num">04</span>
+            <div className="left-feat">
+              <span className="feat-num">04</span>
+              <img src={developper} alt="image_développer" />
+            </div>
             <div>
               <strong>Développer une application adaptée</strong>
               <p>
