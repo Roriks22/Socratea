@@ -5028,7 +5028,7 @@ h1 span {
           justify-content: flex-end;
   width: 100%;
   margin: 0;
-  margin-left: clamp(1.5rem, 8.5vw, 10rem);
+  margin-left: clamp(1.5rem, 4.5vw, 5rem);
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -7362,6 +7362,154 @@ h1 span {
   }
 }
 
+.page-hero--faq {
+  padding: clamp(88px, 8vw, 120px) 0 clamp(72px, 8vw, 110px);
+  background: radial-gradient(circle at 80% 20%, rgba(7, 168, 255, 0.12), transparent 35%), -webkit-gradient(linear, left top, left bottom, from(var(--navy-deep)), to(var(--navy)));
+  background: radial-gradient(circle at 80% 20%, rgba(7, 168, 255, 0.12), transparent 35%), linear-gradient(180deg, var(--navy-deep), var(--navy));
+  overflow: hidden;
+}
+.page-hero--faq .social-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(16px, 3vw, 40px);
+  margin-top: 0;
+  text-align: left;
+}
+.page-hero--faq .social-hero .social-hero__copy {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+}
+@media (max-width: 600px) {
+  .page-hero--faq .social-hero .social-hero__copy {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.page-hero--faq .social-hero .social-hero__copy .breadcrumb {
+  margin-bottom: 50px;
+}
+.page-hero--faq .social-hero .social-hero__copy h1 {
+  max-width: 760px;
+  margin-bottom: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: clamp(20px, 2vw, 32px);
+}
+.page-hero--faq .social-hero .social-hero__copy h1::before {
+  top: 0;
+  bottom: 0;
+}
+.page-hero--faq .social-hero .social-hero__copy h1 span {
+  margin-top: 14px;
+  color: var(--white);
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+.page-hero--faq .social-hero .social-hero__copy .page-hero-lead {
+  max-width: 66ch;
+}
+.page-hero--faq .social-hero .social-hero__copy .page-hero-lead p {
+  text-align: justify;
+}
+@media (max-width: 405px) {
+  .page-hero--faq .social-hero .social-hero__copy .page-hero-lead p {
+    text-align: left;
+  }
+}
+.page-hero--faq .social-hero .social-hero__visual {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  margin-left: clamp(1.5rem, 4.5vw, 5rem);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1330px) {
+  .page-hero--faq .social-hero .social-hero__visual {
+    margin-left: 0;
+  }
+}
+.page-hero--faq .social-hero .social-hero__visual img {
+  display: block;
+  width: clamp(460px, 42vw, 740px);
+  max-width: none;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* =========================================================
+   TABLETTE ET MOBILE
+   ========================================================= */
+@media (max-width: 900px) {
+  .page-hero--faq {
+    padding: 90px 0 0;
+  }
+  .page-hero--faq .social-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .page-hero--faq .social-hero .social-hero__copy {
+    width: 100%;
+  }
+  .page-hero--faq .social-hero .social-hero__visual {
+    width: min(100%, 520px);
+    margin: 0 auto;
+  }
+  .page-hero--faq .social-hero .social-hero__visual img {
+    max-width: 100%;
+    margin-top: -20rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .page-hero--faq .social-hero {
+    gap: 24px;
+  }
+  .page-hero--faq .social-hero .social-hero__copy .breadcrumb {
+    text-align: center;
+    gap: 8px;
+    margin-bottom: 34px;
+    padding-left: 0;
+  }
+  .page-hero--faq .social-hero .social-hero__copy h1 {
+    max-width: 100%;
+    margin-bottom: 32px;
+    padding-left: 20px;
+  }
+  .page-hero--faq .social-hero .social-hero__copy h1 span {
+    margin-top: 18px;
+    font-size: 0.88em;
+    line-height: 1.12;
+  }
+  .page-hero--faq .social-hero .social-hero__copy .page-hero-lead p {
+    padding-left: 0;
+  }
+  .page-hero--faq .social-hero .social-hero__visual {
+    width: 100%;
+    max-width: 460px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .faq-home {
   position: relative;
   padding: 60px 0;
