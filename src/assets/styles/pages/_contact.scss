@@ -76,9 +76,6 @@
       transition: all 0.25s ease;
       cursor: pointer;
 
-      @media (max-width: 332px) {
-      }
-
       &:hover {
         background: #7df596;
         transform: translateY(-1px);
@@ -98,6 +95,12 @@
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
     font-style: italic;
+
+    @media (max-width: 479px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
     p {
       font-size: 0.8rem;
     }
@@ -110,6 +113,11 @@
       &:hover {
         color: var(--blue);
         background: transparent;
+      }
+    }
+    .sep {
+      @media (max-width: 479px) {
+        display: none;
       }
     }
     span {

@@ -36,7 +36,8 @@ const Contact = () => {
           <a href="mailto:julien.jacquesson@socratea.net">
             julien.jacquesson@socratea.net
           </a>
-          .<a href="tel:+33686506129">06 86 50 61 29</a>
+          <span className="sep">|</span>
+          <a href="tel:+33686506129">06 86 50 61 29</a>
         </div>
       </div>
     </section>
