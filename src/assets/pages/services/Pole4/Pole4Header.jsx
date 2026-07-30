@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../../components/useReveal";
-import heroSocialDesktop from "../../../../../public/images/Juridique/juridique-desktop.png";
-import heroSocialMobile from "../../../../../public/images/Juridique/juridique-mobile.png";
+import heroSocialDesktop from "../../../../../public/images/juridique/juridique-desktop.webp";
+import heroSocialMobile from "../../../../../public/images/juridique/juridique-mobile.webp";
 
 const Pole4Header = () => {
   useReveal();

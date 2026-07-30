@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/Methode/methode-desktop.png";
-import heroSocialMobile from "../../../../public/images/Methode/methode-mobile.png";
+import heroSocialDesktop from "../../../../public/images/Methode/methode-desktop.webp";
+import heroSocialMobile from "../../../../public/images/Methode/methode-mobile.webp";
 
 const Methode = () => {
   useReveal();

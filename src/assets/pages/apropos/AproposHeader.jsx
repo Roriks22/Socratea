@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/socratea-logo.png";
-import heroSocialMobile from "../../../../public/images/socratea-logo.png";
+import heroSocialDesktop from "../../../../public/images/socratea-logo.webp";
+import heroSocialMobile from "../../../../public/images/socratea-logo.webp";
 
 const AproposHeader = () => {
   useReveal();

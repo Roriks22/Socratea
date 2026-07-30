@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/cabinets/cabinets-desktop.png";
-import heroSocialMobile from "../../../../public/images/cabinets/cabinets-mobile.png";
+import heroSocialDesktop from "../../../../public/images/cabinets/cabinets-desktop.webp";
+import heroSocialMobile from "../../../../public/images/cabinets/cabinets-mobile.webp";
 
 const CabinetsHeader = () => {
   useReveal();

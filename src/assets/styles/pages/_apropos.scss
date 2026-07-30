@@ -53,6 +53,9 @@
       @media (max-width: 1024px) {
         margin: 0 auto;
       }
+      @media (max-width: 387px) {
+        text-align: left;
+      }
 
       span {
         font-size: 0.8125rem;
@@ -104,6 +107,7 @@
         @media (max-width: 600px) {
           font-size: 1rem;
           padding-left: 15px;
+          padding-right: 15px;
         }
       }
       .texte_2 {
@@ -118,8 +122,9 @@
         @media (max-width: 600px) {
           font-size: 1rem;
           padding-left: 15px;
+          padding-right: 15px;
         }
-        @media (max-width: 320px) {
+        @media (max-width: 387px) {
           text-align: left;
         }
       }

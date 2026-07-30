@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import serviceComptabilite from "../../../../public/images/service-comptabilite.png";
-import serviceAutomatisation from "../../../../public/images/service-automatisation.png";
-import serviceSocial from "../../../../public/images/service-social.png";
-import serviceJuridique from "../../../../public/images/service-juridique.png";
+import serviceComptabilite from "../../../../public/images/service-comptabilite.webp";
+import serviceAutomatisation from "../../../../public/images/service-automatisation.webp";
+import serviceSocial from "../../../../public/images/service-social.webp";
+import serviceJuridique from "../../../../public/images/service-juridique.webp";
 
 const Services = () => {
   useReveal();

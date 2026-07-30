@@ -1,4 +1,4 @@
-import julienimage from "../../../../public/images/julien-complet.png";
+import julienimage from "../../../../public/images/julien-complet.webp";
 import { useNavigate } from "react-router-dom";
 
 const Apropos = () => {

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../../components/useReveal";
 
-import heroSocialDesktop from "../../../../../public/images/social & paie/social-desktop.png";
-import heroSocialMobile from "../../../../../public/images/social & paie/social-mobile.png";
+import heroSocialDesktop from "../../../../../public/images/social & paie/social-desktop.webp";
+import heroSocialMobile from "../../../../../public/images/social & paie/social-mobile.webp";
 
 const Pole3Header = () => {
   useReveal();

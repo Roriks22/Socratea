@@ -1,8 +1,8 @@
 import useReveal from "../../../components/useReveal";
-import flashMensuel from "../../../../../public/images/flash-mensuel.png";
-import analysePonctuelle from "../../../../../public/images/analyse-ponctuelle.png";
-import comptesAnnuels from "../../../../../public/images/comptes-annuels.png";
-import situationTrimestrielle from "../../../../../public/images/situation-trimestrielle.png";
+import flashMensuel from "../../../../../public/images/flash-mensuel.webp";
+import analysePonctuelle from "../../../../../public/images/analyse-ponctuelle.webp";
+import comptesAnnuels from "../../../../../public/images/comptes-annuels.webp";
+import situationTrimestrielle from "../../../../../public/images/situation-trimestrielle.webp";
 
 const Livrables = () => {
   useReveal();

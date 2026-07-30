@@ -1,5 +1,5 @@
 import useReveal from "../../components/useReveal";
-import schemaMethodeHome from "../../../../public/images/schema-methodeHome.png";
+import schemaMethodeHome from "../../../../public/images/schema-methodeHome.webp";
 
 const MethodeHome = () => {
   useReveal();

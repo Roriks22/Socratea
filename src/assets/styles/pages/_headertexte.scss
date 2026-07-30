@@ -1,6 +1,10 @@
 .header-texte {
   background: var(--white);
 
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
   .header-grid {
     margin-left: 4rem;
     display: grid;
@@ -8,14 +12,31 @@
     gap: 80px;
     align-items: start;
 
+    @media (max-width: 1373px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+      gap: 30px;
+    }
+
     .approche {
       margin-top: 2rem;
       text-align: left;
+      @media (max-width: 1373px) {
+        padding: 15px;
+      }
       h2 {
         position: relative;
         padding-left: 28px;
         color: var(--navy);
         margin-bottom: 4rem;
+
+        @media (max-width: 1373px) {
+          margin-bottom: 3rem;
+        }
+        @media (max-width: 1024px) {
+          margin-bottom: 2rem;
+        }
 
         @media (max-width: 600px) {
           text-align: left;
@@ -38,6 +59,14 @@
         margin-bottom: 26px;
         color: var(--gray-text);
         text-align: justify;
+
+        @media (max-width: 1373px) {
+          width: 100%;
+          max-width: 1200px;
+        }
+        @media (max-width: 435px) {
+          text-align: left;
+        }
       }
     }
 
@@ -50,6 +79,16 @@
       align-items: start;
       overflow: visible;
       min-height: 420px;
+
+      @media (max-width: 1373px) {
+        margin: 0 auto;
+        gap: 38px;
+      }
+      @media (max-width: 638px) {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 15px;
+      }
 
       .apropos-text {
         text-align: left;
@@ -76,6 +115,10 @@
           max-width: 300px;
           text-align: left;
           line-height: 2.2;
+
+          @media (max-width: 1373px) {
+            max-width: 700px;
+          }
         }
       }
       .apropos-photo {
@@ -83,9 +126,18 @@
         display: flex;
         align-self: end;
         justify-content: flex-end;
+
+        @media (max-width: 638px) {
+          margin: 0 auto;
+          justify-content: center;
+        }
         img {
           width: 450px;
           display: block;
+
+          @media (max-width: 1373px) {
+            width: clamp(250px, 32vw, 450px);
+          }
         }
       }
     }

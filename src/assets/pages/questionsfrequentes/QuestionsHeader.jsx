@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/faq/faq-desktop.png";
-import heroSocialMobile from "../../../../public/images/faq/faq-mobile.png";
+import heroSocialDesktop from "../../../../public/images/faq/faq-desktop.webp";
+import heroSocialMobile from "../../../../public/images/faq/faq-mobile.webp";
 
 const QuestionsHeader = () => {
   useReveal();

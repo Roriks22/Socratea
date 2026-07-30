@@ -1,8 +1,8 @@
 import useReveal from "../../../components/useReveal";
-import automatiser from "../../../../../public/images/Automatiser.png";
-import centraliser from "../../../../../public/images/Centraliser.png";
-import developper from "../../../../../public/images/Developper.png";
-import connecter from "../../../../../public/images/Connecter.png";
+import automatiser from "../../../../../public/images/Automatiser.webp";
+import centraliser from "../../../../../public/images/Centraliser.webp";
+import developper from "../../../../../public/images/Developper.webp";
+import connecter from "../../../../../public/images/Connecter.webp";
 
 const Pole2Deroulement = () => {
   useReveal();

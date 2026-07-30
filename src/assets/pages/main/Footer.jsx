@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../../public/images/socratea-logo.png";
+import logo from "../../../../public/images/socratea-logo.webp";
 const Footer = () => {
   const location = useLocation();
 

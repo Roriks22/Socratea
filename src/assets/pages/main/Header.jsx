@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/main-desktop.png";
-import heroSocialMobile from "../../../../public/images/main-mobile.png";
+import heroSocialDesktop from "../../../../public/images/main-desktop.webp";
+import heroSocialMobile from "../../../../public/images/main-mobile.webp";
 
 const Header = () => {
   useReveal();

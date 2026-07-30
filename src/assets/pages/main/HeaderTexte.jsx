@@ -1,4 +1,4 @@
-import heroSocialMobile from "../../../../public/images/julien-complet-transparent.png";
+import heroSocialMobile from "../../../../public/images/julien-complet-transparent.webp";
 
 const HeaderTexte = () => {
   return (

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../../components/useReveal";
-import heroSocialDesktop from "../../../../../public/images/automatisation/automatisation-desktop.png";
-import heroSocialMobile from "../../../../../public/images/automatisation/automatisation-mobile.png";
+import heroSocialDesktop from "../../../../../public/images/automatisation/automatisation-desktop.webp";
+import heroSocialMobile from "../../../../../public/images/automatisation/automatisation-mobile.webp";
 
 const Pole2Header = () => {
   useReveal();
