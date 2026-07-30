@@ -26,8 +26,8 @@ const MentionsHome = () => {
             <br />
             Adresse électronique :{" "}
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
-                julien.jacquesson@socratea-expertise.fr
+              <Link to="mailto:julien.jacquesson@socratea.net">
+                julien.jacquesson@socratea.net
               </Link>
             </strong>
           </p>
@@ -145,8 +145,8 @@ const MentionsHome = () => {
             écrire à : <br />{" "}
             <strong>
               {" "}
-              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
-                julien.jacquesson@socratea-expertise.fr
+              <Link to="mailto:julien.jacquesson@socratea.net">
+                julien.jacquesson@socratea.net
               </Link>
             </strong>
           </p>
@@ -175,8 +175,8 @@ const MentionsHome = () => {
             Adresse électronique :{" "}
             <strong>
               {" "}
-              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
-                julien.jacquesson@socratea-expertise.fr
+              <Link to="mailto:julien.jacquesson@socratea.net">
+                julien.jacquesson@socratea.net
               </Link>
             </strong>
           </p>

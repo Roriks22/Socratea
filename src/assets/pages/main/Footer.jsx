@@ -130,8 +130,8 @@ const Footer = () => {
                   80480 Vers-sur-Selle
                 </li>
                 <li>
-                  <a href="mailto:julien.jacquesson@socratea-expertise.fr">
-                    julien.jacquesson@socratea-expertise.fr
+                  <a href="mailto:julien.jacquesson@socratea.net">
+                    julien.jacquesson@socratea.net
                   </a>
                 </li>
                 <li className="telephone">

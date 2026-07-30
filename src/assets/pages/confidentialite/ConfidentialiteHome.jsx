@@ -27,8 +27,8 @@ const ConfidentialiteHome = () => {
             80480 Vers-sur-Selle <br />
             Adresse électronique :{" "}
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
-                julien.jacquesson@socratea-expertise.fr
+              <Link to="mailto:julien.jacquesson@socratea.net">
+                julien.jacquesson@socratea.net
               </Link>
             </strong>{" "}
             <br />
@@ -303,8 +303,8 @@ const ConfidentialiteHome = () => {
           <p>
             Vous pouvez exercer vos droits en écrivant à : <br />
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
-                julien.jacquesson@socratea-expertise.fr
+              <Link to="mailto:julien.jacquesson@socratea.net">
+                julien.jacquesson@socratea.net
               </Link>
             </strong>{" "}
             <br />
@@ -366,8 +366,8 @@ const ConfidentialiteHome = () => {
             80480 Vers-sur-Selle <br />
             Adresse électronique :{" "}
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea-expertise.fr">
-                julien.jacquesson@socratea-expertise.fr
+              <Link to="mailto:julien.jacquesson@socratea.net">
+                julien.jacquesson@socratea.net
               </Link>
             </strong>{" "}
             <br />

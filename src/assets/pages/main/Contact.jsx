@@ -33,8 +33,8 @@ const Contact = () => {
         </div>
         <div className="contact-fin">
           Ou par écrit -
-          <a href="mailto:julien.jacquesson@socratea-expertise.fr">
-            julien.jacquesson@socratea-expertise.fr
+          <a href="mailto:julien.jacquesson@socratea.net">
+            julien.jacquesson@socratea.net
           </a>
           .<a href="tel:+33686506129">06 86 50 61 29</a>
         </div>
