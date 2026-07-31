@@ -75,17 +75,13 @@
       justify-content: flex-end;
       width: 100%;
       margin: 0;
-      margin-left: clamp(1.5rem, 8.5vw, 10rem);
+      margin-left: clamp(1.5rem, 3vw, 5rem);
       pointer-events: none;
       user-select: none;
 
-      @media (max-width: 1330px) {
-        margin-left: 0;
-      }
-
       img {
         display: block;
-        width: clamp(560px, 62vw, 1000px);
+        width: clamp(520px, 56vw, 1000px);
         max-width: none;
         height: auto;
         object-fit: contain;
@@ -115,7 +111,8 @@
 
         img {
           max-width: 100%;
-          margin-top: -10rem;
+          margin: 0 auto;
+          margin-top: -14rem;
           margin-bottom: 2rem;
         }
       }
@@ -157,6 +154,11 @@
         max-width: 460px;
         padding-left: 15px;
         padding-right: 15px;
+
+        img {
+          margin: 0 auto;
+          margin-top: -7rem;
+        }
       }
     }
   }
@@ -254,14 +256,18 @@
           margin-bottom: 10px;
           font-weight: 600;
 
-          @media (max-width: 474px) {
+          @media (max-width: 489px) {
             text-align: left;
           }
         }
         p {
           color: var(--gray-text);
 
-          @media (max-width: 414px) {
+          @media (max-width: 600px) {
+            padding-right: 15px;
+          }
+
+          @media (max-width: 529px) {
             text-align: left;
           }
         }
@@ -410,6 +416,7 @@
 
       @media (max-width: 600px) {
         padding-left: 15px;
+        padding-right: 15px;
       }
       @media (max-width: 400px) {
         text-align: left;
@@ -477,6 +484,7 @@
       @media (max-width: 600px) {
         width: auto;
         padding-left: 15px;
+        padding-right: 15px;
         text-align: left;
       }
     }
@@ -581,6 +589,10 @@
         p {
           color: var(--gray-text);
 
+          @media (max-width: 600px) {
+            padding-right: 15px;
+          }
+
           @media (max-width: 401px) {
             text-align: left;
           }
@@ -644,6 +656,7 @@
 
       @media (max-width: 600px) {
         text-align: left;
+        padding-right: 15px;
         padding-left: 15px;
       }
     }
