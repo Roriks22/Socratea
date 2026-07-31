@@ -372,15 +372,16 @@ const ContactFormulaire = () => {
                   {status.message}
                 </div>
               )}
-
-              <button
-                type="submit"
-                className="btn btn-secondary"
-                disabled={loading}
-                aria-busy={loading}
-              >
-                {loading ? "Envoi en cours..." : "Envoyer ma demande"}
-              </button>
+              <div className="button-flex-formulaire">
+                <button
+                  type="submit"
+                  className="btn btn-secondary button-formulaire"
+                  disabled={loading}
+                  aria-busy={loading}
+                >
+                  {loading ? "Envoi en cours..." : "Envoyer ma demande"}
+                </button>
+              </div>
             </form>
           </div>
         </div>
