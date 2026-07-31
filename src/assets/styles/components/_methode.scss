@@ -545,9 +545,7 @@
               }
             }
           }
-          .process-step:last-child .step-marker::before {
-            display: none;
-          }
+
           .step-content {
             margin-top: 20px;
             margin-left: -2rem;
@@ -568,7 +566,6 @@
               .title-line {
                 width: 45px;
                 height: 3px;
-                background: #39b8ff;
               }
               h4 {
                 font-size: 1.5rem;
@@ -597,6 +594,65 @@
                 text-align: left;
               }
             }
+          }
+        }
+        .process-step:nth-child(1) .step-marker::before {
+          background: linear-gradient(to bottom, #37b9ff, #59cbff);
+        }
+        .process-step:nth-child(2) .step-marker::before {
+          background: linear-gradient(to bottom, #59cbff, #74e7df);
+        }
+        .process-step:nth-child(3) .step-marker::before {
+          background: linear-gradient(to bottom, #74e7df, #74e7c6);
+        }
+        .process-step:nth-child(4) .step-marker::before {
+          background: #74e7c6;
+          bottom: -20px;
+        }
+        .process-step:nth-child(1) .step-marker span {
+          border-color: #37b9ff;
+          color: #37b9ff;
+        }
+        .process-step:nth-child(2) .step-marker span {
+          border-color: #4bd9ff;
+          color: #4bd9ff;
+        }
+        .process-step:nth-child(3) .step-marker span {
+          border-color: #74e7df;
+          color: #74e7df;
+        }
+        .process-step:nth-child(4) .step-marker span {
+          border-color: #74e7c6;
+          color: #74e7c6;
+        }
+        .process-step:nth-child(1) .title-line {
+          background: #37b9ff;
+        }
+        .process-step:nth-child(2) .title-line {
+          background: #4bd9ff;
+        }
+        .process-step:nth-child(3) .title-line {
+          background: #74e7df;
+        }
+        .process-step:nth-child(4) .title-line {
+          background: #74e7c6;
+        }
+        .process-step:nth-child(4) .step-marker::after {
+          content: "";
+          position: absolute;
+          bottom: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background: #74e7c6;
+          border: 3px solid var(--gray-bg);
+          z-index: 4;
+
+          @media (max-width: 600px) {
+            left: 31%;
+            transform: translateX(-31%);
           }
         }
       }
