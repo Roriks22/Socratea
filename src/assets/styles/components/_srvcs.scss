@@ -112,8 +112,8 @@
         margin: 0 auto;
 
         img {
-          width: clamp(580px, 80vw, 820px);
-          margin-top: 1rem;
+          width: clamp(580px, 40vw, 620px);
+          margin-top: -1rem;
           margin-bottom: 2rem;
         }
       }
@@ -152,7 +152,7 @@
       }
       .social-hero__visual {
         img {
-          width: clamp(480px, 75vw, 720px);
+          width: clamp(320px, 90vw, 720px);
         }
       }
     }
@@ -207,6 +207,7 @@
         position: relative;
         padding-left: 28px;
         color: var(--navy);
+
         margin-top: 2rem;
 
         @media (max-width: 600px) {

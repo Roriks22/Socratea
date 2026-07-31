@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
 import heroSocialDesktop from "../../../../public/images/services.webp";
-import heroSocialMobile from "../../../../public/images/services-mobile.webp";
 
 const ServicesHeader = () => {
   useReveal();
@@ -33,7 +32,7 @@ const ServicesHeader = () => {
           className="social-hero__visual reveal reveal-3"
           aria-hidden="true"
         >
-          <source media="(max-width: 900px)" srcSet={heroSocialMobile} />
+          <source media="(max-width: 900px)" srcSet={heroSocialDesktop} />
 
           <img
             src={heroSocialDesktop}
