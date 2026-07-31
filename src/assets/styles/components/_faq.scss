@@ -75,17 +75,13 @@
       justify-content: flex-end;
       width: 100%;
       margin: 0;
-      margin-left: clamp(1.5rem, 4.5vw, 5rem);
+      margin-left: clamp(1.5rem, 2vw, 5rem);
       pointer-events: none;
       user-select: none;
 
-      @media (max-width: 1330px) {
-        margin-left: 0;
-      }
-
       img {
         display: block;
-        width: clamp(460px, 42vw, 740px);
+        width: clamp(360px, 42vw, 740px);
         max-width: none;
         height: auto;
         object-fit: contain;
@@ -115,7 +111,8 @@
 
         img {
           max-width: 100%;
-          margin-top: -20rem;
+          margin: 0 auto;
+          margin-top: 1rem;
           margin-bottom: 2rem;
         }
       }
@@ -155,8 +152,6 @@
       .social-hero__visual {
         width: 100%;
         max-width: 460px;
-        padding-left: 15px;
-        padding-right: 15px;
       }
     }
   }
@@ -192,9 +187,12 @@
     p {
       color: var(--gray-text);
 
-      @media (max-width: 600px) {
+      @media (max-width: 690px) {
         text-align: left;
+      }
+      @media (max-width: 600px) {
         padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
@@ -268,11 +266,10 @@
         transform: rotate(180deg);
       }
       .faq-answer {
-        max-height: 420px;
+        max-height: 1000px;
         padding-bottom: 28px;
         padding-top: 20px;
         opacity: 1;
-        overflow-y: auto;
       }
     }
     .faq-question {
@@ -316,7 +313,6 @@
       }
     }
     .faq-answer {
-      overflow: hidden;
       max-height: 0;
       opacity: 0;
       transition:
@@ -327,19 +323,6 @@
       padding: 0;
       margin: 0 28px;
       border-top: 1px solid rgba(0, 0, 0, 0.05);
-      scrollbar-width: thin;
-      scrollbar-color: var(--blue) transparent;
-
-      &::-webkit-scrollbar {
-        width: 5px;
-      }
-      &::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      &::-webkit-scrollbar-thumb {
-        background: var(--blue);
-        border-radius: 10px;
-      }
 
       @media (max-width: 600px) {
         padding-left: 15px;
@@ -408,6 +391,7 @@
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
