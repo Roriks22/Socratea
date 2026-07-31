@@ -79,17 +79,13 @@
       }
     }
 
-    .premier-h2 {
-      padding-top: 36px;
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
-      margin-top: 0;
-    }
     h2 {
       position: relative;
-      padding-left: 22px;
+      padding-left: 28px;
       margin-top: 56px;
       margin-bottom: 18px;
       color: var(--navy);
+      text-align: left;
 
       @media (max-width: 600px) {
         text-align: left;
@@ -100,18 +96,23 @@
         content: "";
         position: absolute;
         left: 0;
-        top: 20px;
-        bottom: 20px;
+        top: 0;
         width: 4px;
-        height: 80%;
+        height: 100%;
         background: var(--blue);
         border-radius: 2px;
       }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -28px;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.06);
+      }
     }
-    h2:not(:first-of-type) {
-      padding-top: 36px;
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
-    }
+
     p {
       color: var(--gray-text);
 
