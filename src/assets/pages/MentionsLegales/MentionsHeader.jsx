@@ -4,22 +4,24 @@ import useReveal from "../../components/useReveal";
 const MentionsHeader = () => {
   useReveal();
   return (
-    <section className="page-hero">
-      <div className="container page-hero-inner">
-        <div className="breadcrumb reveal reveal-1">
-          <Link to="/">Accueil</Link>
-          <span className="sep">/</span>
-          <span className="current">Mentions Légales</span>
-        </div>
-        <h1 className="reveal reveal-2">
-          Mentions <br />
-          <span>légales.</span>
-        </h1>
-        <div className="page-hero-lead reveal reveal-3">
-          <p>
-            Retrouvez ici les informations relatives à l’éditeur, à
-            l’hébergement et au fonctionnement du site SOCRATEA.
-          </p>
+    <section className="page-hero page-hero--social-mention">
+      <div className="container page-hero-inner social-hero">
+        <div className="social-hero__copy">
+          <div className="breadcrumb reveal reveal-1">
+            <Link to="/">Accueil</Link>
+            <span className="sep">/</span>
+            <span className="current">Mentions Légales</span>
+          </div>
+          <h1 className="page-hero-h1 reveal reveal-2">
+            Mentions <br />
+            <span>légales.</span>
+          </h1>
+          <div className="page-hero-lead reveal reveal-3">
+            <p>
+              Retrouvez ici les informations relatives à l’éditeur, à
+              l’hébergement et au fonctionnement du site SOCRATEA.
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-.page-hero--social {
+.page-hero--social-paie {
   padding: clamp(88px, 8vw, 120px) 0 clamp(72px, 8vw, 110px);
   background:
     radial-gradient(
@@ -99,7 +99,7 @@
    ========================================================= */
 
 @media (max-width: 900px) {
-  .page-hero--social-juridique {
+  .page-hero--social-paie {
     padding: 90px 0 0;
 
     .social-hero {
@@ -124,7 +124,7 @@
 }
 
 @media (max-width: 600px) {
-  .page-hero--social-juridique {
+  .page-hero--social-paie {
     .social-hero {
       gap: 24px;
 

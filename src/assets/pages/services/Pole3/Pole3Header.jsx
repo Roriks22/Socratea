@@ -8,7 +8,7 @@ const Pole3Header = () => {
   useReveal();
 
   return (
-    <section className="page-hero page-hero--social">
+    <section className="page-hero page-hero--social-paie">
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
           <div className="breadcrumb reveal reveal-1">
