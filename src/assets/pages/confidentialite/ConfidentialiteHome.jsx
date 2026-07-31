@@ -118,9 +118,17 @@ const ConfidentialiteHome = () => {
             le formulaire ne pourra pas être envoyé ou votre demande ne pourra
             pas être traitée correctement. <br />
             L'envoi du formulaire est assuré au moyen du service{" "}
-            <strong>EmailJS</strong>, qui intervient comme prestataire technique
-            afin de transmettre votre message à la messagerie de SOCRATEA.{" "}
-            <br />
+            <strong className="strong-cliquable">
+              <a
+                href="https://www.emailjs.com/legal/privacy-policy/"
+                target="_blank"
+                rel="noopener"
+              >
+                EmailJS
+              </a>
+            </strong>
+            , qui intervient comme prestataire technique afin de transmettre
+            votre message à la messagerie de SOCRATEA. <br />
             Les informations communiquées sont utilisées pour prendre
             connaissance de votre demande, vous répondre et assurer le suivi des
             échanges qui peuvent en découler. Elles ne sont pas utilisées pour
@@ -131,8 +139,18 @@ const ConfidentialiteHome = () => {
           </p>
           <h2>Prise de rendez-vous avec Cal.eu</h2>
           <p>
-            Le site intègre un module de prise de rendez-vous fourni par Cal.eu,
-            service proposé par Cal.com. <br />
+            Le site intègre un module de prise de rendez-vous fourni par{" "}
+            <strong>Cal.eu</strong>, service proposé par{" "}
+            <strong className="strong-cliquable">
+              <a
+                href="https://cal.com/fr/privacy"
+                target="_blank"
+                rel="noopener"
+              >
+                Cal.com
+              </a>
+            </strong>{" "}
+            <br />
             Lorsque vous utilisez ce module, les informations nécessaires à
             l’organisation du rendez-vous peuvent être recueillies directement
             par Cal.eu, notamment votre nom, votre adresse électronique, le
@@ -200,7 +218,7 @@ const ConfidentialiteHome = () => {
 
           <h2>Transferts de données hors de l’Espace économique européen</h2>
           <p>
-            Certains prestataires techniques utilisés par SOCRATEA, notamment
+            Certains prestataires techniques utilisés par SOCRATEA, notamment{" "}
             <strong>EmailJS</strong>, peuvent faire intervenir des sociétés ou
             des sous-traitants situés en dehors de l’Espace économique européen.{" "}
             <br />

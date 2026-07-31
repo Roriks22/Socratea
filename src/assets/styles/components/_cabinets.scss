@@ -619,22 +619,23 @@
   }
 
   .section-cabinets-contact {
-    text-align: justify;
+    text-align: center;
 
     .span-cabinet {
+      display: flex;
+      justify-content: center;
       @media (max-width: 355px) {
         letter-spacing: 0.09em;
       }
     }
     h2 {
       position: relative;
+      display: inline-block;
       color: var(--white);
       padding-left: 28px;
-      margin-top: 24px;
-      margin-bottom: 24px;
+      margin: 24px auto;
 
       @media (max-width: 600px) {
-        text-align: left;
         padding-left: 15px;
       }
 
@@ -653,9 +654,9 @@
     p {
       color: rgba(255, 255, 255, 0.8);
       margin-top: 16px;
+      text-align: center;
 
       @media (max-width: 600px) {
-        text-align: left;
         padding-right: 15px;
         padding-left: 15px;
       }
@@ -667,10 +668,46 @@
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     display: flex;
     gap: 16px;
+    justify-content: center;
+    align-items: center;
 
-    @media (max-width: 440px) {
+    @media (max-width: 439px) {
       flex-direction: column;
-      align-items: center;
+      gap: 10px;
+    }
+  }
+  .contact-fin {
+    margin-top: 28px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+
+    @media (max-width: 479px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      padding-left: 0.5rem;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--blue);
+        background: transparent;
+      }
+    }
+    .sep {
+      @media (max-width: 479px) {
+        display: none;
+      }
+    }
+    span {
+      padding-left: 0.5rem;
     }
   }
 }

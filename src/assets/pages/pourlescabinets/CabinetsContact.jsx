@@ -45,6 +45,14 @@ const CabinetsContact = () => {
             Nous écrire
           </button>
         </div>
+        <div className="contact-fin">
+          Ou par écrit -
+          <a href="mailto:julien.jacquesson@socratea.net">
+            julien.jacquesson@socratea.net
+          </a>
+          <span className="sep">|</span>
+          <a href="tel:+33686506129">06 86 50 61 29</a>
+        </div>
       </div>
     </section>
   );

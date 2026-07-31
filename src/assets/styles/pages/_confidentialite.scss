@@ -42,7 +42,7 @@
   text-align: justify;
 
   .container {
-    @media (max-width: 600px) {
+    @media (max-width: 350px) {
       padding: 0;
     }
   }
@@ -137,6 +137,9 @@
       }
       strong {
         color: var(--navy);
+      }
+      .strong-cliquable {
+        cursor: pointer;
       }
 
       .strong-tel {
