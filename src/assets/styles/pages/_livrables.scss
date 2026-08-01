@@ -108,6 +108,19 @@
             img {
               width: 80%;
               background-image: white;
+
+              @media (max-width: 1147px) {
+                width: 60%;
+              }
+              @media (max-width: 900px) {
+                width: 70%;
+              }
+              @media (max-width: 700px) {
+                width: 80%;
+              }
+              @media (max-width: 600px) {
+                width: 100%;
+              }
             }
           }
           .livrables-text {

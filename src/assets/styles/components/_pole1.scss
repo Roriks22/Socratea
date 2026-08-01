@@ -89,26 +89,9 @@
       justify-content: flex-end;
       width: 100%;
       margin: 0;
-      margin-left: clamp(1.5rem, 5vw, 5rem);
+      margin-left: clamp(1.5rem, 6vw, 5rem);
       pointer-events: none;
       user-select: none;
-
-      @media (max-width: 1680px) {
-        margin-left: 15rem;
-      }
-      @media (max-width: 1558px) {
-        margin-left: 8rem;
-      }
-
-      @media (max-width: 1330px) {
-        margin-left: 6rem;
-      }
-      @media (max-width: 1260px) {
-        margin-left: 4rem;
-      }
-      @media (max-width: 900px) {
-        margin-left: 0;
-      }
 
       img {
         display: block;
@@ -181,9 +164,6 @@
       }
       .social-hero__visual {
         width: 100%;
-
-        padding-left: 15px;
-        padding-right: 15px;
       }
     }
   }
@@ -253,6 +233,7 @@
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
@@ -299,6 +280,10 @@
         p {
           color: var(--gray-text);
           margin: 0;
+
+          @media (max-width: 600px) {
+            padding-right: 15px;
+          }
           @media (max-width: 382px) {
             text-align: left;
           }
@@ -378,6 +363,10 @@
 
         @media (max-width: 600px) {
           padding-left: 15px;
+          padding-right: 15px;
+        }
+        @media (max-width: 464px) {
+          text-align: left;
         }
       }
     }
@@ -409,8 +398,21 @@
 
           .livrables-span {
             img {
-              width: 80%;
+              width: 100%;
               background-image: white;
+
+              @media (max-width: 1147px) {
+                width: 60%;
+              }
+              @media (max-width: 900px) {
+                width: 70%;
+              }
+              @media (max-width: 700px) {
+                width: 80%;
+              }
+              @media (max-width: 600px) {
+                width: 100%;
+              }
             }
           }
           .livrables-text {
@@ -471,8 +473,9 @@
 
       @media (max-width: 600px) {
         padding-left: 15px;
+        padding-right: 15px;
       }
-      @media (max-width: 400px) {
+      @media (max-width: 421px) {
         text-align: left;
       }
     }
@@ -488,6 +491,10 @@
       @media (max-width: 600px) {
         font-size: 1rem;
         padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media (max-width: 565px) {
+        text-align: left;
       }
     }
   }
