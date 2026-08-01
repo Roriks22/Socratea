@@ -75,17 +75,13 @@
       justify-content: flex-end;
       width: 100%;
       margin: 0;
-      margin-left: clamp(1.5rem, 8.5vw, 10rem);
+      margin-left: clamp(1.5rem, 1vw, 2rem);
       pointer-events: none;
       user-select: none;
 
-      @media (max-width: 1330px) {
-        margin-left: 0;
-      }
-
       img {
         display: block;
-        width: clamp(560px, 62vw, 1000px);
+        width: clamp(650px, 68vw, 1200px);
         max-width: none;
         height: auto;
         object-fit: contain;
@@ -110,13 +106,18 @@
       }
 
       .social-hero__visual {
-        width: min(100%, 520px);
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
 
         img {
-          max-width: 100%;
-          margin-top: -20rem;
+          width: clamp(420px, 90vw, 700px);
+          margin-top: -28rem;
           margin-bottom: 2rem;
+
+          @media (max-width: 700px) {
+            margin-top: -22rem;
+          }
         }
       }
     }
@@ -154,9 +155,14 @@
       }
       .social-hero__visual {
         width: 100%;
-        max-width: 460px;
-        padding-left: 15px;
-        padding-right: 15px;
+
+        img {
+          width: clamp(330px, 80vw, 620px);
+          margin-top: -18rem;
+          @media (max-width: 500px) {
+            margin-top: -14rem;
+          }
+        }
       }
     }
   }
@@ -227,6 +233,7 @@
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
@@ -276,8 +283,9 @@
           color: var(--gray-text);
           margin: 0;
 
-          @media (max-width: 471px) {
+          @media (max-width: 600px) {
             text-align: left;
+            padding-right: 15px;
           }
         }
       }
@@ -318,9 +326,7 @@
     h2 {
       position: relative;
       padding-left: 28px;
-
       color: var(--navy);
-
       margin-top: 2rem;
 
       @media (max-width: 600px) {
@@ -349,6 +355,7 @@
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
@@ -382,6 +389,11 @@
       p {
         color: var(--gray-text);
         margin-bottom: 18px;
+
+        @media (max-width: 600px) {
+          text-align: left;
+          padding-right: 15px;
+        }
       }
     }
   }
@@ -423,6 +435,7 @@
       @media (max-width: 600px) {
         text-align: left;
         padding-left: 15px;
+        padding-right: 15px;
       }
     }
     blockquote {
@@ -438,6 +451,10 @@
       @media (max-width: 600px) {
         font-size: 1rem;
         padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media (max-width: 518px) {
+        text-align: left;
       }
     }
   }
