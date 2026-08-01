@@ -86,17 +86,28 @@
       }
       @media (max-width: 638px) {
         grid-template-columns: 1fr;
+        grid-template-areas:
+          "title"
+          "photo"
+          "text";
         gap: 0;
         padding: 15px;
       }
 
       .apropos-text {
         text-align: left;
+        @media (max-width: 638px) {
+          display: contents;
+        }
         h3 {
           position: relative;
           margin-bottom: 28px;
           color: var(--navy);
           padding-left: 18px;
+
+          @media (max-width: 638px) {
+            grid-area: title;
+          }
 
           &::before {
             content: "";
@@ -119,6 +130,9 @@
           @media (max-width: 1373px) {
             max-width: 700px;
           }
+          @media (max-width: 638px) {
+            grid-area: text;
+          }
         }
       }
       .apropos-photo {
@@ -128,8 +142,12 @@
         justify-content: flex-end;
 
         @media (max-width: 638px) {
+          display: flex;
           margin: 0 auto;
           justify-content: center;
+          grid-area: photo;
+          margin-top: -2rem;
+          margin-bottom: 2rem;
         }
         img {
           width: 450px;
