@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --mode githug-pages
+        run: npm run build -- --mode github-pages
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
