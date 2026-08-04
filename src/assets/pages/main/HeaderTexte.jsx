@@ -1,8 +1,11 @@
-import heroSocialMobile from "../../../../public/images/julien-complet-transparent.webp";
+import julienPortrait from "/images/julien-complet-transparent.webp";
 
 const HeaderTexte = () => {
   return (
-    <section className="header-texte">
+    <section
+      className="header-texte"
+      aria-label="Présentation du cabinet SOCRATEA et de son fondateur Julien Jacquesson, expert-comptable"
+    >
       <div className="header-grid">
         <div className="approche">
           <h2>Notre approche</h2>
@@ -38,7 +41,11 @@ const HeaderTexte = () => {
             </p>
           </div>
           <div className="apropos-photo">
-            <img src={heroSocialMobile} alt="Julien Jacquesson" />
+            <img
+              src={julienPortrait}
+              alt="Julien Jacquesson, expert-comptable fondateur de SOCRATEA"
+              loading="lazy"
+            />
           </div>
         </aside>
       </div>

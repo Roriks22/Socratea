@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import serviceComptabilite from "../../../../public/images/service-comptabilite.webp";
-import serviceAutomatisation from "../../../../public/images/service-automatisation.webp";
-import serviceSocial from "../../../../public/images/service-social.webp";
-import serviceJuridique from "../../../../public/images/service-juridique.webp";
+import serviceComptabilite from "/images/service-comptabilite.webp";
+import serviceAutomatisation from "/images/service-automatisation.webp";
+import serviceSocial from "/images/service-social.webp";
+import serviceJuridique from "/images/service-juridique.webp";
 
 const Services = () => {
   useReveal();
   return (
-    <section className="services">
+    <section
+      className="services"
+      aria-label="Services du cabinet d'expertise comptable"
+    >
       <div className="container services-deroulement">
         <div className="services-header reveal reveal-1">
           <span>Nos expertises</span>
@@ -28,8 +31,12 @@ const Services = () => {
           <div className="pole-services">
             <div className="pole-texte">
               <span>01</span>
-              <h5>Comptabilité et pilotage</h5>
-              <img src={serviceComptabilite} alt="Service comptabilite" />
+              <h3>Comptabilité et pilotage</h3>
+              <img
+                src={serviceComptabilite}
+                alt="Comptabilité et pilotage d'entreprise - Cabinet SOCRATEA"
+                loading="lazy"
+              />
               <p>
                 Comptabilité, fiscalité, comptes annuels, suivi de trésorerie,
                 marge, activité : nous sécurisons vos obligations tout en vous
@@ -44,8 +51,12 @@ const Services = () => {
           <div className="pole-services">
             <div className="pole-texte">
               <span>02</span>
-              <h5>Automatisation et structuration des flux</h5>
-              <img src={serviceAutomatisation} alt="Service automatisation" />
+              <h3>Automatisation et structuration des flux</h3>
+              <img
+                src={serviceAutomatisation}
+                alt="Automatisation et structuration des flux - Cabinet SOCRATEA"
+                loading="lazy"
+              />
               <p>
                 Nous simplifions vos processus, limitons les ressaisies et
                 faisons mieux circuler l’information. Connexion de vos outils,
@@ -60,8 +71,12 @@ const Services = () => {
           <div className="pole-services">
             <div className="pole-texte">
               <span>03</span>
-              <h5>Social et paie</h5>
-              <img src={serviceSocial} alt="Service social" />
+              <h3>Social et paie</h3>
+              <img
+                src={serviceSocial}
+                alt="Social et paie - Cabinet SOCRATEA"
+                loading="lazy"
+              />
               <p>
                 Bulletins de paie, déclarations sociales, collecte des variables
                 et respect des échéances : votre gestion sociale s’appuie sur
@@ -75,8 +90,13 @@ const Services = () => {
           <div className="pole-services">
             <div className="pole-texte">
               <span>04</span>
-              <h5>Juridique</h5>
-              <img src={serviceJuridique} alt="Service juridique" />
+              <h3>Juridique</h3>
+              <img
+                src={serviceJuridique}
+                alt="Juridique - Cabinet SOCRATEA"
+                loading="lazy"
+              />
+
               <p>
                 Approbation des comptes, secrétariat juridique courant ou
                 opérations ponctuelles : nous vous accompagnons dans les

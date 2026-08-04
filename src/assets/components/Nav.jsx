@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../public/images/socratea-logo.webp";
+import logo from "/images/socratea-logo.webp";
 import { useEffect, useState } from "react";
 
 const Nav = () => {
@@ -31,49 +31,63 @@ const Nav = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header
+      className="header"
+      aria-label="Barre de navigation du site du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container header-inner">
         <Link to="/" className="socratea" onClick={() => handleScrollTop("/")}>
-          <img src={logo} alt="Logo_SOCRATEA" />
+          <img
+            src={logo}
+            alt="Logo du cabinet d'expertise comptable SOCRATEA"
+          />
           SOCRATEA
         </Link>
         <nav className="nav">
           <ul className="nav-links">
             <li>
               <Link to="/methode" onClick={() => handleScrollTop("/methode")}>
-                <h5>Méthode</h5>
+                Méthode
               </Link>
             </li>
             <li>
               <Link to="/services" onClick={() => handleScrollTop("/services")}>
-                <h5>Services</h5>
+                Services
               </Link>
             </li>
             <li>
               <Link to="/apropos" onClick={() => handleScrollTop("/apropos")}>
-                <h5>À propos</h5>
+                À propos
               </Link>
             </li>
             <li>
               <Link to="/contact" onClick={() => handleScrollTop("/contact")}>
-                <h5>Contact</h5>
+                Contact
               </Link>
             </li>
           </ul>
           <a
             href="https://www.cal.eu/socratea"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="nav-cta"
           >
             Prendre rendez-vous
           </a>
           <button
+            type="button"
+            aria-controls="mobile-navigation"
             className={`menu-toggle ${menuOpen ? "active" : ""}`}
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Menu"
+            aria-label={
+              menuOpen
+                ? "Fermer le menu de navigation"
+                : "Ouvrir le menu de navigation"
+            }
+            aria-expanded={menuOpen}
           >
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -88,7 +102,10 @@ const Nav = () => {
           </button>
         </nav>
       </div>
-      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+      <div
+        id="mobile-navigation"
+        className={`mobile-menu ${menuOpen ? "open" : ""}`}
+      >
         <ul>
           <li>
             <Link to="/methode" onClick={() => setMenuOpen(false)}>
@@ -102,7 +119,7 @@ const Nav = () => {
           </li>
           <li>
             <Link to="/apropos" onClick={() => setMenuOpen(false)}>
-              A propos
+              À propos
             </Link>
           </li>
           <li>
@@ -114,7 +131,7 @@ const Nav = () => {
             <a
               href="https://www.cal.eu/socratea"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="nav-cta"
             >
               Prendre rendez-vous

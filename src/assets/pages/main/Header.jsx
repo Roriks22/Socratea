@@ -1,14 +1,16 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/main-desktop.webp";
-import heroSocialMobile from "../../../../public/images/main-mobile.webp";
+import heroSocialDesktop from "/images/main-desktop.webp";
+import heroSocialMobile from "/images/main-mobile.webp";
 
 const Header = () => {
   useReveal();
-  const navigate = useNavigate();
 
   return (
-    <section className="hero hero--social-main">
+    <section
+      className="hero hero--social-main"
+      aria-label="Présentation du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container hero-inner social-hero">
         <div className="hero-content">
           <div className="hero-tag reveal reveal-1">
@@ -27,28 +29,25 @@ const Header = () => {
             <a
               href="https://www.cal.eu/socratea"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
             >
-              <button className="btn btn-primary">
-                Prendre rendez-vous
-                <svg
-                  className="arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
+              Prendre rendez-vous
+              <svg
+                aria-hidden="true"
+                className="arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </a>
-            <button
-              className="btn btn-secondary on-dark"
-              onClick={() => navigate("/methode")}
-            >
+            <Link to="/methode" className="btn btn-secondary on-dark">
               Découvrir notre méthode
-            </button>
+            </Link>
           </div>
         </div>
         <picture
@@ -59,7 +58,7 @@ const Header = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration main"
+            alt=""
             width="540"
             height="700"
             loading="eager"

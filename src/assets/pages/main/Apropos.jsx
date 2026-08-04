@@ -1,17 +1,24 @@
-import julienimage from "../../../../public/images/julien-complet.webp";
+import julienimage from "/images/julien-complet.webp";
 import { useNavigate } from "react-router-dom";
 
 const Apropos = () => {
   const navigate = useNavigate();
   return (
-    <section className="a_propos">
+    <section
+      className="a_propos"
+      aria-label="Présentation de Julien Jacquesson, expert-comptable fondateur du cabinet SOCRATEA"
+    >
       <div className="container apropos">
         <div className="apropos_left">
-          <img src={julienimage} alt="Julien_JACQUESSON" />
+          <img
+            src={julienimage}
+            alt="Julien Jacquesson, expert-comptable fondateur de SOCRATEA"
+            loading="lazy"
+          />
         </div>
         <div className="apropos-right">
-          <span>à propos</span>
-          <h3>Julien Jacquesson, expert-comptable</h3>
+          <span>À propos</span>
+          <h2>Julien Jacquesson, expert-comptable</h2>
           <p className="texte_1">
             « J’ai vu les chiffres des deux côtés : celui de l’auditeur qui
             vérifie, et celui du directeur financier qui décide avec. C’est ce
@@ -28,7 +35,6 @@ const Apropos = () => {
           </p>
           <div className="btn-parcours">
             <button
-              href="apropos"
               className="btn-click-parcours"
               onClick={() => navigate("/apropos")}
             >

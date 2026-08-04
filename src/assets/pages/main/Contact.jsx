@@ -1,6 +1,9 @@
 const Contact = () => {
   return (
-    <section className="contact">
+    <section
+      className="contact"
+      aria-label="Prendre rendez-vous avec le cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container texte-contact">
         <span className="rdv-pris">PRENDRE RENDEZ-VOUS</span>
         <h2>Échangeons sur votre entreprise. </h2>
@@ -15,11 +18,13 @@ const Contact = () => {
           <a
             href="https://www.cal.eu/socratea"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="btn_reserve"
+            aria-label="Prendre rendez-vous avec le cabinet d'expertise comptable SOCRATEA"
           >
             Prendre rendez-vous{" "}
             <svg
+              aria-hidden="true"
               className="arrow"
               viewBox="0 0 24 24"
               fill="none"

@@ -122,7 +122,7 @@ const ConfidentialiteHome = () => {
               <a
                 href="https://www.emailjs.com/legal/privacy-policy/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 EmailJS
               </a>
@@ -145,7 +145,7 @@ const ConfidentialiteHome = () => {
               <a
                 href="https://cal.com/fr/privacy"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Cal.com
               </a>
@@ -338,7 +338,7 @@ const ConfidentialiteHome = () => {
               <a
                 href="https://cnil.fr/fr/professionnel"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Commission nationale de l’informatique et des libertés (CNIL)
               </a>

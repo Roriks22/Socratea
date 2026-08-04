@@ -96,9 +96,10 @@
         background: var(--gray-bg);
       }
 
-      h5 {
+      h3 {
         color: rgba(0, 0, 0, 0.734);
-        font-size: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
         text-align: left;
         min-height: 50px;
         @media (max-width: 830px) {

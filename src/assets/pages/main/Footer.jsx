@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../../public/images/socratea-logo.webp";
+import logo from "/images/socratea-logo.webp";
 const Footer = () => {
   const location = useLocation();
 
@@ -12,13 +12,19 @@ const Footer = () => {
     }
   };
   return (
-    <footer className="footer">
+    <footer
+      className="footer"
+      aria-label="Pied de page du site du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
             <Link to="/" onClick={() => handleScrollTop("/")}>
-              <img src={logo} alt="Logo" />
-              SOCRATEA
+              <img
+                src={logo}
+                alt="Logo du cabinet d'expertise comptable SOCRATEA"
+              />
+              <span>SOCRATEA</span>
             </Link>
             <p>
               SOCRATEA est un cabinet d’expertise comptable qui sécurise vos
@@ -29,14 +35,14 @@ const Footer = () => {
               Installé près d’Amiens, le cabinet accompagne des entreprises
               partout en France grâce à une organisation dématérialisée.
             </p>
-            <Link
-              to="https://www.linkedin.com/in/jacquesson-julien-b72870a9/"
+            <a
+              href="https://www.linkedin.com/in/jacquesson-julien-b72870a9/"
               className="footer-linkedin"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-linkedin"></i>Suivre sur Linkedin
-            </Link>
+              <i className="fa-brands fa-linkedin"></i>Suivre sur LinkedIn
+            </a>
           </div>
           <div className="footer-col-bottom">
             <div className="footer-col">
@@ -126,8 +132,10 @@ const Footer = () => {
               <h4>Contact</h4>
               <ul>
                 <li>
-                  21, rue Charlemagne <br />
-                  80480 Vers-sur-Selle
+                  <address>
+                    21, rue Charlemagne <br />
+                    80480 Vers-sur-Selle
+                  </address>
                 </li>
                 <li>
                   <a href="mailto:julien.jacquesson@socratea.net">
@@ -135,7 +143,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="telephone">
-                  <a href="tel:+33686506129"></a>06 86 50 61 29
+                  <a href="tel:+33686506129">06 86 50 61 29</a>
                 </li>
               </ul>
             </div>
