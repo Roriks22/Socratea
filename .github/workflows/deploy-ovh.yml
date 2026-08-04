@@ -2,40 +2,66 @@ name: Build for OVH
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: ovh-production
+  cancel-in-progress: true
 
 jobs:
   build-ovh:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Récupérer le code source
         uses: actions/checkout@v4
+        with:
+          path: source
 
-      - name: Setup Node
+      - name: Installer Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
+          cache: npm
+          cache-dependency-path: source/package-lock.json
 
-      - name: Install dependencies
+      - name: Installer les dépendances
+        working-directory: source
         run: npm ci
 
-      - name: Build for socratea.net
+      - name: Construire le site
+        working-directory: source
         run: npm run build
 
-      - name: Publish compiled site to OVH branch
+      - name: Récupérer la branche OVH existante
+        uses: actions/checkout@v4
+        with:
+          ref: ovh
+          fetch-depth: 0
+          path: publication
+
+      - name: Remplacer le site compilé
         run: |
-          cd dist
-          git init -b ovh
+          rsync -av --delete \
+            --exclude='.git/' \
+            source/dist/ publication/
+
+      - name: Publier la nouvelle version
+        working-directory: publication
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add -A
-          git commit -m "Deploy OVH ${GITHUB_SHA}"
-          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" ovh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          if git diff --cached --quiet; then
+            echo "Aucune modification à publier."
+          else
+            git commit -m "Deploy OVH ${GITHUB_SHA}"
+            git push origin HEAD:ovh
+          fi
