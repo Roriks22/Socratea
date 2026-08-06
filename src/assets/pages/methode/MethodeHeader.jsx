@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/methode/methode-desktop.webp";
-import heroSocialMobile from "../../../../public/images/methode/methode-mobile.webp";
+import heroSocialDesktop from "/images/methode/methode-desktop.webp";
+import heroSocialMobile from "/images/methode/methode-mobile.webp";
 
 const Methode = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-methode">
+    <section
+      className="page-hero page-hero--social-methode"
+      aria-label="Présentation de la méthode de suivi comptable proposée par le cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
           <div className="breadcrumb reveal reveal-1">
@@ -36,7 +39,7 @@ const Methode = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration methode"
+            alt=""
             width="540"
             height="700"
             loading="eager"

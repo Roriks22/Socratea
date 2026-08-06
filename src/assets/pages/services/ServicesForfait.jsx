@@ -3,7 +3,10 @@ import useReveal from "../../components/useReveal";
 const ServicesForfait = () => {
   useReveal();
   return (
-    <section className="services-forfait">
+    <section
+      className="services-forfait"
+      aria-label="Présentation de l'accompagnement proposé par le cabinet d'expertise comptable SOCRATEA aux entreprises sous forme de forfait"
+    >
       <div className="container">
         <div className="section-forfait reveal reveal-1">
           <span className="eyebrow">Votre accompagnement</span>
@@ -20,8 +23,8 @@ const ServicesForfait = () => {
             l’accompagnement peut changer avec elle.
           </p>
         </div>
-        <div className="two-col reveal reveal-2">
-          <div className="col">
+        <ul className="two-col reveal reveal-2">
+          <li className="col">
             <h3>Un cadre clair dès le départ</h3>
             <p>
               Comptabilité, pilotage, paie, juridique, automatisation : nous
@@ -29,8 +32,8 @@ const ServicesForfait = () => {
               nous et le niveau d’accompagnement attendu. Vous savez ce qui est
               prévu et comment les honoraires sont construits.
             </p>
-          </div>
-          <div className="col">
+          </li>
+          <li className="col">
             <h3>Quand vos besoins évoluent</h3>
             <p>
               Un recrutement, un financement, une nouvelle entité, de nouveaux
@@ -38,8 +41,8 @@ const ServicesForfait = () => {
               la mission lorsque cela devient utile. Nous en parlons avec vous
               et chiffrons l’intervention avant de commencer.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
   );

@@ -43,7 +43,7 @@ const Nav = () => {
           />
           SOCRATEA
         </Link>
-        <nav className="nav">
+        <nav className="nav" aria-label="Navigation principale">
           <ul className="nav-links">
             <li>
               <Link to="/methode" onClick={() => handleScrollTop("/methode")}>

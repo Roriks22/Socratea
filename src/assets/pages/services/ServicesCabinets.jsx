@@ -5,7 +5,10 @@ const ServicesCabinets = () => {
   const navigate = useNavigate();
   useReveal();
   return (
-    <section className="services-cabinets">
+    <section
+      className="services-cabinets"
+      aria-label="Présentation de l'accompagnement proposé par le cabinet d'expertise comptable SOCRATEA aux cabinets d'expertise comptable"
+    >
       <div className="container">
         <div className="section-services-cabinets reveal reveal-1">
           <span className="eyebrow">Vous êtes expert-comptable ?</span>
@@ -31,6 +34,8 @@ const ServicesCabinets = () => {
               fill="none"
               stroke="currentColor"
               strokeWidth="2.5"
+              aria-hidden="true"
+              focusable="false"
             >
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>

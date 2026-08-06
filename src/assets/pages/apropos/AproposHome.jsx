@@ -1,16 +1,22 @@
-import julienimage from "../../../../public/images/julien-complet.webp";
+import julienimage from "/images/julien-complet.webp";
 
 const AproposHome = () => {
   return (
-    <section className="aprps-home">
+    <section
+      className="aprps-home"
+      aria-label="Présentation de l'expert-comptable Julien Jacquesson et du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container">
         <div className="about-inner">
           <div className="about-portrait">
-            <img src={julienimage} alt="Julien_JACQUESSON" />
+            <img
+              src={julienimage}
+              alt="Julien Jacquesson, expert-comptable fondateur de SOCRATEA"
+            />
           </div>
           <div className="about-content">
             <span className="eyebrow">Le fondateur</span>
-            <h3>Un parcours, une conviction.</h3>
+            <h2>Un parcours, une conviction.</h2>
             <p className="aprps1">
               « J’ai vu les chiffres des deux côtés : celui de l’auditeur qui
               vérifie, et celui du directeur financier qui décide avec. C’est ce
@@ -25,9 +31,9 @@ const AproposHome = () => {
               les équipes et d’éclairer les décisions de la direction générale.
             </p>
             <p className="aprps3">
-              Ce double parcours m'a appris à concilier deux exigences : la
-              fiabilité de l'information financière et son utilité réelle pour
-              le dirigeant. C'est de cette double expérience qu'est né SOCRATEA.
+              Ce double parcours m’a appris à concilier deux exigences : la
+              fiabilité de l’information financière et son utilité réelle pour
+              le dirigeant. C’est de cette double expérience qu’est né SOCRATEA.
             </p>
           </div>
         </div>

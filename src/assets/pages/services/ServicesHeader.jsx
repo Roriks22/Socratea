@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/services.webp";
+import heroSocialDesktop from "/images/services.webp";
 
 const ServicesHeader = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-services">
+    <section
+      className="page-hero page-hero--social-services"
+      aria-label="Présentation des services proposés par le cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current">Nos services</span>
-          </div>
+            <span aria-current="page">Nos services</span>
+          </nav>
           <h1 className="hero-inner-h1 reveal reveal-2">
             Quatre expertises. <br />
             <span>Une seule vision de votre entreprise.</span>
@@ -36,7 +39,7 @@ const ServicesHeader = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration services"
+            alt=""
             width="540"
             height="700"
             loading="eager"

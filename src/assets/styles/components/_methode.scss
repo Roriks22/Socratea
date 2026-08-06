@@ -369,17 +369,14 @@
         }
       }
 
-      h4 {
+      h3 {
         margin-top: 5px;
         margin-bottom: 20px;
         color: var(--navy);
-        text-align: justify;
-
+        text-align: left;
         @media (max-width: 788px) {
           margin-top: 15px;
           margin-bottom: 12px;
-        }
-        @media (max-width: 317px) {
         }
       }
       p {
@@ -567,7 +564,7 @@
                 width: 45px;
                 height: 3px;
               }
-              h4 {
+              h3 {
                 font-size: 1.5rem;
                 margin: 0;
                 color: var(--navy);

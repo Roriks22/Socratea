@@ -1,14 +1,17 @@
 import useReveal from "../../components/useReveal";
-import schemaMethodeHome from "../../../../public/images/schema-methodeHome.webp";
-import imageFlux from "../../../../public/images/methode/Schéma - Organiser les flux.webp";
-import imageControler from "../../../../public/images/methode/Schéma - Contrôler et fiabiliser.webp";
-import imageProduire from "../../../../public/images/methode/Schéma - Produire ou réviser.webp";
-import imageRestituer from "../../../../public/images/methode/Schéma - Restituer et éclairer.webp";
+import schemaMethodeHome from "/images/schema-methodeHome.webp";
+import imageFlux from "/images/methode/Organiser les flux.webp";
+import imageControler from "/images/methode/Contrôler et fiabiliser.webp";
+import imageProduire from "/images/methode/Produire ou réviser.webp";
+import imageRestituer from "/images/methode/Restituer et éclairer.webp";
 
 const MethodeHome = () => {
   useReveal();
   return (
-    <section className="methode-home">
+    <section
+      className="methode-home"
+      aria-label="Présentation de la méthode de suivi comptable proposée par le cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container">
         <div className="section-home reveal reveal-1">
           <span className="eyebrow">Le suivi en pratique</span>
@@ -25,19 +28,22 @@ const MethodeHome = () => {
         </div>
         <div className="methode-bottom">
           <div className="process-photo">
-            <img src={schemaMethodeHome} alt="Schema methode" />
+            <img src={schemaMethodeHome} alt="Présentation de la méthode" />
           </div>
-          <div className="process-flow reveal reveal-2">
-            <div className="process-step">
+          <ul className="process-flow reveal reveal-2">
+            <li className="process-step">
               <div className="step-marker">
                 <span>01</span>
               </div>
               <div className="step-content">
                 <div className="step-title">
                   <div className="title-line"></div>
-                  <h4>Organiser les flux</h4>
+                  <h3>Organiser les flux</h3>
                 </div>
-                <img src={imageFlux} alt="Organiser les flux" />
+                <img
+                  src={imageFlux}
+                  alt="Présentation de l'organisation des flux"
+                />
                 <p>
                   Nous définissons avec vous comment les pièces, les données et
                   les informations utiles doivent circuler. Elles peuvent
@@ -46,17 +52,20 @@ const MethodeHome = () => {
                   et de disposer d’une base exploitable.
                 </p>
               </div>
-            </div>
-            <div className="process-step">
+            </li>
+            <li className="process-step">
               <div className="step-marker">
                 <span>02</span>
               </div>
               <div className="step-content">
                 <div className="step-title">
                   <div className="title-line"></div>
-                  <h4>Produire ou réviser</h4>
+                  <h3>Produire ou réviser</h3>
                 </div>
-                <img src={imageProduire} alt="Produire ou réviser" />
+                <img
+                  src={imageProduire}
+                  alt="Présentation de la production ou révision"
+                />
                 <p>
                   Selon votre organisation, SOCRATEA prend en charge la
                   production comptable ou s’appuie sur les travaux déjà réalisés
@@ -65,17 +74,20 @@ const MethodeHome = () => {
                   applicable.
                 </p>
               </div>
-            </div>
-            <div className="process-step">
+            </li>
+            <li className="process-step">
               <div className="step-marker">
                 <span>03</span>
               </div>
               <div className="step-content">
                 <div className="step-title">
                   <div className="title-line"></div>
-                  <h4>Contrôler et fiabiliser</h4>
+                  <h3>Contrôler et fiabiliser</h3>
                 </div>
-                <img src={imageControler} alt="Contrôler et fiabiliser" />
+                <img
+                  src={imageControler}
+                  alt="Présentation du contrôle et de la fiabilisation"
+                />
                 <p>
                   Nous vérifions la cohérence de l’information, analysons les
                   écarts et concentrons les contrôles sur les zones qui méritent
@@ -83,17 +95,20 @@ const MethodeHome = () => {
                   vigilance sont identifiés avant la restitution.
                 </p>
               </div>
-            </div>
-            <div className="process-step">
+            </li>
+            <li className="process-step">
               <div className="step-marker">
                 <span>04</span>
               </div>
               <div className="step-content">
                 <div className="step-title">
                   <div className="title-line"></div>
-                  <h4>Restituer et éclairer</h4>
+                  <h3>Restituer et éclairer</h3>
                 </div>
-                <img src={imageRestituer} alt="Restituer et éclairer" />
+                <img
+                  src={imageRestituer}
+                  alt="Présentation de la restitution et de l'éclairage"
+                />
                 <p>
                   Flash mensuel, situation comptable arrêtée, comptes annuels
                   commentés ou analyse ponctuelle : la restitution dépend de vos
@@ -103,8 +118,8 @@ const MethodeHome = () => {
                   et remis en perspective pour vous aider à décider.
                 </p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

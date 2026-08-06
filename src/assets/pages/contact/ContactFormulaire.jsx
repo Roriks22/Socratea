@@ -207,7 +207,11 @@ const ContactFormulaire = () => {
   };
 
   return (
-    <section id="formulaire" className="contact-formulaire">
+    <section
+      id="formulaire"
+      className="contact-formulaire"
+      aria-label="Présentation du formulaire de contact du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container">
         <div className="contact-layout">
           <div className="calendly-panel">
@@ -260,13 +264,7 @@ const ContactFormulaire = () => {
               répondrons sous deux jours ouvrés.
             </p>
 
-            <form
-              action="#"
-              method="post"
-              noValidate
-              ref={form}
-              onSubmit={handleSubmit}
-            >
+            <form noValidate ref={form} onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="nom">Nom et prénom *</label>
                 <input
@@ -330,17 +328,7 @@ const ContactFormulaire = () => {
                   placeholder="Parlez-nous de votre activité et de votre besoin."
                 />
 
-                <div
-                  aria-hidden="true"
-                  style={{
-                    position: "absolute",
-                    left: "-10000px",
-                    top: "auto",
-                    width: "1px",
-                    height: "1px",
-                    overflow: "hidden",
-                  }}
-                >
+                <div className="honeypot">
                   <label htmlFor="website">Laissez ce champ vide</label>
                   <input
                     type="text"
@@ -351,15 +339,15 @@ const ContactFormulaire = () => {
                   />
                 </div>
 
-                <div className="checkbox-group">
-                  <label htmlFor="rgpd">
+                <div className="rgpd-notice">
+                  <p>
                     Les informations transmises sont utilisées par SOCRATEA pour
                     répondre à votre demande. Pour en savoir plus sur leur
                     utilisation et sur vos droits, consultez notre {""}
                     <Link to="/confidentialite">
                       politique de confidentialité.
                     </Link>
-                  </label>
+                  </p>
                 </div>
               </div>
 

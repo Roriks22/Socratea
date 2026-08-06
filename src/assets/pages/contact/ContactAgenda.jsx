@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 const ContactAgenda = () => {
   const [agendaLoaded, setAgendaLoaded] = useState(false);
   return (
-    <section id="agenda" className="contact-agenda">
+    <section
+      id="agenda"
+      className="contact-agenda"
+      aria-labelledby="agenda-title"
+    >
       <div className="container">
         <div className="section-header-agenda">
           <span className="eyebrow">Prendre rendez-vous</span>
-          <h2>Choisissez directement votre créneau.</h2>
+          <h2 id="agenda-title">Choisissez directement votre créneau.</h2>
           <p>
             Sélectionnez le jour et l’heure qui vous conviennent pour un premier
             échange de 30 minutes en visioconférence. Vous recevrez ensuite la
@@ -27,14 +31,20 @@ const ContactAgenda = () => {
               </p>
               <button
                 type="button"
-                className="btn-primary"
+                className=" btn btn-primary"
                 onClick={() => setAgendaLoaded(true)}
               >
                 Afficher les créneaux disponibles
               </button>
               <p className="cal-privacy-link">
                 Pour en savoir plus, consultez notre{" "}
-                <Link to="/confidentialite">politique de confidentialité</Link>.
+                <Link
+                  to="/confidentialite"
+                  aria-label="Lire la politique de confidentialité"
+                >
+                  politique de confidentialité
+                </Link>
+                .
               </p>
             </div>
           ) : (
@@ -45,6 +55,8 @@ const ContactAgenda = () => {
               frameBorder="0"
               loading="lazy"
               style={{ border: "none", borderRadius: "12px" }}
+              allow="fullscreen"
+              referrerPolicy="strict-origin-when-cross-origin"
               title="Prendre rendez-vous avec SOCRATEA"
             />
           )}

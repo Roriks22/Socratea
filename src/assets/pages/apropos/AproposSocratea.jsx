@@ -1,11 +1,14 @@
-import socratea from "../../../../public/images/Socratea.webp";
+import socratea from "/images/Socratea.webp";
 
 const AproposSocratea = () => {
   return (
-    <section className="apropos-socratea">
+    <section
+      className="apropos-socratea"
+      aria-label="Présentation de l'origine du nom du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="section-socratea">
         <div className="socratea-image">
-          <img src={socratea} alt="Socratea" />
+          <img src={socratea} alt="Logo de SOCRATEA" />
         </div>
         <div className="socratea-texte">
           <span className="eyebrow">Derrière SOCRATEA</span>

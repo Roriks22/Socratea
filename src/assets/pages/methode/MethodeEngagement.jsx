@@ -3,7 +3,10 @@ import useReveal from "../../components/useReveal";
 const MethodeEngagement = () => {
   useReveal();
   return (
-    <section className="methode-engagement">
+    <section
+      className="methode-engagement"
+      aria-label="Présentation des engagements réciproques entre le cabinet d'expertise comptable SOCRATEA et ses clients"
+    >
       <div className="container">
         <div className="section-engagement reveal reveal-1">
           <span className="eyebrow">L'engagement réciproque</span>
@@ -27,10 +30,10 @@ const MethodeEngagement = () => {
                 un point pose question, nous préférons en parler tôt plutôt que
                 de le constater plus tard.
               </p>
-              <span>
+              <p>
                 En contrepartie, nous nous engageons sur les délais de
                 production et sur la qualité des restitutions.
-              </span>
+              </p>
             </div>
             <ul className="engagement-list">
               <li>

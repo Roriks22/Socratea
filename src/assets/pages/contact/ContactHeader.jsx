@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/julien-complet-transparent.webp";
-import heroSocialMobile from "../../../../public/images/julien-complet-transparent.webp";
+import heroSocialDesktop from "/images/julien-complet-transparent.webp";
+import heroSocialMobile from "/images/julien-complet-transparent.webp";
 
 const ContactHeader = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-contact">
+    <section
+      className="page-hero page-hero--social-contact"
+      aria-label="Présentation de la page de contact du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current">Contact</span>
-          </div>
+            <span aria-current="page">Contact</span>
+          </nav>
           <h1 className="page-hero-h1 reveal reveal-2">
             30 minutes
             <br />
@@ -32,12 +35,12 @@ const ContactHeader = () => {
         </div>
         <div className="photo-hero-visual reveal reveal-3">
           <div className="contact-card">
-            <picture className="social-hero__visual" aria-hidden="true">
+            <picture className="social-hero__visual">
               <source media="(max-width: 900px)" srcSet={heroSocialMobile} />
 
               <img
                 src={heroSocialDesktop}
-                alt="illustration contact"
+                alt="Julien Jacquesson, expert-comptable fondateur de SOCRATEA"
                 width="540"
                 height="700"
                 loading="eager"
@@ -47,11 +50,11 @@ const ContactHeader = () => {
               />
             </picture>
             <div className="texte-contact-julien">
-              <h3>Julien Jacquesson</h3>
-              <h4>Expert-comptable</h4>
+              <h2>Julien Jacquesson</h2>
+              <h3>Expert-comptable</h3>
               <div className="hero-tag">
                 <span className="dot"></span>
-                <span>Echange sans engagement</span>
+                <span>échange sans engagement</span>
               </div>
             </div>
           </div>

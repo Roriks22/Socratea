@@ -1,10 +1,13 @@
 const AproposConviction = () => {
   return (
-    <section className="aprps-conviction">
+    <section
+      className="aprps-conviction"
+      aria-label="Présentation de la conviction de l'expert-comptable Julien Jacquesson et du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container">
         <div className="prose">
           <span className="eyebrow">La conviction</span>
-          <h3>Des comptes fiables, mais pas seulement.</h3>
+          <h2>Des comptes fiables, mais pas seulement.</h2>
           <p className="conviction-texte">
             Une comptabilité fiable, des obligations fiscales respectées et des
             comptes annuels établis : c’est indispensable. Mais l’information

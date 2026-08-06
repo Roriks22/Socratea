@@ -5,11 +5,11 @@ const ContactFAQ = () => {
   const navigate = useNavigate();
   useReveal();
   return (
-    <section className="contact-faq">
+    <section className="contact-faq" aria-labelledby="faq-contact-title">
       <div className="container">
         <div className="section-contact-faq reveal reveal-1">
           <span className="eyebrow">Questions fréquentes</span>
-          <h2>Une question avant de nous contacter ?</h2>
+          <h2 id="faq-contact-title">Une question avant de nous contacter ?</h2>
           <p>
             Retrouvez les réponses les plus fréquentes sur notre page dédiée.
           </p>
@@ -26,6 +26,8 @@ const ContactFAQ = () => {
               fill="none"
               stroke="currentColor"
               strokeWidth="2.5"
+              aria-hidden="true"
+              focusable="false"
             >
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>

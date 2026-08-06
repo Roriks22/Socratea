@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/socratea-logo.webp";
-import heroSocialMobile from "../../../../public/images/socratea-logo.webp";
+import heroSocialDesktop from "/images/socratea-logo.webp";
+import heroSocialMobile from "/images/socratea-logo.webp";
 
 const AproposHeader = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-apropos">
+    <section
+      className="page-hero page-hero--social-apropos"
+      aria-label="Présentation de l'expert-comptable Julien Jacquesson et du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current">À propos</span>
-          </div>
+            <span aria-current="page">À propos</span>
+          </nav>
           <h1 className="page-hero-h1 reveal reveal-2">
             Julien Jacquesson <br />
             <span>Expert-comptable</span>
@@ -34,7 +37,7 @@ const AproposHeader = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration apropos"
+            alt="Logo du cabinet d'expertise comptable SOCRATEA"
             width="540"
             height="700"
             loading="eager"
