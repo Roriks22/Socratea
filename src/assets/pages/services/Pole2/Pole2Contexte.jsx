@@ -1,10 +1,12 @@
 const Pole2Contexte = () => {
   return (
-    <section className="pole2-contexte">
+    <section className="pole2-contexte" aria-labelledby="pole2-contexte-title">
       <div className="container">
         <div className="pole2-texte">
           <span className="eyebrow span-pole2">Facturation électronique</span>
-          <h2>Bien plus qu’un changement de format.</h2>
+          <h2 id="pole2-contexte-title">
+            Bien plus qu’un changement de format.
+          </h2>
           <p>
             La facturation électronique ne consiste pas seulement à choisir une
             plateforme agréée. Elle amène aussi à revoir la façon dont les

@@ -3,13 +3,16 @@ import useReveal from "../../../components/useReveal";
 const Pole3Couverture = () => {
   useReveal();
   return (
-    <section className="pole3-couverture">
+    <section
+      className="pole3-couverture"
+      aria-labelledby="pole3-couverture-title"
+    >
       <div className="container">
         <div className="section-header-couverture reveal reveal-1">
           <span className="eyebrow span-pole3">
             Votre gestion sociale au quotidien
           </span>
-          <h2>
+          <h2 id="pole3-couverture-title">
             Une paie suivie, <br />
             mois après mois.
           </h2>

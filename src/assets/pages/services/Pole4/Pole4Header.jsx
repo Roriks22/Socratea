@@ -1,24 +1,29 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../../components/useReveal";
-import heroSocialDesktop from "../../../../../public/images/juridique/juridique-desktop.webp";
-import heroSocialMobile from "../../../../../public/images/juridique/juridique-mobile.webp";
+import heroSocialDesktop from "/images/juridique/juridique-desktop.webp";
+import heroSocialMobile from "/images/juridique/juridique-mobile.webp";
 
 const Pole4Header = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-juridique">
+    <section
+      className="page-hero page-hero--social-juridique"
+      aria-labelledby="page-hero-title"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
             <Link to="/services" className="span-services">
               Nos services
             </Link>
             <span className="sep">/</span>
-            <span className="current current-juridique">Juridique</span>
-          </div>
-          <h1 className="pole4 reveal reveal-2">
+            <span aria-current="page" className="current current-juridique">
+              Juridique
+            </span>
+          </nav>
+          <h1 id="page-hero-title" className="pole4 reveal reveal-2">
             Juridique <br />
             <span>Sécuriser les étapes importantes de votre entreprise.</span>
           </h1>
@@ -41,7 +46,7 @@ const Pole4Header = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration methode"
+            alt=""
             width="540"
             height="700"
             loading="eager"

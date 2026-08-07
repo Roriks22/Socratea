@@ -1,12 +1,14 @@
 const Pole1Objectif = () => {
   return (
-    <section className="pole1-objectif">
+    <section className="pole1-objectif" aria-labelledby="pole1-objectif-title">
       <div className="container">
         <div className="prose">
           <span className="eyebrow span-pole1">
             Quand cet accompagnement prend tout son sens
           </span>
-          <h3>Quand attendre la clôture ne suffit plus.</h3>
+          <h2 id="pole1-objectif-title">
+            Quand attendre la clôture ne suffit plus.
+          </h2>
           <p>
             Un recrutement à décider, un investissement à financer, une marge
             qui se tend ou une nouvelle activité à lancer : dans ces moments,

@@ -1,6 +1,9 @@
 const Pole2Objectif = () => {
   return (
-    <section className="pole2-objectif">
+    <section
+      className="pole2-objectif"
+      aria-label="Objectifs de l'automatisation et structuration des flux"
+    >
       <div className="container">
         <div className="two-col">
           <div>

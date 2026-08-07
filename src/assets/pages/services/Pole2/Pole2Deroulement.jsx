@@ -1,17 +1,20 @@
 import useReveal from "../../../components/useReveal";
-import automatiser from "../../../../../public/images/Automatiser.webp";
-import centraliser from "../../../../../public/images/Centraliser.webp";
-import developper from "../../../../../public/images/Developper.webp";
-import connecter from "../../../../../public/images/Connecter.webp";
+import automatiser from "/images/Automatiser.webp";
+import centraliser from "/images/Centraliser.webp";
+import developper from "/images/Developper.webp";
+import connecter from "/images/Connecter.webp";
 
 const Pole2Deroulement = () => {
   useReveal();
   return (
-    <section className="pole2-deroulement">
+    <section
+      className="pole2-deroulement"
+      aria-labelledby="pole2-deroulement-title"
+    >
       <div className="container">
         <div className="section-header-pole2 reveal reveal-1">
           <span className="eyebrow span-pole2">Quelques exemples concrets</span>
-          <h2>
+          <h2 id="pole2-deroulement-title">
             Des solutions concrètes, <br />à partir de vos irritants.
           </h2>
           <p>
@@ -26,7 +29,10 @@ const Pole2Deroulement = () => {
           <li>
             <div className="left-feat">
               <span className="feat-num">01</span>
-              <img src={centraliser} alt="image_centraliser" />
+              <img
+                src={centraliser}
+                alt="Illustration de la centralisation des documents et des demandes"
+              />
             </div>
             <div>
               <strong>Centraliser les documents et les demandes</strong>
@@ -41,7 +47,10 @@ const Pole2Deroulement = () => {
           <li>
             <div className="left-feat">
               <span className="feat-num">02</span>
-              <img src={connecter} alt="image_connecter" />
+              <img
+                src={connecter}
+                alt="Illustration de la connexion des données entre les outils"
+              />
             </div>
             <div>
               <strong>Faire circuler les données entre vos outils</strong>
@@ -56,7 +65,10 @@ const Pole2Deroulement = () => {
           <li>
             <div className="left-feat">
               <span className="feat-num">03</span>
-              <img src={automatiser} alt="image_automatiser" />
+              <img
+                src={automatiser}
+                alt="Illustration de l'automatisation des tâches répétitives"
+              />
             </div>
             <div>
               <strong>Automatiser les tâches répétitives</strong>
@@ -71,7 +83,10 @@ const Pole2Deroulement = () => {
           <li>
             <div className="left-feat">
               <span className="feat-num">04</span>
-              <img src={developper} alt="image_développer" />
+              <img
+                src={developper}
+                alt="Illustration du développement d'une application adaptée"
+              />
             </div>
             <div>
               <strong>Développer une application adaptée</strong>

@@ -1,26 +1,29 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../../components/useReveal";
-import heroSocialDesktop from "../../../../../public/images/automatisation/automatisation-desktop.webp";
-import heroSocialMobile from "../../../../../public/images/automatisation/automatisation-mobile.webp";
+import heroSocialDesktop from "/images/automatisation/automatisation-desktop.webp";
+import heroSocialMobile from "/images/automatisation/automatisation-mobile.webp";
 
 const Pole2Header = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-automatisation">
+    <section
+      className="page-hero page-hero--social-automatisation"
+      aria-labelledby="page-hero-title"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
             <Link to="/services" className="span-services">
               Nos services
             </Link>
             <span className="sep">/</span>
-            <span className="current current-auto">
+            <span aria-current="page" className="current current-auto">
               Automatisation et structuration des flux
             </span>
-          </div>
-          <h1 className="reveal reveal-2">
+          </nav>
+          <h1 id="page-hero-title" className="reveal reveal-2">
             Automatisation et structuration des flux <br />
             <span>Des outils adaptés à votre façon de travailler.</span>
           </h1>
@@ -44,7 +47,7 @@ const Pole2Header = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration methode"
+            alt=""
             width="540"
             height="700"
             loading="eager"

@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../../components/useReveal";
-
-import heroSocialDesktop from "../../../../../public/images/social & paie/social-desktop.webp";
-import heroSocialMobile from "../../../../../public/images/social & paie/social-mobile.webp";
+import heroSocialDesktop from "/images/social & paie/social-desktop.webp";
+import heroSocialMobile from "/images/social & paie/social-mobile.webp";
 
 const Pole3Header = () => {
   useReveal();
 
   return (
-    <section className="page-hero page-hero--social-paie">
+    <section
+      className="page-hero page-hero--social-paie"
+      aria-labelledby="page-hero-title"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
 
             <span className="sep">/</span>
@@ -22,10 +24,12 @@ const Pole3Header = () => {
 
             <span className="sep">/</span>
 
-            <span className="current current-social">Social et paie</span>
-          </div>
+            <span className="current current-social" aria-current="page">
+              Social et paie
+            </span>
+          </nav>
 
-          <h1 className="pole03 reveal reveal-2">
+          <h1 id="page-hero-title" className="pole03 reveal reveal-2">
             Social et paie
             <span>Une gestion claire, des échéances maîtrisées.</span>
           </h1>
@@ -51,7 +55,7 @@ const Pole3Header = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration social&paie"
+            alt=""
             width="540"
             height="700"
             loading="eager"

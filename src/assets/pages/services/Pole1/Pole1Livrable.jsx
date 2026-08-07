@@ -1,17 +1,20 @@
 import useReveal from "../../../components/useReveal";
-import flashMensuel from "../../../../../public/images/flash-mensuel.webp";
-import analysePonctuelle from "../../../../../public/images/analyse-ponctuelle.webp";
-import comptesAnnuels from "../../../../../public/images/comptes-annuels.webp";
-import situationTrimestrielle from "../../../../../public/images/situation-trimestrielle.webp";
+import flashMensuel from "/images/flash-mensuel.webp";
+import analysePonctuelle from "/images/analyse-ponctuelle.webp";
+import comptesAnnuels from "/images/comptes-annuels.webp";
+import situationTrimestrielle from "/images/situation-trimestrielle.webp";
 
 const Livrables = () => {
   useReveal();
   return (
-    <section className="pole1-livrables">
+    <section
+      className="pole1-livrables"
+      aria-labelledby="pole1-livrables-title"
+    >
       <div className="container livrables-deroulement">
         <div className="livrables-header reveal reveal-1">
           <span>Votre suivi</span>
-          <h2>
+          <h2 id="pole1-livrables-title">
             Des chiffres utiles,
             <br />
             au bon moment.
@@ -27,7 +30,11 @@ const Livrables = () => {
           <div className="livrables-left">
             <div className="livrables-clients">
               <div className="livrables-span">
-                <img src={flashMensuel} alt="Flash-mensuel" />
+                <img
+                  src={flashMensuel}
+                  alt="Flash mensuel de pilotage financier"
+                  loading="lazy"
+                />
               </div>
               <div className="livrables-text">
                 <p>
@@ -44,7 +51,8 @@ const Livrables = () => {
               <div className="livrables-span">
                 <img
                   src={situationTrimestrielle}
-                  alt="Situation trimestrielle"
+                  alt="Présentation de la situation comptable trimestrielle de l'entreprise"
+                  loading="lazy"
                 />
               </div>
               <div className="livrables-text">
@@ -58,7 +66,11 @@ const Livrables = () => {
             </div>
             <div className="livrables-clients">
               <div className="livrables-span">
-                <img src={comptesAnnuels} alt="Comptes annuels" />
+                <img
+                  src={comptesAnnuels}
+                  alt="Présentation des comptes annuels de l'entreprise"
+                  loading="lazy"
+                />
               </div>
               <div className="livrables-text">
                 <p>
@@ -71,7 +83,11 @@ const Livrables = () => {
             </div>
             <div className="livrables-clients">
               <div className="livrables-span">
-                <img src={analysePonctuelle} alt="Analyse ponctuelle" />
+                <img
+                  src={analysePonctuelle}
+                  alt="Présentation des analyses ponctuelles de l'entreprise"
+                  loading="lazy"
+                />
               </div>
               <div className="livrables-text">
                 <p>

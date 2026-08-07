@@ -3,11 +3,14 @@ import useReveal from "../../../components/useReveal";
 const Pole4Formalites = () => {
   useReveal();
   return (
-    <section className="pole4-formalites">
+    <section
+      className="pole4-formalites"
+      aria-labelledby="pole4-formalites-title"
+    >
       <div className="container">
         <div className="section-header-formalites reveal reveal-1">
           <span className="eyebrow span-pole4">Le suivi juridique courant</span>
-          <h2>
+          <h2 id="pole4-formalites-title">
             Les décisions de votre société <br />
             formalisées au bon moment.
           </h2>

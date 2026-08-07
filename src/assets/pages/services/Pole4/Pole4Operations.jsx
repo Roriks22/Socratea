@@ -3,13 +3,16 @@ import useReveal from "../../../components/useReveal";
 const Pole4Operations = () => {
   useReveal();
   return (
-    <section className="pole4-operations">
+    <section
+      className="pole4-operations"
+      aria-labelledby="pole4-operations-title"
+    >
       <div className="container">
         <div className="section-header-operations reveal reveal-1">
           <span className="eyebrow span-pole4">
             Les opérations qui font évoluer votre société
           </span>
-          <h2>
+          <h2 id="pole4-operations-title">
             Préparer chaque étape, <br />
             avec les bons interlocuteurs.
           </h2>

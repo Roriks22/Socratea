@@ -4,13 +4,13 @@ const Pole1Home = () => {
   useReveal();
 
   return (
-    <section className="pole1-home">
+    <section className="pole1-home" aria-labelledby="pole1-home-title">
       <div className="container">
         <div className="section-header-pole1 reveal reveal-1">
           <span className="eyebrow span-pole1">
             Le socle comptable et fiscal
           </span>
-          <h2>
+          <h2 id="pole1-home-title">
             Une comptabilité fiable, <br />
             adaptée à votre organisation.
           </h2>

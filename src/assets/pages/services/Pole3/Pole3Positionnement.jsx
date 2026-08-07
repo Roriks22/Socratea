@@ -1,10 +1,15 @@
 const Pole3Positionnement = () => {
   return (
-    <section className="pole3-positionnement">
+    <section
+      className="pole3-positionnement"
+      aria-labelledby="pole3-positionnement-title"
+    >
       <div className="container">
         <div className="prose">
           <span className="eyebrow">Notre rôle</span>
-          <h3>Un interlocuteur identifié pour vos sujets sociaux.</h3>
+          <h2 id="pole3-positionnement-title">
+            Un interlocuteur identifié pour vos sujets sociaux.
+          </h2>
           <p>
             La paie ne se résume pas à l’établissement d’un bulletin. Elle
             repose sur des informations fiables, des échéances bien suivies et

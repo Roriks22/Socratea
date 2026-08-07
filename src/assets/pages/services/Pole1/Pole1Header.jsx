@@ -1,26 +1,29 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../../components/useReveal";
-import heroSocialDesktop from "../../../../../public/images/comptabilite/comptabilite-desktop.webp";
-import heroSocialMobile from "../../../../../public/images/comptabilite/comptabilite-mobile.webp";
+import heroSocialDesktop from "/images/comptabilite/comptabilite-desktop.webp";
+import heroSocialMobile from "/images/comptabilite/comptabilite-mobile.webp";
 
 const Pole1Header = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-comptabilite">
+    <section
+      className="page-hero page-hero--social-comptabilite"
+      aria-labelledby="page-hero-title"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
             <Link to="/services" className="span-services">
               Nos services
             </Link>
             <span className="sep">/</span>
-            <span className="current current-compta">
+            <span aria-current="page" className="current current-compta">
               Comptabilité et pilotage
             </span>
-          </div>
-          <h1 className="reveal reveal-2">
+          </nav>
+          <h1 id="page-hero-title" className="reveal reveal-2">
             Comptabilité et pilotage
             <br />
             <span>Des chiffres fiables, au bon moment.</span>
@@ -43,7 +46,7 @@ const Pole1Header = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration methode"
+            alt=""
             width="540"
             height="700"
             loading="eager"

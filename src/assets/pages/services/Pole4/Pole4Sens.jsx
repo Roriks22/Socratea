@@ -1,13 +1,13 @@
 const Pole4Sens = () => {
   return (
-    <section className="pole4-sens">
+    <section className="pole4-sens" aria-labelledby="pole4-sens-title">
       <div className="container">
         <div className="prose">
           <span className="eyebrow">Un suivi coordonné</span>
-          <h3>
+          <h2 id="pole4-sens-title">
             Un même point de repère, même lorsque plusieurs experts
             interviennent.
-          </h3>
+          </h2>
           <p>
             Les décisions importantes dépassent souvent un seul cadre. Une
             réorganisation, une entrée d’associé ou une transmission peut avoir

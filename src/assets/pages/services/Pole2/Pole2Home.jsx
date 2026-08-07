@@ -1,10 +1,10 @@
 const Pole2Home = () => {
   return (
-    <section className="pole2-home">
+    <section className="pole2-home" aria-labelledby="pole2-home-title">
       <div className="container">
         <div className="prose">
           <span className="eyebrow">Notre approche</span>
-          <h3>Simplifier ce qui vous ralentit.</h3>
+          <h2 id="pole2-home-title">Simplifier ce qui vous ralentit.</h2>
           <p>
             Nous ne partons pas d’un outil, mais de votre façon de travailler.
             Nous regardons où l’information se perd, où les équipes
