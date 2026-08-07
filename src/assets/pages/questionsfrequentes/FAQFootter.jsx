@@ -1,25 +1,22 @@
 import useReveal from "../../components/useReveal";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const FAQFotter = () => {
+const FAQFootter = () => {
   useReveal();
-  const navigate = useNavigate();
+
   return (
-    <section className="faq-footer">
+    <section className="faq-footer" aria-labelledby="faq-footer-title">
       <div className="container">
         <div className="section-faq-footer reveal reveal-1">
           <span className="eyebrow">Restons en contact</span>
-          <h2>Vous avez une autre question ?</h2>
+          <h2 id="faq-footer-title">Vous avez une autre question ?</h2>
           <p>
             Chaque entreprise a son histoire, son organisation et ses priorités.
             Le plus simple reste souvent d’en parler.
           </p>
         </div>
         <div className="hero-cta-group reveal reveal-2">
-          <button
-            className="btn btn-primary"
-            onClick={() => navigate("/contact#agenda")}
-          >
+          <Link to="/contact#agenda" className="btn btn-primary">
             Prendre rendez-vous
             <svg
               className="arrow"
@@ -27,22 +24,21 @@ const FAQFotter = () => {
               fill="none"
               stroke="currentColor"
               strokeWidth="2.5"
+              aria-hidden="true"
+              focusable="false"
             >
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
-          </button>
+          </Link>
 
-          <button
-            className="btn btn-secondary on-dark"
-            onClick={() => navigate("/contact#formulaire")}
-          >
+          <Link to="/contact#formulaire" className="btn btn-secondary on-dark">
             Nous écrire
-          </button>
+          </Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default FAQFotter;
+export default FAQFootter;

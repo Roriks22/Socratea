@@ -53,7 +53,7 @@ import CabinetsContact from "./assets/pages/pourlescabinets/CabinetsContact";
 import ServicesCabinets from "./assets/pages/services/ServicesCabinets";
 import QuestionsHeader from "./assets/pages/questionsfrequentes/QuestionsHeader";
 import FAQHome from "./assets/pages/questionsfrequentes/FAQHome";
-import FAQFotter from "./assets/pages/questionsfrequentes/FAQFotter";
+import FAQFootter from "./assets/pages/questionsfrequentes/FAQFootter";
 import ContactFAQ from "./assets/pages/contact/ContactFAQ";
 import HeaderTexte from "./assets/pages/main/HeaderTexte";
 
@@ -172,7 +172,7 @@ function App() {
           element={
             <>
               {" "}
-              <QuestionsHeader /> <FAQHome /> <FAQFotter /> <Footer />{" "}
+              <QuestionsHeader /> <FAQHome /> <FAQFootter /> <Footer />{" "}
             </>
           }
         />

@@ -85,11 +85,13 @@ const FAQHome = () => {
   const [open, setOpen] = useState(null);
 
   return (
-    <section className="faq-home">
+    <section className="faq-home" aria-labelledby="faq-home-title">
       <div className="container">
         <div className="faq-header reveal reveal-1">
           <span className="eyebrow">Questions fréquentes</span>
-          <h2>Les réponses aux questions les plus courantes.</h2>
+          <h2 id="faq-home-title">
+            Les réponses aux questions les plus courantes.
+          </h2>
           <p>
             Vous trouverez ci-dessous les principales informations concernant le
             fonctionnement du cabinet, notre accompagnement et le démarrage
@@ -109,6 +111,7 @@ const FAQHome = () => {
                   <button
                     className="faq-question"
                     aria-expanded={open === id}
+                    aria-controls={`faq-answer-${id}`}
                     onClick={() => setOpen(open === id ? null : id)}
                   >
                     <span>{item.question}</span>
@@ -122,7 +125,7 @@ const FAQHome = () => {
                       <polyline points="6 9 12 15 18 9" />
                     </svg>
                   </button>
-                  <div className="faq-answer">
+                  <div id={`faq-answer-${id}`} className="faq-answer">
                     {item.answer.split("\n\n").map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
                     ))}

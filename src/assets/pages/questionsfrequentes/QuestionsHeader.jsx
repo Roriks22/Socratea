@@ -1,20 +1,23 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/faq/faq-desktop.webp";
-import heroSocialMobile from "../../../../public/images/faq/faq-mobile.webp";
+import heroSocialDesktop from "/images/faq/faq-desktop.webp";
+import heroSocialMobile from "/images/faq/faq-mobile.webp";
 
 const QuestionsHeader = () => {
   useReveal();
 
   return (
-    <section className="page-hero page-hero--faq">
+    <section
+      className="page-hero page-hero--faq"
+      aria-label="Questions fréquentes"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current">Questions fréquentes</span>
-          </div>
+            <span aria-current="page">Questions fréquentes</span>
+          </nav>
           <h1 className="page-hero-h1 reveal reveal-2">
             Quelques réponses <br />
             <span>avant notre premier échange.</span>
@@ -35,7 +38,7 @@ const QuestionsHeader = () => {
           <source media="(max-width: 900px)" srcSet={heroSocialMobile} />
           <img
             src={heroSocialDesktop}
-            alt="illustration faq"
+            alt=""
             width="540"
             height="700"
             loading="eager"
