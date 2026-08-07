@@ -4,16 +4,17 @@ import useReveal from "../../components/useReveal";
 const ConfidentialiteHeader = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-confidentialite">
+    <section
+      className="page-hero page-hero--social-confidentialite"
+      aria-label="Présentation de la politique de confidentialité du site internet du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current politique">
-              Politique de confidentialité
-            </span>
-          </div>
+            <span aria-current="page">Politique de confidentialité</span>
+          </nav>
           <h1 className="page-hero-h1 reveal reveal-2">
             Politique <br /> <span>de confidentialité.</span>{" "}
           </h1>

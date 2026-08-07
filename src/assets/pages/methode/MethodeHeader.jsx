@@ -12,11 +12,11 @@ const Methode = () => {
     >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current">Notre méthode</span>
-          </div>
+            <span aria-current="page">Notre méthode</span>
+          </nav>
           <h1 className="page-hero-h1 reveal reveal-2">
             Une organisation claire, <br />
             <span>dès le départ.</span>

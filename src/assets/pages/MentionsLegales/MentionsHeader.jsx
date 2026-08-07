@@ -4,14 +4,17 @@ import useReveal from "../../components/useReveal";
 const MentionsHeader = () => {
   useReveal();
   return (
-    <section className="page-hero page-hero--social-mention">
+    <section
+      className="page-hero page-hero--social-mention"
+      aria-label="Présentation des mentions légales du site internet du cabinet d'expertise comptable SOCRATEA"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current">Mentions Légales</span>
-          </div>
+            <span aria-current="page">Mentions légales</span>
+          </nav>
           <h1 className="page-hero-h1 reveal reveal-2">
             Mentions <br />
             <span>légales.</span>

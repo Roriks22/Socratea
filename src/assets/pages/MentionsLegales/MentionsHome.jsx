@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const MentionsHome = () => {
   return (
-    <section className="mentions-home">
+    <section className="mentions-home" aria-labelledby="mentions-title">
       <div className="container">
         <div className="legal-content">
-          <h1>Mentions légales</h1>
+          <h2 id="mentions-title">Mentions légales</h2>
           <span>Dernière mise à jour : 26 Juin 2026</span>
           <h2 className="premier-h2">Éditeur du site</h2>
           <p>
@@ -26,9 +26,9 @@ const MentionsHome = () => {
             <br />
             Adresse électronique :{" "}
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea.net">
+              <a href="mailto:julien.jacquesson@socratea.net">
                 julien.jacquesson@socratea.net
-              </Link>
+              </a>
             </strong>
           </p>
           <h2>Directeur de la publication</h2>
@@ -145,9 +145,9 @@ const MentionsHome = () => {
             écrire à : <br />{" "}
             <strong>
               {" "}
-              <Link to="mailto:julien.jacquesson@socratea.net">
+              <a href="mailto:julien.jacquesson@socratea.net">
                 julien.jacquesson@socratea.net
-              </Link>
+              </a>
             </strong>
           </p>
           <h2>Cookies et services tiers</h2>
@@ -175,9 +175,9 @@ const MentionsHome = () => {
             Adresse électronique :{" "}
             <strong>
               {" "}
-              <Link to="mailto:julien.jacquesson@socratea.net">
+              <a href="mailto:julien.jacquesson@socratea.net">
                 julien.jacquesson@socratea.net
-              </Link>
+              </a>
             </strong>
           </p>
         </div>

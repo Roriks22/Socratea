@@ -52,11 +52,12 @@
       padding-right: 15px;
     }
 
-    h1 {
+    #mentions-title {
       color: var(--navy);
       display: block;
       white-space: normal;
       overflow-wrap: normal;
+      font-size: clamp(2.2rem, 4vw, 3.3rem);
 
       @media (max-width: 600px) {
         text-align: left;

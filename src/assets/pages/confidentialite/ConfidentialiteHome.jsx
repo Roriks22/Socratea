@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
-
 const ConfidentialiteHome = () => {
   return (
-    <section className="confidentialite-home">
+    <section
+      className="confidentialite-home"
+      aria-labelledby="confidentialite-title"
+    >
       <div className="container">
         <div className="legal-content">
-          <h1>Politique de confidentialité</h1>
+          <h2 id="confidentialite-title">Politique de confidentialité</h2>
           <span>Dernière mise à jour : 26 Juin 2026</span>
           <p>
             Le cabinet SOCRATEA veille à la protection de vos données
@@ -27,9 +28,9 @@ const ConfidentialiteHome = () => {
             80480 Vers-sur-Selle <br />
             Adresse électronique :{" "}
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea.net">
+              <a href="mailto:julien.jacquesson@socratea.net">
                 julien.jacquesson@socratea.net
-              </Link>
+              </a>
             </strong>{" "}
             <br />
             Téléphone : <strong className="strong-tel">
@@ -321,9 +322,9 @@ const ConfidentialiteHome = () => {
           <p>
             Vous pouvez exercer vos droits en écrivant à : <br />
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea.net">
+              <a href="mailto:julien.jacquesson@socratea.net">
                 julien.jacquesson@socratea.net
-              </Link>
+              </a>
             </strong>{" "}
             <br />
             Votre demande doit permettre de vous identifier suffisamment et de
@@ -384,9 +385,9 @@ const ConfidentialiteHome = () => {
             80480 Vers-sur-Selle <br />
             Adresse électronique :{" "}
             <strong>
-              <Link to="mailto:julien.jacquesson@socratea.net">
+              <a href="mailto:julien.jacquesson@socratea.net">
                 julien.jacquesson@socratea.net
-              </Link>
+              </a>
             </strong>{" "}
             <br />
             Téléphone : <strong className="strong-tel">06 86 50 61 29</strong>

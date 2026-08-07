@@ -57,12 +57,13 @@
       padding-right: 15px;
     }
 
-    h1 {
+    #confidentialite-title {
       color: var(--navy);
       display: block;
       white-space: normal;
       overflow-wrap: normal;
       line-height: 1.3;
+      font-size: clamp(2.2rem, 4vw, 3.3rem);
 
       @media (max-width: 600px) {
         text-align: left;
