@@ -1,11 +1,14 @@
 import useReveal from "../../components/useReveal";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CabinetsContact = () => {
   useReveal();
-  const navigate = useNavigate();
+
   return (
-    <section className="cabinets-contact">
+    <section
+      className="cabinets-contact"
+      aria-labelledby="cabinets-contact-title"
+    >
       <div className="container">
         <div className="section-cabinets-contact reveal reveal-1">
           <span className="eyebrow span-cabinet">Collaborer avec SOCRATEA</span>
@@ -21,10 +24,7 @@ const CabinetsContact = () => {
           </p>
         </div>
         <div className="hero-cta-group reveal reveal-2">
-          <button
-            className="btn btn-primary"
-            onClick={() => navigate("/contact#agenda")}
-          >
+          <Link to="/contact#agenda" className="btn btn-primary">
             Prendre rendez-vous
             <svg
               className="arrow"
@@ -32,18 +32,17 @@ const CabinetsContact = () => {
               fill="none"
               stroke="currentColor"
               strokeWidth="2.5"
+              aria-hidden="true"
+              focusable="false"
             >
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
-          </button>
+          </Link>
 
-          <button
-            className="btn btn-secondary on-dark"
-            onClick={() => navigate("/contact#formulaire")}
-          >
+          <Link to="/contact#formulaire" className="btn btn-secondary on-dark">
             Nous écrire
-          </button>
+          </Link>
         </div>
         <div className="contact-fin">
           Ou par écrit -

@@ -1,22 +1,24 @@
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "../../../../public/images/cabinets/cabinets-desktop.webp";
-import heroSocialMobile from "../../../../public/images/cabinets/cabinets-mobile.webp";
+import heroSocialDesktop from "/images/cabinets/cabinets-desktop.webp";
+import heroSocialMobile from "/images/cabinets/cabinets-mobile.webp";
 
 const CabinetsHeader = () => {
   useReveal();
-  const navigate = useNavigate();
+
   return (
-    <section className="page-hero page-hero--social-cabinets">
+    <section
+      className="page-hero page-hero--social-cabinets"
+      aria-labelledby="page-hero-title"
+    >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
-          <div className="breadcrumb reveal reveal-1">
+          <nav className="breadcrumb reveal reveal-1" aria-label="Fil d'Ariane">
             <Link to="/">Accueil</Link>
             <span className="sep">/</span>
-            <span className="current">pour les cabinets</span>
-          </div>
-          <h1 className="page-hero-h1 reveal reveal-2">
+            <span aria-current="page">Pour les cabinets</span>
+          </nav>
+          <h1 id="page-hero-title" className="page-hero-h1 reveal reveal-2">
             Une expertise complémentaire, <br />
             <span>quand vous en avez besoin.</span>
           </h1>
@@ -31,10 +33,7 @@ const CabinetsHeader = () => {
             </p>
           </div>
           <div className="hero-cta-group reveal reveal-4">
-            <button
-              className="btn btn-primary"
-              onClick={() => navigate("/contact")}
-            >
+            <Link to="/contact" className="btn btn-primary">
               Prendre rendez-vous
               <svg
                 className="arrow"
@@ -42,11 +41,13 @@ const CabinetsHeader = () => {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2.5"
+                aria-hidden="true"
+                focusable="false"
               >
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
         <picture
@@ -57,7 +58,7 @@ const CabinetsHeader = () => {
 
           <img
             src={heroSocialDesktop}
-            alt="illustration methode"
+            alt=""
             width="540"
             height="700"
             loading="eager"

@@ -1,12 +1,15 @@
 const CabinetsApproche = () => {
   return (
-    <section className="cabinets-approche">
+    <section
+      className="cabinets-approche"
+      aria-labelledby="cabinets-approche-title"
+    >
       <div className="container">
         <div className="section-cabinets-approche">
           <span className="eyebrow span-cabinet">
             À la croisée du chiffre, du terrain et des outils
           </span>
-          <h2>
+          <h2 id="cabinets-approche-title">
             Comprendre le besoin
             <br />
             avant de construire la solution.

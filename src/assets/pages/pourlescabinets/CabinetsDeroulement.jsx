@@ -4,11 +4,14 @@ const CabinetsDeroulement = () => {
   useReveal();
 
   return (
-    <section className="cabinets-deroulement">
+    <section
+      className="cabinets-deroulement"
+      aria-labelledby="cabinets-deroulement-title"
+    >
       <div className="container">
         <div className="section-cabinets-deroulement reveal reveal-1">
           <span className="eyebrow span-cabinet">Une collaboration simple</span>
-          <h2>
+          <h2 id="cabinets-deroulement-title">
             Un besoin défini. Un cadre clair. <br />
             Une intervention ciblée.
           </h2>

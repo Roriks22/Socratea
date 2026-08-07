@@ -1,10 +1,15 @@
 const CabinetsCollaboration = () => {
   return (
-    <section className="cabinets-collaboration">
+    <section
+      className="cabinets-collaboration"
+      aria-labelledby="cabinets-collaboration-title"
+    >
       <div className="container">
         <div className="prose">
           <span className="eyebrow">Entre confrères</span>
-          <h3>Votre client reste votre client.</h3>
+          <h2 id="cabinets-collaboration-title">
+            Votre client reste votre client.
+          </h2>
           <p>
             Avant de commencer, nous définissons clairement le périmètre de
             l’intervention, les livrables, les délais, les interlocuteurs et la

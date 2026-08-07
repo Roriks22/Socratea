@@ -4,13 +4,13 @@ const CabinetsHome = () => {
   useReveal();
 
   return (
-    <section className="cabinets-home">
+    <section className="cabinets-home" aria-labelledby="cabinets-home-title">
       <div className="container">
         <div className="section-cabinets reveal reveal-1">
           <span className="eyebrow span-cabinet">
             Deux façons de collaborer
           </span>
-          <h2>
+          <h2 id="cabinets-home-title">
             Sur vos dossiers, <br />
             ou dans votre cabinet.
           </h2>
