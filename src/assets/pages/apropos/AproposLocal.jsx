@@ -1,13 +1,10 @@
 const AproposLocal = () => {
   return (
-    <section
-      className="aprps-local"
-      aria-label="Présentation de la présence locale du cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="aprps-local" aria-labelledby="apropos-local-title">
       <div className="container">
         <div className="section-local">
           <span className="eyebrow">Notre présence</span>
-          <h2>
+          <h2 id="apropos-local-title">
             La proximité,
             <br />
             ne se mesure pas en kilomètres.

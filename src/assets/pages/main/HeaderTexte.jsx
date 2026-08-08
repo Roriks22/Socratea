@@ -2,13 +2,10 @@ import julienPortrait from "/images/julien-complet-transparent.webp";
 
 const HeaderTexte = () => {
   return (
-    <section
-      className="header-texte"
-      aria-label="Présentation du cabinet SOCRATEA et de son fondateur Julien Jacquesson, expert-comptable"
-    >
+    <section className="header-texte" aria-labelledby="header-texte-title">
       <div className="header-grid">
         <div className="approche">
-          <h2>Notre approche</h2>
+          <h2 id="header-texte-title">Notre approche</h2>
           <p>
             SOCRATEA est un cabinet d'expertise comptable qui sécurise votre
             comptabilité, vos obligations fiscales et vos comptes annuels.

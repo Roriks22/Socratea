@@ -8,14 +8,11 @@ import serviceJuridique from "/images/service-juridique.webp";
 const Services = () => {
   useReveal();
   return (
-    <section
-      className="services"
-      aria-label="Services du cabinet d'expertise comptable"
-    >
+    <section className="services" aria-labelledby="services-title">
       <div className="container services-deroulement">
         <div className="services-header reveal reveal-1">
           <span>Nos expertises</span>
-          <h2>
+          <h2 id="services-title">
             Un accompagnement construit
             <br />
             autour de votre entreprise.

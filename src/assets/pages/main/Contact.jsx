@@ -1,12 +1,9 @@
 const Contact = () => {
   return (
-    <section
-      className="contact"
-      aria-label="Prendre rendez-vous avec le cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="contact" aria-labelledby="contact-main-title">
       <div className="container texte-contact">
         <span className="rdv-pris">PRENDRE RENDEZ-VOUS</span>
-        <h2>Échangeons sur votre entreprise. </h2>
+        <h2 id="contact-main-title">Échangeons sur votre entreprise. </h2>
         <p>
           Ce premier échange nous permet de comprendre votre organisation, vos
           besoins et vos attentes. De votre côté, vous découvrez l’approche de

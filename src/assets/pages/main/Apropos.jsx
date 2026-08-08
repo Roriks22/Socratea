@@ -1,13 +1,9 @@
 import julienimage from "/images/julien-complet.webp";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Apropos = () => {
-  const navigate = useNavigate();
   return (
-    <section
-      className="a_propos"
-      aria-label="Présentation de Julien Jacquesson, expert-comptable fondateur du cabinet SOCRATEA"
-    >
+    <section className="a_propos" aria-labelledby="apropos-main-title">
       <div className="container apropos">
         <div className="apropos_left">
           <img
@@ -18,7 +14,7 @@ const Apropos = () => {
         </div>
         <div className="apropos-right">
           <span>À propos</span>
-          <h2>Julien Jacquesson, expert-comptable</h2>
+          <h2 id="apropos-main-title">Julien Jacquesson, expert-comptable</h2>
           <p className="texte_1">
             « J’ai vu les chiffres des deux côtés : celui de l’auditeur qui
             vérifie, et celui du directeur financier qui décide avec. C’est ce
@@ -34,12 +30,9 @@ const Apropos = () => {
             C’est de cette double expérience qu’est né SOCRATEA.
           </p>
           <div className="btn-parcours">
-            <button
-              className="btn-click-parcours"
-              onClick={() => navigate("/apropos")}
-            >
+            <Link to="/apropos" className="btn-click-parcours">
               Découvrir son parcours
-            </button>
+            </Link>
           </div>
         </div>
       </div>

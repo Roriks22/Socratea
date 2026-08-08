@@ -4,7 +4,7 @@ const AproposSocratea = () => {
   return (
     <section
       className="apropos-socratea"
-      aria-label="Présentation de l'origine du nom du cabinet d'expertise comptable SOCRATEA"
+      aria-labelledby="apropos-socratea-title"
     >
       <div className="section-socratea">
         <div className="socratea-image">
@@ -12,7 +12,7 @@ const AproposSocratea = () => {
         </div>
         <div className="socratea-texte">
           <span className="eyebrow">Derrière SOCRATEA</span>
-          <h2>Au fait, pourquoi SOCRATEA ?</h2>
+          <h2 id="apropos-socratea-title">Au fait, pourquoi SOCRATEA ?</h2>
           <p>
             Non, SOCRATEA ne vient pas de Socrate. Vous n’aurez pas à préparer
             une dissertation avant de me contacter.

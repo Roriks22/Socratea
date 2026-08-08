@@ -2,10 +2,7 @@ import julienimage from "/images/julien-complet.webp";
 
 const AproposHome = () => {
   return (
-    <section
-      className="aprps-home"
-      aria-label="Présentation de l'expert-comptable Julien Jacquesson et du cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="aprps-home" aria-labelledby="apropos-home-title">
       <div className="container">
         <div className="about-inner">
           <div className="about-portrait">
@@ -16,7 +13,7 @@ const AproposHome = () => {
           </div>
           <div className="about-content">
             <span className="eyebrow">Le fondateur</span>
-            <h2>Un parcours, une conviction.</h2>
+            <h2 id="apropos-home-title">Un parcours, une conviction.</h2>
             <p className="aprps1">
               « J’ai vu les chiffres des deux côtés : celui de l’auditeur qui
               vérifie, et celui du directeur financier qui décide avec. C’est ce

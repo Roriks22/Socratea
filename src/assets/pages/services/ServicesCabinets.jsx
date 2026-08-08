@@ -7,12 +7,12 @@ const ServicesCabinets = () => {
   return (
     <section
       className="services-cabinets"
-      aria-label="Présentation de l'accompagnement proposé par le cabinet d'expertise comptable SOCRATEA aux cabinets d'expertise comptable"
+      aria-labelledby="services-cabinets-title"
     >
       <div className="container">
         <div className="section-services-cabinets reveal reveal-1">
           <span className="eyebrow">Vous êtes expert-comptable ?</span>
-          <h2>
+          <h2 id="services-cabinets-title">
             Certaines expertises peuvent aussi être mises au service de votre
             cabinet.
           </h2>

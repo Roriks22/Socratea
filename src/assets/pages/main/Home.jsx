@@ -4,14 +4,11 @@ const Home = () => {
   useReveal();
 
   return (
-    <section
-      className="entreprise-recherche"
-      aria-label="Présentation des besoins des entreprises"
-    >
+    <section className="entreprise-recherche" aria-labelledby="home-title">
       <div className="container home">
         <div className="home-top reveal">
           <span>Vos enjeux</span>
-          <h2>
+          <h2 id="home-title">
             Votre entreprise évolue. <br />
             Vos besoins aussi.
           </h2>

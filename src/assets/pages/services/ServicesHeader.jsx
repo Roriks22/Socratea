@@ -7,7 +7,7 @@ const ServicesHeader = () => {
   return (
     <section
       className="page-hero page-hero--social-services"
-      aria-label="Présentation des services proposés par le cabinet d'expertise comptable SOCRATEA"
+      aria-labelledby="page-hero-title"
     >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
@@ -16,7 +16,7 @@ const ServicesHeader = () => {
             <span className="sep">/</span>
             <span aria-current="page">Nos services</span>
           </nav>
-          <h1 className="hero-inner-h1 reveal reveal-2">
+          <h1 id="page-hero-title" className="hero-inner-h1 reveal reveal-2">
             Quatre expertises. <br />
             <span>Une seule vision de votre entreprise.</span>
           </h1>

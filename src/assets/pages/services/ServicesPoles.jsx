@@ -8,14 +8,11 @@ import serviceJuridique from "/images/service-juridique.webp";
 const Services = () => {
   useReveal();
   return (
-    <section
-      className="services-poles"
-      aria-label="Présentation des services proposés par le cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="services-poles" aria-labelledby="services-pole-title">
       <div className="container services-deroulement">
         <div className="services-header reveal reveal-1">
           <span className="eyebrow">Nos expertises</span>
-          <h2>
+          <h2 id="services-pole-title">
             Un accompagnement construit
             <br />
             autour de votre entreprise.

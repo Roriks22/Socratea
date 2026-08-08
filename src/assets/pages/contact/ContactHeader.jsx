@@ -8,7 +8,7 @@ const ContactHeader = () => {
   return (
     <section
       className="page-hero page-hero--social-contact"
-      aria-label="Présentation de la page de contact du cabinet d'expertise comptable SOCRATEA"
+      aria-labelledby="contact-title"
     >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
@@ -17,7 +17,7 @@ const ContactHeader = () => {
             <span className="sep">/</span>
             <span aria-current="page">Contact</span>
           </nav>
-          <h1 className="page-hero-h1 reveal reveal-2">
+          <h1 id="contact-title" className="page-hero-h1 reveal reveal-2">
             30 minutes
             <br />
             <span>pour faire connaissance.</span>

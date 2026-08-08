@@ -5,12 +5,12 @@ const MethodeEngagement = () => {
   return (
     <section
       className="methode-engagement"
-      aria-label="Présentation des engagements réciproques entre le cabinet d'expertise comptable SOCRATEA et ses clients"
+      aria-labelledby="methode-engagement-title"
     >
       <div className="container">
         <div className="section-engagement reveal reveal-1">
           <span className="eyebrow">L'engagement réciproque</span>
-          <h2>
+          <h2 id="methode-engagement-title">
             Nos engagements ne tiennent <br />
             que si les vôtres sont tenus aussi.
           </h2>

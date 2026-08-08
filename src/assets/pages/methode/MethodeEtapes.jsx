@@ -3,14 +3,11 @@ import useReveal from "../../components/useReveal";
 const MethodeEtapes = () => {
   useReveal();
   return (
-    <section
-      className="methode-etapes"
-      aria-label="Présentation des trois étapes de la méthode de suivi comptable proposée par le cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="methode-etapes" aria-labelledby="methode-etapes-title">
       <div className="container">
         <div className="section-header reveal reveal-1">
           <span className="eyebrow">Trois étapes</span>
-          <h2>
+          <h2 id="methode-etapes-title">
             Du premier échange à un accompagnement qui évolue avec votre
             entreprise.
           </h2>

@@ -8,7 +8,7 @@ const Methode = () => {
   return (
     <section
       className="page-hero page-hero--social-methode"
-      aria-label="Présentation de la méthode de suivi comptable proposée par le cabinet d'expertise comptable SOCRATEA"
+      aria-labelledby="methode-title"
     >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
@@ -17,7 +17,7 @@ const Methode = () => {
             <span className="sep">/</span>
             <span aria-current="page">Notre méthode</span>
           </nav>
-          <h1 className="page-hero-h1 reveal reveal-2">
+          <h1 id="methode-title" className="page-hero-h1 reveal reveal-2">
             Une organisation claire, <br />
             <span>dès le départ.</span>
           </h1>

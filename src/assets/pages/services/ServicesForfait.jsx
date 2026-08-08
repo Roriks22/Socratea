@@ -5,12 +5,12 @@ const ServicesForfait = () => {
   return (
     <section
       className="services-forfait"
-      aria-label="Présentation de l'accompagnement proposé par le cabinet d'expertise comptable SOCRATEA aux entreprises sous forme de forfait"
+      aria-labelledby="services-forfait-title"
     >
       <div className="container">
         <div className="section-forfait reveal reveal-1">
           <span className="eyebrow">Votre accompagnement</span>
-          <h2>
+          <h2 id="services-forfait-title">
             Une mission définie pour vous,
             <br />
             pas une formule toute faite.

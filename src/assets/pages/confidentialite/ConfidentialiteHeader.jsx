@@ -6,7 +6,7 @@ const ConfidentialiteHeader = () => {
   return (
     <section
       className="page-hero page-hero--social-confidentialite"
-      aria-label="Présentation de la politique de confidentialité du site internet du cabinet d'expertise comptable SOCRATEA"
+      aria-labelledby="politique-confidentialite-title"
     >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
@@ -15,7 +15,10 @@ const ConfidentialiteHeader = () => {
             <span className="sep">/</span>
             <span aria-current="page">Politique de confidentialité</span>
           </nav>
-          <h1 className="page-hero-h1 reveal reveal-2">
+          <h1
+            id="politique-confidentialite-title"
+            className="page-hero-h1 reveal reveal-2"
+          >
             Politique <br /> <span>de confidentialité.</span>{" "}
           </h1>
           <div className="page-hero-lead reveal reveal-3">

@@ -7,14 +7,11 @@ import situationTrimestrielle from "/images/situation-trimestrielle.webp";
 const Livrables = () => {
   useReveal();
   return (
-    <section
-      className="livrables"
-      aria-label="Présentation des 4 méthodes de suivi comptable proposées par le cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="livrables" aria-labelledby="livrables-title">
       <div className="container livrables-deroulement">
         <div className="livrables-header reveal reveal-1">
           <span>Votre suivi</span>
-          <h2>
+          <h2 id="livrables-title">
             Des chiffres utiles,
             <br />
             au bon moment.

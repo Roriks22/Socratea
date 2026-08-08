@@ -6,7 +6,7 @@ const MentionsHeader = () => {
   return (
     <section
       className="page-hero page-hero--social-mention"
-      aria-label="Présentation des mentions légales du site internet du cabinet d'expertise comptable SOCRATEA"
+      aria-labelledby="mentions-legales-title"
     >
       <div className="container page-hero-inner social-hero">
         <div className="social-hero__copy">
@@ -15,7 +15,10 @@ const MentionsHeader = () => {
             <span className="sep">/</span>
             <span aria-current="page">Mentions légales</span>
           </nav>
-          <h1 className="page-hero-h1 reveal reveal-2">
+          <h1
+            id="mentions-legales-title"
+            className="page-hero-h1 reveal reveal-2"
+          >
             Mentions <br />
             <span>légales.</span>
           </h1>

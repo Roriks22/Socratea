@@ -8,14 +8,11 @@ import imageRestituer from "/images/methode/Restituer et éclairer.webp";
 const MethodeHome = () => {
   useReveal();
   return (
-    <section
-      className="methode-home"
-      aria-label="Présentation de la méthode de suivi comptable proposée par le cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="methode-home" aria-labelledby="methode-home-title">
       <div className="container">
         <div className="section-home reveal reveal-1">
           <span className="eyebrow">Le suivi en pratique</span>
-          <h2>
+          <h2 id="methode-home-title">
             De vos données <br />à une information fiable et utile.
           </h2>
           <p>

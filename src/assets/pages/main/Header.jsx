@@ -7,17 +7,14 @@ const Header = () => {
   useReveal();
 
   return (
-    <section
-      className="hero hero--social-main"
-      aria-label="Présentation du cabinet d'expertise comptable SOCRATEA"
-    >
+    <section className="hero hero--social-main" aria-labelledby="header-title">
       <div className="container hero-inner social-hero">
         <div className="hero-content">
           <div className="hero-tag reveal reveal-1">
             <span className="dot"></span>
             <span>Ouverture le 14 septembre 2026</span>
           </div>
-          <h1 className="reveal reveal-2">
+          <h1 id="header-title" className="reveal reveal-2">
             Ancré dans l'expertise.
             <span>En mouvement vers votre avenir.</span>
           </h1>
