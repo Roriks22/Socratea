@@ -19,7 +19,9 @@ const SEO = ({ title, description }) => {
     <Helmet>
       {/* SEO principal */}
       <title>{title}</title>
+
       <meta name="description" content={description} />
+      <meta name="author" content="SOCRATEA" />
 
       {/* Canonical */}
       <link rel="canonical" href={canonicalUrl} />
@@ -33,6 +35,7 @@ const SEO = ({ title, description }) => {
       <meta property="og:locale" content="fr_FR" />
 
       <meta property="og:image" content={OG_IMAGE} />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta
         property="og:image:alt"
         content="SOCRATEA, cabinet d'expertise comptable"
@@ -44,6 +47,7 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:url" content={canonicalUrl} />
       <meta name="twitter:image" content={OG_IMAGE} />
       <meta
         name="twitter:image:alt"

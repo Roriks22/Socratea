@@ -57,11 +57,13 @@ import FAQFootter from "./assets/pages/questionsfrequentes/FAQFootter";
 import ContactFAQ from "./assets/pages/contact/ContactFAQ";
 import HeaderTexte from "./assets/pages/main/HeaderTexte";
 import SEO from "./assets/components/SEO.jsx";
+import StructuredData from "./assets/components/StructuredData";
 
 function App() {
   return (
     <>
       <ScrollToTop />
+      <StructuredData />
       <Nav />
       <Routes>
         <Route
