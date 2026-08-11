@@ -1,16 +1,18 @@
 @font-face {
   font-family: "Serif";
   src: url("../fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf")
-    format("truetype");
+    format("woff2");
   font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Manrope";
-  src: url("../fonts//Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts//Manrope/Manrope-VariableFont_wght.ttf") format("woff2");
   font-weight: 200 800;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
