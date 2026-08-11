@@ -56,6 +56,7 @@ import FAQHome from "./assets/pages/questionsfrequentes/FAQHome";
 import FAQFootter from "./assets/pages/questionsfrequentes/FAQFootter";
 import ContactFAQ from "./assets/pages/contact/ContactFAQ";
 import HeaderTexte from "./assets/pages/main/HeaderTexte";
+import SEO from "./assets/components/SEO.jsx";
 
 function App() {
   return (
@@ -67,6 +68,10 @@ function App() {
           path="/"
           element={
             <>
+              <SEO
+                title="SOCRATEA | Expert-comptable à Amiens et partout en France"
+                description="SOCRATEA accompagne les dirigeants en comptabilité, fiscalité, pilotage, paie, juridique et automatisation. Un accompagnement clair, proche et adapté à votre entreprise."
+              />
               <Header />
               <HeaderTexte />
               <Home />
@@ -82,7 +87,11 @@ function App() {
           path="/methode"
           element={
             <>
-              <MethodeHeader /> <MethodeEtapes /> <MethodeHome /> <Contact />{" "}
+              <SEO
+                title="Notre méthode | SOCRATEA, cabinet d'expertise comptable"
+                description="Découvrez la méthode SOCRATEA : une expertise comptable fondée sur la proximité, la compréhension de votre entreprise, des chiffres utiles et un accompagnement adapté à vos besoins."
+              />
+              <MethodeHeader /> <MethodeEtapes /> <MethodeHome /> <Contact />
               <Footer />
             </>
           }
@@ -91,8 +100,11 @@ function App() {
           path="/services"
           element={
             <>
-              {" "}
-              <ServicesHeader /> <ServicesPoles /> <ServicesForfait />{" "}
+              <SEO
+                title="Nos services | Expertise comptable, pilotage et conseil | SOCRATEA"
+                description="Découvrez les services de SOCRATEA : comptabilité, pilotage, automatisation des flux, paie, juridique et accompagnement des entreprises dans leurs décisions."
+              />
+              <ServicesHeader /> <ServicesPoles /> <ServicesForfait />
               <ServicesCabinets /> <Contact /> <Footer />
             </>
           }
@@ -101,9 +113,12 @@ function App() {
           path="/services-comptabilite"
           element={
             <>
-              {" "}
-              <Pole1Header /> <Pole1Home /> <Pole1Livrable /> <Pole1Objectif />{" "}
-              <Contact /> <Footer />{" "}
+              <SEO
+                title="Comptabilité et pilotage | SOCRATEA"
+                description="SOCRATEA sécurise votre comptabilité et vos obligations fiscales tout en vous donnant des chiffres utiles pour suivre votre activité, votre trésorerie et votre marge."
+              />
+              <Pole1Header /> <Pole1Home /> <Pole1Livrable /> <Pole1Objectif />
+              <Contact /> <Footer />
             </>
           }
         />
@@ -111,9 +126,13 @@ function App() {
           path="/services-automatisation"
           element={
             <>
-              <Pole2Header /> <Pole2Home /> <Pole2Deroulement />{" "}
+              <SEO
+                title="Automatisation et structuration des flux | SOCRATEA"
+                description="SOCRATEA simplifie vos processus, automatise les tâches répétitives et connecte vos outils pour fiabiliser vos données et faire gagner du temps à vos équipes."
+              />
+              <Pole2Header /> <Pole2Home /> <Pole2Deroulement />
               <Pole2Objectif /> <Pole2Contexte />
-              <Contact /> <Footer />{" "}
+              <Contact /> <Footer />
             </>
           }
         />
@@ -121,8 +140,11 @@ function App() {
           path="/services-paie"
           element={
             <>
-              {" "}
-              <Pole3Header /> <Pole3Positionnement /> <Pole3Couverture />{" "}
+              <SEO
+                title="Social et paie | Gestion de la paie et accompagnement | SOCRATEA"
+                description="SOCRATEA accompagne votre gestion sociale : collecte des variables, bulletins de paie, déclarations sociales, événements salariés et suivi des échéances."
+              />
+              <Pole3Header /> <Pole3Positionnement /> <Pole3Couverture />
               <Pole3Objectif /> <Contact /> <Footer />
             </>
           }
@@ -131,7 +153,11 @@ function App() {
           path="/services-juridique"
           element={
             <>
-              <Pole4Header /> <Pole4Formalites /> <Pole4Operations />{" "}
+              <SEO
+                title="Juridique | Accompagnement juridique des entreprises | SOCRATEA"
+                description="SOCRATEA vous accompagne dans les principales étapes juridiques de votre entreprise : approbation des comptes, modifications statutaires et opérations ponctuelles."
+              />
+              <Pole4Header /> <Pole4Formalites /> <Pole4Operations />
               <Pole4Sens /> <Contact /> <Footer />
             </>
           }
@@ -140,8 +166,11 @@ function App() {
           path="/apropos"
           element={
             <>
-              {" "}
-              <AproposHeader /> <AproposHome /> <AproposConviction />{" "}
+              <SEO
+                title="À propos de SOCRATEA | Julien Jacquesson, expert-comptable"
+                description="Découvrez Julien Jacquesson, expert-comptable et fondateur de SOCRATEA, son parcours entre audit et direction financière et sa vision de l'accompagnement des entreprises."
+              />
+              <AproposHeader /> <AproposHome /> <AproposConviction />
               <AproposSocratea /> <AproposLocal /> <Contact /> <Footer />
             </>
           }
@@ -150,9 +179,12 @@ function App() {
           path="/contact"
           element={
             <>
-              {" "}
-              <ContactHeader /> <ContactFAQ /> <ContactFormulaire />{" "}
-              <ContactAgenda /> <Footer />{" "}
+              <SEO
+                title="Contact | Prendre rendez-vous avec SOCRATEA"
+                description="Contactez SOCRATEA pour échanger sur votre entreprise, votre organisation et vos besoins en expertise comptable, pilotage, paie, juridique ou automatisation."
+              />
+              <ContactHeader /> <ContactFAQ /> <ContactFormulaire />
+              <ContactAgenda /> <Footer />
             </>
           }
         />
@@ -160,10 +192,13 @@ function App() {
           path="/pour-les-cabinets"
           element={
             <>
-              {" "}
-              <CabinetsHeader /> <CabinetsHome /> <CabinetsObjectifs />{" "}
-              <CabinetsCollaboration /> <CabinetsApproche />{" "}
-              <CabinetsDeroulement /> <CabinetsContact /> <Footer />{" "}
+              <SEO
+                title="Solutions pour les cabinets comptables | SOCRATEA"
+                description="SOCRATEA accompagne les cabinets comptables dans l'organisation, l'automatisation des processus, la structuration des flux et le développement d'outils adaptés à leurs besoins."
+              />
+              <CabinetsHeader /> <CabinetsHome /> <CabinetsObjectifs />
+              <CabinetsCollaboration /> <CabinetsApproche />
+              <CabinetsDeroulement /> <CabinetsContact /> <Footer />
             </>
           }
         />
@@ -171,8 +206,11 @@ function App() {
           path="/questions-frequentes"
           element={
             <>
-              {" "}
-              <QuestionsHeader /> <FAQHome /> <FAQFootter /> <Footer />{" "}
+              <SEO
+                title="Questions fréquentes | SOCRATEA"
+                description="Retrouvez les réponses aux questions fréquentes concernant l'accompagnement de SOCRATEA, la comptabilité, le pilotage, la paie, le juridique et nos services."
+              />
+              <QuestionsHeader /> <FAQHome /> <FAQFootter /> <Footer />
             </>
           }
         />
@@ -180,6 +218,10 @@ function App() {
           path="/mentions-legales"
           element={
             <>
+              <SEO
+                title="Mentions légales | SOCRATEA"
+                description="Consultez les mentions légales du site internet du cabinet d'expertise comptable SOCRATEA."
+              />
               <MentionsHeader /> <MentionsHome /> <Footer />
             </>
           }
@@ -188,6 +230,10 @@ function App() {
           path="/confidentialite"
           element={
             <>
+              <SEO
+                title="Politique de confidentialité | SOCRATEA"
+                description="Consultez la politique de confidentialité et les informations relatives à la protection des données personnelles du site SOCRATEA."
+              />
               <ConfidentialiteHeader /> <ConfidentialiteHome /> <Footer />
             </>
           }

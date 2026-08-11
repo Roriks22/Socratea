@@ -1,4 +1,4 @@
-import julienimage from "/images/julien-complet.webp";
+import julienImage from "/images/julien-complet.webp";
 import { Link } from "react-router-dom";
 
 const Apropos = () => {
@@ -7,7 +7,7 @@ const Apropos = () => {
       <div className="container apropos">
         <div className="apropos_left">
           <img
-            src={julienimage}
+            src={julienImage}
             alt="Julien Jacquesson, expert-comptable fondateur de SOCRATEA"
             loading="lazy"
           />
