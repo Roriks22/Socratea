@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 const SITE_URL = "https://www.socratea.net";
 const SITE_NAME = "SOCRATEA";
-const OG_IMAGE = `${SITE_URL}/images/og-socratea.jpg`;
+const OG_IMAGE = `${SITE_URL}/og-socratea.jpg`;
 
 const SEO = ({ title, description }) => {
   const location = useLocation();
