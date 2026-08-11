@@ -68,14 +68,15 @@ const MentionsHome = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-instagram"></i>Instagram
+                <i className="fa-brands fa-instagram" aria-hidden="true"></i>
+                Instagram
               </a>
               <a
                 href="https://www.tiktok.com/@romdevix"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-tiktok"></i>TikTok
+                <i className="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok
               </a>
             </div>
           </div>

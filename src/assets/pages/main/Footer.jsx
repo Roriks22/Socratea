@@ -12,10 +12,7 @@ const Footer = () => {
     }
   };
   return (
-    <footer
-      className="footer"
-      aria-label="Pied de page du site du cabinet d'expertise comptable SOCRATEA"
-    >
+    <footer className="footer">
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
@@ -41,12 +38,13 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-linkedin"></i>Suivre sur LinkedIn
+              <i className="fa-brands fa-linkedin" aria-hidden="true"></i>Suivre
+              sur LinkedIn
             </a>
           </div>
           <div className="footer-col-bottom">
             <div className="footer-col">
-              <h4>Cabinet</h4>
+              <h2>Cabinet</h2>
               <ul>
                 <li>
                   <Link
@@ -83,7 +81,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-col">
-              <h4>Services</h4>
+              <h2>Services</h2>
               <ul>
                 <li>
                   <Link
@@ -129,7 +127,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-col">
-              <h4>Contact</h4>
+              <h2>Contact</h2>
               <ul>
                 <li>
                   <address>

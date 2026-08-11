@@ -40,7 +40,8 @@ const Services = () => {
                 donnant des repères utiles pour piloter votre entreprise.
               </p>
               <Link to="/services-comptabilite" className="service-link">
-                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+                Découvrir la comptabilité et le pilotage
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </div>
           </div>
@@ -61,7 +62,8 @@ const Services = () => {
                 chaque solution répond à un besoin concret.
               </p>
               <Link to="/services-automatisation" className="service-link">
-                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+                Découvrir l'automatisation des flux
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </div>
           </div>
@@ -80,7 +82,8 @@ const Services = () => {
                 une organisation claire et un suivi régulier.
               </p>
               <Link to="/services-paie" className="service-link">
-                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+                Découvrir le social et la paie
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </div>
           </div>
@@ -101,7 +104,8 @@ const Services = () => {
                 vos autres conseils lorsque cela est nécessaire.
               </p>
               <Link to="/services-juridique" className="service-link">
-                En savoir plus<i className="fa-solid fa-arrow-right"></i>
+                Découvrir notre accompagnement juridique
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </div>
           </div>

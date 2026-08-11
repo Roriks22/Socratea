@@ -31,10 +31,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <header
-      className="header"
-      aria-label="Barre de navigation du site du cabinet d'expertise comptable SOCRATEA"
-    >
+    <header className="header">
       <div className="container header-inner">
         <Link to="/" className="socratea" onClick={() => handleScrollTop("/")}>
           <img
