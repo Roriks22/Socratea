@@ -619,8 +619,6 @@
   }
 
   .section-cabinets-contact {
-    text-align: center;
-
     .span-cabinet {
       display: flex;
       justify-content: center;
@@ -629,8 +627,6 @@
       }
     }
     h2 {
-      position: relative;
-      display: inline-block;
       color: var(--white);
       padding-left: 28px;
       margin: 24px auto;
@@ -638,27 +634,20 @@
       @media (max-width: 600px) {
         padding-left: 15px;
       }
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 4px;
-        height: 100%;
-        background: var(--blue);
-        border-radius: 2px;
-      }
     }
     p {
       color: rgba(255, 255, 255, 0.8);
       margin-top: 16px;
-      text-align: center;
+      text-align: justify;
+      max-width: 900px;
+      margin: 0 auto;
 
       @media (max-width: 600px) {
         padding-right: 15px;
         padding-left: 15px;
+      }
+      @media (max-width: 381px) {
+        text-align: center;
       }
     }
   }

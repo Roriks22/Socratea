@@ -18,14 +18,14 @@ const ConfidentialiteHome = () => {
           </p>
           <h2 className="premier-h2">Responsable du traitement</h2>
           <p>
-            À la date de la présente politique, la société SOCRATEA est en cours
-            d’immatriculation. <br />
-            Le responsable des traitements réalisés dans le cadre du site est :{" "}
-            <br />
-            <strong>Julien Jacquesson</strong> <br />
-            Porteur du projet SOCRATEA <br />
+            Le responsable des traitements réalisés dans le cadre du site
+            socratea.net est : <br />
+            <strong>SOCRATEA</strong> <br />
+            Société d'expertise comptable <br />
             21 rue Charlemagne <br />
             80480 Vers-sur-Selle <br />
+            Représentée par son gérant : <strong>Julien Jacquesson</strong>{" "}
+            <br />
             Adresse électronique :{" "}
             <strong>
               <a href="mailto:julien.jacquesson@socratea.net">
@@ -34,11 +34,12 @@ const ConfidentialiteHome = () => {
             </strong>{" "}
             <br />
             Téléphone : <strong className="strong-tel">
-              06 86 50 61 29
+              07 68 77 55 24
             </strong>{" "}
             <br />
-            Après l’immatriculation de SOCRATEA EURL, cette rubrique sera mise à
-            jour afin de désigner la société comme responsable du traitement.
+            Pour toute question relative au traitement de vos données
+            personnelles ou à l’exercice de vos droits, vous pouvez contacter
+            SOCRATEA aux coordonnées indiquées ci-dessus.
           </p>
           <h2>Données susceptibles d’être collectées</h2>
           <p>
@@ -390,7 +391,7 @@ const ConfidentialiteHome = () => {
               </a>
             </strong>{" "}
             <br />
-            Téléphone : <strong className="strong-tel">06 86 50 61 29</strong>
+            Téléphone : <strong className="strong-tel">07 68 77 55 24</strong>
           </p>
         </div>
       </div>

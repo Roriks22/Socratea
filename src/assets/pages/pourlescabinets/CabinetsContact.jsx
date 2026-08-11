@@ -50,7 +50,7 @@ const CabinetsContact = () => {
             julien.jacquesson@socratea.net
           </a>
           <span className="sep">|</span>
-          <a href="tel:+33686506129">06 86 50 61 29</a>
+          <a href="tel:+33768775524">07 68 77 55 24</a>
         </div>
       </div>
     </section>

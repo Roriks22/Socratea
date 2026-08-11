@@ -15,13 +15,10 @@ const MentionsHome = () => {
             <br />
             21, rue Charlemagne <br />
             80480 Vers-sur-Selle <br />
-            Numéro SIREN : <em>[en cours d'attribution]</em> <br />
-            Numéro de TVA intracommunautaire : <em>
-              [en cours d'attribution]
-            </em>{" "}
-            <br />
+            Numéro SIREN : <em>108033028</em> <br />
+            Numéro de TVA intracommunautaire : <em>FR77108033028</em> <br />
             Téléphone : <strong className="strong-tel">
-              06 86 50 61 29
+              07 68 77 55 24
             </strong>{" "}
             <br />
             Adresse électronique :{" "}
@@ -43,10 +40,9 @@ const MentionsHome = () => {
             France. <br />
             La société est inscrite au tableau de l’Ordre des experts-comptables
             de la région Hauts-de-France sous le numéro
-            <em>[numéro d’inscription de la société]</em>. <br />
+            <em>29-00004716-01</em>. <br />
             Julien Jacquesson est inscrit au tableau de l’Ordre des
-            experts-comptables sous le numéro{" "}
-            <em>[numéro d’inscription de la personne physique]</em>. <br />
+            experts-comptables sous le numéro <em>29-00001346-01</em>. <br />
             Autorité professionnelle compétente : <br />{" "}
             <strong>
               Conseil régional de l’Ordre des experts-comptables des
@@ -93,8 +89,7 @@ const MentionsHome = () => {
             2 rue Kellermann <br />
             59100 Roubaix <br />
             France <br />
-            Téléphone :{" "}
-            <strong className="strong-tel">+33 9 72 10 10 07</strong>
+            Téléphone : <strong className="strong-tel">09 72 10 10 07</strong>
           </p>
           <h2>Propriété intellectuelle</h2>
           <p>
@@ -169,7 +164,7 @@ const MentionsHome = () => {
             21 rue Charlemagne <br />
             80480 Vers-sur-Selle <br />
             Téléphone : <strong className="strong-tel">
-              06 86 50 61 29
+              07 68 77 55 24
             </strong>{" "}
             <br />
             Adresse électronique :{" "}
