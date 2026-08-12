@@ -1,4 +1,4 @@
-import julienimage from "/images/julien-complet.webp";
+import julienimage from "/images/Page_a_propos_fondateur.webp";
 
 const AproposHome = () => {
   return (

@@ -1,4 +1,4 @@
-import julienImage from "/images/julien-complet.webp";
+import julienImage from "/images/Accueil_a_propos.webp";
 import { Link } from "react-router-dom";
 
 const Apropos = () => {

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useReveal from "../../components/useReveal";
-import heroSocialDesktop from "/images/julien-complet-transparent.webp";
-import heroSocialMobile from "/images/julien-complet-transparent.webp";
+import heroSocialDesktop from "/images/Page_contact_carte_julien.webp";
+import heroSocialMobile from "/images/Page_contact_carte_julien.webp";
 
 const ContactHeader = () => {
   useReveal();

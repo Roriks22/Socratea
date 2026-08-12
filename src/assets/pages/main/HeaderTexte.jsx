@@ -1,4 +1,4 @@
-import julienPortrait from "/images/julien-complet-transparent.webp";
+import julienPortrait from "../../../../public/images/Accueil_notre_approche.webp";
 
 const HeaderTexte = () => {
   return (

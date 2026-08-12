@@ -1030,7 +1030,7 @@ h1 span {
 @media (max-width: 1373px) {
   .header-texte .header-grid .apropos-card {
     margin: 0 auto;
-    gap: 38px;
+    gap: 60px;
   }
 }
 @media (max-width: 638px) {

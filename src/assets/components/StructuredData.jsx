@@ -84,16 +84,10 @@ const StructuredData = () => {
 
         sameAs: ["https://www.linkedin.com/in/jacquesson-julien-b72870a9/"],
 
-        areaServed: [
-          {
-            "@type": "City",
-            name: "Amiens",
-          },
-          {
-            "@type": "Country",
-            name: "France",
-          },
-        ],
+        areaServed: {
+          "@type": "Country",
+          name: "France",
+        },
       },
 
       /*
@@ -107,7 +101,6 @@ const StructuredData = () => {
         "@id": `${SITE_URL}/#professionalservice`,
 
         name: "SOCRATEA",
-
         url: `${SITE_URL}/`,
         image: `${SITE_URL}/og-socratea.jpg`,
 
@@ -117,16 +110,10 @@ const StructuredData = () => {
         description:
           "Cabinet d'expertise comptable accompagnant les dirigeants en comptabilité, fiscalité, pilotage, paie, juridique et automatisation.",
 
-        areaServed: [
-          {
-            "@type": "City",
-            name: "Amiens",
-          },
-          {
-            "@type": "Country",
-            name: "France",
-          },
-        ],
+        areaServed: {
+          "@type": "Country",
+          name: "France",
+        },
 
         openingHoursSpecification: [
           {
@@ -153,7 +140,6 @@ const StructuredData = () => {
 
         url: `${SITE_URL}/`,
         name: SITE_NAME,
-
         description: SITE_DESCRIPTION,
 
         publisher: {
