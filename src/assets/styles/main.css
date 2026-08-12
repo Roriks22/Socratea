@@ -1873,10 +1873,12 @@ h1 span {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 5rem;
 }
 @media (max-width: 1024px) {
   .a_propos .apropos .apropos_left img {
     max-width: 400px;
+    margin-bottom: 0;
   }
 }
 .a_propos .apropos .apropos-right {
