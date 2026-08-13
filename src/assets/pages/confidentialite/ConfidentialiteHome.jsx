@@ -1,4 +1,7 @@
+import useReveal from "../../components/useReveal";
+
 const ConfidentialiteHome = () => {
+  useReveal();
   return (
     <section
       className="confidentialite-home"
@@ -6,9 +9,13 @@ const ConfidentialiteHome = () => {
     >
       <div className="container">
         <div className="legal-content">
-          <h2 id="confidentialite-title">Politique de confidentialité</h2>
-          <span>Dernière mise à jour : 26 Juin 2026</span>
-          <p>
+          <h2 id="confidentialite-title" className="reveal reveal-1">
+            Politique de confidentialité
+          </h2>
+          <span className="reveal reveal-1">
+            Dernière mise à jour : 26 Juin 2026
+          </span>
+          <p className="reveal reveal-1">
             Le cabinet SOCRATEA veille à la protection de vos données
             personnelles. <br />
             Cette page vous explique quelles informations peuvent être
@@ -16,8 +23,10 @@ const ConfidentialiteHome = () => {
             de contact ou prenez rendez-vous, pourquoi elles sont utilisées,
             combien de temps elles sont conservées et quels sont vos droits.
           </p>
-          <h2 className="premier-h2">Responsable du traitement</h2>
-          <p>
+          <h2 className="premier-h2 reveal reveal-1">
+            Responsable du traitement
+          </h2>
+          <p className="reveal reveal-2">
             Le responsable des traitements réalisés dans le cadre du site
             socratea.net est : <br />
             <strong>SOCRATEA</strong> <br />
@@ -41,12 +50,14 @@ const ConfidentialiteHome = () => {
             personnelles ou à l’exercice de vos droits, vous pouvez contacter
             SOCRATEA aux coordonnées indiquées ci-dessus.
           </p>
-          <h2>Données susceptibles d’être collectées</h2>
-          <p>
+          <h2 className="reveal reveal-2">
+            Données susceptibles d’être collectées
+          </h2>
+          <p className="reveal reveal-2">
             Selon la manière dont vous utilisez le site, SOCRATEA peut
             recueillir les informations suivantes :{" "}
           </p>
-          <ul>
+          <ul className="reveal reveal-2">
             <li>votre nom et votre prénom ;</li>
             <li>le nom de votre entreprise ;</li>
             <li>vos coordonnées professionnelles ;</li>
@@ -64,13 +75,13 @@ const ConfidentialiteHome = () => {
               la date et l’heure de connexion.
             </li>
           </ul>
-          <p>
+          <p className="reveal reveal-2">
             SOCRATEA vous invite à ne transmettre que les informations
             nécessaires au traitement de votre demande et à ne pas communiquer
             de données sensibles dans le formulaire de contact.
           </p>
-          <h2>Finalités et bases juridiques</h2>
-          <p>
+          <h2 className="reveal reveal-2">Finalités et bases juridiques</h2>
+          <p className="reveal reveal-2">
             Les données collectées peuvent être utilisées pour : <br />
             <strong className="titre-strong">
               Répondre à vos demandes
@@ -111,8 +122,8 @@ const ConfidentialiteHome = () => {
             lorsque la loi, une autorité compétente ou la défense des droits de
             SOCRATEA l’impose. <br />
           </p>
-          <h2>Formulaire de contact</h2>
-          <p>
+          <h2 className="reveal reveal-2">Formulaire de contact</h2>
+          <p className="reveal reveal-2">
             Le formulaire de contact vous permet de transmettre une demande à
             SOCRATEA. <br />
             Les champs signalés comme obligatoires sont nécessaires pour
@@ -139,8 +150,8 @@ const ConfidentialiteHome = () => {
             Pour en savoir plus, vous pouvez consulter la politique de
             confidentialité d’EmailJS.
           </p>
-          <h2>Prise de rendez-vous avec Cal.eu</h2>
-          <p>
+          <h2 className="reveal reveal-2">Prise de rendez-vous avec Cal.eu</h2>
+          <p className="reveal reveal-2">
             Le site intègre un module de prise de rendez-vous fourni par{" "}
             <strong>Cal.eu</strong>, service proposé par{" "}
             <strong className="strong-cliquable">
@@ -171,8 +182,8 @@ const ConfidentialiteHome = () => {
             Pour en savoir plus, vous pouvez consulter la politique de
             confidentialité de Cal.com applicable au service Cal.eu.
           </p>
-          <h2>Hébergement</h2>
-          <p>
+          <h2 className="reveal reveal-2">Hébergement</h2>
+          <p className="reveal reveal-2">
             Le site SOCRATEA est hébergé par : <br />
             <strong>OVH SAS</strong> <br />
             2 rue Kellermann, <br />
@@ -186,9 +197,11 @@ const ConfidentialiteHome = () => {
             la protection du service. <br />
             OVH intervient en qualité de prestataire technique d’hébergement.
           </p>
-          <h2>Destinataires des données</h2>
-          <p>Les données sont accessibles uniquement : </p>
-          <ul>
+          <h2 className="reveal reveal-2">Destinataires des données</h2>
+          <p className="reveal reveal-2">
+            Les données sont accessibles uniquement :{" "}
+          </p>
+          <ul className="reveal reveal-2">
             <li>
               à Julien Jacquesson et aux personnes habilitées au sein de
               SOCRATEA ;
@@ -202,8 +215,10 @@ const ConfidentialiteHome = () => {
               aux autorités compétentes lorsqu’une obligation légale l’impose.
             </li>
           </ul>
-          <p>Les principaux prestataires concernés sont : </p>
-          <ul>
+          <p className="reveal reveal-2">
+            Les principaux prestataires concernés sont :{" "}
+          </p>
+          <ul className="reveal reveal-2">
             <li>
               <strong>OVH</strong>, pour l’hébergement du site ;
             </li>
@@ -216,10 +231,14 @@ const ConfidentialiteHome = () => {
               rendez-vous.
             </li>
           </ul>
-          <p>SOCRATEA ne vend ni ne loue vos données personnelles.</p>
+          <p className="reveal reveal-2">
+            SOCRATEA ne vend ni ne loue vos données personnelles.
+          </p>
 
-          <h2>Transferts de données hors de l’Espace économique européen</h2>
-          <p>
+          <h2 className="reveal reveal-2">
+            Transferts de données hors de l’Espace économique européen
+          </h2>
+          <p className="reveal reveal-2">
             Certains prestataires techniques utilisés par SOCRATEA, notamment{" "}
             <strong>EmailJS</strong>, peuvent faire intervenir des sociétés ou
             des sous-traitants situés en dehors de l’Espace économique européen.{" "}
@@ -234,8 +253,8 @@ const ConfidentialiteHome = () => {
             Vous pouvez contacter SOCRATEA pour obtenir davantage d’informations
             sur les garanties applicables.
           </p>
-          <h2>Durées de conservation</h2>
-          <p>
+          <h2 className="reveal reveal-2">Durées de conservation</h2>
+          <p className="reveal reveal-2">
             Les données sont conservées pendant une durée adaptée à la finalité
             pour laquelle elles ont été recueillies. <br />
             <strong className="titre-strong">
@@ -274,8 +293,8 @@ const ConfidentialiteHome = () => {
             aux données personnelles sont conservées pendant la durée nécessaire
             à son traitement et à la justification de la réponse apportée.
           </p>
-          <h2>Cookies et autres traceurs</h2>
-          <p>
+          <h2 className="reveal reveal-2">Cookies et autres traceurs</h2>
+          <p className="reveal reveal-2">
             Le site SOCRATEA n’utilise actuellement aucun cookie publicitaire ni
             outil de mesure d’audience. <br />
             Le module <strong>Cal.eu</strong> intégré à la page de contact peut
@@ -291,8 +310,8 @@ const ConfidentialiteHome = () => {
             essentiels sont ajoutés au site, un dispositif de recueil et de
             gestion du consentement sera mis en place avant leur activation.
           </p>
-          <h2>Sécurité des données</h2>
-          <p>
+          <h2 className="reveal reveal-2">Sécurité des données</h2>
+          <p className="reveal reveal-2">
             SOCRATEA met en œuvre des mesures techniques et organisationnelles
             adaptées afin de limiter les risques de perte, d’accès non autorisé,
             de divulgation ou de modification des données personnelles. <br />
@@ -303,12 +322,12 @@ const ConfidentialiteHome = () => {
             adapte ses mesures en fonction des risques identifiés et de
             l’évolution des outils utilisés.
           </p>
-          <h2>Vos droits</h2>
-          <p>
+          <h2 className="reveal reveal-2">Vos droits</h2>
+          <p className="reveal reveal-2">
             Selon la nature du traitement et dans les conditions prévues par la
             réglementation, vous pouvez demander :{" "}
           </p>
-          <ul>
+          <ul className="reveal reveal-2">
             <li>l’accès aux données qui vous concernent ;</li>
             <li>la rectification de données inexactes ou incomplètes ;</li>
             <li>l’effacement de vos données ;</li>
@@ -320,7 +339,7 @@ const ConfidentialiteHome = () => {
               celui-ci.
             </li>
           </ul>
-          <p>
+          <p className="reveal reveal-2">
             Vous pouvez exercer vos droits en écrivant à : <br />
             <strong>
               <a href="mailto:julien.jacquesson@socratea.net">
@@ -346,16 +365,16 @@ const ConfidentialiteHome = () => {
               </a>
             </strong>
           </p>
-          <h2>Absence de décision automatisée</h2>
-          <p>
+          <h2 className="reveal reveal-2">Absence de décision automatisée</h2>
+          <p className="reveal reveal-2">
             Les données collectées par le site ne sont pas utilisées pour
             prendre une décision entièrement automatisée produisant des effets
             juridiques ou significatifs à votre égard. <br />
             Elles ne sont pas utilisées pour établir un profil commercial
             automatisé.
           </p>
-          <h2>Liens vers des sites tiers</h2>
-          <p>
+          <h2 className="reveal reveal-2">Liens vers des sites tiers</h2>
+          <p className="reveal reveal-2">
             Le site peut contenir des liens vers des plateformes ou sites
             exploités par des tiers, notamment Cal.eu ou LinkedIn. <br />
             Lorsque vous accédez à ces services, leurs propres conditions
@@ -363,11 +382,11 @@ const ConfidentialiteHome = () => {
             SOCRATEA n’est pas responsable des traitements réalisés directement
             par ces services pour leurs propres finalités.
           </p>
-          <h2>Modification de la politique</h2>
-          <p>
+          <h2 className="reveal reveal-2">Modification de la politique</h2>
+          <p className="reveal reveal-2">
             La présente politique peut être mise à jour afin de tenir compte :
           </p>
-          <ul>
+          <ul className="reveal reveal-2">
             <li>de l’évolution du site ;</li>
             <li>
               de l’ajout, du remplacement ou du retrait d’un prestataire ;
@@ -375,10 +394,12 @@ const ConfidentialiteHome = () => {
             <li>d’une évolution des traitements réalisés ;</li>
             <li>d’une modification légale ou réglementaire.</li>
           </ul>
-          <p>La date de dernière mise à jour figure en haut de la page.</p>
+          <p className="reveal reveal-2">
+            La date de dernière mise à jour figure en haut de la page.
+          </p>
 
-          <h2>Contact</h2>
-          <p>
+          <h2 className="reveal reveal-2">Contact</h2>
+          <p className="reveal reveal-2">
             Pour toute question concernant cette politique ou l’utilisation de
             vos données personnelles : <br />
             <strong>Julien Jacquesson — SOCRATEA</strong> <br />

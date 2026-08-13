@@ -44,7 +44,7 @@ const CabinetsContact = () => {
             Nous écrire
           </Link>
         </div>
-        <div className="contact-fin">
+        <div className="contact-fin reveal reveal-3">
           Ou par écrit -
           <a href="mailto:julien.jacquesson@socratea.net">
             julien.jacquesson@socratea.net

@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import useReveal from "../../components/useReveal";
 import emailJs from "@emailjs/browser";
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -30,6 +31,7 @@ const saveLastSubmissionTime = () => {
 };
 
 const ContactFormulaire = () => {
+  useReveal();
   const form = useRef(null);
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -214,7 +216,7 @@ const ContactFormulaire = () => {
     >
       <div className="container">
         <div className="contact-layout">
-          <div className="calendly-panel">
+          <div className="calendly-panel reveal reveal-1">
             <span className="eyebrow">Prendre rendez-vous</span>
 
             <h3>Choisissez le créneau qui vous convient.</h3>
@@ -254,7 +256,7 @@ const ContactFormulaire = () => {
             </div>
           </div>
 
-          <div className="form-panel">
+          <div className="form-panel reveal reveal-2">
             <span className="eyebrow">Nous écrire</span>
 
             <h3>Vous préférez nous écrire ?</h3>

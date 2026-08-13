@@ -1,20 +1,23 @@
+import useReveal from "../../components/useReveal";
+
 const AproposLocal = () => {
+  useReveal();
   return (
     <section className="aprps-local" aria-labelledby="apropos-local-title">
       <div className="container">
         <div className="section-local">
-          <span className="eyebrow">Notre présence</span>
-          <h2 id="apropos-local-title">
+          <span className="eyebrow reveal reveal-1">Notre présence</span>
+          <h2 id="apropos-local-title" className="reveal reveal-2">
             La proximité,
             <br />
             ne se mesure pas en kilomètres.
           </h2>
-          <p>
+          <p className="reveal reveal-3">
             SOCRATEA est installé près d’Amiens. Nous privilégions une relation
             directe, des échanges réguliers et des rencontres en présentiel
             chaque fois qu’elles apportent une vraie valeur.
           </p>
-          <p>
+          <p className="reveal reveal-4">
             Notre organisation dématérialisée nous permet également
             d’accompagner des entreprises partout en France. Rendez-vous sur
             place, téléphone ou visioconférence : le mode d’échange s’adapte à

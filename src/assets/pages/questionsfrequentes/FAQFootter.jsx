@@ -7,15 +7,17 @@ const FAQFootter = () => {
   return (
     <section className="faq-footer" aria-labelledby="faq-footer-title">
       <div className="container">
-        <div className="section-faq-footer reveal reveal-1">
-          <span className="eyebrow">Restons en contact</span>
-          <h2 id="faq-footer-title">Vous avez une autre question ?</h2>
-          <p>
+        <div className="section-faq-footer">
+          <span className="eyebrow reveal reveal-1">Restons en contact</span>
+          <h2 id="faq-footer-title" className="reveal reveal-2">
+            Vous avez une autre question ?
+          </h2>
+          <p className="reveal reveal-3">
             Chaque entreprise a son histoire, son organisation et ses priorités.
             Le plus simple reste souvent d’en parler.
           </p>
         </div>
-        <div className="hero-cta-group reveal reveal-2">
+        <div className="hero-cta-group reveal reveal-4">
           <Link to="/contact#agenda" className="btn btn-primary">
             Prendre rendez-vous
             <svg

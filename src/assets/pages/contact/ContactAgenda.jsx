@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useReveal from "../../components/useReveal";
 
 const ContactAgenda = () => {
+  useReveal();
   const [agendaLoaded, setAgendaLoaded] = useState(false);
   return (
     <section
@@ -10,7 +12,7 @@ const ContactAgenda = () => {
       aria-labelledby="agenda-title"
     >
       <div className="container">
-        <div className="section-header-agenda">
+        <div className="section-header-agenda reveal reveal-1">
           <span className="eyebrow">Prendre rendez-vous</span>
           <h2 id="agenda-title">Choisissez directement votre créneau.</h2>
           <p>
@@ -19,7 +21,7 @@ const ContactAgenda = () => {
             confirmation du rendez-vous et le lien de connexion par e-mail.
           </p>
         </div>
-        <div className="cal-inline-widget">
+        <div className="cal-inline-widget reveal reveal-2">
           {!agendaLoaded ? (
             <div className="cal-consent-placeholder">
               <h3>Afficher l’agenda</h3>

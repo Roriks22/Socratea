@@ -22,7 +22,7 @@ const Header = () => {
             Vos chiffres ne doivent pas seulement être justes.
             <span>Ils doivent vous faire avancer.</span>
           </h2>
-          <div className="hero-cta-group reveal reveal-5">
+          <div className="hero-cta-group reveal reveal-3">
             <a
               href="https://www.cal.eu/socratea"
               target="_blank"
@@ -48,7 +48,7 @@ const Header = () => {
           </div>
         </div>
         <picture
-          className="social-hero__visual reveal reveal-3"
+          className="social-hero__visual reveal reveal-2"
           aria-hidden="true"
         >
           <source media="(max-width: 900px)" srcSet={heroSocialMobile} />

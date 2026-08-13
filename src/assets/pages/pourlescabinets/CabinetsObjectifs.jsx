@@ -17,8 +17,8 @@ const CabinetsObjectifs = () => {
             des réponses adaptées.
           </h2>
         </div>
-        <div className="process-flow reveal reveal-2">
-          <div className="process-step">
+        <div className="process-flow">
+          <div className="process-step reveal reveal-2">
             <h3>Exploiter et fiabiliser les données</h3>
             <p>
               Rapprocher plusieurs sources, contrôler la cohérence des
@@ -26,7 +26,7 @@ const CabinetsObjectifs = () => {
               données difficiles à utiliser en une base réellement exploitable.
             </p>
           </div>
-          <div className="process-step">
+          <div className="process-step reveal reveal-3">
             <h3>Construire un pilotage adapté</h3>
             <p>
               Mettre en place des indicateurs, un tableau de bord ou une analyse
@@ -34,7 +34,7 @@ const CabinetsObjectifs = () => {
               marges, sa trésorerie ou sa rentabilité.
             </p>
           </div>
-          <div className="process-step">
+          <div className="process-step reveal reveal-4">
             <h3>Simplifier les processus du cabinet</h3>
             <p>
               Réduire les doubles saisies, organiser la collecte des
@@ -42,7 +42,7 @@ const CabinetsObjectifs = () => {
               de validation et de suivi.
             </p>
           </div>
-          <div className="process-step">
+          <div className="process-step reveal reveal-5">
             <h3>Développer une application sur mesure</h3>
             <p>
               Créer un outil adapté à un besoin interne précis : suivi des

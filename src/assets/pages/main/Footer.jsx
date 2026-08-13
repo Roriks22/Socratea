@@ -1,6 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "/images/socratea-logo.webp";
+import useReveal from "../../components/useReveal";
+
 const Footer = () => {
+  useReveal();
   const location = useLocation();
 
   const handleScrollTop = (path) => {
@@ -15,7 +18,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
-          <div className="footer-brand">
+          <div className="footer-brand reveal reveal-1">
             <Link to="/" onClick={() => handleScrollTop("/")}>
               <img
                 src={logo}
@@ -42,7 +45,7 @@ const Footer = () => {
               sur LinkedIn
             </a>
           </div>
-          <div className="footer-col-bottom">
+          <div className="footer-col-bottom reveal reveal-2">
             <div className="footer-col">
               <h2>Cabinet</h2>
               <ul>

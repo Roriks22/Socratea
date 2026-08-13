@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
+import useReveal from "../../components/useReveal";
 
 const MentionsHome = () => {
+  useReveal();
   return (
     <section className="mentions-home" aria-labelledby="mentions-title">
       <div className="container">
         <div className="legal-content">
-          <h2 id="mentions-title">Mentions légales</h2>
-          <span>Dernière mise à jour : 26 Juin 2026</span>
-          <h2 className="premier-h2">Éditeur du site</h2>
-          <p>
+          <h2 id="mentions-title" className="reveal reveal-1">
+            Mentions légales
+          </h2>
+          <span className="reveal reveal-1">
+            Dernière mise à jour : 26 Juin 2026
+          </span>
+          <h2 className="premier-h2 reveal reveal-2">Éditeur du site</h2>
+          <p className="reveal reveal-2">
             Le présent site est édité par <strong>SOCRATEA</strong>, entreprise
             unipersonnelle à responsabilité limitée au capital de
             <strong> 10 000 euros,</strong> dont le siège social est situé :{" "}
@@ -28,14 +34,14 @@ const MentionsHome = () => {
               </a>
             </strong>
           </p>
-          <h2>Directeur de la publication</h2>
-          <p>
+          <h2 className="reveal reveal-2">Directeur de la publication</h2>
+          <p className="reveal reveal-2">
             Le directeur de la publication est{" "}
             <strong>Julien Jacquesson</strong>, en qualité de gérant de
             SOCRATEA.
           </p>
-          <h2>Activité professionnelle</h2>
-          <p>
+          <h2 className="reveal reveal-2">Activité professionnelle</h2>
+          <p className="reveal reveal-2">
             SOCRATEA exerce une activité d’expertise comptable réglementée en
             France. <br />
             La société est inscrite au tableau de l’Ordre des experts-comptables
@@ -51,11 +57,11 @@ const MentionsHome = () => {
             </strong>
             <strong className="strong-tel">03 20 15 80 80</strong>
           </p>
-          <h2>Conception et réalisation</h2>
-          <p>
+          <h2 className="reveal reveal-2">Conception et réalisation</h2>
+          <p className="reveal reveal-2">
             Conception éditoriale : <strong>SOCRATEA</strong>
           </p>
-          <div className="developer-card">
+          <div className="developer-card reveal reveal-2">
             <h3>Développement du site</h3>
             <p>
               Site conçu et développé par : <strong>RomDevix</strong>,
@@ -81,8 +87,8 @@ const MentionsHome = () => {
             </div>
           </div>
 
-          <h2>Hébergement</h2>
-          <p>
+          <h2 className="reveal reveal-2">Hébergement</h2>
+          <p className="reveal reveal-2">
             Le site est hébergé par : <br />
             <strong>OVH SAS</strong> <br />
             Société par actions simplifiée au capital de 50 000 000 euros <br />{" "}
@@ -92,8 +98,8 @@ const MentionsHome = () => {
             France <br />
             Téléphone : <strong className="strong-tel">09 72 10 10 07</strong>
           </p>
-          <h2>Propriété intellectuelle</h2>
-          <p>
+          <h2 className="reveal reveal-2">Propriété intellectuelle</h2>
+          <p className="reveal reveal-2">
             Le site, sa structure et les éléments qui le composent, notamment
             les textes, photographies, illustrations, éléments graphiques, logos
             et signes distinctifs, sont protégés par les dispositions
@@ -105,8 +111,8 @@ const MentionsHome = () => {
             soit, nécessite l’autorisation écrite préalable de SOCRATEA, sauf
             dans les cas expressément autorisés par la loi.
           </p>
-          <h2>Contenu du site</h2>
-          <p>
+          <h2 className="reveal reveal-2">Contenu du site</h2>
+          <p className="reveal reveal-2">
             SOCRATEA veille à fournir des informations aussi exactes et à jour
             que possible. <br />
             Les contenus publiés sur le site présentent de manière générale le
@@ -119,16 +125,16 @@ const MentionsHome = () => {
             SOCRATEA peut modifier, compléter ou mettre à jour les contenus du
             site à tout moment.
           </p>
-          <h2>Liens vers des services externes</h2>
-          <p>
+          <h2 className="reveal reveal-2">Liens vers des services externes</h2>
+          <p className="reveal reveal-2">
             Le site peut contenir des liens vers des sites, plateformes ou
             services exploités par des tiers. <br />
             SOCRATEA ne maîtrise pas le contenu, la disponibilité ou le
             fonctionnement de ces services externes et ne peut être tenue
             responsable des informations ou services qu’ils proposent.
           </p>
-          <h2>Données personnelles</h2>
-          <p>
+          <h2 className="reveal reveal-2">Données personnelles</h2>
+          <p className="reveal reveal-2">
             Les modalités de collecte et de traitement des données personnelles,
             les services tiers utilisés ainsi que les conditions d’exercice de
             vos droits sont présentés dans la page{" "}
@@ -146,8 +152,8 @@ const MentionsHome = () => {
               </a>
             </strong>
           </p>
-          <h2>Cookies et services tiers</h2>
-          <p>
+          <h2 className="reveal reveal-2">Cookies et services tiers</h2>
+          <p className="reveal reveal-2">
             Le site peut utiliser des services tiers nécessaires à son
             fonctionnement, notamment pour la prise de rendez-vous ou l’envoi de
             formulaires. <br />
@@ -158,8 +164,8 @@ const MentionsHome = () => {
               <Link to="/confidentialite">Politique de confidentialité.</Link>
             </strong>{" "}
           </p>
-          <h2>Contact</h2>
-          <p>
+          <h2 className="reveal reveal-2">Contact</h2>
+          <p className="reveal reveal-2">
             Pour toute question concernant le site ou son contenu : <br />
             <strong>SOCRATEA</strong> <br />
             21 rue Charlemagne <br />

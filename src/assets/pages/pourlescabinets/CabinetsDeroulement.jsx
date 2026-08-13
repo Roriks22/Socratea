@@ -9,14 +9,16 @@ const CabinetsDeroulement = () => {
       aria-labelledby="cabinets-deroulement-title"
     >
       <div className="container">
-        <div className="section-cabinets-deroulement reveal reveal-1">
-          <span className="eyebrow span-cabinet">Une collaboration simple</span>
-          <h2 id="cabinets-deroulement-title">
+        <div className="section-cabinets-deroulement">
+          <span className="eyebrow span-cabinet reveal reveal-1">
+            Une collaboration simple
+          </span>
+          <h2 id="cabinets-deroulement-title" className="reveal reveal-2">
             Un besoin défini. Un cadre clair. <br />
             Une intervention ciblée.
           </h2>
         </div>
-        <ul className="feature-list reveal reveal-2">
+        <ul className="feature-list reveal reveal-3">
           <li>
             <span className="feat-num">01</span>
             <div>

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section className="entreprise-recherche" aria-labelledby="home-title">
       <div className="container home">
-        <div className="home-top reveal">
+        <div className="home-top reveal reveal-1">
           <span>Vos enjeux</span>
           <h2 id="home-title">
             Votre entreprise évolue. <br />
@@ -21,7 +21,7 @@ const Home = () => {
           </p>
         </div>
         <div className="home-bottom">
-          <div className="entreprise-concerne reveal reveal-1">
+          <div className="entreprise-concerne reveal reveal-2">
             <h3>Vos chiffres arrivent trop tard</h3>
             <p>
               Vous découvrez parfois vos résultats trop tard pour ajuster vos
@@ -31,7 +31,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="entreprise-concerne reveal reveal-2">
+          <div className="entreprise-concerne reveal reveal-3">
             <h3>
               Votre entreprise grandit. Vos décisions ne peuvent plus attendre
               la clôture annuelle.
@@ -43,7 +43,7 @@ const Home = () => {
               interlocuteur qui comprenne ce qui est en jeu.
             </p>
           </div>
-          <div className="entreprise-concerne reveal reveal-3">
+          <div className="entreprise-concerne reveal reveal-4">
             <h3>Votre activité se complexifie</h3>
             <p>
               Plusieurs entités, des flux croisés, des interlocuteurs qui se
@@ -53,7 +53,7 @@ const Home = () => {
               fiabilité.
             </p>
           </div>
-          <div className="entreprise-concerne reveal reveal-4">
+          <div className="entreprise-concerne reveal reveal-5">
             <h3>Votre organisation vous fait perdre du temps</h3>
             <p>
               Documents transmis par plusieurs canaux, ressaisies, fichiers

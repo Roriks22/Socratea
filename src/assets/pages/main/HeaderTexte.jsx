@@ -1,10 +1,12 @@
+import useReveal from "../../components/useReveal";
 import julienPortrait from "../../../../public/images/Accueil_notre_approche.webp";
 
 const HeaderTexte = () => {
+  useReveal();
   return (
     <section className="header-texte" aria-labelledby="header-texte-title">
       <div className="header-grid">
-        <div className="approche">
+        <div className="approche reveal reveal-1">
           <h2 id="header-texte-title">Notre approche</h2>
           <p>
             SOCRATEA est un cabinet d'expertise comptable qui sécurise votre
@@ -24,7 +26,7 @@ const HeaderTexte = () => {
             adaptées à votre fonctionnement.
           </p>
         </div>
-        <aside className="apropos-card">
+        <aside className="apropos-card reveal reveal-2">
           <div className="apropos-text">
             <h3>À propos</h3>
             <p>

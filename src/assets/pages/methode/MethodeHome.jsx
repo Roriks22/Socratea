@@ -24,10 +24,10 @@ const MethodeHome = () => {
           </p>
         </div>
         <div className="methode-bottom">
-          <div className="process-photo">
+          <div className="process-photo reveal reveal-2">
             <img src={schemaMethodeHome} alt="Présentation de la méthode" />
           </div>
-          <ul className="process-flow reveal reveal-2">
+          <ul className="process-flow reveal reveal-3">
             <li className="process-step">
               <div className="step-marker">
                 <span>01</span>

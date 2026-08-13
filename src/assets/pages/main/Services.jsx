@@ -24,8 +24,8 @@ const Services = () => {
             accompagnement cohérent, sans multiplier les interlocuteurs.
           </p>
         </div>
-        <div className="services-footer reveal reveal-2">
-          <div className="pole-services">
+        <div className="services-footer">
+          <div className="pole-services reveal reveal-2">
             <div className="pole-texte">
               <span>01</span>
               <h3>Comptabilité et pilotage</h3>
@@ -46,7 +46,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="pole-services">
+          <div className="pole-services reveal reveal-3">
             <div className="pole-texte">
               <span>02</span>
               <h3>Automatisation et structuration des flux</h3>
@@ -67,7 +67,7 @@ const Services = () => {
               </Link>
             </div>
           </div>
-          <div className="pole-services">
+          <div className="pole-services reveal reveal-4">
             <div className="pole-texte">
               <span>03</span>
               <h3>Social et paie</h3>
@@ -87,7 +87,7 @@ const Services = () => {
               </Link>
             </div>
           </div>
-          <div className="pole-services">
+          <div className="pole-services reveal reveal-5">
             <div className="pole-texte">
               <span>04</span>
               <h3>Juridique</h3>

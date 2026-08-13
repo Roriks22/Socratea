@@ -1,17 +1,22 @@
+import useReveal from "../../components/useReveal";
+
 const Contact = () => {
+  useReveal();
   return (
     <section className="contact" aria-labelledby="contact-main-title">
       <div className="container texte-contact">
-        <span className="rdv-pris">PRENDRE RENDEZ-VOUS</span>
-        <h2 id="contact-main-title">Échangeons sur votre entreprise. </h2>
-        <p>
+        <span className="rdv-pris reveal reveal-1">PRENDRE RENDEZ-VOUS</span>
+        <h2 id="contact-main-title" className="reveal reveal-2">
+          Échangeons sur votre entreprise.{" "}
+        </h2>
+        <p className="reveal reveal-3">
           Ce premier échange nous permet de comprendre votre organisation, vos
           besoins et vos attentes. De votre côté, vous découvrez l’approche de
           SOCRATEA et pouvez vérifier qu’elle correspond à ce que vous
           recherchez. Si ce n’est pas le cas, nous vous le dirons et nous vous
           orienterons si nous le pouvons.
         </p>
-        <div className="btn_creneau">
+        <div className="btn_creneau reveal reveal-4">
           <a
             href="https://www.cal.eu/socratea"
             target="_blank"
@@ -33,7 +38,7 @@ const Contact = () => {
             </svg>
           </a>
         </div>
-        <div className="contact-fin">
+        <div className="contact-fin reveal reveal-5">
           Ou par écrit -
           <a href="mailto:julien.jacquesson@socratea.net">
             julien.jacquesson@socratea.net

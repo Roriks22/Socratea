@@ -23,9 +23,9 @@ const Livrables = () => {
             repérer les points qui méritent votre attention.
           </p>
         </div>
-        <div className="livrables-footer reveal reveal-2">
+        <div className="livrables-footer">
           <div className="livrables-left">
-            <div className="livrables-clients">
+            <div className="livrables-clients reveal reveal-2">
               <div className="livrables-span">
                 <img
                   src={flashMensuel}
@@ -44,7 +44,7 @@ const Livrables = () => {
                 </p>
               </div>
             </div>
-            <div className="livrables-clients">
+            <div className="livrables-clients reveal reveal-3">
               <div className="livrables-span">
                 <img
                   src={situationTrimestrielle}
@@ -61,7 +61,7 @@ const Livrables = () => {
                 </p>
               </div>
             </div>
-            <div className="livrables-clients">
+            <div className="livrables-clients reveal reveal-4">
               <div className="livrables-span">
                 <img
                   src={comptesAnnuels}
@@ -78,7 +78,7 @@ const Livrables = () => {
                 </p>
               </div>
             </div>
-            <div className="livrables-clients">
+            <div className="livrables-clients reveal reveal-5">
               <div className="livrables-span">
                 <img
                   src={analysePonctuelle}
