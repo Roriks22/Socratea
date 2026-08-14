@@ -1,4 +1,7 @@
+import useReveal from "../../../components/useReveal";
+
 const Pole2Objectif = () => {
+  useReveal();
   return (
     <section
       className="pole2-objectif"
@@ -6,7 +9,7 @@ const Pole2Objectif = () => {
     >
       <div className="container">
         <div className="two-col">
-          <div>
+          <div className="reveal reveal-1">
             <span className="eyebrow span-pole2">
               Comprendre votre fonctionnement
             </span>
@@ -23,7 +26,7 @@ const Pole2Objectif = () => {
               nécessaire.
             </p>
           </div>
-          <div>
+          <div className="reveal reveal-2">
             <span className="eyebrow span-pole2">
               Mettre en place la bonne solution
             </span>

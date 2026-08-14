@@ -23,8 +23,8 @@ const Pole4Operations = () => {
             préparer l’opération et à coordonner les intervenants nécessaires.
           </p>
         </div>
-        <div className="two-col-operations reveal reveal-2">
-          <div>
+        <div className="two-col-operations">
+          <div className="reveal reveal-2">
             <h3>Structurer la décision</h3>
             <p>
               Nous intervenons sur les dimensions comptables, fiscales et
@@ -34,7 +34,7 @@ const Pole4Operations = () => {
               disposez d’une vision plus claire avant de vous engager.
             </p>
           </div>
-          <div>
+          <div className="reveal reveal-3">
             <h3>Réunir les bonnes expertises</h3>
             <p>
               Lorsque l’opération nécessite l’intervention d’un avocat, d’un
