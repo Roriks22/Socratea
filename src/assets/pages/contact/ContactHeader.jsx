@@ -33,7 +33,7 @@ const ContactHeader = () => {
             </p>
           </div>
         </div>
-        <div className="photo-hero-visual reveal reveal-3">
+        <div className="photo-hero-visual reveal-right">
           <div className="contact-card">
             <picture className="social-hero__visual">
               <source media="(max-width: 900px)" srcSet={heroSocialMobile} />

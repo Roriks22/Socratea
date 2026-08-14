@@ -6,7 +6,7 @@ const HeaderTexte = () => {
   return (
     <section className="header-texte" aria-labelledby="header-texte-title">
       <div className="header-grid">
-        <div className="approche reveal reveal-1">
+        <div className="approche reveal-left">
           <h2 id="header-texte-title">Notre approche</h2>
           <p>
             SOCRATEA est un cabinet d'expertise comptable qui sécurise votre
@@ -26,7 +26,7 @@ const HeaderTexte = () => {
             adaptées à votre fonctionnement.
           </p>
         </div>
-        <aside className="apropos-card reveal reveal-2">
+        <aside className="apropos-card reveal-right">
           <div className="apropos-text">
             <h3>À propos</h3>
             <p>

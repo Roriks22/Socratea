@@ -32,7 +32,7 @@ const CabinetsHeader = () => {
               client. Nous apportons la compétence complémentaire.
             </p>
           </div>
-          <div className="hero-cta-group reveal reveal-4">
+          <div className="hero-cta-group reveal-left">
             <Link to="/contact" className="btn btn-primary">
               Prendre rendez-vous
               <svg
@@ -51,7 +51,7 @@ const CabinetsHeader = () => {
           </div>
         </div>
         <picture
-          className="social-hero__visual reveal reveal-3"
+          className="social-hero__visual reveal-right"
           aria-hidden="true"
         >
           <source media="(max-width: 900px)" srcSet={heroSocialMobile} />

@@ -39,7 +39,7 @@ const Pole1Header = () => {
           </div>
         </div>
         <picture
-          className="social-hero__visual reveal reveal-3"
+          className="social-hero__visual reveal-right"
           aria-hidden="true"
         >
           <source media="(max-width: 900px)" srcSet={heroSocialMobile} />

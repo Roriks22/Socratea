@@ -9,7 +9,7 @@ const AproposSocratea = () => {
       aria-labelledby="apropos-socratea-title"
     >
       <div className="section-socratea">
-        <div className="socratea-image reveal reveal-1">
+        <div className="socratea-image reveal-left">
           <img src={socratea} alt="Logo de SOCRATEA" />
         </div>
         <div className="socratea-texte">

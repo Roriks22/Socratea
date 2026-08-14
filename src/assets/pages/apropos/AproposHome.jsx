@@ -7,7 +7,7 @@ const AproposHome = () => {
     <section className="aprps-home" aria-labelledby="apropos-home-title">
       <div className="container">
         <div className="about-inner">
-          <div className="about-portrait reveal reveal-1">
+          <div className="about-portrait reveal-left">
             <img
               src={julienimage}
               alt="Julien Jacquesson, expert-comptable fondateur de SOCRATEA"

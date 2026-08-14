@@ -22,7 +22,7 @@ const ServicesCabinets = () => {
             intervenir ponctuellement aux côtés de votre équipe.
           </p>
         </div>
-        <div className="hero-cta-group reveal reveal-2">
+        <div className="hero-cta-group reveal-left">
           <button
             className="btn btn-secondary"
             onClick={() => navigate("/pour-les-cabinets")}

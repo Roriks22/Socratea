@@ -16,7 +16,7 @@ const Contact = () => {
           recherchez. Si ce n’est pas le cas, nous vous le dirons et nous vous
           orienterons si nous le pouvons.
         </p>
-        <div className="btn_creneau reveal reveal-4">
+        <div className="btn_creneau reveal-left">
           <a
             href="https://www.cal.eu/socratea"
             target="_blank"

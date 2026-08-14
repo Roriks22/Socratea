@@ -23,7 +23,7 @@ const CabinetsContact = () => {
             aider à faire évoluer l’organisation de votre cabinet.
           </p>
         </div>
-        <div className="hero-cta-group reveal reveal-2">
+        <div className="hero-cta-group reveal-left">
           <Link to="/contact#agenda" className="btn btn-primary">
             Prendre rendez-vous
             <svg

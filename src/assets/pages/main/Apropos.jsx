@@ -7,7 +7,7 @@ const Apropos = () => {
   return (
     <section className="a_propos" aria-labelledby="apropos-main-title">
       <div className="container apropos">
-        <div className="apropos_left reveal reveal-1">
+        <div className="apropos_left reveal-left">
           <img
             src={julienImage}
             alt="Julien Jacquesson, expert-comptable fondateur de SOCRATEA"
@@ -33,7 +33,7 @@ const Apropos = () => {
             information fiable. <br />
             C’est de cette double expérience qu’est né SOCRATEA.
           </p>
-          <div className="btn-parcours reveal reveal-5">
+          <div className="btn-parcours reveal-left">
             <Link to="/apropos" className="btn-click-parcours">
               Découvrir son parcours
             </Link>

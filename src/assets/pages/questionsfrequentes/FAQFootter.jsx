@@ -17,7 +17,7 @@ const FAQFootter = () => {
             Le plus simple reste souvent d’en parler.
           </p>
         </div>
-        <div className="hero-cta-group reveal reveal-4">
+        <div className="hero-cta-group reveal-left">
           <Link to="/contact#agenda" className="btn btn-primary">
             Prendre rendez-vous
             <svg

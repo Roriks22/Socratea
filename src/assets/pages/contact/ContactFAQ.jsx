@@ -14,7 +14,7 @@ const ContactFAQ = () => {
             Retrouvez les réponses les plus fréquentes sur notre page dédiée.
           </p>
         </div>
-        <div className="hero-cta-group reveal reveal-2">
+        <div className="hero-cta-group reveal-left">
           <button
             className="btn btn-secondary"
             onClick={() => navigate("/questions-frequentes")}
