@@ -12,7 +12,7 @@ const Header = () => {
         <div className="hero-content">
           <div className="hero-tag reveal reveal-1">
             <span className="dot"></span>
-            <span>Ouverture le 14 septembre 2026</span>
+            <span>Ouverture le 12 septembre 2026</span>
           </div>
           <h1 id="header-title" className="reveal reveal-2">
             Ancré dans l'expertise.
