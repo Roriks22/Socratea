@@ -82,7 +82,7 @@ const StructuredData = () => {
         telephone: "+33768775524",
         email: "julien.jacquesson@socratea.net",
 
-        sameAs: ["https://www.linkedin.com/in/jacquesson-julien-b72870a9/"],
+        sameAs: ["https://www.linkedin.com/in/julien-jacquesson-b72870a9/"],
 
         areaServed: {
           "@type": "Country",

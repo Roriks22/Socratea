@@ -36,7 +36,7 @@ const Footer = () => {
               partout en France grâce à une organisation dématérialisée.
             </p>
             <a
-              href="https://www.linkedin.com/in/jacquesson-julien-b72870a9/"
+              href="https://www.linkedin.com/in/julien-jacquesson-b72870a9/"
               className="footer-linkedin"
               target="_blank"
               rel="noopener noreferrer"
