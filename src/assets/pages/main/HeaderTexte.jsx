@@ -9,8 +9,10 @@ const HeaderTexte = () => {
         <div className="approche reveal-left">
           <h2 id="header-texte-title">Notre approche</h2>
           <p>
-            SOCRATEA est un cabinet d'expertise comptable qui sécurise votre
-            comptabilité, vos obligations fiscales et vos comptes annuels.
+            SOCRATEA est un cabinet d'expertise comptable installé près
+            d'Amiens. Nous accompagnons les dirigeants de PME partout en France,
+            pour leur comptabilité, leurs obligations fiscales et leurs comptes
+            annuels.
           </p>
           <p>
             Mais notre rôle ne s'arrête pas à produire des chiffres : nous les
