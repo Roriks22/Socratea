@@ -35,7 +35,7 @@ const Services = () => {
                 marge, activité : nous sécurisons vos obligations tout en vous
                 donnant des repères utiles pour piloter votre entreprise.
               </p>
-              <Link to="/services-comptabilite" className="service-link">
+              <Link to="/services/comptabilite" className="service-link">
                 Découvrir la comptabilité et le pilotage
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
@@ -52,7 +52,7 @@ const Services = () => {
                 automatisation de tâches ou développement d’applications :
                 chaque solution répond à un besoin concret.
               </p>
-              <Link to="/services-automatisation" className="service-link">
+              <Link to="/services/automatisation" className="service-link">
                 Découvrir l'automatisation des flux
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
@@ -68,7 +68,7 @@ const Services = () => {
                 et respect des échéances : votre gestion sociale s’appuie sur
                 une organisation claire et un suivi régulier.
               </p>
-              <Link to="/services-paie" className="service-link">
+              <Link to="/services/paie" className="service-link">
                 Découvrir le social et la paie
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
@@ -85,7 +85,7 @@ const Services = () => {
                 principales étapes de la vie de votre entreprise, en lien avec
                 vos autres conseils lorsque cela est nécessaire.
               </p>
-              <Link to="/services-juridique" className="service-link">
+              <Link to="/services/juridique" className="service-link">
                 Découvrir notre accompagnement juridique
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>

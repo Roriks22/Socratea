@@ -88,16 +88,16 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    to="/services-comptabilite"
-                    onClick={() => handleScrollTop("/services-comptabilite")}
+                    to="/services/comptabilite"
+                    onClick={() => handleScrollTop("/services/comptabilite")}
                   >
                     Comptabilité et pilotage
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/services-automatisation"
-                    onClick={() => handleScrollTop("/services-automatisation")}
+                    to="/services/automatisation"
+                    onClick={() => handleScrollTop("/services/automatisation")}
                   >
                     Automatisation <br />
                     et structuration des flux
@@ -105,16 +105,16 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/services-paie"
-                    onClick={() => handleScrollTop("/services-paie")}
+                    to="/services/paie"
+                    onClick={() => handleScrollTop("/services/paie")}
                   >
                     Social et paie
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/services-juridique"
-                    onClick={() => handleScrollTop("/services-juridique")}
+                    to="/services/juridique"
+                    onClick={() => handleScrollTop("/services/juridique")}
                   >
                     Juridique
                   </Link>

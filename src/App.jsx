@@ -120,7 +120,7 @@ function App() {
           }
         />
         <Route
-          path="/services-comptabilite"
+          path="/services/comptabilite"
           element={
             <>
               <SEO
@@ -137,7 +137,7 @@ function App() {
           }
         />
         <Route
-          path="/services-automatisation"
+          path="/services/automatisation"
           element={
             <>
               <SEO
@@ -154,7 +154,7 @@ function App() {
           }
         />
         <Route
-          path="/services-paie"
+          path="/services/paie"
           element={
             <>
               <SEO
@@ -170,7 +170,7 @@ function App() {
           }
         />
         <Route
-          path="/services-juridique"
+          path="/services/juridique"
           element={
             <>
               <SEO
